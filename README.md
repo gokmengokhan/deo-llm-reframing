@@ -117,6 +117,27 @@ uv run python generate_figures.py
 
 The full experiment (3 models, 4 conditions, 5 runs, 3 scorers) costs approximately $15-20 USD across the Groq, Anthropic, and OpenAI APIs.
 
+## Claude Code slash command
+
+This repo includes a `/reframe` slash command that applies the DEO framework to any problem. To use it:
+
+1. Clone this repo
+2. From within the repo directory, run Claude Code
+3. Type `/reframe` followed by your problem:
+
+```
+/reframe Our hospital ED loses $2.3M per year. Should we close it?
+```
+
+Claude will apply the four-step DEO oscillation (ANALYSE, FEEL, REFRAME, ENVISION) and return a reframed response.
+
+To install it globally (available in all projects), copy the command file:
+
+```bash
+mkdir -p ~/.claude/commands
+cp .claude/commands/reframe.md ~/.claude/commands/reframe.md
+```
+
 ## Data format
 
 Each JSON file in `results/` contains:
