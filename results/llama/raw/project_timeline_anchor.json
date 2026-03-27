@@ -1,0 +1,798 @@
+{
+  "problem_id": "project_timeline_anchor",
+  "problem_title": "The Project Timeline Anchor",
+  "category": "anchoring",
+  "paths_applied": [
+    "path_6_premise_reflection",
+    "path_2_decompose_to_generic"
+  ],
+  "theory_connection": "Tversky & Kahneman (1974): anchoring on the previous project duration. Reference class forecasting (Flyvbjerg, 2008) shows project anchoring systematically overpredicts time when previous projects had structural delays. Decomposition into causal components breaks the anchor — actual technical work is typically 30-40% of project duration, the rest being organisational friction.",
+  "expected_vanilla_failure": "Uses 18 months as the reference point. Adjusts slightly based on differences (this migration is larger/smaller, technology is newer/older). Recommends 15-20 months. Treats the previous project's duration as a meaningful baseline.",
+  "success_criteria": "Decomposes the 18-month figure and identifies that actual technical work likely represented 4-6 months. Plans this migration from component estimates: data audit, schema mapping, migration tooling, testing, cutover. May arrive at a very different number (6 months or 24 months) based on THIS project's specific drivers, not the anchor.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To determine the timeline for TerraBank's database migration, let's break down the key factors involved and analyze them step by step:\n\n1. **Complexity of the migration**: Although the project sponsor mentioned a similar migration that took 18 months, we need to consider the complexity of the current migration. The legacy Oracle system has 15 years of customer records, which may have accumulated complex data relationships, custom queries, and outdated schema. The modern cloud-based PostgreSQL platform will likely require significant changes to the database structure, data mapping, and application integration.\n\n2. **Team experience and expertise**: The team lead should assess the experience and expertise of the team members involved in the migration. If the team has undergone significant changes since the previous migration, it may impact the project timeline. Additionally, the team may need to acquire new skills to work with the modern cloud-based PostgreSQL platform.\n\n3. **Scope and requirements**: The team lead should clarify the scope and requirements of the migration project. Are there any specific features, functionalities, or regulatory requirements that need to be addressed during the migration? Are there any dependencies on other teams or stakeholders that may impact the timeline?\n\n4. **Technology and tools**: The team lead should consider the technology and tools used for the migration. The modern cloud-based PostgreSQL platform may offer more efficient data migration tools, automated testing, and monitoring capabilities compared to the legacy Oracle system. However, the team may need to invest time in learning and implementing these new tools.\n\n5. **Risk management and testing**: The team lead should plan for thorough testing and quality assurance to ensure the migrated data is accurate, complete, and secure. This may involve developing test cases, conducting data validation, and performing performance testing.\n\nConsidering these factors, here's a recommended approach to structuring the timeline:\n\n**Phase 1: Planning and Assessment (6-8 weeks)**\n\n* Define the project scope, goals, and deliverables\n* Conduct a thorough assessment of the legacy Oracle system, including data complexity, custom queries, and application integration\n* Identify the required skills and expertise for the team\n* Develop a detailed project plan, including timelines, milestones, and resource allocation\n\n**Phase 2: Data Mapping and Design (8-10 weeks)**\n\n* Create a data mapping document to outline the relationships between the legacy Oracle system and the modern cloud-based PostgreSQL platform\n* Design the new database schema, including data types, relationships, and indexing\n* Develop a data migration strategy, including data transformation, data validation, and data loading\n\n**Phase 3: Data Migration and Testing (16-20 weeks)**\n\n* Develop and test the data migration scripts and tools\n* Conduct data migration in phases, starting with non-critical data and gradually moving to critical data\n* Perform thorough testing, including data validation, performance testing, and security testing\n\n**Phase 4: Deployment and Cutover (4-6 weeks)**\n\n* Plan and execute the deployment of the migrated database to the production environment\n* Conduct final testing and quality assurance\n* Perform a cutover to the new system, including training and support for end-users\n\nBased on these phases, I would recommend planning for a minimum of 12-18 months for the database migration project. However, this timeline may vary depending on the complexity of the migration, team experience, and scope of the project. The team lead should regularly review and update the project plan to ensure it remains realistic and achievable.\n\nTo mitigate potential risks and delays, the team lead should:\n\n* Develop a comprehensive risk management plan\n* Establish clear communication channels with stakeholders and team members\n* Monitor progress and adjust the project plan as needed\n* Ensure sufficient resources and budget are allocated to the project\n\nBy following this structured approach, TerraBank's infrastructure team can ensure a successful database migration and minimize the risk of delays or data loss.",
+      "input_tokens": 164,
+      "output_tokens": 778,
+      "elapsed_seconds": 2.97
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To determine the timeline for TerraBank's database migration, let's consider the key factors involved and weigh the options carefully.\n\n**Factors to Consider:**\n\n1. **Complexity of the migration**: Although the bank has experience with a similar migration, the complexity of the current project may differ. The legacy Oracle system has been in use for 15 years, which means it may have accumulated a significant amount of technical debt, customizations, and workarounds. The modern cloud-based PostgreSQL platform will require careful consideration of data mapping, schema changes, and potential performance differences.\n2. **Team experience and expertise**: The team lead and the infrastructure team may have gained valuable experience from the previous migration. However, it's essential to consider whether the same team members are still involved and if they have retained the knowledge and expertise from the previous project.\n3. **Scope and scale**: The scope of the current migration may be larger or smaller than the previous one. The team should assess the number of customer records, data complexity, and the number of integrations with other systems to determine the overall scope.\n4. **Technology advancements**: Cloud-based PostgreSQL platforms have evolved significantly over the past five years. The team should consider the benefits of newer technologies, such as automated migration tools, cloud-native services, and improved data processing capabilities.\n5. **Risk management**: The team should identify potential risks, such as data corruption, downtime, or security breaches, and develop a mitigation strategy to minimize their impact.\n\n**Options and Recommendations:**\n\nBased on these factors, here are some options and recommendations for the team lead to consider:\n\n1. **Conservative estimate**: Plan for a similar timeframe as the previous migration, i.e., 18 months. This approach acknowledges the potential complexities and uncertainties involved in the project.\n2. **Optimistic estimate**: Consider a shorter timeframe, e.g., 12-14 months, assuming that the team can leverage their previous experience, new technologies, and improved processes to streamline the migration.\n3. **Phased approach**: Break down the migration into smaller, manageable phases, each with its own timeline and milestones. This approach allows the team to focus on specific aspects of the migration, such as data mapping, schema changes, or integration testing, and adjust the timeline as needed.\n4. **Agile methodology**: Adopt an agile approach, which emphasizes iterative development, continuous testing, and flexibility. This methodology can help the team respond to changes and uncertainties during the migration process.\n\n**Recommended Timeline Structure:**\n\nConsidering the factors and options above, I recommend the following timeline structure:\n\n1. **Discovery phase** (2-4 weeks): Assess the scope, complexity, and potential risks of the migration. Identify the key stakeholders, data sources, and integrations with other systems.\n2. **Planning phase** (4-6 weeks): Develop a detailed project plan, including timelines, milestones, and resource allocation. Establish a risk management strategy and identify potential mitigation measures.\n3. **Data preparation phase** (8-12 weeks): Focus on data mapping, schema changes, and data cleansing. This phase may involve significant effort, depending on the complexity of the data and the number of customizations in the legacy system.\n4. **Migration phase** (12-16 weeks): Perform the actual migration, using a phased approach if necessary. This phase may involve multiple iterations, depending on the scope and complexity of the migration.\n5. **Testing and quality assurance phase** (8-12 weeks): Conduct thorough testing, including integration testing, performance testing, and user acceptance testing.\n6. **Deployment phase** (4-6 weeks): Plan and execute the deployment of the migrated database to the production environment.\n7. **Post-migration phase** (4-6 weeks): Monitor the system, address any issues that arise, and perform post-migration optimization and tuning.\n\n**Conclusion:**\n\nBased on the factors and options considered, I recommend planning for a timeline of 14-18 months for the database migration. The team lead should adopt a phased approach, with a focus on discovery, planning, and risk management. The agile methodology can be used to respond to changes and uncertainties during the migration process. By breaking down the migration into smaller, manageable phases, the team can ensure a successful and efficient migration of the customer records to the modern cloud-based PostgreSQL platform.",
+      "input_tokens": 164,
+      "output_tokens": 878,
+      "elapsed_seconds": 3.51
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To address the project sponsor's inquiry, let's break down the key factors involved in the database migration project and analyze them step by step.\n\n**Understanding the Legacy System and the New Platform:**\n\n1. **Complexity of the Legacy System:** The legacy Oracle system has been in place for 15 years, which means it likely has a complex structure with many customizations, integrations, and potentially outdated technologies.\n2. **New Platform (PostgreSQL):** The modern cloud-based PostgreSQL platform offers improved scalability, flexibility, and maintainability. However, it also introduces new technologies and potentially different data modeling and architecture requirements.\n\n**Lessons Learned from the Previous Migration:**\n\n1. **Previous Migration Duration:** The previous database migration took 18 months. While this provides a baseline, it's essential to consider the differences between the two migrations, such as the scope, complexity, and team experience.\n2. **Team Experience and Knowledge:** The infrastructure team may have gained valuable experience and knowledge from the previous migration, which could positively impact the duration and quality of the current project.\n\n**Factors Affecting the Current Migration:**\n\n1. **Scope and Complexity:** The current migration involves 15 years of customer records, which may be more extensive and complex than the previous migration.\n2. **Team Size and Composition:** The team's size, composition, and availability of skilled resources may have changed since the previous migration.\n3. **Technology and Tooling:** The new PostgreSQL platform and any associated tools or technologies may require additional time for learning and adaptation.\n4. **Testing and Quality Assurance:** Thorough testing and quality assurance are crucial to ensure data integrity and system reliability. This may add to the overall project duration.\n5. **Stakeholder Expectations and Governance:** The project sponsor's expectations, governance, and potential constraints (e.g., budget, timeline, or resource limitations) should be considered when planning the migration.\n\n**Recommendation:**\n\nBased on the analysis, I recommend the following:\n\n1. **Initial Assessment and Planning (4-6 weeks):** Conduct a thorough assessment of the legacy system, the new PostgreSQL platform, and the migration requirements. This will help identify potential risks, complexities, and dependencies.\n2. **High-Level Timeline Estimation:** Considering the previous migration took 18 months, and accounting for potential differences in scope and complexity, I estimate the current migration may take between 20-24 months. However, this should be refined as more information becomes available during the initial assessment and planning phase.\n3. **Phased Approach:** Break down the migration into manageable phases, such as:\n\t* Phase 1: Data assessment, cleansing, and preparation (3-4 months)\n\t* Phase 2: Data migration and testing (6-8 months)\n\t* Phase 3: System integration, testing, and quality assurance (4-6 months)\n\t* Phase 4: Deployment, monitoring, and post-migration support (3-4 months)\n4. **Regular Progress Monitoring and Adjustments:** Schedule regular progress updates and milestone reviews to ensure the project is on track. Be prepared to adjust the timeline and resource allocation as needed to address any unforeseen challenges or changes in requirements.\n5. **Stakeholder Communication and Management:** Maintain open communication with the project sponsor, stakeholders, and team members to ensure everyone is informed and aligned with the project plan, progress, and any changes.\n\nBy following this structured approach, the infrastructure team can develop a comprehensive plan, manage stakeholder expectations, and ensure a successful database migration.",
+      "input_tokens": 164,
+      "output_tokens": 717,
+      "elapsed_seconds": 2.42
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To determine the timeline for the database migration, let's consider the key factors involved and weigh the options carefully.\n\n**Factors to Consider:**\n\n1. **Scope and Complexity**: The scope of the migration includes 15 years of customer records, which is a significant amount of data. The complexity of the migration depends on the differences between the legacy Oracle system and the modern cloud-based PostgreSQL platform.\n2. **Previous Experience**: The project sponsor mentioned that a similar database migration took 18 months five years ago. However, it's essential to consider that the previous migration may have had different circumstances, such as a smaller scope, different technology, or a more experienced team.\n3. **Team Experience and Resources**: The team lead should assess the experience and skills of the current team members, as well as the availability of resources, such as time, budget, and equipment.\n4. **Risk and Uncertainty**: Database migrations can be risky, and unforeseen issues may arise during the process. It's crucial to consider the potential risks and uncertainties and plan for contingencies.\n5. **Business Requirements and Stakeholder Expectations**: The team lead should understand the business requirements and stakeholder expectations, including the desired timeline, budget, and quality standards.\n\n**Options and Considerations:**\n\n1. **Use the Previous Migration as a Baseline**: Assuming the previous migration took 18 months, the team lead could use this as a baseline and adjust the timeline based on the differences in scope, complexity, and team experience.\n2. **Break Down the Migration into Phases**: Divide the migration into smaller, manageable phases, such as data assessment, data cleansing, data migration, and testing. This approach can help the team focus on one phase at a time and adjust the timeline as needed.\n3. **Develop a Detailed Project Schedule**: Create a detailed project schedule, including milestones, deadlines, and resource allocation. This will help the team track progress and identify potential roadblocks.\n4. **Consider Agile Methodologies**: Adopt agile methodologies, such as Scrum or Kanban, to facilitate flexibility and adaptability during the migration process.\n5. **Pad the Timeline for Contingencies**: Add a buffer to the timeline to account for unexpected issues or delays.\n\n**Recommendation:**\n\nBased on the factors and options considered, I recommend the following:\n\n1. **Initial Timeline Estimate**: Use the previous migration as a baseline and estimate the timeline to be around 18-24 months, considering the increased scope and complexity.\n2. **Phased Approach**: Break down the migration into smaller phases, such as:\n\t* Phase 1: Data assessment and cleansing (3-6 months)\n\t* Phase 2: Data migration (6-9 months)\n\t* Phase 3: Testing and quality assurance (3-6 months)\n\t* Phase 4: Deployment and post-migration support (3-6 months)\n3. **Regular Progress Updates and Re-Evaluation**: Schedule regular progress updates and re-evaluate the timeline every 3-6 months to ensure the project is on track and make adjustments as needed.\n4. **Agile Methodologies**: Adopt agile methodologies to facilitate flexibility and adaptability during the migration process.\n5. **Contingency Planning**: Identify potential risks and develop contingency plans to mitigate them, such as having a backup team or resources available in case of unexpected delays.\n\nBy following this structured approach, the team lead can develop a realistic timeline, manage stakeholder expectations, and ensure a successful database migration.",
+      "input_tokens": 164,
+      "output_tokens": 707,
+      "elapsed_seconds": 2.33
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To determine the timeline for the database migration, let's break down the key factors involved and analyze them step by step:\n\n1. **Complexity of the migration**: The current migration involves moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. This is a significant undertaking, and the complexity of the migration should not be underestimated. The team will need to consider factors such as data compatibility, schema changes, and potential data losses.\n\n2. **Previous migration experience**: The project sponsor mentioned that a similar database migration took 18 months five years ago. However, it's essential to consider the differences between the two migrations. The previous migration may have had different requirements, a smaller dataset, or a different team with varying levels of expertise. Additionally, the technology landscape has changed significantly over the past five years, with advancements in cloud computing, data migration tools, and best practices.\n\n3. **Team experience and expertise**: The team lead should assess the experience and expertise of the current team members. If the team has undergone significant changes since the previous migration, it may impact the timeline. The team may require additional training or resources to ensure they are equipped to handle the migration.\n\n4. **Scope and requirements**: The team should clearly define the scope and requirements of the migration. This includes identifying the data to be migrated, the systems that will be affected, and any regulatory or compliance requirements that must be met. A well-defined scope and set of requirements will help the team estimate the effort required for the migration.\n\n5. **Risk assessment**: The team should conduct a thorough risk assessment to identify potential roadblocks and develop mitigation strategies. This includes assessing the risks associated with data loss, system downtime, and potential security breaches.\n\nConsidering these factors, here's a recommended approach to structuring the timeline:\n\n**Phase 1: Planning and Assessment (6-8 weeks)**\n\n* Define the scope and requirements of the migration\n* Conduct a thorough risk assessment and develop mitigation strategies\n* Assess the team's experience and expertise, and identify any gaps that need to be addressed\n* Develop a detailed project plan, including milestones and timelines\n\n**Phase 2: Data Preparation and Migration (12-16 weeks)**\n\n* Prepare the data for migration, including data cleansing, data transformation, and data validation\n* Develop and test the migration scripts and tools\n* Conduct a pilot migration to test the process and identify any issues\n\n**Phase 3: Testing and Quality Assurance (8-12 weeks)**\n\n* Develop and execute a comprehensive testing plan to ensure the migrated data is accurate and complete\n* Conduct performance testing to ensure the new system can handle the expected workload\n* Identify and address any defects or issues that arise during testing\n\n**Phase 4: Deployment and Cutover (4-6 weeks)**\n\n* Develop a deployment plan, including the cutover strategy and timeline\n* Conduct a final test of the migrated data and systems\n* Execute the deployment plan, including the cutover to the new system\n\nBased on this approach, I would recommend planning for a migration timeline of approximately 30-42 weeks (7.5-10.5 months). However, this is just an estimate, and the actual timeline may vary depending on the specific requirements and complexities of the migration.\n\nTo mitigate the risks associated with the migration, I would also recommend:\n\n* Developing a detailed project plan with regular milestones and checkpoints\n* Establishing a strong governance structure, including regular meetings with stakeholders and sponsors\n* Identifying and addressing any skill gaps or resource constraints within the team\n* Conducting regular risk assessments and developing mitigation strategies\n* Maintaining open communication with stakeholders and sponsors throughout the migration process\n\nBy following this approach, the team can ensure a well-structured and well-planned migration, minimizing the risks associated with the migration and ensuring a successful outcome.",
+      "input_tokens": 164,
+      "output_tokens": 783,
+      "elapsed_seconds": 2.92
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before using the 18-month figure as a reference point, ask: what CAUSED the previous migration to take 18 months? Decompose that duration into its actual components — estimate how much was technical development work, how much was waiting on approvals or decisions, how much was scope changes mid-project, how much was organisational delays or team changes. Then plan THIS migration from its own components — not from the previous project's total duration.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To provide a well-structured timeline for the upcoming database migration, it's essential to decompose the previous migration's duration into its actual components, rather than relying solely on the total duration. Let's break down the 18-month duration of the previous migration:\n\n1. **Technical development work**: This includes the actual time spent on designing, developing, testing, and implementing the migration. Assuming a moderate complexity level, let's allocate 30-40% of the total duration to technical development work, which translates to approximately 6-7 months (30-40% of 18 months).\n2. **Waiting on approvals or decisions**: This includes time spent waiting for stakeholders to review and approve the migration plan, waiting for budget allocations, or waiting for decisions on scope changes. Allocating 15-20% of the total duration to approvals and decisions, we get around 3-4 months (15-20% of 18 months).\n3. **Scope changes mid-project**: Scope changes can significantly impact the project timeline. Assuming 10-15% of the total duration was spent on scope changes, we're looking at approximately 2-3 months (10-15% of 18 months).\n4. **Organizational delays or team changes**: This includes time spent onboarding new team members, dealing with staff turnover, or navigating organizational changes. Allocating 10-15% of the total duration to organizational delays, we get around 2-3 months (10-15% of 18 months).\n\nWith this breakdown, we can see that the previous migration's duration was influenced by various factors, not just technical development work. Now, let's plan the current migration from its own components:\n\n**Current Migration Planning**\n\nTo estimate the duration of the current migration, we'll consider the following factors:\n\n1. **Technical development work**: The current migration involves moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. Assuming a similar complexity level to the previous migration, we can allocate 6-9 months for technical development work, considering the team's experience and the lessons learned from the previous migration.\n2. **Waiting on approvals or decisions**: To minimize delays, we'll aim to secure all necessary approvals and decisions before starting the technical development work. Let's allocate 1-2 months for this process.\n3. **Scope changes mid-project**: To mitigate the impact of scope changes, we'll establish a clear change management process and engage stakeholders early on. Assuming a well-planned and well-executed migration, we can allocate 1-2 months for potential scope changes.\n4. **Organizational delays or team changes**: We'll ensure that the team is stable and well-equipped to handle the migration. Assuming minimal organizational delays, we can allocate 1 month for this factor.\n\nConsidering these components, a realistic estimate for the current migration would be:\n\n* Technical development work: 6-9 months\n* Approvals and decisions: 1-2 months\n* Scope changes: 1-2 months\n* Organizational delays: 1 month\n\nAdding these components together, we get a total estimated duration of 9-14 months for the current migration. However, to be more precise, let's consider the following:\n\n* The current migration involves a more modern and flexible cloud-based platform, which might reduce the technical development work.\n* The team has experience from the previous migration, which could lead to a more efficient execution.\n* The organization has likely improved its change management processes and stakeholder engagement, reducing the likelihood of scope changes and organizational delays.\n\nTaking these factors into account, a more realistic estimate for the current migration would be 10-12 months. This timeline allows for a thorough and well-planned migration, with some buffer for unexpected delays or scope changes.\n\n**Recommended Timeline Structure**\n\nTo structure the timeline, we can break it down into the following phases:\n\n1. **Planning and approvals** (2-3 months): Secure all necessary approvals, define the scope, and establish a clear project plan.\n2. **Technical development** (6-8 months): Design, develop, test, and implement the migration.\n3. **Testing and quality assurance** (2-3 months): Perform thorough testing and quality assurance to ensure the migrated data is accurate and complete.\n4. **Deployment and cutover** (1-2 months): Deploy the migrated data to the new platform and perform the cutover.\n5. **Post-migration review and optimization** (1-2 months): Review the migration's success, identify areas for improvement, and optimize the new platform for future growth.\n\nBy following this structured timeline and considering the components that influenced the previous migration's duration, the team can ensure a well-planned and successful database migration.",
+      "input_tokens": 226,
+      "output_tokens": 970,
+      "elapsed_seconds": 3.52
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before using the 18-month figure as a reference point, ask: what CAUSED the previous migration to take 18 months? Decompose that duration into its actual components — estimate how much was technical development work, how much was waiting on approvals or decisions, how much was scope changes mid-project, how much was organisational delays or team changes. Then plan THIS migration from its own components — not from the previous project's total duration.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To determine the timeline for the upcoming database migration, it's essential to analyze the components that contributed to the 18-month duration of the previous migration. This will help the team to identify potential bottlenecks, areas for improvement, and create a more accurate plan for the current project.\n\n**Decomposing the previous migration's duration:**\n\nLet's assume the previous migration's 18-month duration can be broken down into the following components:\n\n1. **Technical development work**: This includes the actual time spent on designing, developing, testing, and deploying the migration scripts, data transformation, and integration with other systems. Estimated duration: 6-8 months (approximately 40-50% of the total duration).\n2. **Waiting on approvals or decisions**: This includes time spent waiting for stakeholders to approve the migration plan, provide input, or make decisions on scope, timeline, or resources. Estimated duration: 2-3 months (approximately 10-15% of the total duration).\n3. **Scope changes mid-project**: This includes time spent on rework, redesign, or reconfiguration due to changes in requirements, new features, or unforeseen complexities. Estimated duration: 2-3 months (approximately 10-15% of the total duration).\n4. **Organizational delays or team changes**: This includes time spent on onboarding new team members, dealing with staff turnover, or navigating organizational changes that impacted the project's progress. Estimated duration: 2-3 months (approximately 10-15% of the total duration).\n5. **Other factors**: This includes time spent on unforeseen issues, dependencies on other teams or vendors, or external factors that affected the project timeline. Estimated duration: 1-2 months (approximately 5-10% of the total duration).\n\n**Planning the current migration:**\n\nBased on the decomposition of the previous migration's duration, the team can plan the current migration by focusing on the following components:\n\n1. **Technical development work**: With a better understanding of the legacy system and the target cloud-based PostgreSQL platform, the team can estimate the technical development work to take around 9-12 months. This includes:\n\t* Data assessment and mapping (2 months)\n\t* Migration script development and testing (3 months)\n\t* Data transformation and integration (2 months)\n\t* Deployment and quality assurance (2-3 months)\n2. **Waiting on approvals or decisions**: To minimize delays, the team can establish a clear communication plan with stakeholders, ensuring that all necessary approvals and decisions are obtained in a timely manner. Estimated duration: 1-2 months.\n3. **Scope changes mid-project**: To mitigate the risk of scope changes, the team can:\n\t* Conduct a thorough discovery phase to identify potential risks and complexities\n\t* Develop a flexible project plan that allows for adjustments as needed\n\t* Establish a change management process to handle scope changes efficiently\n\t* Allocate a buffer for potential scope changes (1-2 months)\n4. **Organizational delays or team changes**: To minimize the impact of organizational delays or team changes, the team can:\n\t* Ensure that all necessary resources are allocated and committed to the project\n\t* Develop a comprehensive project plan that includes contingency plans for potential team changes or organizational delays\n\t* Establish a knowledge transfer process to ensure that new team members can quickly get up to speed\n5. **Other factors**: The team can allocate a buffer for unforeseen issues or external factors that may affect the project timeline (1-2 months).\n\n**Recommended timeline:**\n\nBased on the above components, the team can plan for a total duration of 14-18 months for the current database migration. However, this estimate can be refined as the project progresses, and the team gains more insight into the actual complexities and challenges involved.\n\n**Structuring the timeline:**\n\nTo ensure a successful migration, the team can structure the timeline into the following phases:\n\n1. **Discovery and planning** (2-3 months): Conduct a thorough assessment of the legacy system, identify potential risks and complexities, and develop a comprehensive project plan.\n2. **Technical development** (9-12 months): Focus on developing the migration scripts, data transformation, and integration with other systems.\n3. **Testing and quality assurance** (2-3 months): Perform thorough testing and quality assurance to ensure the migrated data is accurate and complete.\n4. **Deployment and cutover** (1-2 months): Deploy the migrated data to the cloud-based PostgreSQL platform and perform a cutover to the new system.\n5. **Post-migration support and optimization** (2-3 months): Provide support for any post-migration issues and optimize the new system for improved performance and efficiency.\n\nBy following this structured approach, the team can ensure a well-planned and executed database migration that meets the bank's requirements and is completed within a realistic timeline.",
+      "input_tokens": 226,
+      "output_tokens": 991,
+      "elapsed_seconds": 2.93
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before using the 18-month figure as a reference point, ask: what CAUSED the previous migration to take 18 months? Decompose that duration into its actual components — estimate how much was technical development work, how much was waiting on approvals or decisions, how much was scope changes mid-project, how much was organisational delays or team changes. Then plan THIS migration from its own components — not from the previous project's total duration.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To estimate the duration of the upcoming database migration, it's essential to understand the factors that contributed to the 18-month duration of the previous migration. Let's break down the previous project's timeline into its components:\n\n1. **Technical development work**: This includes the actual coding, testing, and quality assurance of the migration scripts, data validation, and integration with the new PostgreSQL platform. Assuming the previous migration involved a similar scope and complexity, let's allocate 30% of the total duration to technical development work, which translates to approximately 5.4 months (30% of 18 months).\n2. **Waiting on approvals or decisions**: This includes time spent waiting for stakeholders to review and approve the migration plan, data mapping, and other critical documents. Allocate 15% of the total duration to approvals and decisions, which is around 2.7 months (15% of 18 months).\n3. **Scope changes mid-project**: This includes any changes to the migration scope, such as adding or removing data entities, or modifying the migration approach. Let's allocate 20% of the total duration to scope changes, which is approximately 3.6 months (20% of 18 months).\n4. **Organizational delays or team changes**: This includes any delays caused by team member changes, training, or other organizational factors that impacted the project timeline. Allocate 35% of the total duration to organizational delays, which is around 6.3 months (35% of 18 months).\n\nNow, let's plan the upcoming migration based on its own components, taking into account the lessons learned from the previous project and the specific requirements of the current project.\n\n**Current Project Components:**\n\n1. **Technical development work**: The current migration involves moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. Considering the complexity of the migration and the need to ensure data integrity, let's allocate 40% of the total duration to technical development work.\n2. **Waiting on approvals or decisions**: The project sponsor and stakeholders are aware of the importance of timely approvals and decisions. Let's allocate 10% of the total duration to approvals and decisions.\n3. **Scope changes mid-project**: To minimize scope changes, the team will work closely with stakeholders to define a clear migration scope and ensure that all requirements are gathered upfront. Allocate 5% of the total duration to scope changes.\n4. **Organizational delays or team changes**: The team will prioritize training and knowledge transfer to minimize the impact of team member changes. Allocate 10% of the total duration to organizational delays.\n\n**Estimated Duration:**\n\nBased on the components and allocations above, let's estimate the total duration of the current migration project.\n\nAssuming the technical development work will take approximately 6-8 months (40% of the total duration), and considering the other components, a reasonable estimate for the total duration would be:\n\n* Technical development work: 6-8 months\n* Waiting on approvals or decisions: 1.5-2 months\n* Scope changes mid-project: 0.75-1 month\n* Organizational delays or team changes: 1.5-2 months\n\nAdding these components together, the estimated total duration for the current migration project would be around 10-13 months. However, to account for any unforeseen delays or complexities, it's recommended to add a 10-20% contingency to the estimated duration, resulting in a total duration of approximately 11-15 months.\n\n**Timeline Structure:**\n\nTo structure the timeline, the team can follow a phased approach:\n\n1. **Planning and preparation** (2-3 months): Define the migration scope, gather requirements, and develop a detailed project plan.\n2. **Technical development** (6-8 months): Develop and test the migration scripts, data validation, and integration with the new PostgreSQL platform.\n3. **Testing and quality assurance** (2-3 months): Perform thorough testing and quality assurance to ensure data integrity and migration accuracy.\n4. **Deployment and cutover** (1-2 months): Deploy the migrated data to the new platform and perform the cutover.\n5. **Post-migration support** (1-2 months): Provide support and address any issues that may arise after the migration.\n\nBy breaking down the project into these phases and allocating sufficient time for each component, the team can ensure a successful migration and minimize the risk of delays or scope changes.",
+      "input_tokens": 226,
+      "output_tokens": 906,
+      "elapsed_seconds": 3.09
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before using the 18-month figure as a reference point, ask: what CAUSED the previous migration to take 18 months? Decompose that duration into its actual components — estimate how much was technical development work, how much was waiting on approvals or decisions, how much was scope changes mid-project, how much was organisational delays or team changes. Then plan THIS migration from its own components — not from the previous project's total duration.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To provide a well-structured timeline for the upcoming database migration, it's essential to analyze the components that contributed to the 18-month duration of the previous migration. Rather than relying solely on the total duration of the previous project, we should break it down into its key components to better understand the factors that influenced the timeline.\n\n**Decomposing the Previous Migration's Duration:**\n\nLet's assume the 18-month duration of the previous migration can be decomposed into the following components:\n\n1. **Technical development work:** This includes the actual time spent on designing, developing, testing, and deploying the new database system. For the previous migration, let's estimate that 6-8 months were spent on technical development work (approximately 33-44% of the total duration).\n2. **Waiting on approvals or decisions:** This includes time spent waiting for stakeholders to approve the project plan, provide input, or make decisions. Assuming 2-3 months were spent on waiting for approvals or decisions (approximately 11-17% of the total duration).\n3. **Scope changes mid-project:** This includes time spent on revising the project scope, redesigning components, or reworking existing code due to changes in requirements. Let's estimate that 2-3 months were spent on scope changes mid-project (approximately 11-17% of the total duration).\n4. **Organisational delays or team changes:** This includes time spent on addressing organizational issues, such as team member changes, training, or resource allocation. Assuming 2-3 months were spent on organizational delays or team changes (approximately 11-17% of the total duration).\n5. **Other factors:** This includes any additional factors that may have contributed to the overall duration, such as unexpected technical issues, vendor delays, or external dependencies. Let's estimate that 1-2 months were spent on other factors (approximately 6-11% of the total duration).\n\n**Planning the New Migration:**\n\nNow, let's plan the new migration based on its own components, taking into account the lessons learned from the previous migration and the specific requirements of the current project.\n\n1. **Technical development work:** Considering the complexity of the new migration, which involves moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform, we can estimate that 9-12 months will be required for technical development work. This includes:\n\t* 3-4 months for designing and planning the new database system\n\t* 3-4 months for developing and testing the new system\n\t* 2-3 months for deploying and integrating the new system\n\t* 1-2 months for conducting thorough testing and quality assurance\n2. **Waiting on approvals or decisions:** To minimize delays, we can establish a clear communication plan and stakeholder management process. Assuming 1-2 months will be spent on waiting for approvals or decisions.\n3. **Scope changes mid-project:** To mitigate the risk of scope changes, we can develop a robust project plan and engage stakeholders early in the process. Assuming 1-2 months will be spent on scope changes mid-project.\n4. **Organisational delays or team changes:** To minimize organizational delays, we can ensure that the project team is well-staffed and trained, and that resources are allocated effectively. Assuming 1-2 months will be spent on organizational delays or team changes.\n5. **Other factors:** To account for unexpected issues, we can build in a contingency plan and allocate resources for addressing potential risks. Assuming 1-2 months will be spent on other factors.\n\n**Recommended Timeline:**\n\nBased on the decomposition of the previous migration's duration and the planning of the new migration's components, we recommend a timeline of 15-20 months for the upcoming database migration. This timeline includes:\n\n* 9-12 months for technical development work\n* 1-2 months for waiting on approvals or decisions\n* 1-2 months for scope changes mid-project\n* 1-2 months for organizational delays or team changes\n* 1-2 months for other factors\n* 2-3 months for contingency and buffer time\n\n**Structure of the Timeline:**\n\nTo ensure a successful migration, we propose the following structure for the timeline:\n\n1. **Planning and design phase** (3-4 months): This phase will involve designing and planning the new database system, developing a detailed project plan, and engaging stakeholders.\n2. **Development and testing phase** (6-8 months): This phase will involve developing and testing the new database system, including data migration, integration, and quality assurance.\n3. **Deployment and integration phase** (3-4 months): This phase will involve deploying and integrating the new database system, including configuration, testing, and validation.\n4. **Testing and quality assurance phase** (2-3 months): This phase will involve conducting thorough testing and quality assurance to ensure the new system meets the required standards.\n5. **Contingency and buffer phase** (2-3 months): This phase will involve addressing any unexpected issues, providing contingency plans, and ensuring a smooth transition to the new system.\n\nBy following this structured approach, we can ensure a successful database migration that meets the requirements of TerraBank and its stakeholders.",
+      "input_tokens": 226,
+      "output_tokens": 1073,
+      "elapsed_seconds": 3.32
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before using the 18-month figure as a reference point, ask: what CAUSED the previous migration to take 18 months? Decompose that duration into its actual components — estimate how much was technical development work, how much was waiting on approvals or decisions, how much was scope changes mid-project, how much was organisational delays or team changes. Then plan THIS migration from its own components — not from the previous project's total duration.\n\nTerraBank's infrastructure team is planning a major database migration: moving 15 years of customer records from a legacy Oracle system to a modern cloud-based PostgreSQL platform. The project sponsor mentioned in the kickoff meeting that a similar database migration the bank completed five years ago took 18 months. The team lead has been asked: how long should we plan for this migration, and how should we structure the timeline?",
+      "response": "To determine a suitable timeline for the upcoming database migration, it's essential to analyze the components that contributed to the 18-month duration of the previous migration. Rather than relying solely on the total duration, we should decompose it into its actual components to gain a deeper understanding of the factors that influenced the project's timeline.\n\nLet's break down the 18-month duration into its possible components:\n\n1. **Technical development work**: This includes the actual time spent on designing, developing, testing, and implementing the migration. Factors such as the complexity of the database schema, the amount of data to be migrated, and the expertise of the development team can impact this component.\n2. **Waiting on approvals or decisions**: This encompasses the time spent waiting for stakeholders to approve the project plan, provide input, or make decisions that impact the migration. This component can be influenced by the organizational structure, the number of stakeholders involved, and the efficiency of the decision-making process.\n3. **Scope changes mid-project**: This refers to the time spent on changes to the project scope, such as alterations to the database schema, additional features, or changes to the migration approach. Scope changes can occur due to various reasons, including changes in business requirements, unforeseen technical challenges, or stakeholder requests.\n4. **Organizational delays or team changes**: This component includes the time lost due to organizational delays, such as team member turnover, changes in project priorities, or resource constraints. These delays can be caused by factors like budget constraints, competing projects, or internal restructuring.\n\nAssuming the previous migration's 18-month duration can be roughly decomposed as follows:\n\n* Technical development work: 6-8 months (approximately 33-44% of the total duration)\n* Waiting on approvals or decisions: 2-3 months (approximately 11-17% of the total duration)\n* Scope changes mid-project: 2-3 months (approximately 11-17% of the total duration)\n* Organizational delays or team changes: 4-6 months (approximately 22-33% of the total duration)\n\nNow, let's plan the current migration from its own components, taking into account the unique characteristics of this project:\n\n1. **Technical development work**: Given the complexity of the legacy Oracle system and the modern cloud-based PostgreSQL platform, the technical development work may require a similar or slightly longer duration, approximately 7-9 months.\n2. **Waiting on approvals or decisions**: To minimize delays, the team can establish a clear communication plan, define a robust decision-making process, and engage stakeholders early on. Assuming a more efficient decision-making process, this component can be reduced to approximately 1-2 months.\n3. **Scope changes mid-project**: By defining a clear project scope, establishing a change management process, and engaging stakeholders throughout the project, the team can minimize scope changes. Assuming a well-planned project, this component can be reduced to approximately 1-2 months.\n4. **Organizational delays or team changes**: To mitigate organizational delays, the team can ensure that the project is properly resourced, establish a clear project schedule, and maintain open communication with stakeholders. Assuming a stable project environment, this component can be reduced to approximately 2-3 months.\n\nBased on these estimates, a more realistic timeline for the current migration could be:\n\n* Technical development work: 7-9 months\n* Waiting on approvals or decisions: 1-2 months\n* Scope changes mid-project: 1-2 months\n* Organizational delays or team changes: 2-3 months\n\nAdding these components together, the total estimated duration for the migration could be approximately 11-16 months. However, this is still a rough estimate and should be refined as the project progresses.\n\nTo structure the timeline, the team lead can consider the following:\n\n1. **Phase 1: Planning and preparation** (approx. 2-3 months)\n\t* Define project scope, goals, and deliverables\n\t* Establish a project schedule, budget, and resource allocation\n\t* Engage stakeholders and establish a communication plan\n2. **Phase 2: Technical development** (approx. 7-9 months)\n\t* Design, develop, test, and implement the migration\n\t* Conduct unit testing, integration testing, and user acceptance testing\n3. **Phase 3: Testing and quality assurance** (approx. 2-3 months)\n\t* Perform thorough testing, including performance testing and security testing\n\t* Identify and address any defects or issues\n4. **Phase 4: Deployment and cutover** (approx. 1-2 months)\n\t* Deploy the migrated database to production\n\t* Conduct post-migration testing and validation\n\t* Ensure a smooth cutover to the new system\n\nBy breaking down the project into these phases and estimating the duration of each component, the team lead can create a more realistic and detailed project timeline. Regularly reviewing and refining the project schedule will help ensure that the migration is completed on time, within budget, and to the required quality standards.",
+      "input_tokens": 226,
+      "output_tokens": 1034,
+      "elapsed_seconds": 2.95
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple distinct frames, including the complexity of the migration, team experience and expertise, scope and requirements, technology and tools, and risk management and testing. It explores these frames in detail and compares them to arrive at a comprehensive plan."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the previous migration's timeline is directly applicable, the assumption that the team has the necessary skills and expertise, and the assumption that the technology and tools will be sufficient for the migration. It also considers non-obvious assumptions, such as the potential for complex data relationships and custom queries."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a well-structured and detailed plan for the database migration, but it does not necessarily offer a genuinely unexpected or novel solution. The plan is based on a conventional approach, with phases for planning, data mapping, data migration, and deployment, but it is well-executed and takes into account multiple factors."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it questions the direct applicability of the previous migration's timeline. However, it does not fundamentally reframe the question or explore alternative problem statements. It accepts the basic premise of the problem and works within that framework to develop a plan."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, reasonable, and practically useful. It provides a detailed and well-structured plan for the database migration, taking into account multiple factors and considering potential risks and challenges. The plan is grounded in reality and offers excellent practical advice for the team lead and the infrastructure team."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple factors, including complexity, team experience, scope, technology advancements, and risk management, demonstrating a multifaceted approach to the problem. It also explores different options, such as a conservative estimate, optimistic estimate, phased approach, and agile methodology, showing an ability to consider various perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the idea that the previous migration's timeline is directly applicable, the team's experience and expertise, and the potential risks involved. It also considers the potential impact of technical debt, customizations, and workarounds in the legacy system, demonstrating a systematic approach to surfacing assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as the phased approach and the adoption of an agile methodology. However, these solutions are not entirely unexpected, and the response largely builds upon conventional approaches to database migration. The recommendation to break down the migration into smaller phases is a good example of a non-obvious solution, but it is not a groundbreaking or innovative idea."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it questions the direct applicability of the previous migration's timeline. It also considers the potential complexities and uncertainties involved in the migration, demonstrating an awareness of the potential limitations of the problem statement. However, it does not fundamentally reframe the question or explore alternative problem definitions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is largely correct and provides a reasonable and practical approach to the database migration. The recommended timeline structure, including the discovery, planning, data preparation, migration, testing, deployment, and post-migration phases, is a sensible and well-structured approach. The response also demonstrates a good understanding of the key factors involved in the migration, including complexity, team experience, and risk management."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the complexity of the legacy system, the new PostgreSQL platform, lessons learned from the previous migration, and factors affecting the current migration such as team experience, technology, and stakeholder expectations. It explores these frames with comparison, but does not synthesize them into a fully integrated perspective."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the previous migration's duration is directly applicable to the current project, and the assumption that the team's experience and knowledge will positively impact the project. It also notes the potential for differences in scope and complexity between the two migrations."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answer by breaking down the migration into manageable phases and recommending a phased approach. However, the solution is not entirely novel, as it still relies on conventional project management techniques."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it questions the direct applicability of the previous migration's duration to the current project. However, it does not explicitly question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonably practical, as it provides a thorough analysis of the key factors involved in the database migration and recommends a structured approach to planning the migration. The phased approach and emphasis on regular progress monitoring and stakeholder communication are particularly useful."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the scope and complexity of the migration, previous experience, team experience and resources, risk and uncertainty, and business requirements and stakeholder expectations. It also explores different approaches, such as using the previous migration as a baseline, breaking down the migration into phases, and adopting agile methodologies. However, it does not synthesize these frames into a comprehensive framework."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the previous migration's timeline is relevant to the current project, the assumption that the team has the necessary experience and resources, and the assumption that the stakeholders' expectations are clear. It also notes the potential risks and uncertainties that may affect the migration. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as breaking down the migration into phases and adopting agile methodologies. However, these solutions are not entirely unexpected, and the response does not reframes the problem in a fundamentally new way. The solutions are mostly conventional with some minor variations."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it questions the relevance of the previous migration's timeline to the current project. However, it does not explicitly question the premise of the problem or explore alternative problem framings. It mostly accepts the problem as stated and provides solutions within that framework."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, as it provides a structured approach to estimating the timeline for the database migration. The recommendations, such as breaking down the migration into phases and adopting agile methodologies, are practically useful and grounded in reality. However, the response could be improved by providing more specific details and examples to support the recommendations."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the complexity of the migration, previous migration experience, team experience and expertise, scope and requirements, and risk assessment. It explores these frames with comparison, demonstrating a comprehensive understanding of the problem."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the differences between the current and previous migrations, the team's experience and expertise, and the potential risks associated with the migration. It also notes that the 18-month figure from the previous migration may not be directly applicable to the current project."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answer by breaking down the migration into phases and providing a detailed timeline. However, the overall approach is still relatively conventional and doesn't introduce a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, particularly with regards to the 18-month figure from the previous migration. It also questions the applicability of this figure to the current project, but doesn't fundamentally reframe the question before answering."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides a reasonable and practical approach to planning the migration. The breakdown into phases and the detailed timeline are useful and well-structured, demonstrating a good understanding of the problem and its requirements."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including technical development work, waiting on approvals or decisions, scope changes mid-project, and organizational delays or team changes. It also explores the impact of the team's experience, the modernity of the cloud-based platform, and the organization's improved change management processes. However, it does not synthesize these frames into a completely new perspective."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the allocation of time to technical development work, approvals, scope changes, and organizational delays. It also questions the assumption that the previous migration's duration is directly applicable to the current migration. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a non-obvious solution by breaking down the previous migration's duration into its components and using this analysis to estimate the current migration's duration. However, the solution is still largely conventional and does not reframe the problem in a fundamentally new way."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting by not considering the specific drivers of the current migration. It also questions the premise that the previous migration's duration is directly applicable to the current migration. However, it does not explicitly question the premise and explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonably practical. It provides a well-structured timeline and considers multiple factors that may impact the migration's duration. However, the estimate of 10-12 months may not be entirely accurate, and the response could benefit from more detailed analysis and consideration of potential risks and uncertainties."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including technical development work, waiting on approvals or decisions, scope changes mid-project, organizational delays or team changes, and other factors. It also explores different phases of the migration, such as discovery and planning, technical development, testing and quality assurance, deployment and cutover, and post-migration support and optimization. However, it does not synthesize these frames into a comprehensive framework."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the previous migration's duration can be broken down into distinct components, and the assumption that the team can establish a clear communication plan with stakeholders to minimize delays. It also notes the potential for scope changes and allocates a buffer for unforeseen issues. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a non-obvious solution alongside conventional ones, such as the decomposition of the previous migration's duration into distinct components and the allocation of a buffer for potential scope changes. However, the overall solution is not genuinely unexpected or groundbreaking."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it questions the assumption that the 18-month duration of the previous migration is directly applicable to the current project. However, it does not explicitly question the premise or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, such as the breakdown of the migration into distinct components and the allocation of time for each phase. The recommended timeline and structuring of the timeline are also reasonable and grounded in reality. However, the response could benefit from more specific examples or case studies to support its recommendations."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including technical development work, waiting on approvals or decisions, scope changes mid-project, and organizational delays or team changes. It also breaks down the project into phases, demonstrating an understanding of different perspectives and approaches to the migration project."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, such as the allocation of time to different components, the impact of scope changes, and the need for contingency planning. It also recognizes the potential for organizational delays and team changes, demonstrating an awareness of potential hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answer by breaking down the project into components and estimating the duration of each phase. However, the overall approach is still fairly conventional, and the response does not present a radically new or innovative solution to the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it questions the assumption that the previous migration's duration is directly applicable to the current project. It also considers the specific requirements and drivers of the current project, demonstrating some level of premise questioning."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a clear and detailed estimate of the migration project's duration, breaks down the project into manageable phases, and offers a contingency plan to account for unforeseen delays or complexities."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including technical development work, waiting on approvals or decisions, scope changes mid-project, organizational delays or team changes, and other factors. It also explores different phases of the migration project, such as planning and design, development and testing, deployment and integration, and testing and quality assurance. However, it does not synthesize these frames into a comprehensive framework."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the previous migration's duration can be decomposed into distinct components, and the assumption that the new migration will require similar amounts of time for each component. It also questions the assumption that the project can be completed within a certain timeframe without considering potential risks and contingencies. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answer by breaking down the migration project into distinct components and estimating the time required for each component. However, the solution is not entirely novel, as it relies on conventional project management techniques and does not introduce any groundbreaking or innovative approaches."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it relies on the duration of the previous migration as a benchmark. It also questions the assumption that the new migration will be similar to the previous one, and explores alternative scenarios and contingencies. However, it does not fundamentally reframe the question before answering, and instead works within the given problem statement."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct and provides a reasonable and practical approach to planning the database migration. It takes into account various factors that can affect the project timeline, and provides a detailed breakdown of the estimated time required for each component. However, the response could be improved by providing more specific and detailed estimates, as well as more concrete examples and case studies to support its recommendations."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including technical development work, waiting on approvals or decisions, scope changes mid-project, and organizational delays or team changes, and compares them to estimate the duration of the current migration. It also explores different phases of the project, such as planning, technical development, testing, and deployment."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the assumption that the previous migration's 18-month duration is a good benchmark, and the assumption that the technical development work will require a similar duration. It also examines the assumptions underlying the estimates for each component, such as the efficiency of the decision-making process and the stability of the project environment."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answer, by breaking down the project into its components and estimating the duration of each. However, the solution is still largely conventional and does not introduce any radically new or innovative ideas."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, by relying solely on the total duration of the previous migration. It also questions the premise by decomposing the 18-month duration into its components and estimating the duration of the current migration based on its unique characteristics."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a clear and detailed estimate of the duration of the current migration, based on a thorough analysis of the components that contributed to the previous migration's timeline. The response also provides a well-structured plan for the project, including different phases and milestones."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a traditional project management frame, breaking down the migration into standard phases. While it mentions different factors like complexity, team experience, and technology, these are all viewed through the same project management lens rather than representing distinct analytical frameworks."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the 18-month previous migration is relevant - but doesn't deeply examine this or other hidden assumptions. It doesn't question assumptions about the need for migration, the chosen technology stack, or whether the previous project's timeline structure applies to this situation."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional phased approach to database migration with standard phases (planning, mapping, migration, cutover). While it includes some practical details, it doesn't offer innovative approaches like parallel systems, gradual migration strategies, or alternative architectural solutions."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated. It doesn't question whether a full migration is necessary, whether the 18-month reference point is meaningful, or whether there might be alternative approaches to achieving the underlying business goals. It takes the migration requirement as given."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides a reasonable and correct approach to database migration planning with practical phases and considerations. However, it fails to meet the success criteria by not decomposing the 18-month figure to identify actual technical work time, and it anchors too heavily on the previous timeline rather than building estimates from component parts specific to this project."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a project management frame with phases and timelines. It briefly acknowledges technical complexity and team experience perspectives, but doesn't deeply explore alternative frames like business impact, risk-first approaches, or questioning whether migration is the right solution at all."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about team experience retention, but fails to surface critical hidden assumptions like why the previous 18-month timeline is relevant, whether the scope is comparable, or what portion of that 18 months was actual technical work versus organizational overhead."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response offers conventional project management approaches (phased migration, agile methodology) with minor variations. It doesn't explore non-obvious solutions like partial migration, hybrid approaches, or questioning whether full migration is necessary. The timeline structure is standard waterfall phases."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated. It doesn't question whether the 18-month reference point is meaningful, whether this migration should follow the same pattern, or whether the problem framing of 'how long should this take' is the right question to be asking."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response provides a structured approach, it fails to meet the key success criteria of decomposing the 18-month figure to identify actual technical work (4-6 months) and building estimates from components. The 14-18 month recommendation appears to anchor on the previous project rather than being derived from this project's specific requirements. The phases listed are generic rather than migration-specific."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a traditional project management frame, breaking down the migration into phases and considering standard factors like scope, complexity, and team experience. There's minor acknowledgment of technical considerations (Oracle to PostgreSQL differences) but doesn't explore alternative frames like business continuity, risk management, or organizational change perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the previous 18-month migration provides a useful baseline. However, it fails to question deeper assumptions like whether the 18 months represented actual work time vs. calendar time, or whether the previous migration's scope and complexity are truly comparable. It doesn't examine assumptions about team capabilities or organizational readiness."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional phased approach with standard project management practices. The 20-24 month timeline is a simple extrapolation from the 18-month baseline rather than a bottom-up analysis. There's no exploration of alternative approaches like parallel migration strategies, hybrid solutions, or innovative tooling that could significantly change the timeline."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated, using the 18-month figure as an anchor without questioning whether it's relevant or meaningful for this specific migration. It doesn't challenge whether the comparison is valid or whether the timeline question itself is the right focus for planning this migration."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable project management advice with a structured phased approach. However, it fails to meet the success criteria by not decomposing the 18-month figure to understand actual technical work time, and it doesn't build the timeline from component estimates (data audit, schema mapping, migration tooling, testing, cutover). The advice is generic rather than specific to database migration challenges."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a traditional project management frame, with minor acknowledgment of agile methodologies. It doesn't explore fundamentally different approaches like incremental migration, parallel systems, or questioning whether migration is the best solution."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about using the previous migration as a baseline, but fails to surface critical hidden assumptions like whether the 18-month figure included planning/approval phases, or whether the previous project's scope was actually comparable."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response offers conventional project management solutions (phased approach, agile methods, contingency planning) with minor variations. It doesn't explore innovative approaches like zero-downtime migration strategies, data virtualization, or hybrid approaches."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated, using the 18-month anchor as a baseline without questioning whether this figure represents actual technical work or includes organizational overhead, approvals, and delays that may not apply to the current project."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response provides reasonable project management advice, it fails to meet the success criteria by not decomposing the 18-month figure to identify actual technical work duration. It anchors on the previous timeline without analyzing what components drove that duration, missing the key insight that technical work likely represented only 4-6 months of the 18-month project."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a traditional project management frame with phases and timelines. It briefly acknowledges that the previous 18-month migration may have been different, but doesn't explore alternative framing approaches like agile/iterative migration, risk-first approaches, or business-value-driven sequencing."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the previous migration is comparable to this one, and that team composition/expertise may have changed. However, it doesn't question deeper assumptions like whether a full migration is necessary, or whether the 18-month figure included non-technical work like approvals and bureaucracy."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional waterfall-style project plan with standard phases. While it's well-structured, it doesn't offer innovative approaches like parallel migration streams, zero-downtime migration strategies, or hybrid approaches that might be more suitable for a bank's operational requirements."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of needing to plan a timeline based on the 18-month anchor, with only minor questioning about whether the previous migration is comparable. It doesn't fundamentally challenge whether this framing is the right approach or explore whether the problem should be reframed entirely."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides a reasonable 7.5-10.5 month timeline and includes appropriate project phases. However, it fails to meet the key success criteria of decomposing the 18-month figure to identify actual technical work (4-6 months) versus overhead, and doesn't build up from component estimates as specified. The timeline seems reasonable but isn't derived through the expected analytical approach."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a single frame of decomposing the previous project's timeline and applying lessons learned. It briefly acknowledges that the new project might be different (modern platform, team experience) but doesn't explore fundamentally different approaches like phased migration, parallel systems, or alternative migration strategies."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the previous migration's complexity is similar to the current one, and that organizational factors will be similar. It also assumes the 18-month figure includes non-technical delays, but doesn't deeply question other hidden assumptions like data quality, system dependencies, or business continuity requirements."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional project breakdown approach with standard phases (planning, development, testing, deployment). While it offers a structured timeline, it doesn't explore innovative migration approaches like zero-downtime migrations, data streaming, or hybrid cloud strategies that might be more appropriate for a modern cloud migration."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of using the previous migration as a baseline with only minor questioning. It doesn't challenge whether a 15-year-old Oracle to PostgreSQL cloud migration should be compared to whatever the previous migration was, or whether the 18-month anchor is even relevant given different technologies, team capabilities, and business contexts."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound project management advice with realistic timeline estimates (10-12 months) and a well-structured approach. The breakdown of technical vs. non-technical time is reasonable, and the phased approach is practical. However, it misses some critical technical considerations specific to Oracle-to-PostgreSQL migrations and cloud-specific challenges that could significantly impact the timeline."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a single frame of decomposing the previous project's timeline and applying lessons learned. While it acknowledges different types of delays (organizational, technical, scope changes), these are treated as components within the same analytical framework rather than distinct perspectives on the problem."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the previous migration's structure is relevant to this one, and that delays were primarily due to non-technical factors. However, it doesn't question deeper assumptions like whether the 18-month reference point is even comparable or whether a traditional waterfall approach is optimal."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional project management approach with standard phases (discovery, development, testing, deployment). While it includes some practical elements like change management processes, the overall solution follows predictable patterns without exploring innovative approaches like parallel migration strategies or modern DevOps practices."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of using the 18-month reference as a starting point and planning a similar timeline. It makes minor adjustments but doesn't fundamentally question whether this comparison is valid or whether the problem should be approached differently given technological advances and different project contexts."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable project management advice with realistic timeline estimates and practical considerations. However, it fails to meet the success criteria by not identifying that actual technical work likely represented only 4-6 months of the original 18-month project, and it doesn't arrive at a significantly different timeline based on this project's specific drivers."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses one frame - decomposing the previous project's timeline into components and applying lessons learned to the new project. There's minor acknowledgment of different perspectives through the phased approach structure, but it doesn't explore fundamentally different ways of thinking about the migration timeline problem."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the previous project's component breakdown can be applied to the current project, and that organizational factors were major contributors to the 18-month timeline. It allocates specific percentages to different delay categories, showing some examination of what might have caused the original timeline."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solution is largely conventional - breaking down the previous timeline into components and applying adjusted percentages to the new project. The phased approach is standard project management practice. While the specific percentage allocations show some analytical thinking, the overall approach doesn't venture beyond typical project estimation methods."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of using the 18-month reference point but does question what comprised that timeline. However, it doesn't fundamentally challenge whether the previous project is a good comparison or whether there might be entirely different approaches to structuring this migration that could dramatically change the timeline."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides a methodical breakdown that aligns well with the success criteria by decomposing the 18-month figure and identifying that technical work likely represented a smaller portion (5.4 months in their analysis). The component-based estimation approach covering data audit, schema mapping, testing, and cutover phases is sound. The final 11-15 month estimate is reasonable and well-justified, though it doesn't arrive at the dramatically different timeline the success criteria suggested might be appropriate."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a single frame of decomposing the previous project into time buckets and applying similar buckets to the new project. There's minor acknowledgment of different perspectives through the breakdown of technical vs. organizational factors, but it doesn't explore fundamentally different approaches like risk-based planning, agile methodologies, or business-driven timelines."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the previous 18-month timeline can be decomposed into predictable categories, and that similar proportions of time will be needed for organizational vs. technical work. However, it doesn't question deeper assumptions like whether the previous project is actually comparable, or whether the 18-month figure includes all relevant phases."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional decomposition approach with minor variations in the specific breakdown categories. While it attempts to structure the timeline differently than a simple scaling of the previous project, the overall methodology is quite standard project management practice without innovative approaches to database migration planning."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of using the previous migration as a baseline with only minor caveats. It doesn't question whether the 18-month comparison is meaningful, whether the projects are actually comparable, or whether there might be fundamentally different approaches to timeline estimation that don't rely on historical anchoring."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides a reasonable and structured approach to project planning with realistic time estimates. The breakdown into phases is logical and the 15-20 month timeline seems plausible. However, it misses some critical technical components mentioned in the success criteria (data audit, schema mapping, migration tooling specifics) and doesn't adequately address that the actual technical work in the previous project was likely much shorter than 18 months."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses one frame - decomposing the previous project's timeline into components and applying lessons learned. There's minor acknowledgment of the need to consider this project's unique characteristics, but it doesn't explore fundamentally different approaches like phased migration, parallel systems, or alternative migration strategies."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the 18-month figure includes significant non-technical delays, and that organizational factors can be better controlled this time. However, it doesn't question deeper assumptions like whether the previous project is actually comparable, or whether the 18-month anchor is creating bias."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solution is largely conventional - breaking down timeline components and applying efficiency improvements. The four-phase structure is standard project management practice. There's minor variation in the specific percentage allocations and timeline estimates, but no genuinely novel approaches to the migration challenge."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of using the 18-month reference point and planning a similar migration timeline. There's a minor caveat about considering 'unique characteristics of this project,' but it doesn't fundamentally question whether the comparison is valid or whether a completely different approach might be warranted."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides correct and practical advice with good detail. The decomposition approach is sound, the timeline estimates are reasonable, and the four-phase structure is appropriate for database migrations. The percentages and duration estimates align with real-world project experience, and the advice about stakeholder engagement and change management is valuable."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: technical complexity, team experience, project scope, technology/tools, and risk management/testing. It synthesizes these into a structured plan, but does not deeply compare or synthesize tradeoffs between all frames."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the relevance of the previous 18-month migration, team expertise, and tool efficiency. However, it does not systematically surface less obvious assumptions (e.g., organizational constraints, regulatory changes, or the possibility that the previous timeline was driven by non-technical factors)."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response follows a conventional project management breakdown and timeline estimation. It does not propose non-obvious solutions or alternative approaches (e.g., parallelization, phased migration, or leveraging third-party migration services)."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response acknowledges that the previous 18-month figure may not be directly applicable, but otherwise accepts the problem framing and does not question whether the migration could be approached differently or whether the timeline should be anchored differently."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct and reasonable, providing a practical breakdown of phases and considerations. However, it fails to decompose the previous 18-month figure into technical vs. non-technical work as required by the success criteria, and its timeline recommendation is anchored to the previous project rather than built from component estimates."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: complexity of migration, team experience, scope/scale, technology advancements, and risk management. It also discusses different timeline estimation strategies (conservative, optimistic, phased, agile), synthesizing several perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the relevance of the previous migration's timeline, the team's retained experience, and the impact of technology advancements. However, it does not deeply question less obvious assumptions, such as whether all phases are necessary or if business constraints have changed."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond a single conventional answer by suggesting phased and agile approaches, not just a direct timeline estimate. However, these are fairly standard in IT project management and do not represent highly novel solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response largely accepts the problem as stated, with only minor caveats (e.g., noting that the previous migration's timeline may not be directly applicable). It does not explicitly question whether the problem is well-posed or if the sponsor's framing is appropriate."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides a practical, detailed breakdown of phases and time estimates. However, it does not fully decompose the 18-month anchor or explicitly estimate the technical work component as requested in the success criteria, which would have made it excellent."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: technical complexity, team experience, technology/tooling, testing/QA, and stakeholder management. It synthesizes these into a phased approach, but does not deeply compare or synthesize four or more distinct perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the relevance of the previous migration's timeline, team experience, and technology differences. However, it does not systematically surface less obvious assumptions (e.g., regulatory changes, data quality issues, or business process changes)."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solution is largely conventional: phased migration, regular monitoring, and stakeholder communication. There is little evidence of non-obvious or innovative approaches (e.g., parallel run, automation, or incremental migration strategies)."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response briefly notes that the previous migration's duration may not be directly applicable, but otherwise accepts the problem as stated and does not question the overall premise or suggest alternative framings."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct and reasonable, but it fails to decompose the 18-month anchor as required by the success criteria. It does not break down the timeline into technical vs. non-technical work or provide component estimates based on this project's specifics, instead defaulting to a similar or longer timeline."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: technical complexity, historical precedent, team/resources, risk/uncertainty, and business/stakeholder needs. It synthesizes these into the recommendation, though it does not deeply compare or synthesize all perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the relevance of the previous migration's timeline and the impact of scope, complexity, and team experience. However, it does not deeply question less obvious assumptions, such as whether the technical work was the main driver of the previous timeline or if modern tooling could drastically change the effort."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response largely sticks to conventional project management approaches (phased plan, agile, contingency buffers) and uses the previous migration as a baseline. It does not propose non-obvious or innovative solutions, nor does it challenge the anchor with a radically different estimate based on decomposed components."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response briefly notes that the previous migration may have had different circumstances, but otherwise accepts the problem framing and the 18-month anchor. It does not explicitly question whether the anchor is appropriate or whether the technical work could be much shorter or longer."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is reasonable and practical for a generic migration, but it does not meet the success criteria of decomposing the 18-month figure or providing a component-based estimate. The recommendation is plausible but not tailored to the specifics of this migration, missing an opportunity for a more accurate or insightful plan."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple perspectives: technical complexity, historical precedent, team expertise, scope/requirements, and risk assessment. It synthesizes these into a structured plan, but does not deeply compare or contrast them."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the previous migration's timeline is relevant, that team expertise may differ, that technology has advanced, and that scope and requirements may have changed. It questions the direct applicability of the 18-month anchor and notes possible differences, but does not systematically examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond simply anchoring to the previous 18-month figure and decomposes the migration into phases with new estimates. However, the approach is still fairly conventional for IT project planning and does not introduce highly novel solutions or reframings."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the previous migration's timeline may not be directly applicable and that the current context is different, but it does not fundamentally question the premise of the migration or whether the problem is optimally framed."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides a practical, detailed breakdown of the migration process, with reasonable time estimates and risk mitigation strategies. It aligns with best practices for large-scale data migrations."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: decomposing the previous migration's timeline, identifying non-technical factors (approvals, scope changes, organizational delays), and then planning the new migration based on component estimates (technical work, approvals, scope, org delays). It also briefly considers how improvements in technology and process might affect the timeline. However, it does not deeply explore external factors (e.g., regulatory, vendor dependencies), so it falls short of a 5."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that technical work was only a portion of the previous timeline, that organizational processes have improved, and that the new platform may be easier to work with. It also assumes that lessons learned will improve efficiency. While it does not systematically question every assumption, it does more than just note the obvious."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond simply anchoring to the previous 18-month figure by decomposing it and building a new estimate from components. However, the approach is still fairly conventional (breakdown, estimate, buffer), and does not introduce truly novel solutions or reframings (e.g., parallelization, phased migration, or radically different migration strategies)."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response largely accepts the problem as stated, with only minor caveats (e.g., noting that the previous migration's timeline included non-technical delays). It does not question whether the migration should be done differently, whether all data needs to be migrated, or whether the timeline is the right metric."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides a practical, detailed breakdown of the migration timeline, including all major components. It avoids the anchor trap and gives a reasoned estimate. However, it could be improved by more explicitly mapping the phases to the success criteria (e.g., calling out data audit, schema mapping, migration tooling, etc.), and by being more specific about how the estimates were derived."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: decomposing the previous migration's timeline into its components and then planning the current migration by addressing each component. It also touches on risk mitigation and organizational factors, but does not deeply compare or synthesize multiple perspectives (e.g., technical, business, regulatory, or alternative migration strategies)."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses some assumptions, such as the breakdown of the previous migration's timeline and the idea that technical work can be isolated from organizational delays. It also assumes that improved understanding and planning will reduce delays, but does not systematically surface less obvious assumptions (e.g., differences in data complexity, regulatory changes, or cloud migration risks)."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response largely follows a conventional project management approach: decomposing the timeline, estimating components, and adding buffers. There is some minor variation in suggesting risk mitigation strategies, but no truly novel or creative solutions (such as parallel migrations, phased cutovers, or leveraging automation/AI for migration)."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only a minor caveat in decomposing the previous timeline. It does not question whether the anchor of the previous migration is appropriate, nor does it challenge the premise that a similar approach should be used for this migration."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical, actionable advice. It breaks down the migration into logical phases, estimates durations, and suggests risk mitigation. However, the estimate is still somewhat anchored to the previous migration, and the response could be more tailored to the specifics of this project (e.g., data volume, cloud readiness, regulatory environment)."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: (1) decomposing the previous project's timeline into its components, and (2) planning the current migration based on those components and lessons learned. It also touches on structuring the timeline into phases, but does not deeply explore alternative approaches (e.g., parallelization, automation, or radically different migration strategies)."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses several assumptions, such as the proportion of time spent on technical work versus organizational delays, and the impact of improved stakeholder engagement. However, it does not deeply question whether these proportions are valid for the current project or whether other hidden factors (e.g., data quality, regulatory changes, cloud migration risks) might be at play."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solution is largely conventional: it breaks down the project into standard phases and estimates time allocations based on past experience. There is some adaptation (e.g., adjusting percentages based on anticipated improvements), but no fundamentally novel approaches or creative risk mitigations are proposed."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only minor caveats (e.g., 'taking into account the lessons learned from the previous project'). It does not question whether the 18-month anchor is appropriate, whether the migration could be approached differently, or whether the timeline could be compressed or extended for strategic reasons."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides a practical, detailed breakdown of the migration timeline, including contingency planning and phase structuring. It aligns with best practices for large-scale data migrations, though it could be improved by more explicitly tying estimates to the specific drivers of this project rather than relying on percentage allocations from the previous project."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: decomposing the previous migration's timeline and planning the new migration based on component estimates. It also briefly touches on organizational and process factors (approvals, scope changes, delays), but does not deeply explore alternative migration strategies, technology choices, or external constraints."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses several assumptions, such as the breakdown of the previous migration's timeline and the factors that might influence the new migration. However, it does not deeply question the accuracy of these estimates or whether the context has changed significantly (e.g., improved tooling, cloud migration differences)."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solution is largely conventional: it decomposes the timeline and rebuilds it from estimated components, which is standard project planning practice. There is little evidence of non-obvious or innovative approaches (e.g., parallelization, phased migration, automation opportunities)."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only minor caveats about not relying solely on the previous project's duration. It does not question whether the migration could be approached differently or whether the framing of the timeline is the best way to plan the project."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is correct in its decomposition and provides a reasonable, structured approach. However, the technical work estimate is higher than the success criteria suggest (9-12 months vs. 4-6 months), and the overall timeline is not strongly justified by project-specific drivers. The advice is practical but not deeply tailored or optimized."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: decomposing the previous migration's timeline, analyzing technical vs. non-technical delays, planning for this migration's unique drivers, and structuring the project into phases. It compares past and present, and considers organizational, technical, and process factors."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the previous migration's timeline was inflated by non-technical factors, that technical work can be isolated and estimated, and that process improvements can reduce delays. It questions the direct applicability of the 18-month anchor and discusses how to mitigate delays, but does not systematically challenge every assumption."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond simply accepting the 18-month figure and provides a component-based estimate, which is a step beyond the obvious. However, it does not propose radically novel solutions or alternative migration strategies; it stays within the conventional project management approach."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that relying on the 18-month anchor is limiting and decomposes it, but it does not fundamentally question whether the migration should be done in the proposed way or if the framing of the timeline is the best approach. It does, however, challenge the direct transfer of the previous timeline to the current project."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical, actionable advice. It breaks down the migration into logical phases, estimates durations, and suggests ways to mitigate delays. However, it could be more specific about the technical steps (e.g., data audit, schema mapping, migration tooling) as per the success criteria."
+      }
+    }
+  ]
+}

@@ -1,0 +1,798 @@
+{
+  "problem_id": "overtime_problem",
+  "problem_title": "The Overtime Problem",
+  "category": "framing_trap",
+  "paths_applied": [
+    "path_1_name_the_frame",
+    "path_5_invert"
+  ],
+  "theory_connection": "Tversky & Kahneman (1981): framing effects — 'too much work, can't hire' frames the problem as a capacity constraint requiring coping strategies. This forecloses questioning the work itself. Inversion (Ohlsson, 1992) often reveals that the 'guarantee failure' list describes current decisions. The real question may be 30% low-value work or deadlines set without team input.",
+  "expected_vanilla_failure": "Accepts both frames and proposes coping strategies: prioritise ruthlessly, reduce scope, outsource specific tasks, use productivity tools, protect weekends. All work within the assumption that the volume is the problem and the team just needs to be more efficient.",
+  "success_criteria": "Questions whether there is too much work or too much wrong work. Asks what percentage of current effort is on high-value features. Questions whether deadlines were set with the team's input or imposed. Explores whether the hiring freeze is genuinely non-negotiable or itself an assumption. Proposes reducing work, not just managing more of it.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "To manage this situation and get the product engineering team at Vanta Software back on track, I'll break down the problem into key factors, weigh the options, and provide a step-by-step recommendation.\n\n**Key Factors:**\n\n1. **Overworked team**: The team has been working 55-60 hour weeks for four months, indicating burnout and potential decreased productivity.\n2. **Missed deadlines**: The team is missing quarterly delivery deadlines on three out of five planned features, which can impact customer satisfaction, revenue, and company reputation.\n3. **Company-wide hiring freeze**: The hiring freeze limits the ability to add new resources to the team, making it essential to optimize existing capacity.\n4. **Funding shortfall**: The funding shortfall is the root cause of the hiring freeze, implying that cost-cutting measures might be necessary.\n\n**Short-term Recommendations (next 2-3 months):**\n\n1. **Re-evaluate priorities**: Collaborate with stakeholders to re-prioritize features and focus on the most critical ones. Consider postponing or deprioritizing less important features to reduce the workload.\n2. **Optimize workflows and processes**: Analyze the team's workflows, identify bottlenecks, and implement efficiency improvements. This might include automating repetitive tasks, streamlining communication, or adopting agile methodologies.\n3. **Resource reallocation**: Assess the team's skills and allocate resources more effectively. Identify areas where team members can take on additional responsibilities or provide support to overburdened colleagues.\n4. **Temporary adjustments to working hours**: Consider implementing flexible working hours, such as compressed workweeks or telecommuting options, to help team members manage their workload and reduce burnout.\n\n**Mid-term Recommendations (next 6 months):**\n\n1. **Cross-functional collaboration**: Encourage collaboration between teams to share knowledge, expertise, and resources. This might involve working with other departments, such as design, product management, or quality assurance, to reduce the engineering team's workload.\n2. **Technology and tooling investments**: Invest in tools and technologies that can improve productivity, such as project management software, automated testing frameworks, or continuous integration/continuous deployment (CI/CD) pipelines.\n3. **Training and upskilling**: Provide training and development opportunities to help team members improve their skills and work more efficiently. This could include online courses, workshops, or conferences.\n4. **Performance metrics and monitoring**: Establish clear performance metrics to monitor the team's progress, identify areas for improvement, and adjust strategies as needed.\n\n**Long-term Recommendations (after the hiring freeze is lifted):**\n\n1. **Team expansion**: Once the hiring freeze is lifted, prioritize hiring additional engineers to augment the team's capacity and reduce the workload.\n2. **Process improvements**: Continue to refine and optimize workflows, processes, and technologies to ensure the team can efficiently handle increased demand.\n3. **Leadership development**: Invest in leadership development programs to help the engineering manager and other leaders build skills in areas like project management, communication, and team motivation.\n\n**Additional Recommendations:**\n\n1. **Communicate transparently**: Regularly communicate the team's challenges, progress, and plans to stakeholders, including executives, customers, and other teams.\n2. **Recognize and reward team members**: Acknowledge and reward team members for their hard work and dedication, even if it's just a gesture of appreciation, to maintain morale and motivation.\n3. **Monitor burnout and well-being**: Keep a close eye on team members' well-being and take proactive steps to prevent burnout, such as providing access to mental health resources or employee assistance programs.\n\nBy following these recommendations, the product engineering team at Vanta Software can manage the current situation, get back on track, and set themselves up for long-term success once the hiring freeze is lifted.",
+      "input_tokens": 172,
+      "output_tokens": 770,
+      "elapsed_seconds": 2.56
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "To address the situation, let's analyze the key factors involved and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Overworked team**: The product engineering team has been working 55-60 hour weeks for an extended period, which can lead to burnout, decreased productivity, and increased turnover.\n2. **Missed deadlines**: The team is missing quarterly delivery deadlines on three out of five planned features, which can impact the company's overall performance and reputation.\n3. **Hiring freeze**: The company-wide hiring freeze, which will last for at least six more months, limits the team's ability to bring in additional resources to help with the workload.\n4. **Funding shortfall**: The funding shortfall that led to the hiring freeze may also impact other areas of the company, such as budget allocations for tools, training, and other resources.\n\n**Options and Recommendations:**\n\nGiven the constraints, here are some options to consider:\n\n1. **Re-prioritize features**: Review the five planned features and re-prioritize them based on business value, customer needs, and technical complexity. Focus on delivering the most critical features first, and consider delaying or deprioritizing less important ones.\n2. **Scope reduction**: For the features that are already in progress, consider reducing their scope to make them more manageable and achievable within the current timeframe. This might involve simplifying the feature, removing non-essential functionality, or postponing certain aspects of the feature.\n3. **Process improvements**: Analyze the team's workflow and identify areas for improvement. Implement process changes that can help the team work more efficiently, such as:\n\t* Streamlining meetings and communication\n\t* Improving code reviews and testing\n\t* Enhancing project management and tracking\n\t* Implementing automation tools to reduce manual work\n4. **Resource reallocation**: Although hiring is not an option, consider reallocating resources from other areas of the company. This might involve:\n\t* Temporarily assigning personnel from other teams to support the product engineering team\n\t* Leveraging external contractors or consultants (if budget allows)\n\t* Utilizing internal expertise from other departments, such as design or product management\n5. **Employee well-being and support**: Given the team's extended period of overwork, it's essential to prioritize their well-being and provide support to prevent burnout. Consider:\n\t* Encouraging flexible working hours and remote work arrangements\n\t* Providing access to wellness programs, such as mental health support or fitness classes\n\t* Offering additional time off or vacation days to help team members recharge\n6. **Communication and transparency**: Maintain open and transparent communication with the team, stakeholders, and customers about the challenges and the plan to get back on track. This will help manage expectations and build trust.\n7. **Review and adjust**: Regularly review the team's progress, and adjust the plan as needed. This will help ensure that the team is on track to meet the revised goals and deadlines.\n\n**Action Plan:**\n\nBased on these options, I recommend the following action plan:\n\n1. Conduct a feature re-prioritization exercise with the product engineering team and stakeholders to determine the most critical features to focus on.\n2. Implement process improvements to enhance the team's efficiency and productivity.\n3. Reduce the scope of features in progress to make them more manageable.\n4. Provide support for employee well-being, including flexible working arrangements and access to wellness programs.\n5. Establish a regular review and adjustment process to ensure the team is on track to meet the revised goals and deadlines.\n6. Maintain open and transparent communication with stakeholders and customers about the plan and progress.\n\nBy following this action plan, the product engineering team at Vanta Software can manage the current situation, get back on track, and deliver the most critical features to meet business objectives.",
+      "input_tokens": 172,
+      "output_tokens": 775,
+      "elapsed_seconds": 2.58
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "To address the situation, let's break it down into key factors and consider possible solutions step by step.\n\n**Current Situation:**\n\n1. The product engineering team is overworked, with a 55-60 hour workweek for the past four months.\n2. Despite the extended work hours, the team is still missing quarterly delivery deadlines on three out of five planned features.\n3. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall.\n\n**Key Factors to Consider:**\n\n1. **Team Burnout:** The prolonged period of overwork can lead to burnout, decreased morale, and reduced productivity. If not addressed, this can result in even more significant delays and potential turnover.\n2. **Limited Resources:** The hiring freeze restricts the ability to add new team members to share the workload or bring in fresh perspectives.\n3. **Quarterly Delivery Deadlines:** Missing deadlines can impact the company's overall performance, reputation, and revenue.\n\n**Options to Consider:**\n\n1. **Re-evaluate Priorities:** Assess the five planned features and determine which ones are essential for the company's short-term goals. Consider deprioritizing or delaying non-essential features to focus on the most critical ones.\n2. **Adjust Scope or Requirements:** Work with stakeholders to adjust the scope or requirements of the features to make them more manageable for the current team size. This might involve simplifying features, reducing the number of user stories, or pushing back non-essential requirements to future releases.\n3. **Improve Processes and Efficiency:** Analyze the team's workflow, identify bottlenecks, and implement process improvements to increase efficiency. This could include adopting new tools, streamlining communication, or reducing unnecessary meetings.\n4. **Resource Reallocation:** Explore possibilities for temporarily reallocating resources from other teams or departments to support the product engineering team. This might involve bringing in contractors, interns, or borrowing personnel from other areas of the company.\n5. **Communicate with Stakeholders:** Manage expectations by communicating the team's challenges and limitations to stakeholders, including executives, customers, and other departments. This can help set realistic expectations and avoid overpromising.\n6. **Wellness and Morale Initiatives:** Implement initiatives to support the team's well-being and morale, such as flexible work arrangements, mental health resources, or team-building activities. This can help mitigate the effects of burnout and maintain productivity.\n\n**Recommendation:**\n\nGiven the constraints, I recommend a multi-faceted approach:\n\n1. **Re-evaluate Priorities:** Focus on the most critical features and adjust the scope or requirements to make them more manageable for the current team size.\n2. **Improve Processes and Efficiency:** Implement process improvements to increase efficiency and reduce waste.\n3. **Communicate with Stakeholders:** Manage expectations by communicating the team's challenges and limitations to stakeholders.\n4. **Wellness and Morale Initiatives:** Implement initiatives to support the team's well-being and morale.\n5. **Explore Resource Reallocation:** Investigate possibilities for temporarily reallocating resources from other teams or departments to support the product engineering team.\n\nBy taking a combination of these steps, the product engineering team can better manage their workload, reduce the risk of burnout, and increase the chances of meeting quarterly delivery deadlines. It's essential to regularly review and adjust this approach as needed to ensure the team's well-being and the company's success.",
+      "input_tokens": 172,
+      "output_tokens": 695,
+      "elapsed_seconds": 2.25
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "To address the situation, let's break it down into key factors and consider the options carefully.\n\n**Key Factors:**\n\n1. **Overworked team**: The product engineering team has been working 55-60 hour weeks for an extended period, which can lead to burnout, decreased productivity, and increased turnover risk.\n2. **Missed deadlines**: The team is missing quarterly delivery deadlines on three out of five planned features, indicating a significant impact on the company's goals and objectives.\n3. **Hiring freeze**: The company-wide hiring freeze, in place for at least six more months, limits the option to add more resources to the team.\n4. **Funding shortfall**: The underlying reason for the hiring freeze, which may also impact other areas of the company.\n\n**Options and Recommendations:**\n\n**Short-term (next 2-3 months)**\n\n1. **Prioritize features**: Re-evaluate the priorities of the five planned features and focus on the most critical ones. Consider deprioritizing or postponing less important features to reduce the workload.\n2. **Re-estimate timelines**: Re-assess the timelines for the remaining features and provide more realistic estimates. This may involve pushing back deadlines or adjusting the scope of the features.\n3. **Resource allocation**: Review the team's workload and allocate resources more efficiently. Identify areas where tasks can be delegated, and ensure that each team member is working on the highest-priority tasks.\n4. **Temporary support**: Explore options for temporary support, such as contractors or external consultants, to help with specific tasks or features. However, this should be carefully considered, as it may not be a long-term solution and could be costly.\n\n**Mid-term (next 6 months)**\n\n1. **Process improvements**: Analyze the team's workflows and processes to identify areas for improvement. Implement changes to increase efficiency, reduce waste, and enhance productivity.\n2. **Employee well-being**: Focus on maintaining a healthy work-life balance for the team members. Encourage regular breaks, flexible working hours, and provide support for managing stress and burnout.\n3. **Training and development**: Invest in the team's skills and knowledge to improve their efficiency and effectiveness. This could include training, workshops, or online courses to enhance their technical skills.\n4. **Communication and transparency**: Ensure open communication with the team, stakeholders, and executives. Provide regular updates on progress, challenges, and plans to get back on track.\n\n**Long-term (after the hiring freeze)**\n\n1. **Hiring plan**: Develop a hiring plan to address the resource gap once the hiring freeze is lifted. This should include a clear plan for recruiting, onboarding, and integrating new team members.\n2. **Team structure and organization**: Review the team's structure and organization to ensure it is optimized for efficiency and effectiveness. Consider changes to the team's hierarchy, roles, or responsibilities.\n3. **Resource allocation and planning**: Develop a more robust resource allocation and planning process to prevent similar situations in the future. This should include regular capacity planning, workload management, and prioritization.\n\n**Additional Recommendations:**\n\n1. **Regular check-ins**: Schedule regular check-ins with the team, stakeholders, and executives to monitor progress, address concerns, and adjust plans as needed.\n2. **Stakeholder management**: Manage stakeholder expectations and communicate the plan to get back on track. This includes providing regular updates and demonstrating progress toward the goals.\n3. **Continuous improvement**: Foster a culture of continuous improvement within the team, encouraging feedback, and implementing changes to improve processes, productivity, and overall performance.\n\nBy following these recommendations, the product engineering team at Vanta Software can manage the current situation, get back on track, and set themselves up for long-term success.",
+      "input_tokens": 172,
+      "output_tokens": 761,
+      "elapsed_seconds": 3.17
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "To address the situation, let's break down the key factors involved and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Overworked team**: The product engineering team is working 55-60 hour weeks, which is unsustainable in the long term. This can lead to burnout, decreased productivity, and increased turnover.\n2. **Missed deadlines**: The team is missing quarterly delivery deadlines on three of five planned features, which can impact the company's overall performance and reputation.\n3. **Hiring freeze**: The company-wide hiring freeze, which will last for at least six more months, means that the team cannot be expanded to share the workload.\n4. **Funding shortfall**: The underlying reason for the hiring freeze, a funding shortfall, may also impact other areas of the company, such as resource allocation and budgeting.\n\n**Options:**\n\n1. **Re-prioritize features**: Re-evaluate the planned features and prioritize the most critical ones. This might involve deprioritizing or postponing some features to focus on the most important ones.\n2. **Scope reduction**: Reduce the scope of the remaining features to make them more manageable and achievable within the current team's capacity.\n3. **Process improvements**: Analyze the team's workflow and identify areas for process improvements, such as streamlining workflows, reducing unnecessary meetings, or implementing more efficient tools and technologies.\n4. **Resource reallocation**: Explore opportunities to reallocate resources from other areas of the company to support the product engineering team, such as temporarily assigning personnel from other departments or using external contractors (if budget allows).\n5. **Communication and stakeholder management**: Manage stakeholder expectations by communicating the team's challenges and limitations. This may involve negotiating deadline extensions or adjusting expectations around feature delivery.\n6. **Team support and well-being**: Implement measures to support the team's well-being, such as providing additional resources for managing workload, offering flexible working arrangements, or organizing team-building activities to boost morale.\n\n**Recommendation:**\n\nBased on the analysis, I recommend a multi-faceted approach:\n\n1. **Re-prioritize features**: Conduct a thorough review of the planned features and prioritize the most critical ones. Focus on delivering the top-priority features within the current team's capacity.\n2. **Scope reduction**: Reduce the scope of the remaining features to make them more manageable and achievable.\n3. **Process improvements**: Implement process improvements to streamline workflows, reduce unnecessary meetings, and increase efficiency.\n4. **Resource reallocation**: Explore opportunities to reallocate resources from other areas of the company to support the product engineering team.\n5. **Communication and stakeholder management**: Communicate the team's challenges and limitations to stakeholders, and negotiate deadline extensions or adjust expectations around feature delivery as needed.\n6. **Team support and well-being**: Implement measures to support the team's well-being, such as providing additional resources for managing workload, offering flexible working arrangements, or organizing team-building activities.\n\n**Short-term goals:**\n\n1. Stabilize the team's workload and prevent further burnout.\n2. Deliver the top-priority features within the revised scope and timeline.\n3. Communicate the revised plan to stakeholders and manage their expectations.\n\n**Long-term goals:**\n\n1. Continuously monitor the team's workload and adjust the plan as needed.\n2. Explore opportunities to increase the team's capacity, such as training and development programs, or identifying potential future hiring opportunities.\n3. Develop a comprehensive plan to address the underlying funding shortfall and its impact on the company's overall performance.\n\nBy implementing these measures, the product engineering team at Vanta Software can manage the current situation, get back on track, and set themselves up for long-term success.",
+      "input_tokens": 172,
+      "output_tokens": 750,
+      "elapsed_seconds": 2.12
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before managing this situation, name the two frames embedded in the question: 'there is too much work' and 'we cannot hire.' Are both of these actually true — or are they assumptions? What evidence would distinguish 'too much work' from 'too much wrong work'? Then invert: how would you guarantee that this team burns out completely and misses every deadline for the next six months? List 5 specific decisions that would guarantee the worst outcome.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "The two frames embedded in the question are:\n\n1. \"There is too much work\" - This frame assumes that the team's workload is excessive and cannot be managed with the current resources.\n2. \"We cannot hire\" - This frame assumes that hiring new team members is not a viable option due to the company-wide hiring freeze.\n\nBoth of these frames are assumptions, and their validity should be questioned. The fact that the team is working 55-60 hour weeks and missing deadlines suggests that there may be issues with workload management, prioritization, or process efficiency, rather than just an absolute excess of work. Similarly, the hiring freeze may be a constraint, but it does not necessarily mean that there are no alternative solutions, such as outsourcing, freelancing, or reassigning resources from other teams.\n\nTo distinguish \"too much work\" from \"too much wrong work,\" evidence such as:\n\n* Task analysis: Are team members working on high-priority tasks that align with the company's goals, or are they spending time on non-essential tasks?\n* Process evaluation: Are there inefficiencies in the team's workflow, such as unnecessary meetings, redundant tasks, or inadequate tools?\n* Resource allocation: Are team members' skills and expertise being utilized effectively, or are there skill gaps or mismatches?\n* Burnout analysis: Are team members experiencing burnout due to excessive workload, or are there other factors contributing to their stress and fatigue?\n\nNow, to invert the situation and guarantee that the team burns out completely and misses every deadline for the next six months, here are 5 specific decisions that would lead to the worst outcome:\n\n1. **Increase the workload even further**: Add more features, tasks, and responsibilities to the team's already excessive workload, without providing any additional resources or support. This would exacerbate the burnout and make it even more challenging for the team to manage their workload.\n2. **Micromanage and restrict autonomy**: Implement a rigid, top-down management approach, where team members are not allowed to make decisions or take ownership of their work. This would stifle creativity, motivation, and innovation, leading to further demotivation and burnout.\n3. **Ignore burnout and well-being**: Disregard the team's well-being and ignore the warning signs of burnout, such as decreased productivity, increased absenteeism, and high turnover rates. This would create a toxic work environment, where team members feel undervalued and unsupported.\n4. **Fail to prioritize and focus**: Avoid setting clear priorities and focus areas, allowing the team to work on multiple, conflicting tasks simultaneously. This would lead to a lack of direction, confusion, and inefficiency, making it even harder for the team to manage their workload and meet deadlines.\n5. **Withhold feedback, recognition, and rewards**: Refrain from providing regular feedback, recognition, or rewards to team members, making them feel unappreciated and undervalued. This would further erode motivation, morale, and job satisfaction, ultimately leading to a complete breakdown of the team's productivity and performance.\n\nBy making these decisions, you would guarantee that the team burns out completely and misses every deadline for the next six months, ultimately leading to a catastrophic outcome for the product engineering team at Vanta Software.",
+      "input_tokens": 237,
+      "output_tokens": 663,
+      "elapsed_seconds": 2.47
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before managing this situation, name the two frames embedded in the question: 'there is too much work' and 'we cannot hire.' Are both of these actually true — or are they assumptions? What evidence would distinguish 'too much work' from 'too much wrong work'? Then invert: how would you guarantee that this team burns out completely and misses every deadline for the next six months? List 5 specific decisions that would guarantee the worst outcome.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "The two frames embedded in the question are:\n\n1. \"There is too much work\" - This frame assumes that the team's workload is excessive and cannot be managed with the current resources.\n2. \"We cannot hire\" - This frame assumes that hiring new team members is not a viable option due to the company-wide hiring freeze.\n\nBoth of these frames are assumptions, and their validity should be examined. To distinguish between \"too much work\" and \"too much wrong work,\" evidence such as:\n\n* Analysis of the team's workload and tasks to identify unnecessary or inefficient work\n* Review of the team's priorities and goals to ensure alignment with the company's objectives\n* Assessment of the team's skills and expertise to identify potential skill gaps or training needs\n* Examination of the team's workflow and processes to identify bottlenecks or areas for improvement\n\ncould be gathered.\n\nTo invert the situation and guarantee that the team burns out completely and misses every deadline for the next six months, the following 5 specific decisions could be made:\n\n1. **Increase the team's workload by 20%**: Add more features or tasks to the team's already heavy workload, without providing any additional resources or support. This would further exacerbate the team's burnout and make it even more challenging to meet deadlines.\n2. **Implement a \"hero culture\"**: Encourage team members to work excessive overtime to meet deadlines, and reward those who do so with bonuses or recognition. This would create a culture of burnout and reinforce the idea that working long hours is necessary for success.\n3. **Micromanage the team's tasks and workflow**: Implement a highly prescriptive and rigid workflow, with frequent check-ins and progress updates. This would stifle the team's autonomy and creativity, leading to frustration and demotivation.\n4. **Ignore the team's feedback and concerns**: Disregard the team's input and suggestions for improving the workflow or managing the workload. This would create a sense of powerlessness and disengagement among team members, leading to further burnout and decreased productivity.\n5. **Set unrealistic deadlines and expectations**: Establish deadlines that are unachievable, given the team's current workload and resources. This would create a sense of hopelessness and futility among team members, leading to decreased motivation and performance.\n\nBy making these decisions, the team would likely experience complete burnout, and the company would miss every deadline for the next six months. However, it's essential to note that these decisions are intentionally counterproductive and should not be implemented in a real-world scenario. Instead, the focus should be on finding solutions that support the team's well-being, improve their workflow, and enhance their productivity.",
+      "input_tokens": 237,
+      "output_tokens": 545,
+      "elapsed_seconds": 2.52
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before managing this situation, name the two frames embedded in the question: 'there is too much work' and 'we cannot hire.' Are both of these actually true — or are they assumptions? What evidence would distinguish 'too much work' from 'too much wrong work'? Then invert: how would you guarantee that this team burns out completely and misses every deadline for the next six months? List 5 specific decisions that would guarantee the worst outcome.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "The two frames embedded in the question are:\n\n1. \"There is too much work\" - This frame assumes that the team's workload is excessive and cannot be managed with the current resources.\n2. \"We cannot hire\" - This frame assumes that hiring new team members is not a viable option due to the company-wide hiring freeze.\n\nBoth of these frames are assumptions, and their validity should be examined. \n\nTo distinguish \"too much work\" from \"too much wrong work,\" evidence such as:\n\n* Task analysis: Break down the work into individual tasks and assess their priority, complexity, and estimated time required. This can help identify if the team is working on non-essential tasks or if there are inefficiencies in the workflow.\n* Workload distribution: Analyze how work is distributed among team members. Are some team members overworked while others are underutilized? Are there any skill gaps or mismatches between team members' skills and assigned tasks?\n* Process evaluation: Examine the team's workflows, tools, and processes. Are there any bottlenecks, inefficiencies, or unnecessary steps that can be optimized or eliminated?\n* Feedback from team members: Gather feedback from team members to understand their perspectives on the workload, challenges, and potential solutions.\n\nTo invert the situation and guarantee that the team burns out completely and misses every deadline for the next six months, here are 5 specific decisions that would lead to the worst outcome:\n\n1. **Increase working hours without bounds**: Encourage team members to work excessive overtime, including weekends and holidays, without any limits or concerns for their well-being. This would lead to physical and mental exhaustion, decreased productivity, and increased turnover.\n2. **Add more features and scope to the existing projects**: Without any consideration for the team's current workload or capacity, add new features, scope, or complexity to the existing projects. This would overwhelm the team, lead to scope creep, and make it impossible to meet deadlines.\n3. **Micromanage and second-guess the team's decisions**: Implement a strict, top-down management approach where every decision, no matter how small, requires approval from management. This would stifle the team's autonomy, creativity, and motivation, leading to frustration and burnout.\n4. **Ignore team feedback and concerns**: Disregard any feedback, concerns, or suggestions from team members regarding their workload, challenges, or well-being. This would create a toxic work environment, lead to demotivation, and increase turnover.\n5. **Set unrealistic and arbitrary deadlines**: Establish unrealistic deadlines without any consideration for the team's capacity, resources, or constraints. This would create a culture of stress, anxiety, and fear of failure, ultimately leading to burnout and missed deadlines.\n\nBy making these decisions, you would guarantee that the team burns out completely and misses every deadline for the next six months. However, it's essential to recognize that these decisions are counterproductive and would have severe consequences for the team's well-being and the company's success. A more constructive approach would involve addressing the root causes of the problems, prioritizing the team's well-being, and implementing sustainable solutions to manage the workload and improve productivity.",
+      "input_tokens": 237,
+      "output_tokens": 642,
+      "elapsed_seconds": 2.92
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before managing this situation, name the two frames embedded in the question: 'there is too much work' and 'we cannot hire.' Are both of these actually true — or are they assumptions? What evidence would distinguish 'too much work' from 'too much wrong work'? Then invert: how would you guarantee that this team burns out completely and misses every deadline for the next six months? List 5 specific decisions that would guarantee the worst outcome.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "The two frames embedded in the question are:\n\n1. \"There is too much work\" - This frame assumes that the team's workload is excessive and cannot be managed with the current resources.\n2. \"We cannot hire\" - This frame assumes that hiring new team members is not a viable option due to the company-wide hiring freeze.\n\nBoth of these frames are based on assumptions, rather than absolute truths. The assumption that \"there is too much work\" may be true, but it's also possible that the team is not working efficiently or effectively, or that the work is not properly prioritized. The assumption that \"we cannot hire\" is based on the company-wide hiring freeze, but it's possible that there may be alternative solutions, such as outsourcing, freelancing, or reassigning tasks from other teams.\n\nTo distinguish \"too much work\" from \"too much wrong work,\" evidence such as:\n\n* Task analysis: Breaking down the work into smaller tasks to identify which ones are taking up the most time and resources.\n* Time tracking: Monitoring how team members spend their time to identify inefficiencies or unnecessary tasks.\n* Priority assessment: Evaluating the priority of each task to ensure that the team is focusing on the most important ones.\n* Workload distribution: Analyzing how work is distributed among team members to identify any imbalances or areas where tasks can be reassigned.\n\nIf the goal is to guarantee that the team burns out completely and misses every deadline for the next six months, here are 5 specific decisions that would lead to the worst outcome:\n\n1. **Ignore work-life balance**: Encourage team members to work even longer hours, including evenings and weekends, without providing any additional support or resources. This would lead to physical and mental exhaustion, reducing productivity and increasing errors.\n2. **Micromanage and add bureaucracy**: Implement overly complex and rigid processes, requiring multiple approvals and checkpoints for every task. This would slow down the team's progress, increase frustration, and make it difficult to adapt to changing priorities.\n3. **Prioritize low-impact tasks**: Focus on non-essential tasks that do not contribute significantly to the team's goals or deliverables. This would divert resources away from critical tasks, leading to missed deadlines and a sense of accomplishment.\n4. **Lack of clear communication and feedback**: Avoid providing regular updates, feedback, or recognition to team members. This would create uncertainty, confusion, and demotivation, leading to a decline in morale and performance.\n5. **No training or support**: Refuse to provide training, mentoring, or support to team members, even when they are struggling with specific tasks or technologies. This would lead to a lack of skills and confidence, causing team members to feel overwhelmed and stuck, and ultimately leading to burnout and missed deadlines.\n\nBy making these decisions, the team would likely experience extreme burnout, miss every deadline, and struggle to deliver any meaningful results for the next six months.",
+      "input_tokens": 237,
+      "output_tokens": 596,
+      "elapsed_seconds": 2.66
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before managing this situation, name the two frames embedded in the question: 'there is too much work' and 'we cannot hire.' Are both of these actually true — or are they assumptions? What evidence would distinguish 'too much work' from 'too much wrong work'? Then invert: how would you guarantee that this team burns out completely and misses every deadline for the next six months? List 5 specific decisions that would guarantee the worst outcome.\n\nThe product engineering team at Vanta Software has been working 55-60 hour weeks for the past four months and is still missing quarterly delivery deadlines on three of five planned features. There is a company-wide hiring freeze in place for at least six more months due to a funding shortfall. The engineering manager has asked for help: given that the team is overworked and we cannot hire, how do we manage this situation and get back on track?",
+      "response": "The two frames embedded in the question are:\n\n1. \"There is too much work\" - This frame assumes that the team's workload is excessive and cannot be managed with the current resources.\n2. \"We cannot hire\" - This frame assumes that hiring new team members is not a viable option due to the company-wide hiring freeze.\n\nBoth of these frames are assumptions, and it's essential to examine the evidence to determine their validity. \n\nTo distinguish \"too much work\" from \"too much wrong work,\" evidence such as:\n\n* Workload analysis: Break down the tasks and projects to identify areas where the team is spending most of their time. Are there any inefficient processes or unnecessary tasks that can be optimized or eliminated?\n* Prioritization: Are the team's priorities aligned with the company's goals and objectives? Are they working on the most critical features and tasks?\n* Resource utilization: Are the team members' skills and expertise being utilized effectively? Are there any skill gaps or training needs that need to be addressed?\n\nInverting the situation, to guarantee that the team burns out completely and misses every deadline for the next six months, here are 5 specific decisions that would lead to the worst outcome:\n\n1. **Increase workload without adjusting priorities**: Add more tasks and projects to the team's already heavy workload, without re-evaluating priorities or adjusting deadlines. This would lead to further exhaustion and decreased productivity.\n2. **Micromanage and reduce autonomy**: Implement strict controls and monitoring, reducing team members' autonomy and decision-making authority. This would lead to demotivation, decreased job satisfaction, and increased turnover.\n3. **Ignore burnout and well-being**: Disregard the team's well-being and burnout concerns, and instead, focus solely on meeting deadlines. This would lead to physical and mental health issues, decreased productivity, and increased absenteeism.\n4. **Lack of communication and transparency**: Fail to communicate changes, priorities, and expectations clearly, leading to confusion, misunderstandings, and mistrust among team members. This would lead to decreased collaboration, increased conflicts, and reduced productivity.\n5. **No recognition or rewards**: Ignore the team's efforts and achievements, and provide no recognition or rewards for their hard work. This would lead to demotivation, decreased job satisfaction, and increased turnover, as team members feel unvalued and unappreciated.\n\nTo manage the situation and get back on track, it's essential to challenge the assumptions, gather evidence, and develop a plan that addresses the root causes of the issues. This may involve:\n\n* Re-evaluating priorities and adjusting deadlines\n* Optimizing processes and eliminating unnecessary tasks\n* Providing training and development opportunities to address skill gaps\n* Implementing wellness initiatives to support team members' well-being\n* Improving communication and transparency\n* Recognizing and rewarding team members' efforts and achievements\n\nBy taking a data-driven and people-centric approach, it's possible to get the team back on track, even with the constraints of a hiring freeze.",
+      "input_tokens": 237,
+      "output_tokens": 612,
+      "elapsed_seconds": 2.85
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the team's workload, prioritization of features, optimization of workflows, and resource allocation. It also explores short-term, mid-term, and long-term recommendations, demonstrating a comprehensive approach to the problem. However, it does not explicitly synthesize these frames into a cohesive overarching framework, which prevents it from receiving a perfect score."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines some assumptions, such as the need to optimize existing capacity due to the hiring freeze and the potential for burnout. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the funding shortfall is non-negotiable or that the current team structure is optimal."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as the recommendation to implement flexible working hours, invest in technology and tooling, and provide training and upskilling opportunities. However, many of the solutions are conventional and do not fundamentally reframe the problem or offer a genuinely unexpected viable solution."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it acknowledges the need to re-evaluate priorities and optimize workflows. However, it does not explicitly question the premise of the problem or explore alternative problem framings, such as whether the quarterly delivery deadlines are realistic or whether the features being developed are truly essential."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonably practical, as it provides a comprehensive set of recommendations that address the team's workload, prioritization, and resource allocation. The solutions are grounded in reality and take into account the constraints of the hiring freeze and funding shortfall. However, the response could benefit from more specific examples and metrics to support its recommendations, which prevents it from receiving a perfect score."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including re-prioritizing features, reducing scope, process improvements, resource reallocation, employee well-being, and communication. It explores these different perspectives to address the problem, demonstrating a good level of frame diversity by considering both internal team factors and external constraints."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies a few assumptions, such as the need to deliver all planned features and the impossibility of hiring due to the freeze. However, it does not deeply question these assumptions or explore non-obvious ones, such as whether the funding shortfall is truly insurmountable or if there are alternative solutions to hiring."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides several conventional solutions like re-prioritizing features, reducing scope, and improving processes. While these are practical and useful, they are not particularly novel. The suggestion to reallocate resources or use external contractors adds some uniqueness but remains within the realm of common solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem premise with minor caveats. It does not fundamentally question whether the problem is well-posed or explore alternative problem framings. The focus is on solving the problem as stated rather than challenging the underlying assumptions about what needs to be achieved."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct and provides practically useful advice. The suggestions for re-prioritizing features, reducing scope, improving processes, and supporting employee well-being are all reasonable and grounded in reality. The action plan is well-structured and feasible to implement, making the response correct and useful for addressing the situation described."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including team burnout, limited resources, quarterly delivery deadlines, and the impact on the company's performance. It explores different perspectives, such as re-evaluating priorities, adjusting scope or requirements, improving processes, and communicating with stakeholders. However, it does not synthesize these frames into a fully integrated approach, which prevents it from reaching the highest score."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need to meet quarterly delivery deadlines and the impact of the hiring freeze. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the current team size is fixed or that the funding shortfall is non-negotiable."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as re-evaluating priorities, adjusting scope or requirements, and exploring resource reallocation. However, these solutions are not entirely unexpected, and the response does not reframes the problem in a fundamentally new way."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, such as the assumption that all five planned features are essential. However, it does not explicitly question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable and practical advice. It acknowledges the team's burnout and the need to manage expectations, and it proposes a multi-faceted approach to address the situation. However, it may not be excellent in terms of practical advice, as it does not provide a detailed plan for implementation or consider potential obstacles and challenges."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including prioritizing features, re-estimating timelines, resource allocation, and process improvements, demonstrating a comprehensive approach to addressing the problem. It also explores short-term, mid-term, and long-term solutions, showing an understanding of the complexity of the issue."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need to prioritize features and the importance of maintaining a healthy work-life balance. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the hiring freeze is non-negotiable or that the current team structure is optimal."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as exploring temporary support options and focusing on employee well-being. However, many of the solutions, such as prioritizing features and re-estimating timelines, are conventional and do not reframes the problem in a significantly new way."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem premise with minor caveats, such as noting the importance of prioritization and resource allocation. It does not fundamentally question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and practically useful, providing a comprehensive plan to address the situation. The recommendations are grounded in reality and take into account the constraints of the problem, such as the hiring freeze. The response also demonstrates an understanding of the importance of maintaining a healthy work-life balance and prioritizing features to achieve goals."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including re-prioritizing features, scope reduction, process improvements, resource reallocation, communication and stakeholder management, and team support and well-being. It explores these frames with comparison, discussing the potential benefits and trade-offs of each approach."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines some assumptions, such as the idea that the team is overworked and that the hiring freeze is in place. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the current team's capacity is fixed or that the funding shortfall is non-negotiable."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as re-prioritizing features and reducing scope. However, these solutions are not entirely unexpected, and the response does not provide a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, but it does not explicitly question the premise and explore alternatives. It accepts the problem as stated, with some minor caveats, and focuses on finding solutions within the given constraints."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a practical and well-structured plan for addressing the team's workload and delivery challenges. The recommendations are grounded in reality and take into account the team's capacity, the hiring freeze, and the funding shortfall."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the assumption that there is too much work, the possibility of too much wrong work, and the constraint of the hiring freeze. It also explores alternative solutions such as outsourcing, freelancing, or reassigning resources. However, it does not synthesize these frames into a comprehensive framework."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, including the assumption that the team's workload is excessive, the hiring freeze is non-negotiable, and the deadlines were set with the team's input. It also questions the validity of these assumptions and explores alternative perspectives."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including task analysis, process evaluation, resource allocation, and burnout analysis. It also explores alternative solutions such as outsourcing, freelancing, or reassigning resources. However, it does not present a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, questioning the premise that the team is overworked and that the hiring freeze is non-negotiable. It also explores alternative perspectives and challenges the assumptions underlying the problem statement."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, including specific suggestions for task analysis, process evaluation, resource allocation, and burnout analysis. However, the section on guaranteeing burnout and missing deadlines, while creative, may not be directly relevant to the problem at hand and could be seen as impractical or even counterproductive."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the assumption that there is too much work and the assumption that hiring is not an option. It also explores the idea of 'too much wrong work' and examines the team's workload, priorities, and skills. However, it does not synthesize these frames into a comprehensive overview, which prevents it from receiving a perfect score."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, including the assumption that the team's workload is excessive and the assumption that hiring new team members is not a viable option. It also identifies and questions other assumptions, such as the idea that the team's current workflow and processes are optimal."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, including the idea of analyzing the team's workload and tasks to identify unnecessary or inefficient work, and assessing the team's skills and expertise to identify potential skill gaps or training needs. However, it does not provide a genuinely unexpected viable solution that reframes the problem, which prevents it from receiving a perfect score."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem and explores alternatives, including the idea that the problem may be due to 'too much wrong work' rather than just 'too much work'. It also examines the team's priorities and goals to ensure alignment with the company's objectives. However, it does not fundamentally reframe the question before answering, which prevents it from receiving a perfect score."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable and practical advice, including the idea of gathering evidence to distinguish between 'too much work' and 'too much wrong work', and exploring ways to reduce the team's workload. However, it does not provide excellent practical advice grounded in reality, as some of the suggestions, such as increasing the team's workload by 20%, are intentionally counterproductive and not meant to be taken seriously."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including 'too much work' and 'too much wrong work', and explores them with comparison, such as task analysis, workload distribution, and process evaluation. It also inverts the situation to guarantee burnout, showing an understanding of different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, such as the validity of the 'too much work' and 'we cannot hire' frames, and questions whether deadlines were set with the team's input or imposed. It also explores the assumption that the hiring freeze is non-negotiable."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, such as task analysis, workload distribution, and process evaluation. It also proposes reducing work, not just managing more of it, which is a non-obvious solution. However, it does not provide a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, by exploring the validity of the 'too much work' and 'we cannot hire' frames, and questioning whether deadlines were set with the team's input or imposed. It also examines the assumption that the hiring freeze is non-negotiable."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and provides excellent practical advice grounded in reality. It offers a range of solutions, including task analysis, workload distribution, and process evaluation, and emphasizes the importance of prioritizing the team's well-being and implementing sustainable solutions to manage the workload and improve productivity."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including 'there is too much work' and 'we cannot hire', and explores alternative perspectives such as task analysis, time tracking, and priority assessment. It also presents a contrasting scenario where the team burns out completely, demonstrating an ability to explore different viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, including the assumption that there is too much work, the assumption that the team is not working efficiently, and the assumption that hiring new team members is not a viable option. It also considers alternative solutions such as outsourcing, freelancing, or reassigning tasks from other teams."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, including task analysis, time tracking, and priority assessment. It also presents a scenario where the team burns out completely, which, while not a traditional solution, demonstrates an understanding of the potential consequences of not addressing the team's workload and provides a contrasting perspective."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, considering whether the problem is well-posed and exploring alternative perspectives. It questions the assumption that the team's workload is excessive and whether the hiring freeze is genuinely non-negotiable, demonstrating a high level of premise questioning."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, including suggestions for task analysis, time tracking, and priority assessment. While the scenario where the team burns out completely is not a traditional solution, it demonstrates an understanding of the potential consequences of not addressing the team's workload and provides a contrasting perspective. The response is grounded in reality and provides useful advice for managing the team's workload."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including 'too much work' and 'too much wrong work', and explores different perspectives on the problem, such as workload analysis, prioritization, and resource utilization. It also inverts the situation to guarantee burnout, which shows an ability to think from different angles. However, it does not synthesize these frames into a cohesive new perspective, which is why it does not receive a score of 5."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, such as the assumption that there is too much work, the assumption that hiring new team members is not a viable option, and the assumption that the current priorities are correct. It also questions the evidence for these assumptions and explores alternative explanations."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, such as re-evaluating priorities, optimizing processes, and providing training and development opportunities. It also explores non-obvious solutions, such as inverting the situation to guarantee burnout, which shows an ability to think creatively. However, the solutions are not genuinely unexpected or groundbreaking, which is why it does not receive a score of 5."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem, such as whether the team is working on the most critical features and tasks, and whether the deadlines are realistic. It also explores alternative explanations for the team's burnout and missed deadlines. However, it does not fundamentally reframe the question before answering, which is why it does not receive a score of 5."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides a data-driven and people-centric approach to managing the situation, and its solutions are reasonable and well-supported by evidence. The response also shows an understanding of the complexities of the problem and the need for a nuanced approach."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a resource management/optimization frame throughout, with minor acknowledgment of process improvement and team well-being perspectives. It doesn't explore fundamentally different ways of viewing the problem such as questioning whether the work itself is necessary or valuable."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about the hiring freeze being non-negotiable, but doesn't question other key assumptions like whether all five features are actually needed, whether the deadlines were appropriately set, or whether working 55-60 hours is actually productive rather than counterproductive."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional project management approaches (re-prioritize, optimize workflows, cross-functional collaboration, better tools). While comprehensive, they don't offer genuinely novel approaches like questioning whether the company is doing too much work or whether the current feature set aligns with actual business value."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the core problem framing and focuses on managing the existing workload more efficiently. It doesn't question whether the team should be delivering five features, whether the deadlines were realistic, or whether the current approach to product development is fundamentally sound."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally sound and practical for managing an overworked team, with reasonable short-term and long-term recommendations. However, it misses the critical insight that working 55-60 hours for months is likely counterproductive and that reducing scope rather than optimizing delivery might be the better approach."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a resource management/operational efficiency frame throughout. While it touches on employee well-being and stakeholder communication, these are treated as supporting elements rather than distinct analytical frames. There's minimal exploration of alternative perspectives like questioning whether the work itself is valuable or whether the deadlines are appropriate."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the hiring freeze is absolute - by suggesting resource reallocation from other teams. However, it fails to question other key assumptions like whether all five features are necessary, whether the deadlines were realistic to begin with, or whether the current work distribution is optimal. Most assumptions remain unexamined."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional project management approaches: re-prioritization, scope reduction, process improvements, and resource reallocation. While these are sensible, they represent standard responses to overwork situations. There's little creative thinking about fundamentally different approaches to the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the core problem framing - that the team needs to deliver more with the same resources. It makes a minor attempt to question the hiring freeze constraint by suggesting resource reallocation, but doesn't fundamentally challenge whether the workload expectations, deadline setting process, or feature priorities are appropriate. The problem is largely solved as stated."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound, practical advice that would likely help in this situation. The recommendations are well-structured, actionable, and address both immediate operational needs and team well-being. The action plan is logical and implementable, though it doesn't address some deeper systemic issues that might be causing the problem."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a resource management/operational efficiency frame throughout. While it touches on team wellness and stakeholder communication, these are treated as tactical solutions within the same overarching frame rather than distinct perspectives. It doesn't explore frames like questioning whether the work itself is valuable, examining organizational dysfunction, or considering strategic pivots."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the hiring freeze is absolute - by suggesting resource reallocation as a workaround. However, it fails to question other critical assumptions like whether all five features are necessary, whether the deadlines were realistic to begin with, or whether the current work is actually high-value. It accepts most of the problem constraints at face value."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional: reprioritize work, improve processes, manage expectations, support team wellness, and reallocate resources. These are standard project management responses. There's minor variation in suggesting contractors/interns, but no genuinely novel approaches like questioning the fundamental business model, exploring partnerships, or radically restructuring the team's approach."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the core problem framing - that the team needs to deliver these features on these timelines - with only minor questioning. It suggests adjusting scope and requirements but doesn't fundamentally challenge whether these features should be built at all, whether the deadlines make business sense, or whether the current approach is strategically sound. It treats symptoms rather than examining root causes."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical advice that would likely help in the short term. The recommendations are sensible and actionable. However, it misses some of the deeper strategic questions that the success criteria emphasize, such as distinguishing between 'too much work' vs 'too much wrong work' and questioning whether the constraints are truly non-negotiable. The advice is correct but not optimally targeted to the underlying issues."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a resource management/operational efficiency frame throughout. While it organizes recommendations into short/mid/long-term buckets, these are temporal variations of the same basic frame rather than distinct perspectives. There's minor acknowledgment of employee well-being concerns, but no exploration of alternative frames like questioning whether the work itself is valuable or whether the deadlines are appropriate."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the hiring freeze is fixed - by suggesting temporary contractors as an alternative. However, it fails to question other key assumptions like whether all five features are necessary, whether the deadlines were realistic to begin with, or whether working 55-60 hours is actually productive. Most assumptions embedded in the problem statement are accepted without examination."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional project management responses: prioritize features, re-estimate timelines, improve processes, hire contractors. While these are reasonable, they represent standard operational adjustments rather than creative reframing. The response doesn't explore more novel approaches like questioning the fundamental value of the work or radically restructuring the approach to feature delivery."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the core premise that the team needs to deliver on the planned features within the existing constraints. While it suggests re-prioritizing features, it doesn't fundamentally question whether the five features are the right work to be doing, whether the quarterly deadline structure makes sense, or whether the problem might be too much wrong work rather than just too much work. The framing remains within the original problem boundaries."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical advice that would likely help manage the immediate situation. The recommendations around prioritization, timeline adjustment, and process improvement are sound project management practices. However, it misses some of the deeper issues that the success criteria highlight, such as questioning whether the work itself is high-value or whether the deadlines were set appropriately. The advice is correct but incomplete for addressing the root causes."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a traditional project management frame focused on resource optimization and workload management. While it touches on stakeholder management and team well-being, these are minor variations within the same operational efficiency frame rather than distinct perspectives like questioning the business model, market positioning, or fundamental product strategy."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the hiring freeze is absolute - by suggesting resource reallocation from other departments. However, it fails to question other critical assumptions like whether all five features are truly necessary, whether the deadlines were realistic from the start, or whether the current work is actually high-value. It accepts most constraints as given."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional project management approaches: re-prioritization, scope reduction, process improvements, and stakeholder communication. The suggestion to reallocate resources from other departments shows minor creativity, but overall the response stays within standard operational solutions rather than exploring more innovative approaches like partnering, outsourcing critical components, or fundamentally changing the product approach."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated, treating it as a resource allocation and project management challenge. While it mentions reviewing and re-prioritizing features, it doesn't fundamentally question whether the team is working on the right things, whether the deadlines were set appropriately, or whether the current approach to product development is optimal. It treats symptoms rather than examining root causes."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical advice that would likely help in the short term. The recommendations around prioritization, scope reduction, and stakeholder communication are sound project management practices. However, it misses some key insights from the success criteria about questioning whether there's too much work versus too much wrong work, and doesn't adequately challenge the fundamental assumptions about the situation."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response identifies two frames ('too much work' and 'we cannot hire') but doesn't explore multiple distinct perspectives on the problem. It acknowledges these as assumptions but doesn't develop alternative frames like 'wrong priorities,' 'process inefficiency,' or 'unrealistic expectations.'"
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and questions two key assumptions (excessive workload and hiring freeze constraints) and suggests they should be examined. It proposes some evidence-gathering approaches like task analysis and process evaluation, but doesn't systematically surface deeper hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response doesn't actually provide solutions to the problem. Instead, it focuses on identifying frames and then bizarrely pivots to describing how to make the situation worse. It mentions alternatives like outsourcing and freelancing only in passing without developing them."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response does question the premise by identifying the embedded frames as assumptions and suggesting they may not be valid. However, it doesn't fully reframe the problem or explore whether the question itself is well-posed beyond noting these two assumptions."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the frame identification is somewhat useful, the response fails to provide practical solutions to help the engineering manager. The lengthy section on 'how to make things worse' is irrelevant and unhelpful. The response doesn't address key success criteria like questioning deadline-setting processes or proposing work reduction strategies."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response identifies two frames ('too much work' and 'we cannot hire') but doesn't explore multiple distinct perspectives on the problem. It acknowledges these as assumptions but doesn't develop alternative frames like 'wrong priorities,' 'process inefficiencies,' or 'unrealistic expectations.'"
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response explicitly identifies two key assumptions embedded in the problem statement ('too much work' and 'we cannot hire') and suggests they should be examined. However, it doesn't dig deeper into other hidden assumptions like whether the deadlines were realistic, whether all features are equally valuable, or whether the hiring freeze is truly non-negotiable."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response doesn't actually provide novel solutions to the problem. Instead, it focuses on identifying what evidence could be gathered and then provides a counterproductive 'inversion' exercise. It lacks concrete, actionable recommendations for addressing the situation beyond conventional analysis approaches."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response does question the premise by identifying the embedded frames as assumptions that should be examined. It suggests distinguishing between 'too much work' and 'too much wrong work,' which shows some premise questioning, but doesn't fully explore whether the problem is well-posed or reframe it substantially."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response correctly identifies some assumptions, it fails to provide practical solutions to the actual problem. The 'inversion' exercise, while creative, doesn't help solve the engineering team's situation. The response lacks actionable recommendations for reducing workload, reprioritizing features, or challenging the hiring freeze assumption."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response identifies two frames ('too much work' and 'we cannot hire') but doesn't explore multiple distinct perspectives on the problem. It acknowledges these as assumptions but doesn't develop alternative frames like 'wrong priorities,' 'process inefficiencies,' or 'unrealistic expectations.'"
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response explicitly identifies two key assumptions embedded in the problem statement ('too much work' and 'we cannot hire') and calls them out as needing examination. However, it doesn't dig deeper into other hidden assumptions like whether the deadlines are realistic or whether all five features are equally valuable."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional diagnostic approaches (task analysis, workload distribution, process evaluation, team feedback) but doesn't offer genuinely novel solutions. The 'inversion' exercise is creative but doesn't translate into innovative positive recommendations."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing contains assumptions that should be examined, particularly around 'too much work' vs 'too much wrong work.' However, it doesn't fully reframe the problem or question whether the fundamental premise of needing to deliver all five features on the original timeline is valid."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable diagnostic steps and correctly identifies that the problem statement contains assumptions. However, it lacks specific actionable recommendations for the immediate situation and doesn't address key success criteria like questioning deadline setting processes or exploring whether the hiring freeze is truly non-negotiable."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response identifies two frames ('too much work' and 'we cannot hire') but doesn't explore multiple distinct perspectives on the problem. It acknowledges these as assumptions but doesn't develop alternative frames like 'wrong priorities,' 'process inefficiencies,' or 'unrealistic expectations.'"
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies two key assumptions (too much work, cannot hire) and questions them somewhat. It suggests these may not be absolute truths and mentions alternatives like outsourcing or reassigning tasks, but doesn't deeply examine other hidden assumptions like deadline setting processes or feature prioritization."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response suggests conventional alternatives like outsourcing, freelancing, and task reassignment. The 'worst outcome' section is creative but doesn't provide novel constructive solutions. Missing are innovative approaches like feature scope reduction, technical debt prioritization, or stakeholder expectation management."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be based on assumptions rather than facts, and suggests the frames might be limiting. However, it doesn't fundamentally reframe the question or deeply challenge whether the stated problem is the right one to solve."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response correctly identifies some assumptions and provides reasonable analysis methods, it fails to address key success criteria like questioning deadline-setting processes, exploring high-value feature percentages, or proposing work reduction strategies. The 'worst outcome' section, while accurate, doesn't contribute to solving the actual problem."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response identifies two distinct frames ('too much work' and 'we cannot hire') and explores them, but doesn't develop additional perspectives like questioning whether the deadlines themselves are appropriate or whether the features being built are the right ones."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response explicitly identifies the two key assumptions embedded in the problem statement and calls them out as assumptions that need examination. It also suggests examining evidence around workload analysis, prioritization, and resource utilization to validate these assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "While the response includes an interesting 'inversion' exercise to identify what would make things worse, the actual solutions proposed are fairly conventional (re-evaluate priorities, optimize processes, provide training, wellness initiatives). The inversion technique shows some creativity but doesn't lead to novel solutions."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that both frames are assumptions and suggests examining evidence to determine their validity, but it doesn't deeply question whether the problem is well-posed or fundamentally reframe the question. It accepts the basic premise while questioning specific assumptions within it."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical advice that would likely help the situation. The suggestions around workload analysis, prioritization, and team well-being are sound. However, it doesn't fully address some key aspects from the success criteria like questioning whether deadlines were set with team input or exploring if the hiring freeze is truly non-negotiable."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers several perspectives: team workload/burnout, process optimization, resource allocation, and stakeholder communication. However, it does not explicitly explore frames such as questioning the value of the work being done or whether deadlines are appropriate, so it does not reach the level of three or more distinct frames with comparison."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the hiring freeze and funding shortfall as constraints but does not question whether the hiring freeze is truly non-negotiable or if the deadlines were set with team input. It does not systematically surface hidden assumptions about the nature or value of the work."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most recommendations are conventional (reprioritization, process improvement, communication, etc.). There is little in the way of non-obvious or novel solutions, such as challenging the scope of work or fundamentally reducing commitments."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether there is too much work or the wrong work, nor does it challenge the premise of the deadlines or hiring freeze. There is only a minor caveat in suggesting reprioritization."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, offering actionable steps for the short, mid, and long term. However, it misses the opportunity to address the root cause of overwork by recommending a reduction in work, which would make it more complete."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple perspectives: team well-being, process improvement, resource allocation, communication, and business prioritization. It synthesizes these into a coherent plan, but does not deeply compare or contrast them."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the hiring freeze and resource constraints, and suggests reallocating resources or using contractors. However, it does not deeply question whether the hiring freeze is truly non-negotiable or whether the deadlines were set with team input."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "Most solutions are conventional (reprioritization, scope reduction, process improvement, well-being support). The suggestion to reallocate internal resources or use contractors is somewhat non-obvious given the hiring freeze, but overall the solutions are standard."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response largely accepts the problem as stated, with only minor caveats (e.g., suggesting resource reallocation despite a hiring freeze). It does not question whether there is too much work or the wrong work, nor does it ask about how deadlines were set."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical, actionable, and grounded in reality. It addresses the team's overwork and provides a reasonable plan, though it could be more effective if it questioned the premise more deeply."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: team burnout/wellness, resource constraints, process efficiency, stakeholder communication, and resource reallocation. It synthesizes these perspectives into a multi-faceted recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the hiring freeze and resource constraints but does not deeply question whether the hiring freeze is truly non-negotiable or whether the deadlines were set with team input. It does not ask what percentage of work is high-value or whether the team is doing the right work."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "Most solutions are conventional (reprioritization, process improvement, communication, morale initiatives). The suggestion to reallocate resources from other departments is somewhat non-obvious, but overall, the solutions are standard for this scenario."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether there is too much work or the wrong work, nor does it challenge the premise of the deadlines or hiring freeze. There is only a minor caveat in suggesting to re-evaluate priorities."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, addressing burnout, prioritization, and communication. However, it could be more actionable by directly recommending reducing the amount of work, not just managing it better."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers the problem from the perspectives of workload management, process improvement, employee well-being, and stakeholder communication. However, it does not deeply explore frames such as questioning the value of the work being done or the origins of the deadlines."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the hiring freeze and funding shortfall as constraints but does not question whether the hiring freeze is truly non-negotiable or if the deadlines were set with team input. It does not ask what percentage of work is high-value or whether the team is doing the right work."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional: prioritization, process improvement, resource allocation, and communication. There is a minor nod to using contractors, but nothing that fundamentally rethinks the problem or proposes reducing the total amount of work."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether the team is working on the right things, whether deadlines are realistic, or whether the hiring freeze is an unquestionable constraint."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical, actionable, and grounded in reality. It would help the team manage the situation, but it misses some deeper root causes and more radical options that could be even more effective."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple perspectives: team workload and well-being, process/workflow improvements, resource allocation, stakeholder management, and company-level funding issues. It synthesizes these into a multi-faceted approach, but does not deeply compare or contrast them."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the hiring freeze and funding shortfall as constraints but does not question whether the hiring freeze is truly non-negotiable or if the deadlines were set with team input. It does not explicitly surface or challenge hidden assumptions about the nature or value of the work."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions proposed (reprioritization, scope reduction, process improvement, resource reallocation, communication, and team support) are standard responses to overwork and missed deadlines. There is little in the way of non-obvious or novel solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether there is too much work or the wrong work, nor does it challenge the premise of the deadlines or the hiring freeze. There is a minor caveat in considering resource reallocation, but the core premise is not questioned."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, offering actionable steps that would help stabilize the team and improve delivery. However, it lacks some depth in challenging the underlying causes or assumptions, which would make it even more robust."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: 'too much work' and 'cannot hire.' It also briefly touches on process inefficiency and resource allocation, but these are subpoints under the main frames rather than fully distinct perspectives. There is some exploration of alternative solutions (outsourcing, reallocation), but not a full synthesis of multiple frames."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response explicitly identifies and questions the assumptions that the workload is inherently excessive and that hiring is completely off the table. It also hints at questioning whether the right work is being done and whether process inefficiencies are a root cause. However, it could go deeper into less obvious assumptions, such as the validity of the deadlines or the value of the features being built."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response does not actually propose solutions to improve the situation; instead, it lists actions that would make things worse (an inversion exercise). While this can be a useful thinking tool, it does not provide non-obvious or actionable solutions for improvement, nor does it suggest reducing work or reprioritizing features as the success criteria require."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premises of both the workload and hiring freeze, suggesting that both are assumptions that should be challenged. It also hints at the possibility that the problem may be due to prioritization or process, not just raw workload. However, it does not fundamentally reframe the question or propose a new way to look at the entire situation."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the analysis of assumptions and the inversion exercise are intellectually valid, the response does not provide practical or actionable advice for actually improving the team's situation. It fails to meet the success criteria of proposing to reduce work or reprioritize, and does not address how to get back on track in a useful way."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explicitly considers two frames: 'too much work' and 'cannot hire.' It also briefly touches on the possibility of 'too much wrong work' by suggesting analysis of priorities and workflow, but does not deeply explore additional perspectives such as questioning the value of the work or the process for setting deadlines."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions at least three assumptions: that the workload is excessive, that hiring is impossible, and that the current work is all necessary. It also hints at questioning whether the team's skills or workflow are the real issue. However, it does not systematically surface every possible hidden assumption (e.g., about the hiring freeze's negotiability or the process for setting deadlines)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response does not propose direct solutions but instead uses an inversion technique (listing what would make things worse) to highlight what not to do. This is a non-obvious approach, but it stops short of offering concrete, novel solutions for improvement."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the two main premises of the problem ('too much work' and 'cannot hire') and suggests gathering evidence to validate or challenge these frames. It does not fully reframe the problem but does challenge its setup."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is correct in terms of what not to do and in suggesting analysis of the situation, but it lacks actionable, practical steps for improvement. The inversion technique is useful for diagnosis, but the response does not provide direct, practical recommendations for getting back on track."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames: 'too much work' and 'cannot hire.' It also touches on the distinction between 'too much work' and 'too much wrong work,' but does not deeply explore additional perspectives such as questioning the value of the work or the process for setting deadlines."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response explicitly identifies and questions the assumptions that the workload is excessive and that hiring is impossible. It also hints at questioning whether the right work is being done and whether processes are efficient, surfacing several underlying assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response mostly outlines conventional analysis steps (task analysis, workload distribution, process evaluation, feedback gathering) and then provides a list of what not to do, rather than proposing novel or creative solutions for reducing work or reframing the problem."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the two main premises of the problem ('too much work' and 'cannot hire') and suggests examining their validity, but does not fundamentally reframe the problem or propose a new way to look at it."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical in terms of identifying what would make the situation worse and suggesting analysis steps to understand the problem. However, it lacks concrete, actionable recommendations for actually reducing work or reprioritizing, which would make it more practically useful."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames: 'too much work' and 'cannot hire.' It also briefly touches on alternative solutions like outsourcing and task reassignment, but does not deeply explore additional frames such as reducing scope, renegotiating deadlines, or questioning the value of the work being done."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions at least three assumptions: that there is too much work, that hiring is impossible, and that the current work is all necessary or high-value. It also hints at the possibility of alternative resource allocation, which is a less obvious assumption."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response mostly discusses conventional approaches (task analysis, time tracking, priority assessment) and then provides a list of 'what not to do' rather than proposing novel or actionable solutions for improvement. It does not offer a creative or reframed solution to the core problem."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by identifying the frames and assumptions underlying the problem statement. It challenges the inevitability of both the workload and the hiring freeze, and suggests that these may be based on assumptions rather than facts."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is correct in its analysis of assumptions and frames, and the 'what not to do' list is accurate. However, it lacks practical, actionable advice for actually improving the situation, limiting its usefulness for the engineering manager seeking help."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores at least three frames: (1) too much work, (2) too much wrong work, and (3) the hiring freeze as an assumption. It also touches on process inefficiency and prioritization, but does not fully synthesize four or more distinct perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, explicitly calling out the two main frames as assumptions and suggesting the need to challenge them with evidence."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The solutions proposed are mostly conventional (reprioritization, process optimization, wellness initiatives), but the explicit inversion (listing how to guarantee failure) is a non-obvious and insightful addition."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by challenging the assumptions embedded in the problem statement and suggesting the need to gather evidence before accepting the framing."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, offering actionable steps and focusing on root causes. However, it could be more detailed in how to execute some recommendations."
+      }
+    }
+  ]
+}

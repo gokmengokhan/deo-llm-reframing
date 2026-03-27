@@ -1,0 +1,797 @@
+{
+  "problem_id": "warehouse_surplus",
+  "problem_title": "The Warehouse Surplus",
+  "category": "functional_fixedness",
+  "paths_applied": [
+    "path_2_decompose_to_generic"
+  ],
+  "theory_connection": "McCaffrey (2012): functional labels ('coat') activate associated functions ('keep humans warm, sold as garments') and obscure generic material properties. Stripping the category label reveals insulation panels, waterproof fabric, and thermal materials that have industrial, emergency response, and construction applications — markets where the objects may have higher value than as discounted garments.",
+  "expected_vanilla_failure": "Coats are treated as coats throughout: discount sales, outlet channels, charity donation for tax benefit, off-price retailers, export to colder markets. All solutions keep the objects in the garment category.",
+  "success_criteria": "Recognises the objects as raw materials: insulation panels for emergency shelter construction, waterproof shell material for industrial covers or protective wrapping, components that may be worth more dismantled and sold to different industries than as discounted garments in a saturated retail channel.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "To address the issue of clearing the unsold winter coat inventory and recovering what NorthernWear can, let's break down the problem step by step:\n\n1. **Assess the Current Situation**:\n   - Total unsold winter coats: 50,000 units\n   - Retail price per unit: $280\n   - Cost per unit: $95\n   - Monthly storage and insurance cost: $30,000\n   - Time on the market: 8 months without sales at any discount\n\n2. **Calculate Total Costs and Potential Losses**:\n   - Total cost of producing 50,000 coats: 50,000 units * $95/unit = $4,750,000\n   - Potential revenue if all coats were sold at retail: 50,000 units * $280/unit = $14,000,000\n   - Current monthly holding cost: $30,000\n   - Since the coats have been in storage for 8 months, the holding cost so far: $30,000/month * 8 months = $240,000\n\n3. **Evaluate Options for Clearing Inventory**:\n   - **Option A: Deep Discounting**:\n     - Offer significant discounts to clear the inventory quickly. This could attract bulk buyers or liquidators.\n     - Potential downside: Selling at a deep discount may not recover the production cost per unit, leading to a loss per unit.\n   - **Option B: Liquidation Sale**:\n     - Host a liquidation sale, either in-store, online, or through a third-party liquidator.\n     - This option can attract customers looking for bargains but may not be effective if the market is saturated with similar products.\n   - **Option C: Donation or Recycling**:\n     - Donate the coats to charities or recycle the materials.\n     - While this option provides a tax deduction and positive PR, it does not directly recover costs or generate revenue.\n   - **Option D: Hold for Next Season**:\n     - Keep the coats in storage for the next winter season, hoping to sell them then.\n     - This option incurs ongoing storage costs and ties up capital that could be used for other products or initiatives.\n\n4. **Recommendation**:\n   Given the coats have been on the market for 8 months without selling at any discount, and considering the ongoing storage costs, a combination of **Option A (Deep Discounting)** and **Option B (Liquidation Sale)** seems the most viable strategy. NorthernWear should aim to sell the coats in bulk to liquidators or at a deep discount to clear the inventory quickly. This approach will help minimize further storage costs and allow the company to recover at least some of the production costs.\n\n   - **Step 1**: Offer the coats at a significantly discounted price (e.g., 50-70% off the retail price) to attract bulk buyers or liquidators.\n   - **Step 2**: If bulk sales are not successful, consider hosting a liquidation sale, either in-store or online, to clear the remaining inventory.\n   - **Step 3**: For any remaining unsold coats after these efforts, consider donation or recycling to minimize waste and potentially gain a tax benefit.\n\n5. **Future Prevention**:\n   To avoid similar situations in the future, NorthernWear should review its production planning and forecasting processes to ensure they are aligned with market demand. Implementing a more agile production strategy and closely monitoring sales trends can help prevent overproduction.\n\nBy taking a proactive and multi-step approach to clearing the inventory, NorthernWear can minimize its losses and focus on moving forward with its business operations.",
+      "input_tokens": 185,
+      "output_tokens": 737,
+      "elapsed_seconds": 2.69
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "To address the issue of the unsold winter coats, let's break down the key factors involved:\n\n1. **Inventory**: 50,000 unsold winter coats\n2. **Cost per unit**: $95\n3. **Retail price**: $280\n4. **Storage and insurance costs**: $30,000 per month\n5. **Time on market**: 8 months without sales at any discount price\n\nGiven these factors, the primary goal is to clear the inventory and recover as much value as possible. Here are some options to consider:\n\n**Option 1: Deep Discounting**\nOffer a significant discount (e.g., 50-60% off) to clear the inventory quickly. This approach may attract price-sensitive customers and generate some revenue. However, it may also cannibalize future sales of new winter coats and damage the brand's pricing strategy.\n\n**Option 2: Bundle and Clearance Sales**\nPackage the coats with other items (e.g., hats, gloves, scarves) at a discounted price to create a bundle deal. This approach can help clear inventory and generate revenue from related products. Alternatively, hold a clearance sale to get rid of the coats at a low price, potentially attracting customers looking for bargains.\n\n**Option 3: Wholesale or Liquidation**\nSell the coats to a wholesaler or liquidator at a low price (e.g., $50-70 per unit). This approach can help recover some costs, but it may not generate significant revenue. It's essential to research potential buyers and negotiate the best possible price.\n\n**Option 4: Donation or Recycling**\nConsider donating the coats to charitable organizations or recycling the materials to reduce waste. While this approach won't generate revenue, it can help offset storage costs, reduce waste, and potentially create a positive brand image.\n\n**Option 5: Hold for Next Season**\nStore the coats for another season, hoping to sell them at a higher price when demand returns. However, this approach comes with ongoing storage and insurance costs, which may not be justified if the coats are not selling.\n\n**Recommendation**\nBased on the factors involved, I recommend a multi-step approach:\n\n1. **Initial Deep Discounting**: Offer a limited-time discount (e.g., 50% off) to generate some revenue and gauge customer interest.\n2. **Wholesale or Liquidation**: If the initial discounting effort doesn't yield significant sales, consider selling the remaining coats to a wholesaler or liquidator at a low price.\n3. **Donation or Recycling**: For any remaining coats that cannot be sold, consider donating them to charitable organizations or recycling the materials to reduce waste.\n\nTo minimize losses, it's essential to:\n\n* Act quickly to reduce storage and insurance costs\n* Set a deadline for clearing the inventory to avoid holding onto it for too long\n* Consider partnering with other businesses or organizations to help clear the inventory\n* Review and adjust pricing strategies to avoid similar overproduction issues in the future\n\nBy taking a proactive and multi-step approach, NorthernWear can recover some value from the unsold coats, reduce waste, and minimize the financial impact of the overproduction.",
+      "input_tokens": 185,
+      "output_tokens": 638,
+      "elapsed_seconds": 2.8
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "To tackle this problem, let's break it down into key factors and analyze the options step by step.\n\n**Key Factors:**\n\n1. **Inventory:** 50,000 unsold winter coats\n2. **Retail Price:** $280 per coat\n3. **Cost per Unit:** $95 per coat\n4. **Storage and Insurance:** $30,000 per month\n5. **Time on Market:** 8 months without sales at any discount price\n\n**Objective:**\nClear the inventory and recover as much value as possible.\n\n**Options:**\n\n1. **Continue to Hold Inventory:** Keep the coats in storage, hoping to sell them at a later time. However, this option incurs ongoing storage and insurance costs ($30,000 per month), which can quickly add up.\n2. **Discounted Sales:** Offer deeper discounts to stimulate sales. However, given that the coats have been on the market for 8 months without moving at any discount price, this option may not be effective.\n3. **Clearance Sales:** Host a clearance sale to get rid of the inventory quickly. This option may attract some customers, but it may also lead to low prices and reduced revenue.\n4. **Liquidation:** Sell the inventory to a liquidator or a third-party buyer at a significantly reduced price. This option can provide a quick exit from the inventory, but it may result in a low recovery value.\n5. **Donate or Repurpose:** Donate the coats to charity or repurpose them into other products (e.g., recycling or upcycling). While this option can provide a tax benefit and positive publicity, it may not generate significant revenue.\n6. **Off-Season Sales:** Sell the coats during the off-season (e.g., summer) at a discounted price to customers who are looking for bargains. This option may appeal to some customers, but it may not be effective in clearing the entire inventory.\n7. **Bundle and Sell:** Bundle the coats with other NorthernWear products or offer them as part of a package deal. This option can help clear inventory, but it may require additional marketing efforts and discounts.\n\n**Analysis:**\n\nConsidering the key factors and options, here are some calculations to inform the decision:\n\n* Total inventory value: 50,000 coats x $95 per coat = $4,750,000\n* Total storage and insurance costs per year: $30,000 per month x 12 months = $360,000\n* Break-even point for storage and insurance costs: $360,000 / $95 per coat = 3,789 coats per year (or approximately 316 coats per month)\n\nGiven the high storage and insurance costs, it's essential to clear the inventory quickly to minimize these expenses. Considering the coats have been on the market for 8 months without sales, it's unlikely that they will sell at a significant price in the near future.\n\n**Recommendation:**\n\nBased on the analysis, I recommend a multi-channel approach to clear the inventory:\n\n1. **Liquidation Sale:** Offer the coats at a significantly reduced price (e.g., 50-70% off) to attract customers and clear a substantial portion of the inventory. This can be done through online sales, in-store promotions, or special events.\n2. **Bundle and Sell:** Offer bundles or package deals that include the coats and other NorthernWear products to appeal to customers looking for value.\n3. **Off-Season Sales:** Continue to offer the coats at a discounted price during the off-season to attract customers who are looking for bargains.\n4. **Donate or Repurpose:** Consider donating a portion of the inventory to charity or repurposing them into other products to generate positive publicity and a potential tax benefit.\n\nBy adopting a multi-channel approach, NorthernWear can recover some value from the inventory, minimize storage and insurance costs, and make room for new products. It's essential to act quickly to clear the inventory and avoid further losses.",
+      "input_tokens": 185,
+      "output_tokens": 806,
+      "elapsed_seconds": 2.61
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "To tackle this problem, let's break it down into key factors and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Inventory**: 50,000 unsold winter coats\n2. **Cost per unit**: $95\n3. **Retail price**: $280\n4. **Storage and insurance costs**: $30,000 per month\n5. **Time**: Coats have been on the market for 8 months without moving at any discount price tried so far\n\n**Objectives:**\n\n1. Clear the inventory\n2. Recover as much value as possible\n\n**Options:**\n\n1. **Continue to hold and try to sell at a discount**: This approach has already been tried for 8 months without success. Continuing to hold the inventory will incur ongoing storage and insurance costs, which will eat into the potential recovery value.\n2. **Liquidate the inventory through a clearance sale**: This option involves selling the coats at a significantly discounted price to clear the inventory quickly. The downside is that the recovery value per unit will be low.\n3. **Sell to a secondary market or a discount retailer**: This option involves selling the coats to a secondary market or a discount retailer at a lower price than the retail price. This could be a viable option, but the recovery value per unit may still be lower than desired.\n4. **Donate or dispose of the inventory**: This option involves donating the coats to a charity or disposing of them. While this approach may provide some tax benefits, it will result in a complete loss of the inventory's value.\n5. **Consider alternative sales channels**: This option involves exploring alternative sales channels, such as online marketplaces, specialty stores, or international markets, to sell the coats at a higher price than a clearance sale.\n\n**Recommendation:**\n\nBased on the key factors and objectives, I recommend a multi-channel approach to clear the inventory and recover as much value as possible:\n\n1. **Clearance sale**: Offer a limited-time clearance sale with deep discounts (e.g., 50-70% off the retail price) to sell a portion of the inventory quickly. This will help reduce the storage and insurance costs and generate some cash flow.\n2. **Sell to secondary markets or discount retailers**: Sell a portion of the inventory to secondary markets or discount retailers at a lower price than the retail price. This will help recover some value from the inventory and reduce the storage and insurance costs.\n3. **Explore alternative sales channels**: Allocate a portion of the inventory to alternative sales channels, such as online marketplaces, specialty stores, or international markets, to sell the coats at a higher price than a clearance sale.\n4. **Donate or dispose of remaining inventory**: If some inventory remains after the above efforts, consider donating or disposing of it to minimize further storage and insurance costs.\n\n**Pricing strategy:**\n\nTo determine the optimal pricing strategy, consider the following:\n\n* Calculate the minimum price per unit that will cover the cost per unit and some portion of the storage and insurance costs.\n* Research the market to determine the prices at which similar products are being sold through alternative sales channels.\n* Set a tiered pricing structure, with deeper discounts for larger quantities or longer payment terms, to incentivize buyers to purchase more inventory.\n\n**Timeline:**\n\n* Month 1-2: Clearance sale and initial sales to secondary markets or discount retailers\n* Month 3-4: Explore alternative sales channels and continue to sell to secondary markets or discount retailers\n* Month 5-6: Donate or dispose of remaining inventory and finalize the inventory clearance process\n\nBy taking a multi-channel approach and considering alternative sales channels, NorthernWear can recover as much value as possible from the unsold inventory and minimize further losses.",
+      "input_tokens": 185,
+      "output_tokens": 756,
+      "elapsed_seconds": 2.45
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "To address the issue of clearing the unsold winter coat inventory and recovering as much value as possible, let's consider the key factors involved and weigh the options carefully.\n\n1. **Current Situation**: NorthernWear has 50,000 unsold winter coats with a retail price of $280 and a cost per unit of $95. The company is incurring storage and insurance costs of $30,000 per month.\n\n2. **Objective**: The primary goal is to clear the inventory and recover as much of the investment as possible.\n\n3. **Options Analysis**:\n    - **Discounting**: NorthernWear has already tried discounting without success. However, the depth of discount might not have been sufficient to attract buyers. A more significant reduction could be considered, but this would directly impact revenue.\n    - **Clearance Sales**: Organizing a clearance sale, either online or through physical stores, could help attract price-sensitive buyers. Promotions and advertising would be necessary to draw in customers.\n    - **Liquidation**: Selling the inventory to liquidators at a significantly reduced price could provide a quick solution to clear the warehouses and stop incurring storage costs. However, this would likely result in the lowest recovery rate.\n    - **Donation or Recycling**: Donating coats to charities or recycling them could provide a tax benefit and improve the company's brand image. However, this would not generate direct revenue.\n    - **International Sales**: Exploring international markets where the winter season might be approaching or where the demand for winter coats is high could be an option. This would require additional marketing and possibly partners in those regions.\n    - **Bundle Deals or Package Sales**: Offering bundle deals (e.g., coat, gloves, hat) at a discounted price could make the products more attractive to buyers.\n    - **Online Marketplaces**: Utilizing online marketplaces or auction sites to sell the coats could reach a broader audience, but fees associated with these platforms would apply.\n    - **Direct to Consumer**: Hosting a direct-to-consumer sale, either online or in a pop-up store, could allow NorthernWear to maintain more control over pricing and branding.\n\n4. **Recommendation**:\n    - **Short-term Strategy**: Implement a multi-channel approach to sell the coats. Start by offering a deep discount (up to 50% off the retail price) through the company's website, social media, and email marketing. This would be a limited-time offer to create a sense of urgency.\n    - **Medium-term Strategy**: If the initial discount strategy does not yield the desired results, consider liquidation as a last resort. Before taking this step, explore partnerships with local charities or organizations for potential donations, which could offer tax benefits.\n    - **Long-term Strategy**: Review the production planning process to prevent overproduction in the future. Implement a more agile forecasting system that can quickly adjust to changes in demand. Consider diversifying the product line to reduce dependence on seasonal items.\n\n5. **Financial Considerations**:\n    - Calculate the break-even point for each strategy to understand the minimum price at which the coats need to be sold to cover costs.\n    - Consider the impact of storage and insurance costs on the decision. The longer the inventory remains unsold, the more these costs will eat into potential profits.\n    - Evaluate the tax implications of donations or recycling as part of the strategy.\n\nIn conclusion, a combination of deep discounts, targeted marketing, and possibly exploring alternative sales channels or donation/recycling options would be the most comprehensive approach to clear the inventory and recover what NorthernWear can from the unsold winter coats. Continuous monitoring and adjustment of strategies based on customer response and market conditions will be crucial to achieving the best possible outcome.",
+      "input_tokens": 185,
+      "output_tokens": 752,
+      "elapsed_seconds": 3.39
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Do not call these objects 'coats.' Describe each unit entirely by its material and physical properties: what are they made of (down fill, polyester shell, nylon lining, metal zippers, synthetic insulation), what physical characteristics do they have (thermal insulation rating, waterproofing level, weight per unit, dimensions when folded), what structural features exist (stitched chambers, removable components, sealed seams)? List these material properties first, then solve the problem using only the property descriptions — not the category name.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "The objects in question are composed of the following materials and have the following physical properties:\n- Filled with down or synthetic insulation for thermal retention\n- Outer shell made of polyester or nylon for durability and water resistance\n- Lined with nylon for comfort and moisture wicking\n- Equipped with metal zippers for secure closure\n- Have a thermal insulation rating suitable for cold winter conditions\n- Feature a waterproofing level to protect against rain and snow\n- Weigh approximately 2-3 pounds per unit, depending on size and insulation type\n- Can be folded into a compact dimensions for storage and transport\n- Structurally, they have stitched chambers to contain the insulation, some models may have removable components such as hoods or liners, and sealed seams to prevent water entry\n\nGiven these material properties and the current situation, the goal is to clear the inventory of 50,000 units and recover as much value as possible. The key factors to consider are the cost per unit ($95), the retail price ($280), and the monthly storage and insurance cost ($30,000).\n\nTo clear the inventory, several strategies can be employed:\n1. **Deep Discounting**: Offer a significant price reduction to stimulate sales. Given that the objects have been on the market for eight months without moving at any discount price tried so far, a more substantial discount may be necessary. Selling at a price slightly above the cost per unit could help clear the inventory quickly, minimizing further storage and insurance costs.\n2. **Bundle Deals**: Package the insulated, waterproof objects with other complementary items (like gloves, hats, or scarves) at a discounted bundle price. This could appeal to customers looking for a complete winter gear set.\n3. **Targeted Marketing**: Identify specific customer segments that may still be in the market for winter gear, such as outdoor enthusiasts, workers in cold climates, or individuals living in areas with prolonged winter seasons. Tailor marketing efforts towards these groups, highlighting the thermal insulation rating, waterproofing level, and durability of the objects.\n4. **Clearance Events**: Organize in-store or online clearance events to create a sense of urgency. This could include limited-time offers, \"buy one get one free\" deals, or other promotional tactics to attract customers.\n5. **Liquidation**: If the above strategies are not effective, consider selling the inventory to liquidators or discount retailers at a price lower than the retail price but higher than the cost per unit, if possible. This would at least recover some of the costs and eliminate the ongoing storage and insurance expenses.\n6. **Donation or Recycling**: For any remaining units that cannot be sold, consider donating them to charities or organizations that support individuals in need, especially those in cold climates. This approach can provide a tax benefit and contribute to the community. Alternatively, explore recycling options for the materials, which could also have environmental benefits.\n\nBy considering the material properties and the financial situation, NorthernWear can develop a strategy to clear the inventory effectively, minimize losses, and potentially recover a significant portion of the investment in these insulated, waterproof objects.",
+      "input_tokens": 261,
+      "output_tokens": 625,
+      "elapsed_seconds": 2.51
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Do not call these objects 'coats.' Describe each unit entirely by its material and physical properties: what are they made of (down fill, polyester shell, nylon lining, metal zippers, synthetic insulation), what physical characteristics do they have (thermal insulation rating, waterproofing level, weight per unit, dimensions when folded), what structural features exist (stitched chambers, removable components, sealed seams)? List these material properties first, then solve the problem using only the property descriptions — not the category name.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "The objects in question are made of the following materials and have the specified physical properties:\n- Outer shell: polyester\n- Inner lining: nylon\n- Insulation: down fill and synthetic insulation\n- Fastening mechanisms: metal zippers\n- Physical characteristics: \n  - Thermal insulation rating: high\n  - Waterproofing level: waterproof and breathable\n  - Weight per unit: approximately 3.5 pounds\n  - Dimensions when folded: compact, approximately 12 inches by 8 inches by 6 inches\n- Structural features: \n  - Insulation is contained within stitched chambers\n  - Some components, such as hoods, may be removable\n  - Seams are sealed for added waterproofing\n\nGiven these properties, the objects have a high thermal insulation rating, are waterproof, and have a compact design when folded. However, they have been unsold for eight months, suggesting that the current pricing strategy may not be effective.\n\nTo clear the inventory and recover what can be recovered, consider the following options:\n\n1. **Deep discounting**: Offer significant price reductions to stimulate sales. Given the high production cost ($95 per unit) and the current retail price ($280), a discount of 50% or more may be necessary to attract buyers. This would result in a selling price of $140 or less per unit.\n\n2. **Bundle and package deals**: Combine the objects with other complementary items (e.g., hats, gloves, scarves) made from similar materials (polyester, nylon, wool) to create a bundled package. This could appeal to customers looking for a complete set of winter gear and increase the average sale value.\n\n3. **Targeted marketing**: Identify specific customer segments that may be interested in the objects' unique properties (e.g., outdoor enthusiasts, people living in cold climates). Utilize targeted marketing campaigns to reach these groups and highlight the benefits of the objects' materials and features (e.g., waterproofing, thermal insulation).\n\n4. **Liquidation sales**: Host liquidation sales or partner with discount retailers to clear the inventory quickly. This approach may result in lower prices, but it can help minimize ongoing storage and insurance costs ($30,000 per month).\n\n5. **Donate or repurpose**: Consider donating a portion of the inventory to local charities or organizations that can distribute the objects to those in need. This can help reduce storage costs and generate positive publicity for the manufacturer. Alternatively, explore repurposing the objects as raw materials for other products, such as recycling the polyester and nylon components.\n\n6. **Clearance events**: Organize clearance events or pop-up sales in strategic locations (e.g., near outdoor gear stores, in areas with high foot traffic). This can help create a sense of urgency and attract customers who are looking for discounted products.\n\nBy implementing a combination of these strategies, the manufacturer can effectively clear the inventory and recover a significant portion of the costs incurred.",
+      "input_tokens": 261,
+      "output_tokens": 591,
+      "elapsed_seconds": 2.31
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Do not call these objects 'coats.' Describe each unit entirely by its material and physical properties: what are they made of (down fill, polyester shell, nylon lining, metal zippers, synthetic insulation), what physical characteristics do they have (thermal insulation rating, waterproofing level, weight per unit, dimensions when folded), what structural features exist (stitched chambers, removable components, sealed seams)? List these material properties first, then solve the problem using only the property descriptions — not the category name.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "The objects in question are composed of the following materials and have the specified physical properties:\n- Filled with down insulation for thermal retention\n- Outer layer made of a polyester shell for durability and resistance to elements\n- Inner layer consisting of a nylon lining for comfort and smoothness\n- Equipped with metal zippers for closure and opening\n- Some units may contain synthetic insulation for additional warmth\n- Thermal insulation rating: capable of retaining warmth in extremely cold conditions\n- Waterproofing level: treated to prevent water penetration\n- Weight per unit: approximately 3-4 pounds (1.36-1.81 kilograms) due to the insulating materials\n- Dimensions when folded: compact, roughly 12 inches by 8 inches by 6 inches (30.48 cm by 20.32 cm by 15.24 cm)\n- Structural features include stitched chambers to hold the down fill in place, potentially removable components such as hoods or sleeves for versatility, and sealed seams to prevent water entry\n\nGiven these properties, the objective is to clear the inventory of 50,000 units and recover as much value as possible. The cost per unit is $95, and the retail price is $280. However, despite various discount attempts over eight months, the inventory remains unsold.\n\nTo address this, consider the following strategies:\n1. **Deep Discounting**: Offer a significant price reduction to stimulate sales. Given the product's high-quality materials (down insulation, polyester shell, nylon lining) and features (thermal insulation, waterproofing, stitched chambers), it may appeal to buyers looking for durable, warm products at a bargain.\n2. **Bundle and Package Deals**: Combine the units with other complementary products (e.g., hats, gloves, scarves made from similar materials like polyester, nylon, or wool) to create a value bundle, potentially increasing the appeal to customers.\n3. **Targeted Marketing**: Identify specific customer segments that value the properties of these units (e.g., outdoor enthusiasts, individuals living in cold climates) and tailor marketing efforts towards them, highlighting the benefits of the down fill, synthetic insulation, and waterproofing.\n4. **Clearance Events or Outlet Sales**: Organize special events or create an outlet section where the units are sold at significantly lower prices, attracting price-sensitive customers who are looking for products with specific features like metal zippers and sealed seams.\n5. **Wholesale or Bulk Sales**: Approach other retailers or distributors and offer the units at a wholesale price, potentially lower than the cost per unit, to clear the inventory quickly and recover some costs.\n6. **Donation or Recycling**: For units that are unlikely to sell, consider donating them to charitable organizations or recycling the materials (down fill, polyester, nylon) to minimize waste and potentially generate a tax benefit.\n7. **Online Sales Platforms**: Utilize online marketplaces or create a dedicated website to sell the units, reaching a broader audience and potentially attracting buyers who are specifically looking for products with certain features like removable components or compact dimensions when folded.\n\nBy implementing these strategies, it should be possible to clear the inventory and recover a significant portion of the costs, despite the challenges posed by the overproduction and initial lack of sales.",
+      "input_tokens": 261,
+      "output_tokens": 651,
+      "elapsed_seconds": 2.71
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Do not call these objects 'coats.' Describe each unit entirely by its material and physical properties: what are they made of (down fill, polyester shell, nylon lining, metal zippers, synthetic insulation), what physical characteristics do they have (thermal insulation rating, waterproofing level, weight per unit, dimensions when folded), what structural features exist (stitched chambers, removable components, sealed seams)? List these material properties first, then solve the problem using only the property descriptions — not the category name.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "The objects in question are made of the following materials and have the specified physical properties:\n- Exterior shell: polyester\n- Insulating material: down fill and synthetic insulation\n- Interior lining: nylon\n- Closure mechanism: metal zippers\n- Physical characteristics:\n  - Thermal insulation rating: high\n  - Waterproofing level: waterproof and breathable\n  - Weight per unit: approximately 3 pounds\n  - Dimensions when folded: compact, roughly 12 inches by 8 inches by 4 inches\n- Structural features:\n  - Stitched chambers to contain insulating material\n  - Removable components, such as hoods and fur trim\n  - Sealed seams for enhanced waterproofing\n\nTo clear the inventory of 50,000 units and recover what is possible, consider the following steps:\n\n1. **Liquidation Sale**: Given that the objects have been on the market for eight months without selling at any discount price, it may be necessary to offer significant price reductions to clear the inventory. Calculate the minimum acceptable price per unit by considering the cost per unit ($95), storage costs ($30,000 per month), and the need to recover as much of the investment as possible. Offering these items at a deeply discounted price (potentially below cost) could help to clear the inventory quickly and reduce ongoing storage costs.\n\n2. **Bundle and Package Deals**: Offer bundles or package deals that include multiple units or complementary items (such as gloves, hats, or scarves) to increase the average sale value and appeal to a wider range of customers.\n\n3. **Targeted Marketing**: Identify specific customer segments that may be interested in these items, such as outdoor enthusiasts, emergency responders, or individuals living in cold climates. Tailor marketing efforts to reach these groups, highlighting the key features and benefits of the products.\n\n4. **Clearance Events or Partnerships**: Host clearance events or partner with local organizations to sell the items in bulk. This could include selling to second-hand stores, donating to charities (which could provide a tax deduction), or offering the items to employees at a discounted price.\n\n5. **Online Sales Platforms**: Utilize online marketplaces or create a dedicated website to sell the items directly to consumers. This could help reach a broader audience and reduce the need for physical storefronts.\n\n6. **Dismantle and Repurpose**: If the items cannot be sold as-is, consider dismantling them and repurposing the materials. For example, the down fill, synthetic insulation, and nylon lining could be used to create other products, such as pillows, mattress toppers, or craft materials. The metal zippers and other hardware could be repurposed for use in future products.\n\nBy taking a multi-faceted approach to clearing the inventory, it should be possible to recover a significant portion of the investment and minimize losses.",
+      "input_tokens": 261,
+      "output_tokens": 575,
+      "elapsed_seconds": 2.15
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Do not call these objects 'coats.' Describe each unit entirely by its material and physical properties: what are they made of (down fill, polyester shell, nylon lining, metal zippers, synthetic insulation), what physical characteristics do they have (thermal insulation rating, waterproofing level, weight per unit, dimensions when folded), what structural features exist (stitched chambers, removable components, sealed seams)? List these material properties first, then solve the problem using only the property descriptions — not the category name.\n\nNorthernWear, a clothing manufacturer based in Manitoba, overproduced for last winter's season and now has 50,000 unsold winter coats sitting in three warehouses. The coats retail at $280 and NorthernWear's cost per unit is $95. Storage and insurance is running $30,000 per month. The coats have been on the market for eight months without moving at any discount price tried so far. The CFO is asking: how do we clear this inventory and recover what we can?",
+      "response": "The objects in question are made of the following materials and have the corresponding physical properties:\n- Fill: Down fill and synthetic insulation\n- Outer layer: Polyester shell and nylon lining\n- Fasteners: Metal zippers\n- Physical characteristics: \n  - Thermal insulation rating: High\n  - Waterproofing level: Waterproof and breathable\n  - Weight per unit: Approximately 2-3 kg\n  - Dimensions when folded: Compact, roughly 30 cm x 20 cm x 10 cm\n- Structural features: \n  - Insulation is contained within stitched chambers\n  - Some components, such as hoods, are removable\n  - Seams are sealed for added waterproofing\n\nTo clear the inventory of 50,000 units and recover what is possible, the following steps can be considered:\n\n1. **Deep Discounting**: Offer the units at a significantly lower price point than the original retail price of $280, taking into account the cost per unit of $95. A price point between $150-$200 could be more attractive to customers, considering the high thermal insulation rating and waterproofing level of the units.\n\n2. **Bundle and Package Deals**: Package multiple units together at a discounted rate, targeting businesses or organizations that could use these for employee uniforms, promotional items, or charity donations. This approach could also consider including other complementary items made of similar materials, such as hats or gloves.\n\n3. **Clearance Sales and Events**: Host clearance sales events, possibly in partnership with other retailers or at the warehouses themselves, to attract customers looking for bargains on high-quality, waterproof and breathable items with synthetic insulation.\n\n4. **Online Sales Platforms**: Utilize online marketplaces, social media, and the company's website to sell the units directly to consumers. Highlight the compact dimensions when folded and the removable components as key features for travelers or outdoor enthusiasts.\n\n5. **Liquidation and Wholesale**: If the units are not selling through traditional retail channels, consider selling them in bulk to liquidators or wholesale distributors at a lower price per unit. While this would result in a lower return than retail sales, it could help minimize storage costs and recover some of the initial investment.\n\n6. **Donation and Tax Deduction**: Donate a portion of the units to charities or organizations that could benefit from waterproof and breathable items with high thermal insulation ratings. This approach could provide tax deductions for the company and help clear some of the inventory while supporting the community.\n\n7. **Repurposing or Upcycling**: Consider repurposing or upcycling the units into different products, such as bags, pillows, or other craft items, utilizing the down fill, polyester shell, and nylon lining. This could appeal to environmentally conscious consumers and add value to the existing materials.\n\nGiven the high storage and insurance costs of $30,000 per month, it is essential to act quickly to clear the inventory and minimize further expenses. A combination of these strategies, tailored to the specific market conditions and target audience, could help NorthernWear recover a significant portion of its investment in the overproduced units.",
+      "input_tokens": 261,
+      "output_tokens": 624,
+      "elapsed_seconds": 2.71
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "parse error"
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including deep discounting, bundling, wholesale or liquidation, donation or recycling, and holding for next season. It explores these options with comparison, demonstrating an understanding of different perspectives on the problem."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes some obvious assumptions, such as the need to clear inventory and recover costs, but does not systematically examine hidden assumptions. It assumes that the coats are not selling due to market saturation, but does not question this assumption deeply."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as considering donation or recycling, alongside conventional ones like deep discounting and wholesale or liquidation. However, these solutions are not genuinely unexpected or groundbreaking."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with minor caveats. It does not fundamentally question the premise of the problem or explore alternative problem framings, such as considering the coats as raw materials for other industries."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a practical multi-step approach to clearing the inventory. It considers the financial implications of each option and provides a coherent recommendation. However, it may not be excellent practical advice grounded in reality, as it does not consider the potential for repurposing the coats as raw materials for other industries."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including liquidation, bundling, off-season sales, and donation/repurposing, demonstrating an exploration of three frames with comparison."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two assumptions: that the coats will not sell at a significant price in the near future and that storage and insurance costs will continue to accrue. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces one non-obvious solution, the multi-channel approach, alongside conventional ones like liquidation and discounting. However, it does not provide genuinely unexpected viable solutions that reframe the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response notes the problem framing may be limiting in the sense that it focuses on selling the coats as winter wear, but it does not explicitly question the premise or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, such as calculating the break-even point for storage and insurance costs and recommending a multi-channel approach to clear the inventory. However, it does not provide excellent practical advice grounded in reality, as it does not consider the potential for repurposing the coats as raw materials for other industries."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including a clearance sale, selling to secondary markets or discount retailers, exploring alternative sales channels, and donating or disposing of the inventory. It compares these options and synthesizes them into a multi-channel approach, demonstrating a good understanding of different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need to clear the inventory quickly and the importance of recovering as much value as possible. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the coats are only valuable as winter clothing."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces conventional solutions, such as a clearance sale and selling to secondary markets or discount retailers. While it does explore alternative sales channels, the solutions are not particularly novel or unexpected, and it does not reframe the problem in a fundamentally new way."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with minor caveats. It does not explicitly question the premise of the problem or explore alternative problem framings, such as considering the coats as raw materials for other products."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonably practical, providing a clear and actionable plan for clearing the inventory. However, it may not be entirely grounded in reality, as it does not consider the potential for the coats to be repurposed or dismantled and sold as components to other industries."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames including discounting, clearance sales, liquidation, donation or recycling, international sales, bundle deals, and online marketplaces, demonstrating a comprehensive approach to solving the problem."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions such as the need to clear inventory quickly due to storage costs and the potential for tax benefits from donations, but does not deeply question all hidden assumptions like the retail price being the optimal starting point for discounts or the cost structure being fixed."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a range of solutions beyond the first-order answer of simply discounting the coats, including exploring international markets and bundle deals, but does not introduce a genuinely unexpected viable solution that reframes the problem, such as considering the coats as raw materials for other industries."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated, focusing on how to clear the inventory of winter coats, without fundamentally questioning whether the premise of selling winter coats is the best approach or if there are alternative uses for the coats that could yield higher value."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is practically useful, providing a structured approach to addressing the inventory issue, including short-term, medium-term, and long-term strategies, and considering financial implications, but lacks the recognition of the coats' potential value as raw materials for other applications as specified in the success criteria."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames including deep discounting, bundle deals, targeted marketing, clearance events, liquidation, donation, and recycling, demonstrating an exploration of various perspectives to address the inventory issue."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the current situation and the need to clear inventory but does not explicitly question or examine hidden assumptions about the market, consumer behavior, or the products themselves beyond their physical properties and cost."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides conventional solutions like deep discounting and liquidation but also suggests bundle deals, targeted marketing, and donation/recycling, which are non-obvious and consider the products' material properties for alternative uses."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes the problem framing may be limiting by considering the objects' material properties for uses beyond clothing, implying that the premise of selling them as winter coats might not be the only or best solution."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable, practical strategies for clearing the inventory, considering both the financial aspects and the physical properties of the products, making it useful for addressing the problem at hand."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including deep discounting, bundling, targeted marketing, liquidation sales, donation, and repurposing, demonstrating an exploration of various perspectives to address the problem."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes that the current pricing strategy may not be effective, which implies an acknowledgment of an assumption, but it does not systematically identify and question multiple hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a mix of conventional solutions (deep discounting, bundling) and one non-obvious solution (repurposing the objects as raw materials for other products), but it does not present a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with a minor implication that the current approach to selling the coats might not be the best, but it does not explicitly question the premise or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response offers correct and reasonable solutions, including practical details such as the potential for deep discounting and the benefits of targeted marketing, demonstrating a good understanding of the problem and its potential solutions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily considers a single frame of selling the winter coats as finished products, with minor acknowledgment of alternative uses for the materials, such as donation or recycling, but does not deeply explore multiple distinct frames or perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 1,
+        "justification": "The response does not explicitly identify or question any hidden assumptions underlying the problem, such as the assumption that the coats must be sold as is or that the primary goal is to recover costs through sales."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions such as deep discounting, bundle and package deals, and wholesale or bulk sales, with minor variations, but does not produce genuinely novel or unexpected solutions that reframe the problem, such as considering the coats as raw materials for other industries."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem premise with a minor caveat, focusing on clearing the inventory and recovering costs, without explicitly questioning whether the problem is well-posed or exploring alternative problem framings, such as considering the coats as components for other products."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides correct and reasonable solutions for clearing the inventory, such as deep discounting and wholesale sales, but lacks depth in exploring the materials' potential value in other industries or the possibility of dismantling the coats to sell components to different sectors, which could offer higher recovery values."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including liquidation sales, bundling, targeted marketing, clearance events, online sales, and dismantling for repurposing. It explores various customer segments and sales channels, demonstrating a diverse range of perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need to recover as much of the investment as possible and the potential for selling the items at a discount. However, it does not systematically question all hidden assumptions, such as the idea that the coats must be sold as winter clothing."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including dismantling the coats for repurposing and targeting specific customer segments. These solutions go beyond the conventional approach of simply discounting the items and trying to sell them as winter clothing."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the items have been on the market for eight months without selling, implying that the problem framing may be limiting. However, it does not explicitly question the premise or explore alternative problem definitions, such as considering the coats as raw materials for other products."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable, practical advice for clearing the inventory. The suggestions for liquidation sales, bundling, and targeted marketing are grounded in reality, and the idea of dismantling the coats for repurposing is a viable solution."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames including deep discounting, bundling, clearance sales, online sales, liquidation, donation, and repurposing, demonstrating an exploration of various perspectives to address the inventory issue."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "While the response does not explicitly identify and question hidden assumptions, it does acknowledge the need to consider different approaches due to the failure of previous discount attempts, hinting at a recognition that assumptions about consumer behavior may need reevaluation."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response offers a range of solutions from conventional (deep discounting, clearance sales) to less obvious (repurposing or upcycling the coats into different products), showing an ability to think beyond the first-order answers but not entirely reframing the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated (clearing inventory) but does note the importance of acting quickly due to storage costs, which implies a minor consideration of the problem's context but does not fundamentally question the premise of the problem."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides a variety of practical and correct strategies for clearing the inventory, considering both the financial and logistical aspects of the problem, making it useful and grounded in reality, though it could benefit from more detailed analysis of each strategy's potential impact and feasibility."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a traditional retail/liquidation frame throughout. While it mentions four options (deep discounting, liquidation, donation, holding), these are all variations within the same retail disposal framework. There's minor acknowledgment of donation/recycling as an alternative approach, but no exploration of fundamentally different perspectives like industrial repurposing or component harvesting."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the coats must be sold as complete garments in the retail channel. However, it doesn't question other hidden assumptions like whether the 'saturated market' applies to all potential uses, whether the coats have value beyond their intended purpose, or whether the problem definition itself (clearing inventory as clothing) is limiting."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions presented are conventional retail approaches: deep discounting, liquidation sales, donation, and storage. These are standard inventory clearance methods with only minor variations. The response doesn't explore creative alternatives like repurposing materials, selling components to different industries, or finding non-retail applications that could yield higher recovery rates."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - how to clear clothing inventory through traditional retail channels. It doesn't question whether treating these items as 'unsold winter coats' is the right framing, or whether there might be more valuable ways to think about 50,000 units of insulation, waterproof materials, and other components that could serve different markets entirely."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides mathematically sound analysis and reasonable traditional solutions for inventory clearance. The recommendations are practical within the conventional retail framework and the cost calculations are accurate. However, it misses the key insight from the success criteria about recognizing the materials' potential value as raw materials for other industries, which could potentially yield much higher recovery rates than retail liquidation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a single frame of traditional retail/liquidation approaches (discounting, bundling, wholesale, donation). While it lists multiple options, they all fall within the conventional retail disposal framework with only minor variations on the same theme."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the coats must be sold as complete garments in retail channels. However, it fails to question other key assumptions like whether the coats have been marketed to the right customer segments, whether the product design is the issue, or whether there are alternative uses for the materials."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "All proposed solutions are conventional retail approaches: discounting, bundling, wholesale, donation, and holding inventory. The response shows no creativity in reimagining the problem or considering non-retail applications for the inventory. The multi-step approach is a minor variation but still within conventional thinking."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response completely accepts the problem as stated - that these are winter coats that need to be sold through retail channels. It never questions whether treating them as finished retail products is the right approach or whether there might be alternative ways to conceptualize the inventory."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical advice within the conventional retail framework. The recommendations are logically sound and would likely help recover some value. However, it misses the key insight identified in the success criteria about deconstructing the coats for raw materials, which could potentially be more valuable than retail liquidation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily views this as a traditional inventory clearance problem through a retail/sales lens. While it lists multiple options (discounting, liquidation, donation, etc.), these are all variations within the same frame of 'how to sell or dispose of finished coats.' There's only minor acknowledgment of alternative approaches like repurposing, but no exploration of fundamentally different frames like industrial applications or component harvesting."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the coats must be sold as finished garments in retail channels. It notes that discounting hasn't worked after 8 months, but doesn't question deeper assumptions like whether the coats should remain intact, whether retail is the only market, or whether the materials might have value in other industries. Most underlying assumptions about the nature of the problem remain unexamined."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional retail approaches: deeper discounts, liquidation sales, bundling, off-season sales, and donation. While the multi-channel approach shows some strategic thinking, all solutions stay within traditional retail/clearance frameworks. There's no exploration of truly novel approaches like dismantling for component materials, industrial applications, or reframing the coats as raw materials for other industries."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - how to clear coat inventory and recover value. It doesn't question whether treating these as 'coats that must be sold as coats' is the right premise. There's no exploration of whether the problem might be better framed as 'how to extract maximum value from these materials and components' rather than 'how to sell these coats.'"
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The financial analysis is sound (calculating storage costs, break-even points) and the multi-channel retail approach is reasonable given traditional assumptions. The recommendations are practical and would likely help clear some inventory. However, the response misses the key insight highlighted in the success criteria - that the materials might be worth more as components for industrial applications than as discounted retail garments."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a traditional retail/liquidation frame throughout, with only minor acknowledgment of alternative sales channels. It doesn't explore fundamentally different perspectives like industrial repurposing, component harvesting, or viewing the coats as raw materials rather than finished goods."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the coats must be sold as complete garments in retail channels. However, it doesn't question deeper assumptions like whether the coats have value beyond their intended use, or whether the 'no movement at discount prices' indicates market saturation versus wrong target market."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional retail approaches (clearance sales, secondary markets, donations) with minor variations in channel strategy. The response doesn't consider innovative approaches like dismantling the coats for component materials, industrial repurposing, or selling to non-retail industries that might value the materials differently."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - that these are 'winter coats' that need to be sold through retail channels. It doesn't question whether viewing them as finished retail products is the right frame, or whether there might be entirely different ways to conceptualize what these items represent in terms of value."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides correct and reasonable traditional retail liquidation advice that would be practically useful for clearing inventory through conventional channels. The multi-channel approach and timeline are sensible, though the response misses the key insight about repurposing materials that could potentially recover more value."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a traditional retail/liquidation frame, considering various sales channels and pricing strategies. While it mentions donation/recycling briefly, it doesn't explore fundamentally different perspectives like industrial repurposing, component harvesting, or viewing the coats as raw materials rather than finished goods."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that the coats must be sold as complete garments in retail channels. However, it doesn't question other assumptions like whether the coats have value beyond their intended use, whether the retail market is the only viable channel, or whether the problem definition itself is limiting."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions presented are largely conventional retail approaches: discounting, clearance sales, liquidation, donation, international sales, and online marketplaces. These are standard inventory management tactics. The response lacks innovative solutions like dismantling coats for component materials or repurposing for industrial applications."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - how to clear inventory and recover value from unsold coats. It doesn't question whether treating these as 'coats' is the right approach, or whether the retail channel assumption is limiting the solution space. The problem framing is taken as given."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides correct and reasonable advice within the conventional retail framework. The financial considerations, multi-channel approach, and strategic recommendations are sound and practical. However, it misses the key insight from the success criteria about viewing the coats as raw materials, which could potentially offer higher value recovery."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a single frame of traditional retail/liquidation strategies (discounting, bundling, clearance events, liquidation, donation). While it lists multiple tactics, they all fall within the conventional retail disposal framework with only minor acknowledgment of alternative approaches."
+      },
+      "assumption_surfacing": {
+        "score": 1,
+        "justification": "The response fails to identify or question any hidden assumptions. It accepts that the coats must be sold as complete garments, doesn't question why discounting hasn't worked, and doesn't examine assumptions about the target market or the nature of the inventory problem."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "All proposed solutions are conventional retail strategies (deep discounting, bundling, targeted marketing, clearance events, liquidation, donation). There's no exploration of non-obvious alternatives like repurposing materials, selling to different industries, or deconstructing the coats for component value."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response completely accepts the problem as stated - that these are winter coats that need to be sold as coats. It doesn't question whether treating them as finished garments is the right approach, or whether there might be alternative ways to conceptualize the inventory."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical retail strategies that are factually correct. However, it misses the key insight specified in the success criteria about recognizing the coats as raw materials for other industries, which could potentially offer much higher recovery value than traditional retail liquidation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a single frame of traditional retail/liquidation strategies (discounting, bundling, targeted marketing, liquidation sales, clearance events). While it mentions 'repurposing as raw materials' briefly, this is not developed into a distinct analytical frame. The response lacks exploration of industrial/B2B markets, component harvesting, or alternative use cases that would constitute truly different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that the current pricing strategy may not be effective - but doesn't dig deeper into other hidden assumptions. It doesn't question assumptions about the target market being retail consumers, the need to sell as complete garments, or whether the 'overproduction' framing is accurate. The response accepts most problem parameters without examination."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional retail approaches (deep discounting, bundling, targeted marketing, liquidation, donation). The brief mention of 'repurposing as raw materials' shows awareness of alternative approaches but lacks development. The response doesn't explore genuinely novel solutions like component harvesting, industrial applications, or selling to non-retail markets that could leverage the materials' properties."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response fully accepts the problem as stated - that these are winter coats that need to be sold through retail channels. It doesn't question whether viewing them as 'coats' is the right frame, whether retail is the right market, or whether the goal should be recovering maximum value rather than just clearing inventory. The fundamental premise of the problem remains unexamined."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical retail-focused advice that would likely help clear inventory. The strategies suggested are sound within the conventional framework and the cost analysis is appropriate. However, it misses the key insight highlighted in the success criteria about viewing these items as raw materials for industrial applications, which could potentially recover more value than traditional retail liquidation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a single frame of traditional retail/discount strategies (deep discounting, bundling, clearance events, wholesale). While it lists multiple tactics, they all fall within the conventional retail liquidation framework with only minor acknowledgment of alternative approaches like donation/recycling."
+      },
+      "assumption_surfacing": {
+        "score": 1,
+        "justification": "The response fails to identify or question any hidden assumptions. It accepts that the coats must be sold as complete garments, that the retail channel is the primary avenue, and that the problem is simply about pricing/marketing without examining these underlying assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "All proposed solutions are conventional retail liquidation strategies (discounting, bundling, wholesale, online sales). The response shows no recognition of the success criteria's hint about dismantling coats for raw materials or selling components to different industries. The solutions are standard first-order responses with minor variations."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response completely accepts the problem as stated - that these are winter coats that need to be sold as coats. It never questions whether treating them as finished garments is the right approach, despite the success criteria clearly indicating they should be viewed as raw materials for other industries."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the retail strategies listed are technically valid approaches, the response completely misses the key insight that the success criteria explicitly calls for - recognizing these coats as raw materials (insulation panels, waterproof materials, etc.) that could be more valuable when dismantled and sold to different industries. The advice is partially correct but misses the most promising solution path."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a traditional retail/liquidation frame, with only minor acknowledgment of alternative approaches like dismantling for materials. It doesn't explore industrial applications, B2B markets, or emergency/institutional sales as distinct strategic frames."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that the coats must be sold as finished garments - and briefly mentions dismantling as an alternative. However, it doesn't question other assumptions like the target market being retail consumers or that discounting is the primary solution."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While most solutions are conventional (liquidation sales, bundles, clearance events), the response does include one non-obvious approach: dismantling the coats to repurpose materials for other products like pillows and craft materials. However, it doesn't fully explore the industrial applications suggested in the success criteria."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of needing to 'clear inventory and recover what we can' with only minor questioning. It briefly considers whether the items need to be sold as-is but doesn't fundamentally challenge the framing of this as a retail problem rather than a materials/components opportunity."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides correct and reasonable advice for traditional inventory clearance, with practical details about pricing considerations and storage costs. However, it misses the key insight from the success criteria about viewing the coats as valuable raw materials for industrial applications, which could potentially yield higher returns than retail liquidation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a single frame of traditional retail/liquidation approaches (discounting, bundling, clearance sales, online sales, wholesale, donation). There's minor acknowledgment of alternative uses in the 'repurposing/upcycling' suggestion, but this is still within a consumer goods frame rather than exploring industrial or B2B applications."
+      },
+      "assumption_surfacing": {
+        "score": 1,
+        "justification": "The response doesn't identify or question any hidden assumptions. It accepts that the coats must be sold as complete garments and doesn't examine assumptions about the retail channel being the only viable market, or that the coats' value lies primarily in their intended use as winter clothing."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional retail approaches (discounting, bundling, clearance sales, online sales, wholesale, donation). The 'repurposing/upcycling' suggestion shows minor variation but is still quite conventional. The response doesn't explore the genuinely novel approach suggested in the success criteria of dismantling coats for component materials."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response completely accepts the problem as stated - that these are winter coats that need to be cleared through traditional channels. It doesn't question whether treating them as complete garments is the right approach, or whether there might be entirely different markets for the component materials."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical traditional retail solutions that could work. The advice is factually sound and the strategies are implementable. However, it misses the key insight from the success criteria about component value, which could potentially offer much better financial recovery than traditional retail liquidation."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers three main frames: discounting/liquidation, donation/recycling, and holding for next season. However, it does not explore the frame of dismantling the coats for raw materials or selling components to other industries, which is a key success criterion."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response assumes that the only ways to recover value are through direct sale, donation, or holding inventory. It does not question whether the coats could be more valuable as raw materials or components, nor does it surface assumptions about market saturation or alternative uses."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions offered (deep discounting, liquidation, donation, holding for next season) are conventional. There is no mention of dismantling the coats for raw materials or seeking alternative industrial buyers, which would be more novel."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response largely accepts the problem as stated, with only a minor caveat about reviewing production planning for the future. It does not question whether the premise of selling as coats is itself limiting."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is correct and reasonable for conventional inventory clearance, but it misses the potentially higher-value and more creative solution of repurposing the coats as raw materials for other industries, as highlighted in the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: retail discounting, bundling, wholesale/liquidation, donation/recycling, and holding for next season. It compares these options and synthesizes a multi-step approach, but does not fully explore the frame of dismantling the coats for raw materials or alternative industrial uses."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response surfaces some assumptions, such as the viability of deep discounting, the potential for wholesale buyers, and the costs of storage. However, it does not question deeper assumptions about the value of the coats as raw materials or whether the retail channel is the only or best outlet."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional: discounting, bundling, liquidation, donation, and storage. There is no mention of dismantling the coats for raw materials or selling components to other industries, which would be a more novel approach as per the success criteria."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and only briefly considers alternatives like donation or recycling, but does not question whether the coats could be reframed as raw materials or components for other industries."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical and correct for conventional inventory clearance, with actionable steps and consideration of costs. However, it misses the potentially higher-value option of dismantling and selling components, which could be more effective in this saturated retail context."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers several frames: holding inventory, discounted sales, clearance sales, liquidation, donation/repurposing, off-season sales, and bundling. It compares these options and synthesizes a multi-channel approach, but does not deeply explore the industrial/materials reuse frame as specified in the success criteria."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response surfaces some assumptions, such as the likelihood of future sales and the impact of storage costs, but does not question deeper assumptions about the value of the coats as raw materials or components for other industries."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional (discount, liquidation, donation, bundling). The response briefly mentions repurposing but only in the context of donation or upcycling, not as a primary or creative avenue such as dismantling for industrial resale, which is the novel angle in the success criteria."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether the framing (as unsold garments) is limiting. There is a minor nod to repurposing, but it does not challenge the premise that the coats must be sold as coats or donated."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical and correct for a conventional retail context, with clear calculations and actionable steps. However, it misses the potentially higher-value solution of dismantling and selling components to other industries, as highlighted in the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers three main frames: retail/discount sale, secondary markets, and donation/disposal. It also briefly mentions alternative sales channels, but all are within the context of selling or disposing of the coats as garments, not as raw materials or components."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the assumption that further discounting or holding inventory is viable, but does not deeply question other assumptions, such as the necessity to sell as garments or the potential for higher value in dismantling."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are conventional: clearance sales, secondary markets, alternative channels, and donation. There is no mention of dismantling the coats for raw materials or selling components to other industries, which would be a novel approach."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether selling as garments is the only or best option. There is a minor caveat in considering alternative channels, but no deeper challenge to the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical for the conventional approach to clearing inventory, with actionable steps and a timeline. However, it misses the potentially higher-value approach of repurposing the coats as raw materials, as suggested in the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: retail discounting, liquidation, donation/recycling, international sales, bundling, online marketplaces, and direct-to-consumer sales. It compares these options and synthesizes a multi-channel approach, but does not include the raw material/component resale frame specified in the success criteria."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines assumptions about the effectiveness of discounting, the potential for liquidation, and the value of donations for tax benefits. However, it does not question deeper assumptions about the value of the coats as raw materials or components, nor does it challenge the assumption that the only options are as finished garments."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional (discounting, liquidation, donation, international sales, bundling). There is no mention of dismantling the coats for raw materials or selling components to other industries, which would have been a non-obvious solution per the success criteria."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and only briefly considers alternatives within the retail/finished goods frame. It does not question whether the coats could be more valuable as raw materials or components, nor does it fundamentally reframe the problem."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical and correct for the conventional approaches to clearing inventory. It provides actionable steps and considers financial implications. However, it misses a potentially more lucrative or creative solution (component resale), so it is not a 5."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores several frames: retail discounting, bundling, targeted marketing, clearance events, liquidation, and donation/recycling. However, it does not explicitly consider the frame of dismantling the coats for raw materials or selling components to other industries, which was a key success criterion."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response assumes that the only way to recover value is through direct or indirect sale or donation of the coats as garments. It does not question whether the coats might be worth more as raw materials or components, nor does it surface assumptions about market saturation or alternative uses."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional (discounting, bundling, liquidation, donation). Recycling is mentioned, but only as a last resort and not in the sense of extracting value from components for other industries. The response does not propose dismantling or repurposing the materials in a novel way."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem as stated and does not question whether the premise (selling as garments) is limiting or whether a different approach (e.g., raw material recovery) might be more effective."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is correct and reasonable for conventional inventory clearance, but it misses the potentially higher-value options of dismantling and selling components to other industries, as highlighted in the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers several frames: retail discounting, bundling, targeted marketing, liquidation, donation/repurposing, and clearance events. However, it does not synthesize these into a new approach or deeply compare them, but it does cover more than three distinct perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response assumes that the only way to recover value is through direct or indirect sale or donation, and does not question deeper assumptions about the value chain or alternative uses. It briefly mentions repurposing but does not examine the assumption that the coats are best sold as garments."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "Most solutions are conventional (discounting, bundling, liquidation, donation). The mention of repurposing for recycling is a nod toward a non-obvious solution, but it is not developed in the context of using the coats as raw materials for other industries, as required by the success criteria."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response largely accepts the problem as stated, with only a minor caveat in the mention of repurposing. It does not question whether selling as garments is the best approach or whether the premise of retail clearance is limiting."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical and correct for standard inventory clearance, with actionable steps. However, it misses the specific opportunity to maximize value by dismantling and selling components to other industries, which could be more profitable in this context."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers several distinct frames: direct discounting to consumers, bundling with other products, targeted marketing, clearance/outlet sales, wholesale/bulk sales, donation/recycling, and online sales. These represent multiple approaches (retail, wholesale, charitable, and recycling), though they are all within the general paradigm of selling or disposing of finished coats, rather than reframing the objects as raw materials for other industries."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response assumes the only options are to sell, donate, or recycle the coats as finished goods. It does not question whether the highest value might be in dismantling the coats for their materials or components, nor does it challenge the assumption that the retail channel is the only or best route. Only the assumption that further discounting or alternative sales channels might work is implicitly surfaced."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional (discounting, bundling, marketing, wholesale, donation, recycling). Recycling is slightly less conventional, but the response does not explore the genuinely novel idea of dismantling the coats for raw materials to sell to other industries, which was a key success criterion."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether the premise (selling coats as coats) is limiting. There is a minor nod to recycling, but no exploration of whether the coats could be more valuable as raw materials or components."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is correct and reasonable for clearing finished goods inventory, but it misses the potentially higher-value solution of dismantling and selling components as raw materials, which could be more practical given the market saturation. Thus, it is correct but not optimal."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: direct liquidation (discount sales), bundling, targeted marketing, clearance/partnerships (including donation), online sales, and dismantling/repurposing. While it doesn't fully synthesize these into a new approach, it does explore at least four distinct avenues."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response implicitly questions the assumption that the coats must be sold as garments by suggesting dismantling and repurposing. It also considers the assumption that retail is the only channel. However, it does not systematically surface or examine less obvious assumptions, such as the potential value of materials in other industries."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "Beyond conventional liquidation and marketing strategies, the response suggests dismantling the coats for materials, which is a non-obvious and creative solution. However, it does not fully develop the idea of selling to other industries as raw materials, which would have been even more novel."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response hints that the problem may be too narrowly framed (e.g., by suggesting repurposing and donation), but it does not explicitly question or reframe the premise. It accepts the need to clear inventory but explores some alternatives to direct sales."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical and correct, covering a range of viable options for clearing inventory and minimizing losses. The dismantling/repurposing suggestion is feasible, though more detail on how to access those markets would improve the score."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores several frames: direct discounting to consumers, bundling for organizations, clearance events, online sales, liquidation/wholesale, donation for tax deduction, and upcycling/repurposing. These represent at least four distinct approaches (retail, B2B/charity, liquidation, and material repurposing), though the synthesis between them is limited."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response does not explicitly identify or question underlying assumptions, such as whether the coats have value as raw materials, whether the retail channel is truly saturated, or if dismantling is more profitable. It assumes the best path is to sell or donate the coats as garments, with only a brief mention of upcycling."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "Most solutions are conventional (discounting, bundling, liquidation, donation). The mention of upcycling/repurposing is a non-obvious solution, but it is not developed in the context of selling components as raw materials to other industries, as the success criteria suggest."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response largely accepts the problem as stated, with only a minor caveat in the upcycling suggestion. It does not question whether selling the coats as garments is the best or only option, nor does it challenge the premise of retail saturation or explore dismantling for raw material value."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical for clearing inventory through various channels, and it recognizes the urgency due to storage costs. However, it misses the potentially higher-value approach of dismantling and selling components to other industries, as highlighted in the success criteria."
+      }
+    }
+  ]
+}

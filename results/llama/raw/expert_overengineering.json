@@ -1,0 +1,798 @@
+{
+  "problem_id": "expert_overengineering",
+  "problem_title": "The Expert Overengineering Problem",
+  "category": "einstellung",
+  "paths_applied": [
+    "path_2_decompose_to_generic",
+    "path_9_step_outside"
+  ],
+  "theory_connection": "Dane (2010): cognitive entrenchment — expertise creates schema stability that resists appropriate simplification. LLMs trained on enterprise architecture content default to enterprise patterns regardless of scale. Multi-perspective reasoning (Kross & Ayduk, 2017) breaks the single-expert frame.",
+  "expected_vanilla_failure": "Proposes microservices, REST API, React frontend, PostgreSQL/MongoDB, Docker, possibly Kubernetes — enterprise architecture for a problem that could be a spreadsheet or a single SQLite database.",
+  "success_criteria": "Recommends something proportional to the actual scale: a simple SQLite database with a basic web app, a spreadsheet with macros, or even an off-the-shelf library management tool. Explicitly notes that 50 events/day does not need distributed systems.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "**System Requirements and Constraints**\n\nTo design a suitable software architecture for the community library system, let's first summarize the key requirements and constraints:\n\n1. **Number of books**: 500\n2. **Number of branch locations**: 3\n3. **Number of daily checkouts**: 50 (across all branches)\n4. **Number of users**: 2 librarians\n5. **Functionalities**:\n\t* Track book inventory\n\t* Handle checkouts and returns\n\t* Send overdue notices via email\n\n**System Design**\n\nBased on the requirements, I recommend a simple, web-based application with a centralized database. Here's a high-level overview of the system architecture:\n\n### 1. Database Design\n\n* **Database Management System**: MySQL or PostgreSQL (both are suitable for small to medium-sized applications)\n* **Database Schema**:\n\t+ **Books table**: stores book metadata (title, author, ISBN, etc.)\n\t+ **Branches table**: stores branch location information (name, address, etc.)\n\t+ **Checkouts table**: stores checkout history (book ID, branch ID, checkout date, due date, etc.)\n\t+ **Users table**: stores librarian information (username, password, etc.)\n\n### 2. Application Layer\n\n* **Programming Language**: Python or JavaScript (both are popular choices for web development)\n* **Web Framework**: Flask or Express.js (both are lightweight and suitable for small applications)\n* **Application Components**:\n\t+ **Book Management**: handles book inventory, search, and filtering\n\t+ **Checkout Management**: handles checkout, return, and overdue notice generation\n\t+ **User Management**: handles librarian authentication and authorization\n\t+ **Email Service**: integrates with an email service (e.g., SendGrid) to send overdue notices\n\n### 3. User Interface\n\n* **Web Interface**: a simple, user-friendly interface for librarians to manage the system\n* **Features**:\n\t+ Book search and filtering\n\t+ Checkout and return management\n\t+ Overdue notice generation and email sending\n\t+ User authentication and authorization\n\n### 4. Deployment\n\n* **Deployment Option**: cloud hosting (e.g., AWS, Google Cloud, Microsoft Azure) or on-premises deployment\n* **Server**: a small virtual machine or container (e.g., Docker) with a suitable operating system (e.g., Ubuntu)\n\n**System Workflow**\n\nHere's an overview of the system workflow:\n\n1. **Librarian logs in**: the librarian authenticates with the system using their username and password.\n2. **Book search**: the librarian searches for a book using the web interface.\n3. **Checkout**: the librarian checks out a book to a patron, and the system updates the checkout history.\n4. **Return**: the patron returns the book, and the librarian updates the checkout history.\n5. **Overdue notice generation**: the system generates overdue notices for books that are past their due date.\n6. **Email sending**: the system sends overdue notices to patrons via email.\n\n**Scalability and Maintenance**\n\nTo ensure scalability and maintainability, the system should be designed with the following considerations:\n\n* **Modular code**: separate application components into modular code to facilitate updates and maintenance.\n* **Database indexing**: optimize database queries with indexing to improve performance.\n* **Error handling**: implement robust error handling to handle unexpected errors and exceptions.\n* **Backup and recovery**: schedule regular backups and implement a recovery plan to ensure data integrity.\n\nBy following this design, the community library system should be able to efficiently manage its book inventory, handle checkouts and returns, and send overdue notices via email, while providing a user-friendly interface for librarians.",
+      "input_tokens": 142,
+      "output_tokens": 751,
+      "elapsed_seconds": 2.76
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "**System Requirements and Constraints**\n=====================================\n\n*   Track 500 books across 3 branch locations\n*   Handle approximately 50 checkouts per day across all branches\n*   Manage book returns\n*   Send overdue notices via email\n*   Two librarians will use the system\n\n**Software Architecture Design**\n==============================\n\nTo design a robust and scalable system, we'll consider the following key factors:\n\n### 1. Database Design\n\nWe'll use a relational database management system (RDBMS) like MySQL or PostgreSQL to store book information, checkout records, and user data. The database schema will include the following tables:\n\n*   **Books**: stores book metadata (title, author, ISBN, branch location, etc.)\n*   **Checkouts**: stores checkout records (book ID, user ID, checkout date, due date, etc.)\n*   **Users**: stores user information (librarian ID, name, email, etc.)\n*   **Branches**: stores branch location information (branch ID, name, address, etc.)\n\n### 2. Application Server\n\nWe'll use a web application framework like Flask or Django to build the application server. This will handle HTTP requests, interact with the database, and send emails.\n\n### 3. Frontend\n\nWe'll use a web-based interface built with HTML, CSS, and JavaScript to provide an intuitive interface for librarians to manage books, checkouts, and user data.\n\n### 4. Email Notification System\n\nWe'll use a library like smtplib (Python) or Nodemailer (Node.js) to send overdue notices via email.\n\n### 5. System Components\n\nThe system will consist of the following components:\n\n*   **Book Manager**: responsible for managing book metadata, including adding, updating, and deleting books.\n*   **Checkout Manager**: responsible for handling checkouts, returns, and sending overdue notices.\n*   **User Manager**: responsible for managing user data, including librarian information and user authentication.\n*   **Branch Manager**: responsible for managing branch location information.\n\n### 6. System Interactions\n\nThe system will interact with the following external systems:\n\n*   **Email Server**: for sending overdue notices via email.\n*   **Database**: for storing and retrieving book metadata, checkout records, and user data.\n\n### 7. System Security\n\nTo ensure system security, we'll implement the following measures:\n\n*   **User Authentication**: librarians will log in with their credentials to access the system.\n*   **Authorization**: librarians will have role-based access control to perform specific actions (e.g., manage books, checkouts, or user data).\n*   **Data Encryption**: sensitive data, such as user passwords and email addresses, will be encrypted using a secure encryption algorithm (e.g., bcrypt).\n\n**System Architecture Diagram**\n-----------------------------\n\nHere's a high-level system architecture diagram:\n```markdown\n+---------------+\n|  Web Interface  |\n+---------------+\n           |\n           |\n           v\n+---------------+\n|  Application  |\n|  Server (Flask  |\n|  or Django)    |\n+---------------+\n           |\n           |\n           v\n+---------------+\n|  Database (MySQL|\n|  or PostgreSQL) |\n+---------------+\n           |\n           |\n           v\n+---------------+\n|  Email Server  |\n+---------------+\n```\n**Technology Stack**\n--------------------\n\n*   Frontend: HTML, CSS, JavaScript\n*   Backend: Python (Flask or Django)\n*   Database: MySQL or PostgreSQL\n*   Email Library: smtplib (Python) or Nodemailer (Node.js)\n\n**Example Use Cases**\n---------------------\n\n1.  **Librarian Logs In**: A librarian logs in to the system using their credentials.\n2.  **Book Checkout**: A librarian checks out a book to a user, and the system updates the checkout record and sends an email with the due date.\n3.  **Book Return**: A user returns a book, and the system updates the checkout record and sends an email notification to the librarian.\n4.  **Overdue Notice**: The system sends an overdue notice via email to users with late returns.\n\n**Code Example (Python)**\n-------------------------\n\nHere's a simple example of how the checkout manager could be implemented:\n```python\nfrom flask import Flask, request, jsonify\nfrom flask_sqlalchemy import SQLAlchemy\nfrom datetime import datetime, timedelta\n\napp = Flask(__name__)\napp.config[\"SQLALCHEMY_DATABASE_URI\"] = \"sqlite:///library.db\"\ndb = SQLAlchemy(app)\n\nclass Book(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    title = db.Column(db.String(100), nullable=False)\n    author = db.Column(db.String(100), nullable=False)\n    isbn = db.Column(db.String(20), nullable=False)\n\nclass Checkout(db.Model):\n    id = db.Column(db.Integer, primary_key=True)\n    book_id = db.Column(db.Integer, db.ForeignKey(\"book.id\"))\n    user_id = db.Column(db.Integer, db.ForeignKey(\"user.id\"))\n    checkout_date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)\n    due_date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow() + timedelta(days=14))\n\n@app.route(\"/checkout\", methods=[\"POST\"])\ndef checkout_book():\n    book_id = request.json[\"book_id\"]\n    user_id = request.json[\"user_id\"]\n    checkout = Checkout(book_id=book_id, user_id=user_id)\n    db.session.add(checkout)\n    db.session.commit()\n    return jsonify({\"message\": \"Book checked out successfully\"})\n\nif __name__ == \"__main__\":\n    app.run(debug=True)\n```\nThis example demonstrates how to create a simple checkout manager using Flask and SQLAlchemy. Note that this is a highly simplified example and you should consider implementing additional features, such as user authentication and authorization, to make the system more robust and secure.",
+      "input_tokens": 142,
+      "output_tokens": 1191,
+      "elapsed_seconds": 3.32
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "**System Requirements and Constraints**\n\nTo design a suitable software architecture for the community library system, let's break down the key requirements and constraints:\n\n1. **Number of books**: 500\n2. **Number of branch locations**: 3\n3. **Daily checkouts**: 50 (across all branches)\n4. **Number of users**: 2 librarians\n5. **Functionality**:\n\t* Track book checkouts and returns\n\t* Send overdue notices via email\n6. **Data storage and management**: The system should store book information, checkout history, and user data (librarians).\n7. **Scalability**: The system should be able to handle a moderate increase in the number of books, branches, and users.\n\n**Software Architecture Design**\n\nBased on the requirements, I recommend a web-based application with a simple and intuitive interface. The system will consist of the following components:\n\n1. **Frontend**:\n\t* **User Interface (UI)**: A web-based interface built using HTML, CSS, and JavaScript (e.g., React or Angular) for the librarians to interact with the system.\n\t* **UI Components**: Separate sections for book search, checkout, return, and overdue notice management.\n2. **Backend**:\n\t* **Server-side Language**: Python (e.g., Flask or Django) or Node.js (e.g., Express.js) for handling requests, data storage, and email notifications.\n\t* **Database**: A relational database management system (RDBMS) like MySQL or PostgreSQL for storing book information, checkout history, and user data.\n3. **Database Schema**:\n\t* **Books Table**: stores book information (title, author, ISBN, etc.)\n\t* **Checkouts Table**: stores checkout history (book ID, user ID, checkout date, due date, etc.)\n\t* **Users Table**: stores user data (librarian names, email addresses, etc.)\n4. **Email Notification System**:\n\t* **Email Service**: Integrate an email service like SendGrid or Mailgun to send overdue notices to borrowers.\n5. **Data Storage and Management**:\n\t* **Database Connection**: Use an ORM (Object-Relational Mapping) tool like SQLAlchemy (for Python) or Sequelize (for Node.js) to interact with the database.\n\t* **Data Validation**: Implement data validation and sanitization to ensure data consistency and prevent errors.\n6. **Security**:\n\t* **Authentication**: Implement user authentication using a library like Passport.js (for Node.js) or Flask-Login (for Python) to ensure only authorized librarians can access the system.\n\t* **Authorization**: Implement role-based access control to restrict access to certain features and data.\n\n**System Workflow**\n\nHere's a high-level overview of the system workflow:\n\n1. **Book Search**: A librarian searches for a book by title, author, or ISBN.\n2. **Checkout**: The librarian checks out a book to a borrower, and the system updates the checkout history and sends a confirmation email.\n3. **Return**: The borrower returns the book, and the librarian updates the system, which triggers an email notification to the borrower.\n4. **Overdue Notice**: The system periodically checks for overdue books and sends email notices to borrowers.\n\n**Deployment and Maintenance**\n\nTo ensure the system is reliable and maintainable, I recommend:\n\n1. **Cloud Hosting**: Host the application on a cloud platform like AWS, Google Cloud, or Microsoft Azure for scalability and reliability.\n2. **Containerization**: Use containerization tools like Docker to ensure consistent deployment and easy maintenance.\n3. **Monitoring and Logging**: Set up monitoring and logging tools like Prometheus and Grafana to track system performance and errors.\n\nBy following this software architecture design, the community library system will be able to efficiently manage book checkouts, returns, and overdue notices, while providing a user-friendly interface for the librarians.",
+      "input_tokens": 142,
+      "output_tokens": 796,
+      "elapsed_seconds": 2.78
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "To design a software architecture for the community library system, we need to consider several key factors, including data management, user interface, performance, scalability, and reliability. Here's a step-by-step approach to designing the system:\n\n**System Requirements**\n\n1. Track 500 books across 3 branch locations\n2. Handle 50 checkouts per day across all branches\n3. Handle returns\n4. Send overdue notices via email\n5. Two librarians will use the system\n\n**System Components**\n\n1. **Database**: A relational database management system (RDBMS) such as MySQL or PostgreSQL to store book information, checkout history, and user data.\n2. **Application Server**: A web application server such as Apache Tomcat or Node.js to handle user requests, process transactions, and interact with the database.\n3. **User Interface**: A web-based interface using HTML, CSS, and JavaScript to provide an intuitive and user-friendly experience for librarians.\n4. **Email Service**: An email service such as SendGrid or Amazon SES to send overdue notices via email.\n\n**System Architecture**\n\n1. **Frontend**:\n\t* User Interface: A web-based interface built using HTML, CSS, and JavaScript, with a responsive design to accommodate different devices and screen sizes.\n\t* Client-side validation and error handling to ensure data integrity and usability.\n2. **Backend**:\n\t* Application Server: Handles user requests, processes transactions, and interacts with the database.\n\t* API-based architecture to provide a flexible and modular design.\n\t* Server-side validation and error handling to ensure data integrity and security.\n3. **Database**:\n\t* Relational database management system (RDBMS) to store book information, checkout history, and user data.\n\t* Database schema designed to optimize data retrieval and storage.\n4. **Email Service**:\n\t* Integrated email service to send overdue notices via email.\n\t* Email templates designed to provide clear and concise information to borrowers.\n\n**System Workflow**\n\n1. **Checkout**:\n\t* Librarian searches for a book and selects it for checkout.\n\t* System checks availability and updates the book's status.\n\t* System generates a unique checkout ID and stores the transaction in the database.\n2. **Return**:\n\t* Librarian scans the returned book's barcode or enters the checkout ID.\n\t* System updates the book's status and removes the checkout ID from the database.\n3. **Overdue Notice**:\n\t* System runs a scheduled task to check for overdue books.\n\t* System generates an email notice with the book's details and sends it to the borrower via the email service.\n\n**Security and Authentication**\n\n1. **User Authentication**: Librarians log in to the system using a username and password.\n2. **Role-based Access Control**: Librarians have restricted access to system features and data based on their role.\n3. **Data Encryption**: Sensitive data, such as borrower information, is encrypted to ensure confidentiality.\n\n**Scalability and Performance**\n\n1. **Horizontal Scaling**: The system is designed to scale horizontally by adding more application servers as the load increases.\n2. **Caching**: The system uses caching mechanisms to improve performance and reduce the load on the database.\n3. **Load Balancing**: The system uses load balancing techniques to distribute the load across multiple application servers.\n\n**Recommendation**\n\nBased on the requirements and system design, I recommend using a cloud-based platform such as Amazon Web Services (AWS) or Microsoft Azure to host the system. This will provide a scalable, secure, and reliable infrastructure for the library system.\n\nThe system can be built using a combination of technologies such as:\n\n* Frontend: React or Angular for the user interface\n* Backend: Node.js or Python for the application server\n* Database: MySQL or PostgreSQL for the relational database management system\n* Email Service: SendGrid or Amazon SES for email notifications\n\nBy following this design, the community library system will provide a robust, scalable, and user-friendly solution for tracking books, handling checkouts and returns, and sending overdue notices via email.",
+      "input_tokens": 142,
+      "output_tokens": 831,
+      "elapsed_seconds": 2.31
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "**System Requirements and Constraints**\n\nTo design a suitable software architecture for the community library system, let's first outline the key requirements and constraints:\n\n1. **Data Management**: Store information about 500 books, including title, author, publication date, ISBN, and branch location.\n2. **Checkout and Return Management**: Handle approximately 50 checkouts and returns per day across all three branches.\n3. **Overdue Notice Management**: Send automated email notifications to borrowers when books are overdue.\n4. **User Management**: Support two librarian users with access to the system.\n5. **Scalability**: The system should be able to handle a potential increase in the number of books, branches, and users.\n\n**Proposed Software Architecture**\n\nBased on the requirements and constraints, I recommend a web-based application with a microservices architecture. This design will provide a scalable, maintainable, and flexible system.\n\n### 1. Frontend\n\n* **Web Application**: Build a user-friendly web interface using a framework like React or Angular, allowing librarians to interact with the system.\n* **API Gateway**: Use a reverse proxy server like NGINX or Amazon API Gateway to handle incoming requests, route them to the appropriate microservice, and return responses to the client.\n\n### 2. Microservices\n\n* **Book Service**: Responsible for managing book metadata, including CRUD (Create, Read, Update, Delete) operations.\n\t+ Database: Use a relational database like MySQL or PostgreSQL to store book information.\n* **Checkout Service**: Handles checkout and return transactions, including updating book availability and borrower information.\n\t+ Database: Use a separate relational database or a NoSQL database like MongoDB to store transactional data.\n* **Notification Service**: Sends automated email notifications for overdue books using a email service like SendGrid or Amazon SES.\n* **User Service**: Manages librarian user accounts, including authentication and authorization.\n\n### 3. Database Design\n\n* **Book Database**:\n\t+ Table: `books` (id, title, author, publication_date, isbn, branch_location)\n\t+ Indexes: `title`, `author`, `isbn`\n* **Checkout Database**:\n\t+ Table: `checkouts` (id, book_id, borrower_id, checkout_date, due_date, return_date)\n\t+ Table: `borrowers` (id, name, email)\n\t+ Indexes: `book_id`, `borrower_id`, `checkout_date`\n\n### 4. Communication between Microservices\n\n* **API-based Communication**: Use RESTful APIs or message queues like RabbitMQ to enable communication between microservices.\n\n### 5. Deployment and Scaling\n\n* **Cloud Hosting**: Deploy the application on a cloud platform like Amazon Web Services (AWS) or Microsoft Azure to ensure scalability and reliability.\n* **Containerization**: Use containerization tools like Docker to package and deploy microservices.\n* **Orchestration**: Use an orchestration tool like Kubernetes to manage and scale microservices.\n\n### 6. Security and Authentication\n\n* **Authentication**: Implement authentication using OAuth or JWT (JSON Web Tokens) to secure librarian access to the system.\n* **Authorization**: Use role-based access control to restrict access to sensitive features and data.\n* **Data Encryption**: Encrypt sensitive data, such as borrower information, using SSL/TLS.\n\n### 7. Monitoring and Maintenance\n\n* **Logging**: Implement logging mechanisms to track system activity, errors, and performance issues.\n* **Monitoring**: Use monitoring tools like Prometheus and Grafana to track system performance and alert on potential issues.\n* **Backup and Recovery**: Schedule regular backups of the database and implement a disaster recovery plan to ensure business continuity.\n\nBy following this proposed software architecture, the community library system will be able to efficiently manage book checkouts, returns, and overdue notices, while providing a scalable and maintainable solution for future growth.",
+      "input_tokens": 142,
+      "output_tokens": 780,
+      "elapsed_seconds": 2.28
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before designing anything, answer these questions:\n1. How many events per day will this system handle? How many per second?\n2. How many concurrent users will it have at peak?\n3. What is the total data volume in megabytes?\n\nNow answer as three different people:\n- A senior architect at a major tech company\n- A solo developer who builds profitable side projects\n- A librarian who currently tracks this on paper index cards\n\nAfter hearing all three perspectives, recommend the architecture.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "### Senior Architect at a Major Tech Company\n\n1. **Events per day and per second**: Given the scope of the library system, we can expect a relatively low volume of events. Assuming each checkout and return constitutes an event, we're looking at approximately 50 events per day (25 checkouts and 25 returns, averaged). This translates to a negligible number of events per second, likely less than 1 event per second even at peak hours, considering the events are spread throughout the day.\n\n2. **Concurrent users at peak**: Since there are only two librarians using the system, our concurrent user count is very low, at 2 users. This simplifies the design significantly, as we don't have to worry about scaling for a large number of simultaneous users.\n\n3. **Total data volume**: With 500 books and assuming each book's record might take up approximately 1 KB (including title, author, ISBN, location, and status), the total data volume for the books themselves would be about 0.5 MB. Adding in checkout history and user data (librarians and patrons), we might reach a total of a few MBs at most. Let's estimate the total data volume to be around 10 MB, considering additional metadata and logs.\n\nGiven these requirements, a simple and efficient architecture would involve a small web application hosted on a cloud platform (like AWS or Azure) that utilizes a relational database (such as PostgreSQL) for storing book and user data. The application would be built using a lightweight web framework and would be designed with security and simplicity in mind. Automated backups and basic monitoring would be essential components.\n\n### Solo Developer Who Builds Profitable Side Projects\n\n1. **Events per day and per second**: For a small library system, the number of daily events is minimal, around 50. As for per second, it's almost negligible unless there's a specific peak hour where all librarians are using the system simultaneously, but even then, it's unlikely to exceed 1 event per second.\n\n2. **Concurrent users at peak**: With only 2 librarians, the system doesn't need to handle a high number of concurrent users, keeping the design straightforward.\n\n3. **Total data volume**: The total data volume is very small. For 500 books, assuming a simple record structure, we're looking at a few MBs at most. This means we don't need a massive database or powerful servers.\n\nFor a side project like this, I'd recommend keeping it super simple and cost-effective. A small web app built with a framework like Flask or Django, connected to a SQLite database (to keep things lightweight), would be more than sufficient. Hosting could be on a basic plan from a provider like Heroku or DigitalOcean, with automated backups. This approach minimizes both development time and running costs, making it ideal for a small library system.\n\n### Librarian Who Currently Tracks This on Paper Index Cards\n\n1. **Events per day and per second**: We have about 50 transactions per day across all branches. As for per second, I'm not sure that's relevant to how we work, but I can tell you it's not very often that we have multiple people checking out books at the exact same time.\n\n2. **Concurrent users at peak**: There are two of us who would be using the system, so it doesn't need to handle a lot of users at once.\n\n3. **Total data volume**: We have information on 500 books. If we include some basic patron information and checkout history, I suppose it would be a few boxes of index cards' worth of data. If each box holds about 200 cards, and each card has a small amount of information, we're talking about a very small amount of data.\n\nI think what we need is something that's easy to use and understand, like a digital version of our index cards but with the ability to send emails. Maybe something that looks like a spreadsheet but can do more would be perfect. It should be accessible from the two library computers and possibly from home for when we need to work remotely. It doesn't need to be fancy, just reliable and easy to learn.\n\n### Recommendation\n\nGiven the requirements and perspectives, the most suitable architecture for the library system would be a lightweight web application with the following characteristics:\n- **Backend**: Utilize a simple web framework such as Flask or Django for the application logic.\n- **Database**: A SQLite database would suffice due to the small data volume, but for slightly better scalability and ease of management, a small PostgreSQL instance could be used.\n- **Frontend**: A simple, intuitive web interface that resembles a digital card catalog or a spreadsheet for ease of use by the librarians.\n- **Hosting**: Host the application on a basic cloud hosting plan (e.g., Heroku, DigitalOcean) to keep costs low and ensure reliability.\n- **Features**: Include functionality for managing book inventory, tracking checkouts and returns, and sending overdue notices via email.\n- **Security**: Implement basic security measures such as user authentication and authorization to ensure only authorized librarians can access and modify the data.\n- **Backup and Monitoring**: Set up automated backups and basic monitoring to ensure the system's data is safe and the system remains operational.\n\nThis architecture balances simplicity, cost-effectiveness, and the specific needs of the small community library, making it an ideal solution for their book tracking and management system.",
+      "input_tokens": 215,
+      "output_tokens": 1102,
+      "elapsed_seconds": 5.06
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before designing anything, answer these questions:\n1. How many events per day will this system handle? How many per second?\n2. How many concurrent users will it have at peak?\n3. What is the total data volume in megabytes?\n\nNow answer as three different people:\n- A senior architect at a major tech company\n- A solo developer who builds profitable side projects\n- A librarian who currently tracks this on paper index cards\n\nAfter hearing all three perspectives, recommend the architecture.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "### Senior Architect at a Major Tech Company\n\n1. **Events per day and per second**: Given the small scale of the library, we can expect a relatively low volume of events. Assuming 50 checkouts per day, and considering returns and other activities, let's estimate around 100 events per day. This translates to approximately 0.001 events per second, considering an 8-hour operating day. This is an extremely low load, suitable for a simple web application.\n\n2. **Concurrent users at peak**: Since there are only two librarians using the system, we can safely assume that the peak concurrent user count will be 2. This is a very low concurrency requirement, easily handled by most web frameworks without any special consideration.\n\n3. **Total data volume**: With 500 books and assuming each book's record (including title, author, ISBN, etc.) takes up about 1 kilobyte (a generous estimate considering the actual data size will be much smaller), the total data volume for all book records would be approximately 500 KB or 0.5 MB. Adding some overhead for user data, checkout history, and other metadata, let's round up to 1 MB. This is an incredibly small dataset, suggesting that data storage and retrieval will not be a bottleneck.\n\nGiven these considerations, a simple web application with a backend database (e.g., MySQL or PostgreSQL for relational data) and a frontend (possibly a React, Angular, or Vue.js application) would suffice. The application should be deployed on a cloud platform (like AWS or Google Cloud) to leverage scalability and reliability features without excessive upfront costs.\n\n### Solo Developer Who Builds Profitable Side Projects\n\n1. **Events per day and per second**: For a small library with 50 daily checkouts across all branches, plus returns and other actions, let's assume around 100-150 events per day. This works out to a negligible number of events per second, indicating that the system doesn't need to be overly complex to handle the load.\n\n2. **Concurrent users at peak**: With two librarians, the system will rarely see more than 2 concurrent users. This means I can focus on developing a straightforward, user-friendly interface without worrying about advanced concurrency control mechanisms.\n\n3. **Total data volume**: For 500 books, assuming a small amount of data per book (title, author, status, etc.), the total dataset will be very small, likely less than 1 MB. This small dataset means I can use a lightweight database solution.\n\nConsidering these factors, I'd opt for a minimalist approach: a single-page application (SPA) with a small backend, possibly using a serverless architecture (like Firebase or AWS Amplify) to keep costs low and development simple. The database could be a NoSQL database like Firebase Realtime Database or MongoDB, which are easy to set up and scale, and suitable for small to medium-sized datasets.\n\n### Librarian Who Currently Tracks This on Paper Index Cards\n\n1. **Events per day and per second**: We currently process about 50 checkouts and returns per day across our three branches. I'm not sure about \"events per second,\" but it seems like a very small number.\n\n2. **Concurrent users at peak**: Only my colleague and I will be using the system, so at most, there will be 2 users at any given time.\n\n3. **Total data volume**: We have about 500 books. If each book's information takes up a small amount of space, I imagine all our data together would still be quite small, similar in size to a small box of index cards.\n\nFrom my perspective, the system should be easy to use, similar to our current method but digital. It should allow us to easily check out and return books, send reminders, and keep track of our collection. It doesn't need to be fast or handle a lot of users because it's just for our small library. A simple, web-based system that we can access from our library's computers would be perfect. It could use a basic database to store our book information and user data.\n\n### Recommended Architecture\n\nBased on the considerations from all three perspectives, a suitable architecture for the library system would be a web-based application with the following components:\n\n- **Backend**: Use a lightweight backend framework (such as Node.js with Express) that can handle the small load. Given the tiny dataset and low traffic, a serverless approach could also be viable, offering cost savings and ease of deployment.\n- **Database**: A small, easy-to-manage database like SQLite or a NoSQL database such as MongoDB would be sufficient for storing book records and checkout history. These databases are straightforward to set up and can handle the small amount of data and traffic.\n- **Frontend**: A simple, user-friendly single-page application (SPA) built with React, Angular, or Vue.js can provide an intuitive interface for librarians to manage book checkouts, returns, and send overdue notices.\n- **Email Service**: Integrate a simple email service (like SendGrid or Mailgun) to handle sending overdue notices automatically.\n- **Deployment**: Host the application on a cloud platform (AWS, Google Cloud, or Microsoft Azure) to leverage scalability, reliability, and security features. Consider using a Platform-as-a-Service (PaaS) for easier deployment and management.\n\nThis architecture balances simplicity, ease of development, and the ability to scale (though scaling is unlikely to be needed for this small library). It should effectively meet the needs of the librarians and the library's operations.",
+      "input_tokens": 215,
+      "output_tokens": 1130,
+      "elapsed_seconds": 4.45
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before designing anything, answer these questions:\n1. How many events per day will this system handle? How many per second?\n2. How many concurrent users will it have at peak?\n3. What is the total data volume in megabytes?\n\nNow answer as three different people:\n- A senior architect at a major tech company\n- A solo developer who builds profitable side projects\n- A librarian who currently tracks this on paper index cards\n\nAfter hearing all three perspectives, recommend the architecture.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "### Senior Architect at a Major Tech Company\n\n1. **Events per day and per second**: Given the scope, we're looking at approximately 50 checkout and return events per day across all branches. This translates to a very low event rate, likely less than 1 event per minute on average, or less than 0.02 events per second. This is negligible in terms of system load.\n2. **Concurrent users at peak**: With only two librarians using the system, the concurrent user count is 2. This is an extremely low load from a user perspective.\n3. **Total data volume**: Assuming each book record and each transaction (checkout, return, overdue notice) takes up a small amount of data (let's say approximately 1 KB per record for simplicity), with 500 books and assuming an average of 100 transactions per book per year (a high estimate for a small library), we're looking at about 50,000 transactions per year, or roughly 50 MB of data per year, not accounting for any potential growth or additional data types.\n\nGiven these numbers, a simple, lightweight web application would suffice. A microservices architecture might be overkill, but a well-structured monolithic application with a database (e.g., PostgreSQL) for data storage and a web framework (e.g., Flask or Django for Python) for the backend, along with a basic frontend (possibly using a JavaScript framework like React), could easily handle these requirements. The system should be designed with scalability in mind but doesn't need to be overly complex.\n\n### Solo Developer Who Builds Profitable Side Projects\n\n1. **Events per day and per second**: About 50 events per day, which is almost nothing. In terms of seconds, it's less than a blip on the radar.\n2. **Concurrent users at peak**: Two librarians, so 2 concurrent users. Easy.\n3. **Total data volume**: Let's keep it simple. We're talking megabytes here, not even gigabytes. Maybe 50-100 MB tops, considering all the data we need to store.\n\nFor a small project like this, I'd recommend keeping it as simple as possible. A lightweight backend (maybe Node.js with Express) with a small database (could even use SQLite for such a small dataset) would work perfectly. The frontend could be a simple web app built with something like Vue.js. Since the load is so low, we could even get away with hosting it on a small VPS or even a free tier of a cloud platform like Heroku or AWS. The key here is to keep development time and costs low while still delivering a functional product.\n\n### Librarian Who Currently Tracks This on Paper Index Cards\n\n1. **Events per day and per second**: We do about 50 checkouts and returns each day across all our branches.\n2. **Concurrent users at peak**: It's usually just me or my colleague using the system at any given time.\n3. **Total data volume**: I'm not sure what that means, but we have about 500 books and we keep track of who borrowed them, when they're due back, and whether they've been returned.\n\nHonestly, I just want something that's easy to use and replaces our paper index card system. Something that can remind us when books are overdue and help us keep track of everything would be great. It doesn't need to be fancy; just reliable and simple. If it could send emails to patrons when their books are due back, that would be a big help. I'm not sure about the technical side, but if it could be accessed from any computer in our library, that would be perfect.\n\n### Recommendation\n\nGiven the low volume of events, users, and data, a simple web application with a lightweight backend and a user-friendly frontend is the most appropriate architecture. Here's a recommended design:\n\n- **Backend**: Use Node.js with Express as the web framework. It's lightweight, easy to develop, and can handle the low traffic with ease.\n- **Database**: SQLite could be sufficient for such a small dataset, but for ease of scalability and management, consider using PostgreSQL. It's more robust and widely supported.\n- **Frontend**: A simple web application built with Vue.js or React could provide a clean and easy-to-use interface for librarians.\n- **Hosting**: Given the low load, consider hosting on a cloud platform's free tier (e.g., AWS, Heroku) or a small VPS.\n- **Features**: Implement basic CRUD (Create, Read, Update, Delete) operations for book and user management. Include functionality for checking out books, returning them, and sending overdue notices via email.\n- **Email Service**: Use an email service like Mailgun or SendGrid to handle sending emails for overdue notices.\n\nThis architecture balances simplicity with the potential for future scalability, ensuring the system can grow with the library's needs while remaining easy to maintain and update.",
+      "input_tokens": 215,
+      "output_tokens": 1007,
+      "elapsed_seconds": 4.61
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before designing anything, answer these questions:\n1. How many events per day will this system handle? How many per second?\n2. How many concurrent users will it have at peak?\n3. What is the total data volume in megabytes?\n\nNow answer as three different people:\n- A senior architect at a major tech company\n- A solo developer who builds profitable side projects\n- A librarian who currently tracks this on paper index cards\n\nAfter hearing all three perspectives, recommend the architecture.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "### Senior Architect at a Major Tech Company\n\n1. **Events per day and per second**: We're looking at approximately 50 checkout and return events per day across all branches. Assuming an even distribution throughout the day, this translates to roughly 2-3 events per minute, or about 0.05 events per second. This is a very low volume of events, suggesting that the system can be quite simple without needing to worry about high scalability.\n\n2. **Concurrent users at peak**: Since there are only two librarians using the system, the number of concurrent users is extremely low. Even if we consider potential future growth or additional staff, it's unlikely to exceed more than a handful of users at any given time.\n\n3. **Total data volume**: With 500 books across three locations, and assuming each book's record might include title, author, ISBN, location, and checkout status (roughly 1 KB per book), the total data volume for the books themselves would be about 0.5 MB. Adding in some metadata for users (librarians) and transaction history (checkouts, returns, notices), the total data volume is likely to remain under 10 MB, even with several years of transaction history.\n\nGiven these requirements, a simple web application with a small relational database (like SQLite) could easily handle the needs of this library system. The application could be designed with a basic CRUD (Create, Read, Update, Delete) interface for managing books and user interactions, with automated tasks for sending overdue notices.\n\n### Solo Developer Who Builds Profitable Side Projects\n\n1. **Events per day and per second**: 50 events per day is nothing. That's like, one event every 29 minutes if they're evenly spaced out, which they won't be, but it gives you an idea. Per second, it's virtually zero.\n\n2. **Concurrent users at peak**: Two users. I've built systems for clients with more complex needs and higher traffic, but for this? It's a breeze.\n\n3. **Total data volume**: The data volume is tiny. We're talking megabytes here, not even gigabytes. A small database or even a well-organized JSON file could store all the necessary data.\n\nFor a project like this, I'd consider using a low-code or no-code solution to speed up development, or maybe even a simple spreadsheet with some automation via scripts if the client is comfortable with that. However, if we're building a custom solution, a lightweight web framework (like Flask for Python) with a small database backend (such as SQLite) would be more than sufficient. The key here is to keep it simple, get it done quickly, and ensure it's easy to maintain and update.\n\n### Librarian Who Currently Tracks This on Paper Index Cards\n\n1. **Events per day and per second**: Honestly, it feels like a lot when you're dealing with it day in and day out, but I guess it's about 50 transactions per day across all our branches. It's not like it's constant, though - most of it happens during our open hours.\n\n2. **Concurrent users at peak**: It's usually just me or my colleague using the system at any given time. Maybe during inventory or when we're both prepping for programs, but that's about it.\n\n3. **Total data volume**: I'm not sure how to think about this in terms of megabytes, but we have about 500 books, and we keep track of who checked them out, when they're due back, and some other details. It doesn't seem like a lot, but it's enough that using these index cards is getting cumbersome.\n\nI just want something that makes my job easier. If we could have a system that lets us easily check books in and out, keeps track of who has what, and reminds us (or even better, them) when books are due, that would be amazing. It doesn't have to be fancy; it just needs to work reliably and be easy to use.\n\n### Recommended Architecture\n\nGiven the low volume of events, small number of concurrent users, and tiny data volume, the recommended architecture for this library system is straightforward and lightweight:\n\n- **Backend**: Use a simple web framework such as Flask (Python) or Express.js (Node.js) to create a RESTful API that handles CRUD operations for books, users, and transactions.\n- **Database**: A small relational database like SQLite is more than sufficient for storing data. It's easy to set up, doesn't require a separate server process, and is well-supported by most programming languages.\n- **Frontend**: A basic web interface built with HTML, CSS, and JavaScript can provide an easy-to-use interface for librarians to manage books and transactions. Given the simplicity required, this could even be a single-page application.\n- **Automation**: For sending overdue notices, a simple cron job or scheduled task can run a script that checks for overdue books and sends emails to patrons.\n- **Deployment**: The application can be deployed on a small virtual private server (VPS) or even a Raspberry Pi, given the minimal resource requirements.\n\nThis architecture prioritizes simplicity, ease of development, and low maintenance, making it suitable for a small community library's needs.",
+      "input_tokens": 215,
+      "output_tokens": 1072,
+      "elapsed_seconds": 4.81
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before designing anything, answer these questions:\n1. How many events per day will this system handle? How many per second?\n2. How many concurrent users will it have at peak?\n3. What is the total data volume in megabytes?\n\nNow answer as three different people:\n- A senior architect at a major tech company\n- A solo developer who builds profitable side projects\n- A librarian who currently tracks this on paper index cards\n\nAfter hearing all three perspectives, recommend the architecture.\n\nWe need to build a system that tracks 500 books across 3 branch locations of a small community library. The system should handle checkouts (about 50 per day across all branches), returns, and send overdue notices via email. Two librarians will use it. Design the software architecture.",
+      "response": "### Senior Architect at a Major Tech Company\n\n1. **Events per day and per second**: Given the scope of the library system, we anticipate around 50 checkout events per day across all branches. This translates to a very low event rate, approximately 0.0006 events per second (assuming an 8-hour operational day). Returns and overdue notices will add to this total but will not significantly impact the overall event rate per second.\n\n2. **Concurrent users at peak**: Since only two librarians will be using the system, we can safely assume that the peak concurrent user count will be 2. This is an extremely low load from a user perspective, suggesting that the system's user management and authentication components will not be complex.\n\n3. **Total data volume in megabytes**: Assuming each book record and associated checkout/return history might occupy roughly 1 KB (a generous estimate considering the simplicity of the data), 500 books would amount to about 0.5 MB. Even with a generous factor for overhead, growth, and additional metadata (e.g., user information, email logs), the total data volume is unlikely to exceed 5 MB, and likely will be much less.\n\nGiven these parameters, a simple, web-based application with a small database (possibly even a file-based database like SQLite) would be more than sufficient. The system could be designed with a microservices architecture in mind for scalability, but initially, a monolithic approach would suffice due to the low load and data volume. Cloud hosting could provide easy scalability and reliability, with automatic backups and updates for minimal maintenance.\n\n### Solo Developer Who Builds Profitable Side Projects\n\n1. **Events per day and per second**: About 50 checkouts per day, or roughly 0.0006 events per second. This is a very low-traffic system.\n\n2. **Concurrent users at peak**: Just 2 users, so we don't need to worry about scaling for a large user base.\n\n3. **Total data volume in megabytes**: With 500 books and some additional data, let's assume we're looking at maybe 1-2 MB of data, tops. This is tiny.\n\nFor a system this small, I'd recommend keeping things super simple. A web application with a backend like Node.js or Python (using Flask or Django), paired with a lightweight database like SQLite or even a NoSQL database like MongoDB (if you anticipate needing more flexible data structures), would be overkill but still a good learning experience. Hosting on a platform like Heroku or a small VPS would be easy and cheap. Since this is a side project, keeping costs low and using free tiers where possible (e.g., MongoDB's free tier) could be a good strategy. The focus should be on delivering a functional system quickly, with the potential to scale up if the library decides to expand its operations significantly.\n\n### Librarian Who Currently Tracks This on Paper Index Cards\n\n1. **Events per day and per second**: We do about 50 checkouts per day. I'm not sure about per second, but it seems like not very many.\n\n2. **Concurrent users at peak**: Usually, it's just me or my colleague using the system at any given time.\n\n3. **Total data volume in megabytes**: I have no idea, but we only have 500 books, so it can't be that much, right?\n\nHonestly, as long as the system is easy to use and can send out overdue notices automatically, that would be a huge help. Something that looks like a digital version of our index cards but can also email patrons would be perfect. We don't need anything fancy, just something reliable and easy to understand. If it could also keep track of which books are at which branch, that would save us a lot of time. I'm not sure about the technical details, but if it could be accessed from any computer in the library, that would be great. And it needs to be secure, so our patrons' information is safe.\n\n### Recommendation\n\nBased on the input from all three perspectives, the recommended architecture for the library system would be a simple, web-based application with the following components:\n\n- **Backend**: Utilize a lightweight framework such as Python with Flask or Django, or Node.js, to handle requests and interact with the database. Given the low traffic and data volume, the backend can be designed to handle all logic in a monolithic manner initially, with the possibility of scaling to microservices if needed in the future.\n\n- **Database**: A file-based database like SQLite would be more than sufficient for the initial deployment due to its simplicity, low overhead, and the small data volume. However, considering future growth and the ease of scaling, using a database service like MongoDB or a managed relational database (e.g., PostgreSQL) could provide more flexibility and scalability options.\n\n- **Frontend**: A simple, user-friendly web interface that mimics the current workflow of the librarians, with clear and intuitive screens for checking out books, returning books, and viewing book availability across branches. The interface should also allow for easy management of patron information and the configuration of overdue notices.\n\n- **Hosting**: Host the application on a cloud platform (e.g., AWS, Google Cloud, Microsoft Azure) that offers a free tier or low-cost hosting options for small applications. This will provide automatic backups, easy scaling, and reliable uptime.\n\n- **Security**: Implement basic security measures such as HTTPS for encrypting data in transit, secure password storage for librarians, and access controls to ensure that only authorized personnel can modify book records or patron information.\n\n- **Email Integration**: Use a transactional email service (e.g., Mailgun, Sendgrid) to handle overdue notices and other automated emails to patrons. These services provide reliable delivery, analytics, and are scalable.\n\nThis approach balances the need for a functional and easy-to-use system for the librarians with the technical requirements for scalability, security, and reliability, all while keeping costs minimal.",
+      "input_tokens": 215,
+      "output_tokens": 1218,
+      "elapsed_seconds": 5.61
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily considers a single frame of a web-based application with a centralized database, with minor acknowledgment of alternative deployment options (cloud hosting or on-premises deployment)."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes one obvious assumption (the need for a database management system) but does not systematically surface and examine other hidden assumptions, such as the scalability requirements or user needs."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces a conventional solution (a web-based application with a centralized database) with minor variation (considering different programming languages and web frameworks)."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem exactly as stated, without questioning the premise or exploring alternative problem framings, such as using an off-the-shelf library management tool or a spreadsheet with macros."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, including a high-level overview of the system architecture, database schema, and application components. However, it does not explicitly note that 50 events/day does not require a distributed system, which is a key consideration for the problem."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily considers a single frame of building a custom web application with a relational database, with minor acknowledgment of alternative solutions such as using an off-the-shelf library management tool."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that a custom web application is necessary - but does not thoroughly examine or question other hidden assumptions, such as the need for a relational database or the suitability of the proposed technology stack."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces a conventional solution with minor variation, using a common technology stack and design pattern, but does not introduce non-obvious or innovative solutions to the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem exactly as stated, without questioning the premise or exploring alternative problem framings, such as whether a custom web application is the best solution for a small community library with limited resources and users."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct and provides a reasonable and practical solution to the problem, with good detail on the proposed system architecture and technology stack, but may not be the most efficient or cost-effective solution for a small community library with limited resources and users."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily considers a single frame of building a custom web-based application, with minor acknowledgment of alternative solutions such as off-the-shelf library management tools, but does not explore these alternatives in depth."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes some obvious assumptions, such as the need for a database and user authentication, but does not systematically surface and examine hidden assumptions, such as the potential for a significant increase in the number of books or users."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces a conventional solution, a web-based application with a relational database, and does not offer non-obvious or innovative solutions, such as using a NoSQL database or a cloud-based library management platform."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem exactly as stated, without questioning the premise or exploring alternative problem framings, such as whether the library's needs might be met by a simpler solution, like a spreadsheet with macros."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides a reasonable and practical solution, with good detail on the system's components and workflow, but does not explicitly note that 50 events/day does not require a distributed system, which is an important consideration for the library's scale."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily considers a single frame of building a custom web application with a relational database, with minor acknowledgment of alternative technologies such as React or Angular, but does not explore multiple distinct frames or perspectives in depth."
+      },
+      "assumption_surfacing": {
+        "score": 1,
+        "justification": "The response does not explicitly identify or question any hidden assumptions in the problem statement, such as the need for a custom web application or the suitability of a relational database for the task."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces a conventional solution with minor variations, such as using a cloud-based platform or different programming languages, but does not introduce any non-obvious or innovative solutions to the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem premise as stated, with a minor caveat of recommending a cloud-based platform, but does not fundamentally question the premise or explore alternative problem framings, such as using an off-the-shelf library management tool."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is generally correct and provides a reasonable solution to the problem, with good practical detail on system components and workflow, but may be overly complex for the scale of the problem, as noted in the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 1,
+        "justification": "The response only considers a single frame, which is a complex software architecture with microservices, without exploring alternative simpler solutions that might be more proportional to the scale of the problem."
+      },
+      "assumption_surfacing": {
+        "score": 1,
+        "justification": "The response does not identify or question any hidden assumptions about the problem or the proposed solution, such as the need for a microservices architecture or the use of specific technologies."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response produces a conventional solution that is not novel or beyond the obvious first-order answer, and does not consider simpler or more innovative solutions that might be more suitable for a small community library."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated and does not question whether the problem is well-posed or whether there are any underlying assumptions that need to be challenged."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the proposed solution is technically correct in terms of software architecture, it is not practically useful for a small community library with limited resources and a small number of books and users, and does not meet the success criteria of being proportional to the scale of the problem."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including those of a senior architect, a solo developer, and a librarian, synthesizing them to provide a comprehensive solution."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the need for a simple and cost-effective solution, the low volume of events, and the small data volume, but does not systematically surface all possible hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces solutions that go beyond the obvious first-order answer, such as considering a lightweight web application with a SQLite database, but does not provide genuinely unexpected viable solutions that reframe the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, but does not explicitly question the premise or explore alternative problem framings in depth."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and provides excellent practical advice grounded in reality, taking into account the specific needs and constraints of the small community library."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames or perspectives, including those of a senior architect, a solo developer, and a librarian, demonstrating a comprehensive understanding of the problem from various viewpoints and synthesizing them into a cohesive recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the low volume of events per day, the small number of concurrent users, and the tiny dataset, which are crucial for determining the appropriate system architecture. However, it does not systematically surface all possible hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response provides multiple non-obvious solutions, including the use of a serverless architecture, a NoSQL database, and a simple web-based application, which go beyond the conventional first-order answers. However, these solutions are not entirely unexpected in the context of modern web development."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes the problem's constraints, such as the small scale of the library and the low volume of events, which implicitly questions the need for a complex system. However, it does not explicitly question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides a suitable architecture for the library system, considering the small scale and specific needs of the library, and offers a balanced approach between simplicity, ease of development, and scalability."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames or perspectives, including those of a senior architect, a solo developer, and a librarian, demonstrating an understanding of different viewpoints and needs. It synthesizes these perspectives to recommend a suitable architecture."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the low volume of events and users, and examines them to determine the appropriate system architecture. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions, such as using a lightweight backend and a simple web application, without introducing particularly novel or unexpected solutions beyond the obvious first-order answers."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated, with minor caveats, and does not fundamentally question the premise or explore significant alternatives to the problem as posed."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable, practical advice. It recommends a suitable system architecture given the scale and requirements of the library, including the use of a lightweight backend, a simple web application, and a robust database. The advice is grounded in reality and considers the library's specific needs and constraints."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames or perspectives, including those of a senior architect, a solo developer, and a librarian, demonstrating a comprehensive understanding of the problem from various viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the low volume of events, the small number of concurrent users, and the tiny data volume, but does not systematically surface and examine all possible hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a solution that is not entirely conventional, considering both custom development and off-the-shelf solutions, but does not present a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, particularly in terms of scalability and the need for a simple solution, but does not explicitly question the premise or explore alternative problem framings in depth."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, provides excellent practical advice grounded in reality, and offers a suitable solution for the library's needs, considering factors such as the low volume of events, small user base, and minimal data requirements."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "parse error"
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 1,
+        "justification": "The response only considers one frame: building a custom web application with a database. It doesn't explore alternative approaches like off-the-shelf library management systems, spreadsheet solutions, or simpler database options that would be more appropriate for this scale."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about needing a web-based system, but fails to question other key assumptions like whether a custom solution is needed, whether the system needs to be centralized, or whether the complexity proposed matches the actual requirements."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response provides only the most conventional answer - a custom web application with MySQL/PostgreSQL database. It doesn't consider simpler, more appropriate solutions like SQLite, spreadsheet macros, or existing library management tools that would better fit the small scale."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated and immediately jumps to designing a custom system without questioning whether such complexity is needed for 500 books, 50 daily transactions, and 2 users. It doesn't challenge the premise that a custom solution is required."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the technical details are not incorrect, the solution is massively over-engineered for the stated requirements. Recommending MySQL/PostgreSQL, cloud hosting, and a custom web application for 500 books and 50 daily transactions is impractical and wasteful. The response fails to meet the success criteria of recommending something proportional to the actual scale."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 1,
+        "justification": "The response only considers one frame: building a custom web application with a database. It doesn't explore alternative approaches like off-the-shelf library management systems, spreadsheet solutions, or simpler database options that would be more appropriate for this scale."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about needing a web-based system, but fails to question other key assumptions like whether a custom solution is needed, whether the scale requires MySQL/PostgreSQL, or whether the complexity proposed matches the actual requirements."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response provides only the most conventional enterprise-style solution with MySQL/PostgreSQL, Flask/Django, and complex architecture. It doesn't consider simpler, more appropriate solutions for a 500-book, 50-checkout-per-day system."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated and immediately jumps to designing a complex system without questioning whether such complexity is needed for this small-scale library operation."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While technically correct, the solution is massively over-engineered for the stated requirements. The success criteria explicitly call for recognizing that 50 events/day doesn't need distributed systems and should recommend proportional solutions like SQLite, spreadsheets, or off-the-shelf tools. This response does the opposite by proposing enterprise-grade architecture for a tiny library system."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 1,
+        "justification": "The response only considers one frame: building a custom web application with database backend. It doesn't explore alternative approaches like off-the-shelf library management systems, spreadsheet solutions, or simpler database-only approaches that would be more appropriate for this scale."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about scalability ('The system should be able to handle a moderate increase') but doesn't question other key assumptions like whether a custom web application is needed, whether cloud hosting is necessary for 2 users, or whether the complexity proposed matches the actual requirements."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response provides only the most conventional enterprise-style web application solution with standard components (React/Angular frontend, Python/Node.js backend, MySQL/PostgreSQL database). No consideration of simpler, more appropriate alternatives for this small-scale use case."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated and immediately jumps into designing a complex system without questioning whether such complexity is warranted for 500 books, 2 users, and 50 transactions per day. No consideration of whether the problem needs a custom software solution at all."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the technical architecture described would work, it's massively over-engineered for the stated requirements. The solution ignores the success criteria completely - recommending cloud hosting, containerization, monitoring tools, and enterprise-grade architecture for a tiny library system. This violates the principle of proportional solutions and would be expensive and unnecessarily complex to implement and maintain."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 1,
+        "justification": "The response only considers one frame - a traditional enterprise-style web application architecture. It doesn't explore alternative approaches like off-the-shelf library management systems, spreadsheet solutions, or simpler database approaches that might be more appropriate for this scale."
+      },
+      "assumption_surfacing": {
+        "score": 1,
+        "justification": "The response doesn't identify or question any assumptions. It assumes a web-based system is needed without considering whether the librarians might prefer desktop software, whether internet connectivity is reliable at all branches, or whether the complexity is justified for just 2 users and 50 transactions per day."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response provides only the most conventional enterprise web application approach. It doesn't consider simpler alternatives like using existing library management software, spreadsheet-based solutions, or even a simple desktop database application that would be more proportional to the actual needs."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated and immediately jumps into designing a custom software system. It doesn't question whether building custom software is the right approach for such a small operation, or whether existing solutions might be more cost-effective and practical."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the technical architecture described is not factually wrong, it's completely disproportionate to the actual scale (500 books, 2 users, 50 transactions/day). The recommendation for cloud platforms, horizontal scaling, load balancing, and complex multi-tier architecture is massive overkill. The response fails to meet the success criteria by not recognizing that this small scale doesn't need distributed systems or enterprise architecture."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 1,
+        "justification": "The response only considers one frame: a complex microservices architecture. It doesn't explore alternative approaches like simple databases, spreadsheets, or off-the-shelf solutions that would be more appropriate for this scale."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about scalability ('The system should be able to handle a potential increase') but doesn't question other hidden assumptions like whether the complexity is warranted for 500 books and 50 transactions per day."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response provides only the most conventional enterprise-level solution (microservices architecture) without considering simpler, more novel approaches that would be better suited to the actual scale of the problem."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated and immediately jumps to designing a complex system without questioning whether such complexity is needed for a small community library with minimal transaction volume."
+      },
+      "correctness": {
+        "score": 1,
+        "justification": "The response is factually wrong for this use case. It massively over-engineers the solution, recommending microservices, cloud hosting, Kubernetes, and multiple databases for a system that handles 50 transactions per day. This violates the success criteria which explicitly calls for proportional solutions and noting that 50 events/day doesn't need distributed systems."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct perspectives: a senior architect at a major tech company (focusing on technical scalability metrics), a solo developer building side projects (emphasizing simplicity and cost-effectiveness), and a librarian currently using paper cards (prioritizing ease of use and familiarity). Each frame brings different priorities and concerns, and the response synthesizes these into a final recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines several assumptions: that events are evenly distributed throughout the day, that concurrent usage will be minimal, and that data volume will remain small. It also surfaces the assumption about what constitutes an 'event' (checkout/return). However, it doesn't deeply question assumptions about whether a custom solution is needed versus off-the-shelf options."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional web application solution with minor variations (SQLite vs PostgreSQL options, different hosting platforms). While it considers the librarian's perspective of wanting something 'like a spreadsheet but can do more,' it doesn't explore truly novel approaches like leveraging existing library management systems, Google Sheets with automation, or other creative solutions that might better fit the scale."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the premise that a custom software system needs to be built, with only minor consideration of alternatives. While it acknowledges the small scale through the different perspectives, it doesn't seriously question whether building custom software is the right approach for such a small operation, or explore whether existing solutions might be more appropriate."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The technical recommendations are sound and appropriately scaled for the problem size. The response correctly identifies that this is a low-volume, low-complexity scenario and recommends lightweight solutions. The final architecture suggestion (Flask/Django + SQLite/PostgreSQL + basic cloud hosting) is technically correct and practical for the stated requirements. However, it misses the success criteria's emphasis on considering off-the-shelf library management tools as potentially better options."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explicitly presents three distinct perspectives: a senior architect at a major tech company, a solo developer who builds profitable side projects, and a librarian who currently tracks on paper index cards. Each perspective brings different priorities and considerations, and the response synthesizes these into a final recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines several key assumptions: the actual volume of events per day (estimating 100-150 total events including returns), concurrent user load (2 users maximum), and total data volume (estimating around 1MB). However, it doesn't deeply question some assumptions like whether all three perspectives are equally valid or whether the problem scope is complete."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions presented are fairly conventional - web applications with standard databases, serverless architectures, and cloud deployment. While the multi-perspective approach is interesting, the actual technical solutions don't go beyond typical first-order responses. There's no consideration of simpler alternatives like spreadsheets or off-the-shelf library management systems."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and focuses on technical implementation details. It doesn't question whether building custom software is the right approach for such a small operation, or whether existing solutions might be more appropriate. The librarian perspective hints at simplicity needs but doesn't challenge the premise of building a system."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the technical details are generally sound, the response fails the key success criterion by not recommending proportional solutions like SQLite with a basic web app, spreadsheets, or off-the-shelf tools. Instead, it suggests overly complex solutions like cloud deployment, multiple frameworks, and serverless architectures for a 500-book, 2-user system. The response doesn't explicitly acknowledge that 50 events/day doesn't need distributed systems."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct perspectives: a senior architect at a major tech company (focusing on technical scalability metrics), a solo developer (emphasizing simplicity and cost-effectiveness), and a librarian (user-focused practicality). Each frame brings different priorities and concerns, with good comparison between technical complexity vs. practical needs."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines key assumptions about data volume (estimating transaction sizes and frequency), user load (2 concurrent users), and system requirements. It questions the need for complex architecture given the low scale, though it could have explored more assumptions about budget, technical expertise, or maintenance capabilities."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional web application solution with standard technology choices (Node.js, PostgreSQL/SQLite, React/Vue.js). While it appropriately scales down from enterprise solutions, it doesn't explore more creative alternatives like using existing library management software, spreadsheet-based solutions, or hybrid approaches that might be more suitable for this scale."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the premise of building a custom software system and focuses on scaling it appropriately. While it recognizes the system doesn't need enterprise-level complexity, it doesn't question whether building custom software is the right approach at all, or explore alternatives like off-the-shelf library management systems."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The technical recommendations are sound and appropriately scaled for the problem size. The architecture choices (lightweight web app, simple database, cloud hosting) match the low-volume requirements well. The response correctly identifies that 50 events/day doesn't require distributed systems. However, it misses the success criteria's emphasis on considering even simpler solutions like spreadsheets or existing library software."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct perspectives: a senior architect at a major tech company (focusing on technical scalability metrics), a solo developer (emphasizing practical simplicity and speed), and a librarian (user-focused on ease of use). Each frame brings different priorities and language, showing good diversity of viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines key assumptions about event distribution (assuming even spacing throughout the day), data volume calculations (1KB per book record), and future growth patterns. However, it doesn't deeply question some assumptions like whether all branches need real-time synchronization or whether email is the best notification method."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional web application solution with standard components (Flask/Express, SQLite, basic frontend). While it mentions low-code/no-code solutions and spreadsheets as alternatives, these are fairly obvious options. The solution doesn't explore more creative approaches like leveraging existing library management systems or hybrid approaches."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated and focuses on building a custom system. While it briefly mentions off-the-shelf solutions in passing, it doesn't seriously question whether building custom software is the right approach for such a small operation, or explore whether the stated requirements are actually necessary."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The technical analysis is sound and the recommended architecture is appropriate for the scale. The response correctly identifies that 50 events/day doesn't require distributed systems and provides practical, implementable solutions. The architecture recommendations are technically correct and proportional to the actual needs, though it could have more strongly emphasized simpler alternatives like existing library software."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explicitly presents three distinct perspectives: a Senior Architect at a Major Tech Company, a Solo Developer Who Builds Profitable Side Projects, and a Librarian Who Currently Tracks This on Paper Index Cards. Each frame brings different priorities and concerns - the architect focuses on technical scalability, the developer on cost-effectiveness and simplicity, and the librarian on usability and practical needs. The response then synthesizes these perspectives into a final recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines several key assumptions: the low event rate (50 checkouts/day), the minimal concurrent users (2), and the small data volume (500 books). It calculates specific metrics like events per second (0.0006) and data size estimates. However, it doesn't deeply question some assumptions like whether all branches need real-time synchronization or whether the current workflow is optimal."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional web application solutions (Python/Flask, Node.js, SQLite/MongoDB) without exploring more creative alternatives. While it mentions the possibility of microservices architecture, it doesn't consider simpler solutions like spreadsheet-based systems, off-the-shelf library management software, or even enhanced paper-based systems with digital components. The solutions are technically sound but predictable."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and focuses on building a custom software system. It doesn't question whether building custom software is necessary for such a small operation, or whether existing solutions (commercial library management systems, enhanced spreadsheets, or hybrid approaches) might be more appropriate. There's minimal exploration of whether the stated requirements truly necessitate a custom-built solution."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The technical recommendations are sound and appropriate for the scale described. The response correctly identifies that this is a low-traffic, small-data system and recommends proportionate solutions like SQLite and simple web frameworks. The security considerations, hosting suggestions, and email integration advice are practical and realistic. However, it may be over-engineering the solution given that simpler alternatives like off-the-shelf library software might be more cost-effective and easier to maintain."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response considers only a single frame: building a custom web application with a relational database. It does not discuss or compare alternative approaches such as spreadsheets, off-the-shelf tools, or even simpler solutions, nor does it weigh the pros and cons of different architectures."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response implicitly assumes that a custom web app is necessary and does not question whether simpler or existing solutions would suffice. It does not surface assumptions about the technical skills of the librarians, the need for cloud hosting, or the appropriateness of the proposed stack for such a small scale."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The solution is entirely conventional: a web app with a relational database. It does not propose any non-obvious or creative alternatives, nor does it suggest leveraging simpler or off-the-shelf solutions."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem as stated and does not question whether the requirements justify the proposed complexity. It does not challenge the premise or suggest that the problem might be over-engineered."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The proposed solution is technically correct and would work, but it is over-engineered for the scale described. It misses the success criteria of recommending something proportional to the scale, such as SQLite, a spreadsheet, or an off-the-shelf tool, and does not explicitly note that distributed systems are unnecessary."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily considers a conventional web app architecture (RDBMS, web server, frontend), with some mention of technology choices (Flask/Django, MySQL/PostgreSQL). It does not explore alternative frames such as spreadsheets, off-the-shelf tools, or ultra-simple solutions, nor does it compare these options."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response assumes a need for a custom-built web application and a full RDBMS, without questioning whether this is necessary for the scale. It does not surface or examine assumptions about the actual requirements or the appropriateness of simpler solutions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solution is a standard web app with a relational database, which is conventional for CRUD applications. There is a minor nod to using SQLite in the code, but the main text recommends heavier solutions. No non-obvious or creative alternatives are presented."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem as stated and does not question whether the requirements justify the proposed complexity. It does not consider if a simpler or off-the-shelf solution would suffice."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is technically correct and would work, but it is over-engineered for the described scale. It misses the success criteria of recommending a solution proportional to the problem (e.g., SQLite, spreadsheet, or off-the-shelf tool), and does not explicitly note that distributed systems are unnecessary."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response only considers a single, relatively complex web app architecture and does not discuss or compare simpler alternatives such as spreadsheets, SQLite, or off-the-shelf tools. There is a minor nod to scalability, but no real exploration of other frames."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response assumes a need for a custom web app and cloud hosting without questioning if this is overkill for the scale. It does not surface assumptions about the technical skills of librarians, budget, or whether simpler solutions would suffice."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The solution is a standard web app stack (React/Angular frontend, Flask/Django/Node backend, RDBMS, cloud hosting) and does not propose any non-obvious or creative alternatives."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem as stated and does not question whether the requirements justify the proposed complexity or if the problem could be solved more simply."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the architecture is technically correct, it is disproportionate to the scale of the problem. It ignores the success criteria, which call for a simpler solution, and thus is impractical for a small library with only two users and 500 books."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response considers only a conventional web application architecture and does not discuss alternative approaches such as spreadsheets, off-the-shelf tools, or simpler solutions. It focuses solely on a custom-built web app with a relational database."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response does not explicitly identify or question assumptions about scale, user needs, or technical constraints. It assumes a need for a scalable, cloud-hosted, multi-server architecture without examining whether this is necessary for such a small-scale system."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The solution is entirely conventional, recommending a standard web app stack with cloud hosting. It does not propose any non-obvious or creative alternatives, nor does it tailor the solution to the small scale of the problem."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem as stated and does not question whether the requirements justify the proposed complexity. It does not consider whether a simpler or off-the-shelf solution would be more appropriate."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the proposed architecture would technically work, it is over-engineered for the described scale (500 books, 2 librarians, 50 events/day). It ignores the success criteria, which call for a much simpler solution, and thus is impractical for the actual needs."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 1,
+        "justification": "The response only considers a single, highly technical frame (microservices, cloud, containers) and does not discuss or compare simpler alternatives such as spreadsheets, SQLite, or off-the-shelf tools."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response assumes scalability and future growth are important but does not question whether these are realistic for a 500-book, 2-librarian system. It does not surface or challenge the assumption that such complexity is needed."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The solution is a conventional enterprise web app with microservices, which is not novel and is in fact overkill for the described use case. No alternative or creative solutions are offered."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem as stated and does not question whether the scale justifies the proposed architecture or if a simpler solution would suffice."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the architecture is technically correct for a much larger system, it is impractical and disproportionate for the described scale. It fails the success criteria of recommending a simple, proportional solution."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explicitly considers three distinct perspectives: a senior architect, a solo developer, and a librarian. It synthesizes their views in the final recommendation, but does not add a fourth frame or a radically different stakeholder."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: low event volume, low concurrency, small data size, and the librarians' technical needs. It also considers the need for remote access and ease of use, which are not explicitly stated in the problem. However, it does not systematically question every possible hidden assumption."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response offers the conventional lightweight web app with SQLite solution, and briefly mentions the possibility of using a spreadsheet-like interface. It does not propose a truly novel or unexpected solution, but does consider both web app and spreadsheet paradigms."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response gently questions the need for technical complexity by emphasizing the small scale and referencing the librarian's current paper-based system. It does not, however, fundamentally challenge the premise or suggest that the problem might be solved in a radically different way."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The recommendation is highly appropriate for the scale and needs described, avoids unnecessary complexity, and includes practical considerations like backups, security, and ease of use. It is grounded in reality and would be effective for the described scenario."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explicitly considers three distinct perspectives: a senior architect, a solo developer, and a librarian. It synthesizes their views in the final recommendation, but does not add a fourth frame (e.g., off-the-shelf tool vendor or spreadsheet power user)."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: event volume, concurrency, data size, and user needs. It quantifies these and discusses their implications, but does not deeply question less obvious assumptions (e.g., whether a web app is needed at all, or if email is the best notification method)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response mostly recommends conventional solutions (simple web app, lightweight database, cloud hosting), but does mention both relational and NoSQL options, and serverless as a possible approach. It does not suggest truly non-obvious solutions like spreadsheets with macros or off-the-shelf library tools."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only minor caveats (e.g., noting the low event rate and small data size). It does not question whether a custom web app is necessary or if simpler alternatives (like a spreadsheet or existing software) would suffice."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical for the scale described, recommending a simple, maintainable architecture. However, it could be even more practical by explicitly recommending the simplest possible solutions (e.g., SQLite, spreadsheet, or off-the-shelf tool), as called for in the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response presents three distinct perspectives: a senior architect, a solo developer, and a librarian. Each brings a different lens to the problem, and their views are summarized before synthesizing a recommendation. However, there is no explicit comparison or synthesis of trade-offs between all options, nor is there a fourth frame."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response surfaces some assumptions, such as the low event rate, small number of users, and minimal data volume. It also assumes the need for a web app and considers future scalability. However, it does not deeply question whether a web app is necessary versus even simpler solutions (like a spreadsheet or off-the-shelf tool), nor does it challenge the need for a custom build."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solution is conventional: a lightweight web app with a simple backend and database. While it mentions SQLite and cloud hosting, it does not propose non-obvious or alternative solutions such as using a spreadsheet with macros or an off-the-shelf library management system, both of which would be highly appropriate for this scale."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether a custom-built web app is necessary. There is a minor nod to simplicity and the librarian's desire for ease of use, but no explicit challenge to the premise or exploration of whether an even simpler or pre-existing solution would suffice."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The recommendation is technically correct and practical for the scale described. It avoids overengineering and provides actionable advice. However, it misses the opportunity to recommend even simpler or off-the-shelf solutions, which would be more proportional to the actual needs."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explicitly presents three distinct perspectives: a senior architect, a solo developer, and a librarian. Each frame is explored with its own reasoning and priorities, and the final recommendation synthesizes their input. However, it does not introduce a fourth or more frames, nor does it deeply compare and contrast all options."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: the low event rate, the small number of users, and the minimal data volume. It also considers future growth and the librarians' comfort with technology. While it doesn't systematically list every possible hidden assumption, it does address more than just the obvious ones."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the most conventional answer by mentioning spreadsheets with automation, low-code/no-code solutions, and JSON file storage, in addition to the standard web app with SQLite. However, the final recommendation is still the expected simple web app, so the novelty is present but not extensive."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response gently questions the scale and complexity implied by the problem, noting that the requirements are modest and that simpler solutions (like spreadsheets or low-code tools) could suffice. It does not, however, fundamentally challenge the need for a custom system or reframe the problem."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is highly accurate and practical. It recommends a solution proportional to the scale, explicitly notes that distributed systems are unnecessary, and provides concrete, actionable advice for implementation. It also addresses the success criteria directly."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explicitly considers three distinct perspectives: a senior architect, a solo developer, and a librarian. It synthesizes their views in the final recommendation, but does not add a fourth or more frames."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: event rate, user concurrency, data volume, and the need for scalability. It also considers librarian usability and security, but does not systematically examine all possible hidden assumptions (e.g., offline access, regulatory requirements)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response mostly recommends conventional solutions (web app with SQLite, cloud hosting, transactional email). It briefly mentions the possibility of using a spreadsheet or off-the-shelf tool via the success criteria, but does not deeply explore non-obvious or radically different solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether a digital system is necessary or whether simpler alternatives (like a spreadsheet or off-the-shelf tool) might suffice. It does not challenge the premise or reframe the problem."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The recommendation is highly practical, proportional to the scale, and addresses all requirements (simplicity, usability, security, email integration). It avoids overengineering and is grounded in the actual needs of the library."
+      }
+    }
+  ]
+}

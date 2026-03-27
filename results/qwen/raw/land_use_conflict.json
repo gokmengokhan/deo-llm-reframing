@@ -1,0 +1,798 @@
+{
+  "problem_id": "land_use_conflict",
+  "problem_title": "The Urban Land Use Conflict",
+  "category": "zero_sum",
+  "paths_applied": [
+    "path_5_invert",
+    "path_9_step_outside"
+  ],
+  "theory_connection": "Perspective-taking (Kross & Ayduk, 2017) disrupts the binary by introducing fundamentally different value systems. Inversion reveals that a pure single-use decision on a constrained urban site typically produces worst outcomes. The binary frame ('park or housing') forecloses hybrid urban design solutions documented in urban planning literature.",
+  "expected_vanilla_failure": "Picks a side with caveats (community needs are important, but housing crisis is urgent) or proposes a spatial split (3 acres park, 2 acres housing). The park-or-housing binary is never questioned.",
+  "success_criteria": "Identifies hybrid designs: housing with rooftop parks and ground-floor community gardens, mixed-use development with public green space integrated into the building design, or challenges the 'one plot, one use' assumption entirely. Recognises that urban design regularly achieves both on a single site.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "To approach this problem, let's consider the key factors involved and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Community Need for Green Space:** The nearest park is 1.2 miles away, which may be too far for some residents, particularly those with mobility issues or young children. Green spaces provide numerous benefits, including recreation, relaxation, and improved air quality.\n2. **Housing Shortage:** The city has a significant housing waitlist of 4,000 families, indicating a severe shortage of affordable housing. The proposed 120 units of affordable housing would help alleviate this shortage.\n3. **Brownfield Site:** The 5-acre parcel is a remediated brownfield site, which means it was previously contaminated but has been cleaned up at public expense. This investment should be leveraged to benefit the community.\n4. **Density and Neighborhood Character:** The site is located in a dense residential neighborhood, which may already have a high population density. Introducing more housing units could exacerbate existing issues, such as parking and traffic congestion.\n\n**Options:**\n\n1. **Park:** Converting the site into a park would provide much-needed green space for the community, promoting recreation, relaxation, and environmental benefits. However, it would not address the housing shortage.\n2. **Affordable Housing:** Building 120 units of affordable housing would help reduce the waitlist and provide essential housing for families in need. Nevertheless, it might not fully address the community's desire for green space.\n3. **Mixed-Use Development:** A potential compromise could be a mixed-use development that incorporates both affordable housing and green space. This could include building housing units with a smaller footprint, leaving room for a community garden, playground, or other green amenities.\n\n**Recommendation:**\n\nConsidering the competing needs and factors, I recommend exploring the mixed-use development option. This approach would allow the city to:\n\n* Provide some affordable housing units (e.g., 80-100 units) to address the housing shortage\n* Incorporate green space (e.g., a community garden, playground, or pocket park) to meet the community's need for recreation and relaxation\n* Leverage the remediated brownfield site to benefit the community in a way that balances competing priorities\n* Potentially incorporate innovative design elements, such as green roofs or urban agriculture, to maximize the use of space\n\nTo make this option work, the city could:\n\n* Engage with the community to determine the optimal mix of housing and green space\n* Collaborate with the housing developer to design a project that meets the city's affordable housing goals while incorporating green amenities\n* Explore funding opportunities or partnerships to support the development of the mixed-use project\n* Ensure that the development is designed with sustainability and environmental stewardship in mind, minimizing its impact on the surrounding neighborhood\n\nBy adopting a mixed-use approach, the city of Hartwell can create a win-win solution that addresses both the need for affordable housing and green space, ultimately benefiting the community as a whole.",
+      "input_tokens": 181,
+      "output_tokens": 608,
+      "elapsed_seconds": 2.74
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "To approach this problem, let's break it down into key factors and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Community need for green space:** The nearest park is 1.2 miles away, which may be too far for some residents, particularly those with mobility issues or young children. Green spaces provide numerous benefits, including recreation, relaxation, and improved air quality.\n2. **Need for affordable housing:** The city has a significant shortage of affordable housing, with 4,000 families on the waitlist. Affordable housing is essential for low-income families, and the proposed 120 units could make a significant dent in the waitlist.\n3. **Brownfield site remediation:** The site was remediated at public expense, which suggests that the city has already invested significant resources in preparing the land for development.\n4. **Density and compatibility:** The site is located in a dense residential neighborhood, which may affect the suitability of the land for either a park or affordable housing.\n\n**Options:**\n\n1. **Park:** Converting the site into a park would provide much-needed green space for the community. However, it would not address the affordable housing shortage.\n2. **Affordable housing:** Building 120 units of affordable housing would help alleviate the city's housing shortage, but it would not provide the community with the desired green space.\n3. **Hybrid solution:** Could the city consider a hybrid solution that combines elements of both options? For example, incorporating green spaces or parks within the affordable housing development, or exploring alternative locations for a smaller park or community garden.\n\n**Recommendation:**\n\nAfter careful consideration, I would recommend exploring a hybrid solution that balances the need for both green space and affordable housing. Here's a possible approach:\n\n* Allocate a portion of the 5-acre site (e.g., 1-2 acres) for a community park or green space, which could include amenities like playgrounds, walking trails, and community gardens.\n* Use the remaining land (e.g., 3-4 acres) for the affordable housing development, incorporating green spaces and parks within the development to provide residents with access to outdoor recreation areas.\n* Consider alternative locations for a smaller park or community garden, which could be developed in conjunction with the affordable housing project.\n* Engage with the community and stakeholders to ensure that the final design meets the needs and expectations of both the residents and the city.\n\nBy adopting a hybrid approach, the city can address both the need for green space and affordable housing, while also making the most of the remediated brownfield site. This solution would require careful planning, collaboration, and creative problem-solving, but it could ultimately provide a more comprehensive and sustainable outcome for the community.",
+      "input_tokens": 181,
+      "output_tokens": 550,
+      "elapsed_seconds": 3.3
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "To approach this decision, let's break down the key factors involved and weigh the options carefully.\n\n**Factor 1: Community Need for Green Space**\nThe community has been vocal about needing green space, and the nearest park is 1.2 miles away. This suggests that there is a genuine demand for recreational areas and open spaces in the neighborhood. Parks provide numerous benefits, including opportunities for physical activity, socialization, and mental health improvement. They also contribute to the aesthetic appeal and property values of the surrounding area.\n\n**Factor 2: Affordable Housing Shortage**\nThe city has a significant shortage of affordable housing, with 4,000 families on the waitlist. The proposed 120 units of affordable housing would help alleviate this shortage, providing much-needed homes for low-income families. Affordable housing is essential for maintaining social equity, reducing homelessness, and supporting the local economy.\n\n**Factor 3: Brownfield Site Remediation**\nThe 5-acre brownfield site was remediated at public expense, which means that the city has already invested significant resources in making the land safe for development. This investment should be considered when evaluating the potential uses for the site.\n\n**Option 1: Park Development**\nIf the city decides to develop the site as a park, it would:\n* Address the community's need for green space and recreational areas\n* Provide a valuable amenity for nearby residents\n* Potentially increase property values in the surrounding area\n* Offer opportunities for community events and social activities\n\nHowever, this option would:\n* Not address the pressing need for affordable housing\n* Leave the city's housing waitlist unchanged\n\n**Option 2: Affordable Housing Development**\nIf the city decides to develop the site for affordable housing, it would:\n* Provide 120 units of much-needed housing for low-income families\n* Help reduce the city's housing waitlist\n* Support the local economy by providing homes for workers and families\n* Make use of the remediated brownfield site, justifying the public investment in remediation\n\nHowever, this option would:\n* Not address the community's need for green space\n* Potentially lead to increased density and strain on local resources\n\n**Hybrid Option: Mixed-Use Development**\nA potential compromise could be a mixed-use development that incorporates both affordable housing and green space. This could involve:\n* Building affordable housing units on a portion of the site, while reserving a smaller area for a park or community garden\n* Incorporating green roofs, courtyards, or other design elements that provide recreational spaces for residents\n* Partnering with local organizations to create community programs and services that support both housing and green space needs\n\nThis hybrid option would:\n* Address both the need for affordable housing and green space\n* Make efficient use of the remediated brownfield site\n* Provide opportunities for innovative design and community engagement\n\n**Recommendation**\nBased on the analysis, I recommend exploring the hybrid option: a mixed-use development that combines affordable housing with green space. This approach would allow the city to address both pressing needs, while also making use of the remediated brownfield site. By incorporating design elements that provide recreational spaces and partnering with local organizations, the city can create a vibrant and sustainable community that benefits both residents and the environment.\n\nTo move forward, the city council should:\n1. Conduct a feasibility study to determine the optimal mix of housing and green space for the site.\n2. Engage with the community to gather feedback and input on the proposed development.\n3. Explore partnerships with local organizations and developers to support the project.\n4. Develop a comprehensive plan that balances the needs for affordable housing, green space, and community amenities.\n\nBy taking a thoughtful and inclusive approach, the city of Hartwell can create a thriving and sustainable community that meets the needs of its residents, while also making the most of the remediated brownfield site.",
+      "input_tokens": 181,
+      "output_tokens": 781,
+      "elapsed_seconds": 3.18
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "To approach this decision, let's consider the key factors involved and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Community Need for Green Space:** The nearest park is 1.2 miles away, which may be too far for some residents, especially those with mobility issues or young children. Green spaces provide numerous benefits, including recreation, mental health, and environmental advantages.\n2. **Housing Crisis:** The city has a significant housing waitlist with 4,000 families, indicating a severe shortage of affordable housing. The proposed 120 units would help alleviate some of this pressure.\n3. **Brownfield Site Remediation:** The site was remediated at public expense, which suggests that the city has already invested in making the land usable. This investment could be leveraged to benefit the community in a meaningful way.\n4. **Density and Compatibility:** The site is located in a dense residential neighborhood, which may impact the feasibility of either option. The city should consider how the chosen use would affect the surrounding area and its residents.\n\n**Options:**\n\n1. **Park:** Creating a park would provide much-needed green space for the community, potentially improving residents' quality of life and property values. However, it would not address the pressing housing crisis.\n2. **Affordable Housing:** Building 120 units of affordable housing would help reduce the waitlist and provide homes for families in need. Nevertheless, this option would not fulfill the community's desire for green space.\n3. **Hybrid Solution:** A potential compromise could involve a mixed-use development that incorporates both housing and green space. This might include:\n\t* Building affordable housing on a portion of the site, while designating a smaller area for a community garden, playground, or other green space.\n\t* Incorporating green roofs, courtyards, or other innovative design elements to maximize green space within the housing development.\n\t* Partnering with nearby organizations or landowners to create a network of smaller, connected green spaces that could provide a similar benefit to a single, larger park.\n\n**Recommendation:**\n\nConsidering the city's dual needs for green space and affordable housing, I recommend exploring a hybrid solution that combines elements of both. This approach would allow the city to:\n\n1. Provide some green space for the community, even if it's not a full-sized park.\n2. Address the housing crisis by building affordable units.\n3. Leverage the remediated brownfield site to create a unique, mixed-use development that benefits the community in multiple ways.\n\nTo move forward, the city council could:\n\n1. Engage with the community to gather input on the hybrid solution and understand their priorities.\n2. Collaborate with urban planners, architects, and developers to design a mixed-use development that balances housing and green space.\n3. Explore potential partnerships or funding opportunities to support the project and make it more viable.\n\nBy adopting a hybrid approach, the city of Hartwell can create a innovative solution that addresses both the need for green space and affordable housing, ultimately benefiting the community as a whole.",
+      "input_tokens": 181,
+      "output_tokens": 616,
+      "elapsed_seconds": 3.08
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "To approach this problem, let's break it down into key factors and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Community Need for Green Space:** The nearest park is 1.2 miles away, which may be too far for some residents, particularly those with mobility issues or young children. Green spaces provide numerous benefits, including recreational areas, air quality improvement, and mental health benefits.\n2. **Need for Affordable Housing:** The city has a significant housing waitlist of 4,000 families, indicating a severe shortage of affordable housing. The proposed 120 units of affordable housing would help address this need.\n3. **Brownfield Site:** The 5-acre site was remediated at public expense, which suggests that the city has already invested in preparing the land for development.\n4. **Dense Residential Neighborhood:** The site is located in a dense residential area, which may impact the suitability of the site for either a park or affordable housing.\n\n**Option 1: Park**\n\n* Pros:\n\t+ Addresses the community's need for green space and recreational areas.\n\t+ Can provide benefits for air quality, mental health, and community cohesion.\n* Cons:\n\t+ May not address the pressing need for affordable housing.\n\t+ Could be seen as underutilizing a remediated brownfield site, which was prepared for development at public expense.\n\n**Option 2: Affordable Housing**\n\n* Pros:\n\t+ Addresses the significant need for affordable housing in the city.\n\t+ Can provide a substantial number of units (120) to help reduce the housing waitlist.\n* Cons:\n\t+ May not address the community's need for green space and recreational areas.\n\t+ Could lead to increased density in an already dense residential neighborhood, potentially straining local resources and infrastructure.\n\n**Hybrid Option:**\n\nConsidering the competing needs, a hybrid approach might be the most effective solution. This could involve:\n\n1. **Mixed-Use Development:** Incorporate both affordable housing and green space into the development. For example, the site could be used for a mix of affordable housing units, with green roofs, community gardens, or a smaller park area.\n2. **Innovative Design:** Utilize innovative design principles to maximize the use of the site. This could include stacked housing, green spaces on rooftops, or underground parking to minimize the footprint of the development.\n3. **Phased Development:** Consider phasing the development, starting with a smaller park or green space, and then adding affordable housing units in subsequent phases.\n\n**Recommendation:**\n\nBased on the analysis, I recommend a hybrid approach that incorporates both affordable housing and green space. This could involve a mixed-use development with a combination of affordable housing units, green roofs, community gardens, or a smaller park area. This approach would address both the community's need for green space and the pressing need for affordable housing.\n\nTo move forward, the city council could:\n\n1. **Conduct Community Engagement:** Engage with the community to gather feedback and input on the proposed hybrid approach.\n2. **Work with Developers:** Collaborate with the housing developer to explore innovative design principles and mixed-use development options.\n3. **Assess Feasibility:** Conduct a thorough feasibility study to determine the viability of the hybrid approach, including costs, zoning regulations, and potential environmental impacts.\n\nBy taking a thoughtful and inclusive approach, the city of Hartwell can create a development that balances the competing needs of its residents, providing both affordable housing and green space in a way that benefits the community as a whole.",
+      "input_tokens": 181,
+      "output_tokens": 716,
+      "elapsed_seconds": 2.87
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before choosing between park and housing, do two things. First: how would you guarantee the WORST possible outcome for this neighbourhood — one that maximises community harm and wastes the site's potential? List 5 specific decisions. Second: answer the question from four distinct perspectives, each in first person: a parent with young children who lives three blocks away, a person currently on the housing waitlist living in temporary shelter, a local business owner whose shop fronts the parcel, and a landscape architect who specialises in urban design.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "**Guaranteeing the Worst Possible Outcome**\n\nTo maximize community harm and waste the site's potential, here are five specific decisions that could be made:\n\n1. **Delay the decision indefinitely**: By putting off the choice between park and housing, the city can ensure that the site remains vacant and unused, denying the community access to either green space or affordable housing.\n2. **Choose a use that ignores community feedback**: Disregard the community's vocal need for green space and the housing waitlist's desperate need for affordable units. Instead, use the site for a purpose that benefits only a select few, such as a private development or a city-owned facility.\n3. **Prioritize short-term gains over long-term benefits**: Focus on generating quick revenue or appeasing a specific interest group, rather than considering the long-term benefits of the site's use. This could involve selling the land to a private developer or using it for a temporary, low-benefit purpose.\n4. **Fail to incorporate community amenities**: Regardless of whether the site is used for housing or a park, neglect to include community amenities such as playgrounds, community centers, or public art installations that could enhance the quality of life for local residents.\n5. **Disregard sustainable design principles**: Ignore environmental and social sustainability considerations, such as energy-efficient design, green infrastructure, and accessibility features, to ensure that the site's development has a negative impact on the community and the environment.\n\n**Four Distinct Perspectives**\n\n### A Parent with Young Children\n\nAs a parent living three blocks away, I would love to see a park on this site. My kids are always looking for a safe and green space to play, and the nearest park is just too far away. I worry about their health and well-being, and a park would provide them with a much-needed outlet for physical activity and fresh air. While I understand the need for affordable housing, I believe that a park would benefit not just my family but the entire community. It would be a vibrant hub of activity, fostering connections and a sense of community among local residents. I would be willing to explore alternative solutions for affordable housing, such as inclusive zoning or community land trusts, to ensure that the site is used in a way that benefits everyone.\n\n### A Person on the Housing Waitlist\n\nI've been living in temporary shelter for what feels like an eternity, and the thought of having a stable and affordable place to call home is a constant source of hope and anxiety. The proposed 120 units of affordable housing on this site would be a lifeline for me and the thousands of others on the waitlist. I understand that the community needs green space, but I believe that housing is a more pressing need. Every day, I see families and individuals struggling to make ends meet, and the lack of affordable housing is a major contributor to this problem. I would be grateful if the city could prioritize housing on this site, while also exploring ways to incorporate community amenities and green spaces into the development.\n\n### A Local Business Owner\n\nAs a business owner with a shop fronting the parcel, I have a unique perspective on the site's potential. While both a park and affordable housing would bring benefits to the community, I believe that a well-designed housing development could have a more significant positive impact on my business and the local economy. More residents in the area would mean more customers, and a diverse, vibrant community would attract even more people to our neighborhood. However, I also recognize the importance of green space and community amenities. I would suggest that the city consider a mixed-use development that incorporates both housing and green space, such as a rooftop garden or a community courtyard. This would not only benefit my business but also enhance the quality of life for local residents.\n\n### A Landscape Architect\n\nAs a landscape architect specializing in urban design, I see the potential for this site to be a game-changer for the community. A well-designed park could not only provide much-needed green space but also serve as a catalyst for community engagement and social cohesion. However, I also recognize the urgent need for affordable housing. I would propose a hybrid solution that combines both uses. For example, a housing development with a significant green roof or a community garden could provide both affordable housing and green space. Alternatively, a park design that incorporates affordable housing units, such as a community land trust or inclusive zoning, could ensure that the site is used in a way that benefits both the community and the environment. By thinking creatively and incorporating sustainable design principles, we can create a vibrant, inclusive, and resilient community that benefits everyone.",
+      "input_tokens": 262,
+      "output_tokens": 925,
+      "elapsed_seconds": 3.47
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before choosing between park and housing, do two things. First: how would you guarantee the WORST possible outcome for this neighbourhood — one that maximises community harm and wastes the site's potential? List 5 specific decisions. Second: answer the question from four distinct perspectives, each in first person: a parent with young children who lives three blocks away, a person currently on the housing waitlist living in temporary shelter, a local business owner whose shop fronts the parcel, and a landscape architect who specialises in urban design.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "**Guaranteeing the Worst Possible Outcome: 5 Specific Decisions**\n\nTo maximize community harm and waste the site's potential, the city council could make the following decisions:\n\n1. **Ignore Community Engagement**: Disregard the community's input and concerns, and make a decision without considering the needs and opinions of local residents, business owners, and stakeholders.\n2. **Choose a Single-Use Development**: Decide to use the entire 5-acre site for either a park or affordable housing, without exploring possibilities for mixed-use development or innovative designs that could incorporate both uses.\n3. **Prioritize Short-Term Gains**: Focus solely on short-term benefits, such as quickly filling the housing units or creating a park that can be used immediately, without considering the long-term consequences, maintenance costs, or potential for future development.\n4. **Overlook Environmental Concerns**: Fail to consider the environmental implications of the development, such as the potential for stormwater management issues, heat island effects, or the loss of biodiversity, which could have negative impacts on the community and the site itself.\n5. **Neglect Phasing and Implementation**: Rush into development without a phased plan, leading to chaotic construction, disrupted community activities, and potential safety hazards, which could delay the project and increase costs.\n\n**Perspectives on the Park vs. Housing Decision**\n\n### A Parent with Young Children\n\nAs a parent living just three blocks away, I'm desperate for a nearby park where my kids can play safely. The nearest park is over a mile away, which is too far for us to walk, especially with toddlers in tow. I've seen how much my children benefit from outdoor play, and I believe that a park would be a wonderful asset for our community. However, I'm also aware of the pressing need for affordable housing in our city. If I'm being honest, I'd love to see a compromise – perhaps a smaller park or playground, combined with some housing units that could be designed with families in mind. That way, we could have the best of both worlds.\n\n### A Person on the Housing Waitlist\n\nI've been living in temporary shelter for months, and the uncertainty is taking a toll on my mental and physical health. I'm desperate for a stable and secure place to call home. The proposed 120 units of affordable housing would be a lifeline for me and hundreds of other families on the waitlist. I understand that the community wants a park, but for me, a roof over my head is the most basic necessity. I'd be willing to work with the community to find alternative solutions for green space, such as community gardens or smaller pocket parks, if it means that I can finally have a place to live. Affordable housing is not just a want – it's a need, and I implore the city council to prioritize it.\n\n### A Local Business Owner\n\nAs a business owner with a shop fronting the parcel, I have a unique perspective on the development. A park would be a fantastic addition to our neighborhood, attracting more foot traffic and potentially boosting sales for local businesses like mine. However, I'm also aware that the housing development could bring in new customers and help revitalize the area. If I had to choose, I'd say that a mixed-use development that incorporates both housing and commercial space could be the most beneficial for our community. This would not only provide much-needed housing but also create opportunities for new businesses, services, and amenities that could cater to the new residents and existing community members. A well-designed development could be a win-win for everyone.\n\n### A Landscape Architect\n\nAs a landscape architect specializing in urban design, I believe that this site presents an incredible opportunity for innovative and sustainable design. Rather than pitting park against housing, I'd argue that we can have both – and more. By incorporating green roofs, urban agriculture, and clever site planning, we could create a development that not only provides affordable housing but also delivers a range of community benefits, including green space, stormwater management, and improved air quality. A mixed-use development that prioritizes sustainability, accessibility, and community engagement could be a model for future urban development. I'd love to see the city council consider a more holistic approach that balances the needs of different stakeholders and creates a thriving, resilient community for generations to come.",
+      "input_tokens": 262,
+      "output_tokens": 873,
+      "elapsed_seconds": 3.35
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before choosing between park and housing, do two things. First: how would you guarantee the WORST possible outcome for this neighbourhood — one that maximises community harm and wastes the site's potential? List 5 specific decisions. Second: answer the question from four distinct perspectives, each in first person: a parent with young children who lives three blocks away, a person currently on the housing waitlist living in temporary shelter, a local business owner whose shop fronts the parcel, and a landscape architect who specialises in urban design.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "**Guaranteeing the Worst Possible Outcome: 5 Specific Decisions**\n\nTo maximize community harm and waste the site's potential, the city council could make the following decisions:\n\n1. **Delay the decision indefinitely**: By putting off the choice between park and housing, the city council can ensure that the site remains vacant and unused, depriving the community of both much-needed green space and affordable housing.\n2. **Prioritize luxury development**: Instead of choosing between park and affordable housing, the city council could opt for a luxury development that caters to high-income residents, pricing out existing community members and exacerbating gentrification.\n3. **Ignore community engagement**: The city council could disregard the community's input and concerns, imposing a top-down decision that fails to address the neighborhood's needs and priorities, leading to widespread dissatisfaction and mistrust.\n4. **Choose a poorly designed project**: The city council could select a design that is inadequate, inefficient, or unsustainable, whether it's a park that is poorly maintained or housing that is poorly constructed, ensuring that the site's potential is wasted and the community is left with a subpar outcome.\n5. **Fail to provide supporting infrastructure**: The city council could neglect to invest in supporting infrastructure, such as transportation, amenities, or services, making the chosen project (whether park or housing) less accessible, less usable, and less beneficial to the community, thereby maximizing its negative impact.\n\n**Four Distinct Perspectives:**\n\n### A Parent with Young Children\n\nAs a parent living three blocks away, I'm desperate for a safe and accessible green space where my kids can play and get some exercise. The nearest park is just too far, and I worry about their health and well-being. I understand the need for affordable housing, but I believe that a park would have a more immediate and tangible impact on our community's quality of life. A park would provide a space for my kids to socialize, learn, and thrive, and it would also become a hub for community events and activities. I'd be willing to explore alternative solutions for affordable housing, such as infill development or redevelopment of nearby underutilized sites.\n\n### A Person on the Housing Waitlist\n\nI've been living in temporary shelter for months, and the uncertainty is taking a toll on my mental and physical health. I desperately need a stable and secure place to call home. The proposed affordable housing development would be a game-changer for me and the 4,000 other families on the waitlist. I understand that the community needs green space, but I believe that housing is a more pressing and fundamental need. A park can be built elsewhere, but affordable housing is scarce and urgently required. I implore the city council to prioritize housing and provide a safe and dignified place for me and my fellow waitlisters to live.\n\n### A Local Business Owner\n\nAs a business owner with a shop fronting the parcel, I have a unique perspective on the site's potential. While a park could bring in foot traffic and enhance the area's aesthetic appeal, I believe that affordable housing would have a more significant and lasting impact on our local economy. The proposed development would bring in new residents, many of whom would become customers, employees, or entrepreneurs, injecting vitality and diversity into our community. Additionally, the increased density would support existing businesses like mine, making our neighborhood more vibrant and resilient. I'd be happy to work with the city council to ensure that the chosen project, whether park or housing, is designed and implemented in a way that benefits local businesses and the community as a whole.\n\n### A Landscape Architect\n\nAs a landscape architect specializing in urban design, I see the potential for this site to be a showcase for innovative and sustainable design. Whether the city council chooses a park or affordable housing, I believe that the site should be designed with multiple benefits in mind. A park could incorporate green infrastructure, such as rain gardens and green roofs, to manage stormwater runoff and mitigate the urban heat island effect. An affordable housing development could be designed with green spaces, community gardens, and pedestrian-friendly streets to create a livable and sustainable community. I'd advocate for a hybrid approach that combines elements of both park and housing, such as a mixed-use development with integrated green spaces or a community land trust that prioritizes affordability and community engagement. By embracing a holistic and integrated design approach, we can create a thriving and resilient neighborhood that benefits everyone.",
+      "input_tokens": 262,
+      "output_tokens": 896,
+      "elapsed_seconds": 3.13
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before choosing between park and housing, do two things. First: how would you guarantee the WORST possible outcome for this neighbourhood — one that maximises community harm and wastes the site's potential? List 5 specific decisions. Second: answer the question from four distinct perspectives, each in first person: a parent with young children who lives three blocks away, a person currently on the housing waitlist living in temporary shelter, a local business owner whose shop fronts the parcel, and a landscape architect who specialises in urban design.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "**Guaranteeing the WORST possible outcome: 5 specific decisions**\n\nTo maximize community harm and waste the site's potential, the following decisions could be made:\n\n1. **Delayed decision-making**: The city council could prolong the decision-making process for years, keeping the site vacant and unused, while the community's needs for green space and affordable housing continue to grow.\n2. **Lack of community engagement**: The city could ignore community input and concerns, leading to a decision that does not reflect the needs and priorities of the neighbourhood, potentially resulting in a project that is met with resistance and opposition.\n3. **Inadequate planning**: The city could fail to conduct thorough planning and analysis, leading to a project that is not well-designed, not financially sustainable, and does not adequately address the community's needs.\n4. **Prioritizing private interests**: The city could prioritize the interests of private developers or special interest groups over the needs of the community, leading to a project that benefits a select few at the expense of the broader community.\n5. **Inconsistent zoning and land-use regulations**: The city could apply inconsistent or outdated zoning and land-use regulations, leading to a project that is not compatible with the surrounding neighbourhood, potentially causing conflicts and reducing the overall quality of life for residents.\n\n**Perspectives on the park vs. housing decision**\n\n### A parent with young children who lives three blocks away\n\nAs a parent, I'm desperate for a safe and accessible green space where my kids can play and get some exercise. The nearest park is just too far away, and I worry about their health and wellbeing. I understand the need for affordable housing, but I think a park would be a better use of this land. It would not only benefit my family but also the entire community, providing a space for socialization, recreation, and relaxation. I'd be willing to explore alternative solutions for housing, such as infill development or redevelopment of underutilized sites.\n\n### A person currently on the housing waitlist living in temporary shelter\n\nI've been on the housing waitlist for what feels like an eternity, and the thought of having a safe and stable place to call my own is a dream come true. I understand that the community needs green space, but I believe that affordable housing is a more pressing issue. There are 4,000 families on the waitlist, and every day that passes means another day of uncertainty and insecurity for us. I think the city should prioritize housing on this site, as it would provide a tangible solution to a critical problem. Perhaps the city could explore alternative locations for a park or incorporate green spaces into the housing development.\n\n### A local business owner whose shop fronts the parcel\n\nAs a business owner, I'm concerned about the impact that either a park or housing development could have on my shop. On one hand, a park could attract more foot traffic and create a welcoming atmosphere, potentially benefiting my business. On the other hand, a housing development could bring in new customers and increase the local population, also potentially benefiting my business. However, I'm worried that a large housing development could lead to increased competition for parking and put a strain on local resources. I think the city should consider a mixed-use development that incorporates both housing and green space, providing a balanced solution that benefits both the community and local businesses.\n\n### A landscape architect who specialises in urban design\n\nAs a landscape architect, I believe that this site presents a unique opportunity to create a innovative and sustainable urban design solution. Rather than pitting park vs. housing, I think the city should consider a hybrid approach that incorporates both elements. A well-designed housing development could include green roofs, courtyards, and public spaces that provide amenities for residents and the broader community. Alternatively, a park could be designed with community facilities, such as a community center or playground, that also serve as hubs for social activity and community engagement. By thinking creatively and exploring alternative design solutions, I believe we can create a project that meets the community's needs for both housing and green space, while also enhancing the overall quality of life in the neighbourhood.",
+      "input_tokens": 262,
+      "output_tokens": 833,
+      "elapsed_seconds": 3.14
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before choosing between park and housing, do two things. First: how would you guarantee the WORST possible outcome for this neighbourhood — one that maximises community harm and wastes the site's potential? List 5 specific decisions. Second: answer the question from four distinct perspectives, each in first person: a parent with young children who lives three blocks away, a person currently on the housing waitlist living in temporary shelter, a local business owner whose shop fronts the parcel, and a landscape architect who specialises in urban design.\n\nThe city of Hartwell has one available parcel: a 5-acre brownfield site in a dense residential neighbourhood that was remediated at public expense. The community has been vocal about needing green space — the nearest park is 1.2 miles away. A housing developer has proposed 120 units of affordable housing, which the city also badly needs — the housing waitlist has 4,000 families. The city council has been asked: should this land become a park or affordable housing?",
+      "response": "**Guaranteeing the WORST possible outcome for the neighbourhood:**\n\nTo maximize community harm and waste the site's potential, here are 5 specific decisions that could be made:\n\n1. **Ignoring community engagement**: Disregard the input and concerns of local residents, business owners, and stakeholders, and make a decision without considering the neighborhood's unique needs and characteristics.\n2. **Prioritizing short-term gains**: Focus solely on short-term benefits, such as quick revenue or political gain, rather than considering the long-term consequences and potential of the site.\n3. **Failing to consider alternative solutions**: Dismiss the possibility of innovative, hybrid solutions that could incorporate both green space and affordable housing, such as green roofs, community gardens, or mixed-use developments.\n4. **Disregarding environmental concerns**: Overlook the site's environmental history and potential risks, such as soil contamination or floodplain issues, which could lead to costly remediation or maintenance problems down the line.\n5. **Lack of maintenance and upkeep**: Fail to allocate sufficient funds or resources for the ongoing maintenance and upkeep of the site, whether it's a park or housing development, leading to neglect, disrepair, and decreased quality of life for neighboring residents.\n\n**Perspectives on the park vs. housing decision:**\n\n### A parent with young children who lives three blocks away:\n\nAs a parent, I desperately want a safe and accessible park for my kids to play in. The nearest park is just too far away, and I worry about their safety walking that distance. I'd love to see a park on this site, with play structures, green space, and maybe even a community garden. However, I also understand the need for affordable housing in our city. Perhaps a compromise could be reached, such as incorporating a smaller park or green space within a mixed-use development that includes housing? That way, we could balance the needs of families like mine with the urgent need for affordable housing.\n\n### A person currently on the housing waitlist living in temporary shelter:\n\nI've been waiting for a place to call home for what feels like an eternity. The thought of 120 units of affordable housing on this site gives me hope. I dream of having a stable, secure place to live, where I can build a life and start to rebuild my sense of self-worth. While I understand the desire for a park, I believe that housing should take priority. There are other potential sites for parks in the city, but the need for affordable housing is dire. I implore the city council to consider the human cost of delaying or denying housing to those of us who need it most.\n\n### A local business owner whose shop fronts the parcel:\n\nAs a business owner, I have a vested interest in seeing this site developed in a way that benefits our community and enhances the local economy. While a park could potentially attract more foot traffic and customers to my shop, I'm concerned about the potential loss of revenue and business opportunities if the site is used solely for green space. On the other hand, affordable housing could bring in new customers and help stimulate local economic growth. I think a mixed-use development that incorporates both housing and commercial space could be a win-win for our neighborhood. It would provide much-needed housing, support local businesses, and create a vibrant, diverse community that benefits everyone.\n\n### A landscape architect who specialises in urban design:\n\nFrom a design perspective, I see immense potential in this site to create a truly innovative and sustainable urban space. Rather than pitting park against housing, I'd love to explore ways to integrate both uses in a way that maximizes benefits for the community. For example, we could design a park that incorporates affordable housing units, community gardens, and green roofs, while also providing public amenities like playgrounds, walkways, and public art installations. By thinking creatively and pushing the boundaries of traditional urban design, we could create a model for sustainable, equitable, and resilient urban development that serves the needs of all stakeholders. This approach would not only address the immediate needs of the community but also provide a long-term legacy for the city of Hartwell.",
+      "input_tokens": 262,
+      "output_tokens": 835,
+      "elapsed_seconds": 3.07
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the community's need for green space, the housing shortage, the brownfield site's potential, and the neighborhood's density. It explores these frames with comparison, weighing the options carefully and considering the trade-offs between different uses of the land."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the idea that the site must be used for either housing or a park, and that these uses are mutually exclusive. It also considers the assumption that the community's needs can be met by a single-use development, and challenges this assumption by proposing a mixed-use approach."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces a solution beyond the obvious first-order answer, proposing a mixed-use development that incorporates both affordable housing and green space. This solution is non-obvious and requires a deeper understanding of the problem and its constraints."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the problem is a zero-sum choice between housing and green space, and explores alternative approaches that can meet both needs. It reframes the question to consider how the site can be used to benefit the community in a way that balances competing priorities."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a clear and well-supported recommendation for a mixed-use development, and offers suggestions for how to implement this approach in a way that benefits the community. The response demonstrates a strong understanding of the problem and its constraints, and provides excellent practical advice grounded in reality."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the need for green space, the need for affordable housing, and the potential for a hybrid solution that combines both. It explores the perspectives of the community, the city, and the residents, demonstrating a good understanding of the various stakeholders involved."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines some assumptions, such as the idea that the site must be used for either a park or affordable housing, and that these uses are mutually exclusive. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the 5-acre site is the only available location for a park or affordable housing."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces a solution beyond the obvious first-order answer, which is to choose between a park and affordable housing. The proposed hybrid solution, which combines elements of both, is a non-obvious solution that demonstrates creativity and thinking outside the box."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, in that it presents a false dichotomy between a park and affordable housing. However, it does not explicitly question the premise of the problem or explore alternative problem framings, such as considering other locations for a park or affordable housing."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and practically useful, in that it proposes a viable solution that balances the need for green space and affordable housing. The hybrid solution is well-reasoned and takes into account the various stakeholders and factors involved, demonstrating a good understanding of the problem and its context."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the need for green space, affordable housing, and the potential for mixed-use development. It explores the benefits and drawbacks of each option, demonstrating an understanding of different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the idea that the site must be used for either housing or a park, and challenges this assumption by proposing a hybrid option. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces a non-obvious solution, the hybrid option, which combines affordable housing with green space. This solution goes beyond the conventional either-or approach and demonstrates creativity in addressing the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, implying that the site does not have to be used for a single purpose. However, it does not explicitly question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and provides a practical and useful solution. The hybrid option is a viable and innovative approach that addresses both the need for affordable housing and green space, making it an excellent example of a correct and practically useful response."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the community's need for green space, the housing crisis, and the potential for a hybrid solution that combines both. It explores the perspectives of residents, the city council, and potential developers, demonstrating a nuanced understanding of the issue."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the idea that the site must be used for either a park or affordable housing, and that these uses are mutually exclusive. It also considers the assumption that the community's needs can be met by a single, large park, rather than a network of smaller green spaces."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, including a hybrid approach that incorporates both housing and green space. It suggests innovative design elements, such as green roofs and courtyards, and explores the potential for partnerships to create a network of connected green spaces."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the problem is a binary choice between a park and affordable housing. It explores alternative framings, such as a hybrid solution, and considers the potential benefits and trade-offs of different approaches."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a thoughtful analysis of the issue, considers multiple perspectives, and offers a range of potential solutions that are grounded in reality and responsive to the community's needs."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the need for green space, the need for affordable housing, and the potential for hybrid designs that combine both. It explores these frames in detail, comparing their pros and cons, and synthesizes them into a comprehensive recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the site must be used for either a park or affordable housing, and the assumption that these uses are mutually exclusive. It also considers the potential impact of increased density on local resources and infrastructure."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including the idea of a mixed-use development with green roofs, community gardens, or a smaller park area, and the concept of phased development. These solutions go beyond the conventional either-or approach and demonstrate a high degree of creativity and innovation."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the problem is a zero-sum choice between a park and affordable housing, and explores alternative approaches that can meet both needs. It challenges the 'one plot, one use' assumption and considers more innovative and flexible uses of the site."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a comprehensive analysis of the problem, identifies key factors and trade-offs, and offers a well-supported recommendation that balances competing needs and priorities. The proposed hybrid approach is grounded in reality and takes into account the complexities of urban planning and development."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers four distinct perspectives: a parent with young children, a person on the housing waitlist, a local business owner, and a landscape architect. Each perspective is explored in detail, demonstrating a high level of frame diversity and synthesis."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the site can only be used for one purpose, the assumption that affordable housing and green space are mutually exclusive, and the assumption that the community's needs are fixed and unchanging. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 5,
+        "justification": "The response produces solutions beyond the obvious first-order answer, including hybrid designs that combine housing and green space, such as rooftop parks and ground-floor community gardens. The landscape architect's proposal for a hybrid solution that incorporates both uses is a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem, noting that the 'one plot, one use' assumption may be limiting and that urban design can achieve both housing and green space on a single site. However, it does not fundamentally reframe the question before answering, instead working within the given problem statement."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. The proposed solutions are grounded in reality and take into account the needs of the community, the environment, and the city's goals. The response demonstrates a deep understanding of the problem and its complexities."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including those of a parent with young children, a person on the housing waitlist, a local business owner, and a landscape architect, demonstrating a high level of frame diversity and synthesis."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the idea that the site must be used for either a park or affordable housing, and that these uses are mutually exclusive. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 5,
+        "justification": "The response produces genuinely unexpected and viable solutions, such as incorporating green roofs, urban agriculture, and clever site planning to create a mixed-use development that balances the needs of different stakeholders and delivers a range of community benefits."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, challenging the 'one plot, one use' assumption and exploring alternative solutions that integrate multiple uses and benefits."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality, providing excellent advice on how to approach the problem and create a thriving, resilient community for generations to come."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers four distinct perspectives: a parent with young children, a person on the housing waitlist, a local business owner, and a landscape architect, demonstrating a high level of frame diversity and synthesis."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the idea that the site can only be used for one purpose, the assumption that affordable housing and green space are mutually exclusive, and the notion that the community's needs can be met by a single solution. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, such as hybrid designs that combine housing with rooftop parks and ground-floor community gardens, and challenges the 'one plot, one use' assumption. However, it does not present a genuinely unexpected viable solution that completely reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem by considering alternative uses for the site and exploring the idea that the community's needs can be met through innovative design and planning. However, it does not fundamentally reframe the question before answering."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing practical and useful suggestions for the city council to consider. The ideas presented are grounded in reality and take into account the needs and perspectives of various stakeholders. However, the response could benefit from more detailed and specific examples of how the proposed solutions could be implemented."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including those of a parent with young children, a person on the housing waitlist, a local business owner, and a landscape architect, demonstrating a high level of frame diversity and synthesis."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the assumption that the site must be used for either a park or housing, and the assumption that these uses are mutually exclusive. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 5,
+        "justification": "The response produces solutions beyond the obvious first-order answer, including hybrid designs that incorporate both housing and green space, such as rooftop parks and ground-floor community gardens, and mixed-use development with public green space integrated into the building design."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem, noting that the 'one plot, one use' assumption may be limiting, and exploring alternative solutions that challenge this assumption. However, it does not fundamentally reframe the question before answering."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, reasonable, and practically useful, providing excellent practical advice grounded in reality, such as considering the needs of the community, the benefits of mixed-use development, and the importance of creative urban design solutions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including those of a parent with young children, a person on the housing waitlist, a local business owner, and a landscape architect, demonstrating a high level of frame diversity and synthesis."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the idea that the site must be used for either a park or affordable housing, and that these uses are mutually exclusive. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 5,
+        "justification": "The response produces genuinely unexpected and viable solutions, such as incorporating rooftop parks and ground-floor community gardens, mixed-use development with public green space, and challenging the 'one plot, one use' assumption, which reframes the problem and offers innovative solutions."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem, exploring alternative uses for the site and challenging the assumption that the site must be used for either a park or affordable housing. However, it does not fundamentally reframe the question before answering."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality, offering excellent practical advice and solutions that take into account the needs and perspectives of various stakeholders."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: community needs (green space vs housing shortage) and explores a third mixed-use perspective. However, it doesn't deeply explore other potential frames like economic development, environmental justice, or long-term urban planning perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - the 'one plot, one use' assumption when it suggests mixed-use development. However, it doesn't systematically examine other hidden assumptions like whether all 120 units must be on this site, whether the community's stated preference for green space represents all stakeholders, or whether the current zoning constraints are fixed."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response moves beyond the binary choice to suggest mixed-use development, which is a step beyond conventional thinking. It mentions innovative elements like green roofs and urban agriculture, but these are fairly standard urban planning solutions rather than genuinely novel approaches."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of choosing between park or housing with only minor questioning. While it suggests mixed-use as a compromise, it doesn't fundamentally challenge whether this single 5-acre site must solve both problems or whether the framing itself is limiting."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides practical, realistic advice that aligns with modern urban planning principles. The mixed-use recommendation is sound, the implementation steps are reasonable, and the consideration of community engagement and sustainability is appropriate. The advice is grounded in real-world urban development practices."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames (park vs. affordable housing) and explores a hybrid approach. It examines the community perspective (need for green space), the housing crisis perspective (4,000 families on waitlist), and the municipal investment perspective (remediated brownfield). However, it doesn't deeply explore other potential frames like economic development, environmental justice, or long-term urban planning perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that it must be 'either/or' rather than 'both/and' - and proposes a hybrid solution. However, it doesn't question other assumptions like whether 120 units is the optimal density, whether the entire 5 acres must be used, or whether this specific location is the best use of remediated land. It accepts most of the problem parameters without deeper examination."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response moves beyond the binary choice to propose a hybrid solution that combines both uses on the same site. This includes allocating portions of land for different uses and incorporating green spaces within housing development. While this is a step beyond conventional thinking, the solutions are still relatively straightforward mixed-use concepts rather than truly innovative approaches."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of choosing between park or housing but does question the either/or framing by proposing a hybrid approach. However, it doesn't fundamentally challenge other aspects of the problem setup, such as whether this is the right site for either use, whether 120 units is appropriate, or whether there are entirely different ways to meet both community needs."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound, practical advice that addresses both community needs. The hybrid approach is realistic and commonly implemented in urban planning. The recommendation to engage stakeholders and consider phased development shows good understanding of implementation challenges. The analysis of key factors is accurate and the proposed solution is feasible, though it could benefit from more specific design details."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers three distinct frames: (1) park development focusing on community green space needs, (2) affordable housing development addressing the housing crisis, and (3) a hybrid mixed-use approach. Each frame is explored with its benefits and drawbacks, though the analysis could have been deeper."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one main assumption - that the site must be used for either housing OR green space - and proposes a hybrid solution. However, it doesn't systematically examine other hidden assumptions like the specific housing density proposed, whether all 5 acres must be developed, or alternative governance models."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response moves beyond the binary choice to propose a hybrid solution combining housing with green space elements like green roofs and courtyards. While this is a step beyond conventional thinking, the solutions remain fairly standard mixed-use concepts rather than genuinely innovative approaches."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting by suggesting the 'either/or' choice is false, and proposes a hybrid approach. However, it doesn't deeply question other aspects of how the problem is framed, such as the scale of development, timeline, or governance assumptions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound practical advice with a structured approach including feasibility studies, community engagement, and partnership exploration. The hybrid solution is realistic and addresses both identified needs. The recommendation includes concrete next steps that are actionable and well-grounded in urban planning practice."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames (park vs. housing) and introduces a third hybrid frame. It examines the community perspective (need for green space), the housing crisis perspective, and the mixed-use development perspective, but doesn't explore additional frames like economic development, environmental justice, or long-term urban planning perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that it must be 'one plot, one use' - and challenges this through the hybrid solution. However, it doesn't surface other assumptions like whether 5 acres is optimal for either use, whether the location is best for housing vs. park, or whether the community's stated preferences reflect all stakeholders' needs."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the binary choice to propose multiple innovative hybrid solutions including mixed-use development with integrated green space, green roofs and courtyards, and creating networks of connected smaller green spaces. These represent genuinely creative approaches that reframe the either/or problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting by suggesting the 'one plot, one use' assumption doesn't have to hold, and proposes hybrid solutions. However, it doesn't deeply question other aspects of how the problem is posed, such as whether this specific site is optimal for either use or whether the timeline/process assumptions are sound."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides practical, realistic advice that aligns with modern urban planning principles. The hybrid solutions suggested (mixed-use development, green roofs, community engagement) are feasible and commonly implemented. The recommendation includes concrete next steps for implementation, making it actionable and grounded in reality."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames (park vs. housing) and introduces a third hybrid frame. It explores the community needs perspective, the housing crisis perspective, and the mixed-use development perspective, but doesn't deeply explore additional frames like economic development, environmental justice, or long-term urban planning perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one main assumption - that it must be 'one plot, one use' - and challenges this through the hybrid approach. However, it doesn't surface other potentially important assumptions like whether 120 units is the optimal density, whether the community consultation was representative, or whether the 1.2-mile distance truly represents inadequate access to green space."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes well beyond the binary choice presented in the problem. It proposes multiple innovative solutions including mixed-use development with green roofs, community gardens, stacked housing, underground parking, and phased development. These represent genuinely creative approaches that reframe the either/or problem into a both/and solution."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the fundamental premise of the problem by challenging the 'one plot, one use' assumption and proposing that both needs can be met simultaneously. It reframes the problem from a binary choice to an integrated design challenge, though it could have gone further in questioning other aspects of how the problem was framed."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides practical, realistic advice that aligns with modern urban planning principles. The hybrid solutions proposed (green roofs, mixed-use development, community gardens) are all feasible and commonly implemented. The recommendation includes concrete next steps (community engagement, developer collaboration, feasibility study) that are appropriate and actionable."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores four distinct perspectives: a parent with young children (prioritizing green space), a person on the housing waitlist (prioritizing housing), a local business owner (considering economic impacts), and a landscape architect (proposing hybrid solutions). Each perspective is well-developed with unique concerns and viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and questions the assumption that the site must be used for only one purpose (either park OR housing). The landscape architect perspective explicitly challenges this binary thinking. However, it doesn't systematically examine other hidden assumptions like zoning constraints, funding mechanisms, or community decision-making processes."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes well beyond conventional either/or solutions by proposing multiple hybrid approaches: housing with rooftop gardens, community courtyards, mixed-use development with integrated green space, and community land trusts. The landscape architect perspective particularly offers creative solutions that combine both uses effectively."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the fundamental premise of the either/or choice through the landscape architect's perspective, which challenges the 'one plot, one use' assumption. It reframes the problem from a binary choice to a design challenge of how to achieve both goals simultaneously."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response contains some good ideas about hybrid solutions, it's significantly undermined by the opening section titled 'Guaranteeing the Worst Possible Outcome' which provides counterproductive advice that would harm the community. This section appears to misunderstand the task and provides impractical, harmful recommendations that detract from the overall quality and usefulness of the response."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores four distinct perspectives: a parent with young children (prioritizing green space for families), a person on the housing waitlist (prioritizing shelter as basic necessity), a local business owner (considering economic impacts and mixed-use potential), and a landscape architect (focusing on innovative design solutions). Each perspective is well-developed with unique concerns and priorities."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies several key assumptions: the 'one plot, one use' assumption (explicitly challenged by the landscape architect), the assumption that park vs. housing is a binary choice, assumptions about community engagement processes, and assumptions about prioritizing short-term vs. long-term benefits. The opening section systematically identifies assumptions that would lead to poor outcomes."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes well beyond conventional either/or thinking by proposing multiple innovative solutions: mixed-use development with integrated green space, green roofs and urban agriculture, community gardens combined with housing, and phased development approaches. The landscape architect perspective particularly emphasizes creative design solutions that achieve both goals simultaneously."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the fundamental premise of the either/or choice. The landscape architect states 'Rather than pitting park against housing, I'd argue that we can have both – and more.' The opening section also challenges assumptions about single-use development and the framing of the problem as a binary choice."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides practical, realistic advice grounded in actual urban planning practices. The solutions proposed (mixed-use development, green roofs, integrated community spaces) are commonly implemented in real urban development projects. The multiple stakeholder perspectives reflect genuine community dynamics, and the emphasis on hybrid solutions aligns with modern sustainable urban design principles."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response presents four distinct perspectives: a parent with young children (prioritizing green space for child development), a person on the housing waitlist (prioritizing urgent housing needs), a local business owner (considering economic impacts), and a landscape architect (focusing on design integration). Each perspective is well-developed with unique concerns and priorities."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies some assumptions, particularly in the landscape architect's perspective about the potential for hybrid approaches, but it doesn't systematically surface and examine the core hidden assumptions of the problem. The 'worst possible outcomes' section touches on some assumptions about decision-making processes but doesn't deeply examine the either/or framing assumption."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The landscape architect perspective mentions hybrid approaches like 'mixed-use development with integrated green spaces' and 'community land trust,' which goes beyond the conventional either/or choice. However, these solutions are mentioned briefly without detailed exploration, and the response doesn't fully develop the innovative potential that the success criteria specifically calls for."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "While the landscape architect briefly suggests a 'hybrid approach that combines elements of both,' the response largely accepts the either/or framing of the problem. It doesn't fundamentally question whether a single site must have a single use, which is the core premise that should be challenged according to the success criteria."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable perspectives and acknowledges real urban planning considerations. However, it fails to meet the specific success criteria of identifying hybrid designs or challenging the 'one plot, one use' assumption. The perspectives are realistic but don't address the core expectation of demonstrating that urban design regularly achieves both uses on a single site."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores four distinct perspectives: a parent needing green space, a person on the housing waitlist, a local business owner, and a landscape architect. Each perspective is well-developed with different priorities and concerns, showing good diversity of viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies some assumptions like the either/or framing and mentions 'one plot, one use' thinking through the landscape architect's perspective, but doesn't systematically surface and examine the deeper assumptions underlying the problem."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The landscape architect perspective suggests hybrid approaches like green roofs, courtyards, and mixed-use development, which goes beyond the basic park vs. housing dichotomy. However, these solutions are fairly conventional in urban planning and don't represent genuinely unexpected reframing."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes through the landscape architect that the either/or framing may be limiting and suggests hybrid approaches, but doesn't fundamentally challenge the problem setup or deeply question whether this is the right question to be asking."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response provides multiple perspectives and mentions hybrid solutions, it spends significant time on 'worst possible outcomes' that don't address the core question. The hybrid solutions mentioned are reasonable but lack the specific detail and innovative thinking that the success criteria explicitly call for, such as rooftop parks or integrated public green spaces."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores four distinct perspectives: a parent with young children, a person on the housing waitlist, a local business owner, and a landscape architect. Each perspective brings different priorities and concerns, creating a comprehensive view of stakeholder interests."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: the assumption that community input should be ignored (point 1) and the assumption that only conventional single-use solutions should be considered (point 3). However, it doesn't systematically surface other hidden assumptions like zoning constraints or funding mechanisms."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes well beyond conventional either/or thinking by proposing multiple innovative solutions: mixed-use development with integrated green space, housing with rooftop parks and community gardens, green roofs, and a park that incorporates affordable housing units. The landscape architect's perspective particularly emphasizes creative integration."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the fundamental premise of the either/or choice through the landscape architect's perspective, which states 'Rather than pitting park against housing, I'd love to explore ways to integrate both uses.' It challenges the 'one plot, one use' assumption and reframes the problem as an opportunity for innovative integration."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides practical and realistic advice grounded in actual urban planning practices. The hybrid solutions mentioned (mixed-use development, green roofs, integrated community spaces) are established approaches in urban design. The stakeholder perspectives are realistic and the solutions are implementable, though it could have provided more specific technical details about implementation."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three main frames: (1) park only, (2) affordable housing only, and (3) mixed-use development. It compares these options and discusses their trade-offs, but does not introduce a fourth or more distinct perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines at least two assumptions: that the site must be used for only one purpose (park or housing), and that the number of housing units is fixed. It also hints at the assumption that green space and housing are mutually exclusive, but does not systematically surface less obvious assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response moves beyond the obvious binary choice and proposes a mixed-use solution, including green roofs and community gardens. While these are not highly novel in urban design, they are non-obvious compared to the initial framing."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that a mixed-use approach challenges the 'one plot, one use' assumption, indicating some questioning of the problem's framing. However, it does not fundamentally reframe the question or deeply interrogate the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical, actionable advice, including community engagement and collaboration with developers. It is grounded in real-world urban planning practices, though it could be more detailed in implementation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames (park vs. affordable housing) and introduces a hybrid solution as a third frame. However, it does not deeply compare or synthesize more than these three, nor does it introduce additional perspectives such as economic development, environmental sustainability, or long-term urban planning."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and lightly examines two assumptions: that the site must be used for only one purpose, and that green space and housing are mutually exclusive. It hints at challenging the 'one plot, one use' assumption but does not systematically surface or deeply examine less obvious assumptions (e.g., about the necessity of on-site green space, or the potential for vertical integration)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response moves beyond the binary choice by proposing a hybrid solution (splitting the site, integrating green space into housing), which is a non-obvious but increasingly common approach. However, it does not propose more innovative urban design solutions such as rooftop parks, fully integrated mixed-use buildings, or challenging the site allocation paradigm."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that a hybrid solution is possible and hints that the binary framing may be limiting, but it does not explicitly question or reframe the premise of the problem. It accepts the need to choose between park and housing, then suggests a compromise, rather than fundamentally challenging the setup."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical, actionable advice. It suggests community engagement, phased allocation, and integration of green space, all of which are feasible and grounded in real-world urban planning practice. However, it could be more detailed about implementation or cite specific examples."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct frames: (1) using the site solely as a park, (2) using it solely for affordable housing, and (3) a hybrid/mixed-use approach. It compares the pros and cons of each, but does not introduce a fourth or more radically different frame."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses some assumptions, such as the need to choose between housing and green space, and the value of public investment in remediation. However, it does not deeply question less obvious assumptions, such as the scale or form of green space, or whether other sites could be leveraged."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the two obvious solutions (park or housing) by proposing a hybrid/mixed-use development, including green roofs and community gardens. However, it does not detail more innovative or unexpected urban design solutions (e.g., fully integrated rooftop parks open to the public, or challenging the 'one plot, one use' paradigm in a more radical way)."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that a hybrid solution is possible and implicitly challenges the binary framing of the problem, but it does not explicitly question whether the problem is well-posed or fundamentally reframe the question."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct, practical, and provides actionable steps for the city council. It is grounded in reality and urban planning best practices, though it could be more detailed in describing specific design precedents or mechanisms for implementation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three main frames: (1) using the site solely as a park, (2) using it solely for affordable housing, and (3) a hybrid/mixed-use solution. It compares these options and discusses their trade-offs, but does not introduce a fourth or more distinct perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the site must be used for only one purpose, that green space and housing are mutually exclusive, and that the community's needs can only be met by a single large park or a single housing development. It does not systematically examine all possible hidden assumptions, but it does challenge the 'one plot, one use' assumption."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious binary choice and proposes a hybrid solution, including specific ideas like green roofs, courtyards, and community gardens. It also suggests partnerships for a network of green spaces, which is a non-obvious extension. However, it does not present a genuinely unexpected or radically new solution."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting by challenging the assumption that the site must be used for only one purpose and suggesting hybrid solutions. However, it does not fundamentally reframe the question or deeply interrogate the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical, actionable advice. It outlines steps for community engagement and collaboration with professionals, and the hybrid solution is grounded in real-world urban design practices. More detail on implementation could push this to a 5."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three main frames: (1) using the site as a park, (2) using it for affordable housing, and (3) a hybrid/mixed-use approach. It compares the pros and cons of each and synthesizes them into a recommendation, but does not introduce a fourth distinct frame such as commercial use or alternative urban interventions."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses some assumptions, such as the need to choose between housing and green space, and the suitability of the site for either use. It hints at challenging the 'one plot, one use' assumption by proposing a hybrid, but does not systematically surface less obvious assumptions (e.g., about zoning, funding, or the necessity of maximizing units/acre)."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious binary choice and proposes a hybrid solution, mentioning mixed-use development, green roofs, and community gardens. While these are not groundbreaking, they are non-obvious and align with best practices in urban design."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that a hybrid approach is possible and implicitly questions the binary framing of the problem, but does not explicitly challenge the premise or fundamentally reframe the question."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is accurate, practical, and grounded in real-world urban planning principles. It provides actionable steps (community engagement, developer collaboration, feasibility study) and recognizes the feasibility of integrating both uses on a single site."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response presents four distinct perspectives: a parent, a person on the housing waitlist, a local business owner, and a landscape architect. Each perspective is explored in detail, and there is some synthesis, especially in the landscape architect's and business owner's suggestions for hybrid solutions."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the site must be used for only one purpose, that community needs are mutually exclusive, and that conventional solutions are the only options. The landscape architect and business owner both challenge the 'one plot, one use' assumption, and the parent questions whether alternative housing solutions could be found elsewhere."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the binary choice by proposing hybrid solutions such as housing with green roofs, community gardens, and mixed-use development. These are non-obvious and align with the success criteria, though they are not extremely novel or unexpected."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the site must be either a park or housing, especially through the landscape architect and business owner perspectives. It explores alternatives and hybrid models, but does not fundamentally reframe the question at the deepest level."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is accurate, practical, and grounded in real urban design practices. It recognizes the feasibility of hybrid solutions and the importance of community input, sustainability, and practical implementation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response presents four distinct perspectives: a parent, a person on the housing waitlist, a local business owner, and a landscape architect. Each frame is explored in detail, and there is synthesis in the landscape architect's section, which integrates the needs of multiple stakeholders."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions, especially in the 'Guaranteeing the Worst Possible Outcome' section, such as the assumption that only single-use development is possible, that short-term gains should be prioritized, and that environmental and community concerns can be ignored. The landscape architect also challenges the assumption that the site must be either/or. However, it does not systematically examine every hidden assumption."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the conventional park vs. housing dichotomy by suggesting mixed-use development, green roofs, community gardens, and integrated green space. These are non-obvious solutions that align with the success criteria, though they are not radically unexpected."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of 'one plot, one use' and explores alternatives, especially through the landscape architect's and business owner's perspectives. It does not fully reframe the question but does challenge the binary framing."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, grounded in real urban design practices, and offers actionable, realistic solutions that address both community needs and city priorities."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response explicitly presents four distinct perspectives (parent, person on housing waitlist, business owner, landscape architect) and synthesizes their views, especially in the landscape architect's section, which advocates for a hybrid approach."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the site must be used for only one purpose, that affordable housing and green space are mutually exclusive, and that the only options are park or housing. The landscape architect's section in particular challenges these assumptions, but the examination is not fully systematic."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the binary choice by proposing hybrid solutions such as mixed-use development with integrated green spaces, community gardens, and green infrastructure. However, it does not provide a highly detailed or radically new design."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the 'one plot, one use' premise and suggests that both needs can be met on the same site, especially in the landscape architect's section. It does not fully reframe the entire question but does challenge the initial binary framing."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, recognizes real urban design possibilities, and offers practical, grounded advice that aligns with best practices in urban planning and community engagement."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response presents four distinct perspectives: a parent, a person on the housing waitlist, a local business owner, and a landscape architect. Each perspective is explored in detail, and the business owner and architect synthesize both sides, considering hybrid solutions."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the site must be used for only one purpose, that community needs are mutually exclusive, and that alternative sites or hybrid solutions are not possible. The landscape architect and business owner both challenge the 'one plot, one use' assumption, and the parent and housing waitlist perspectives question the prioritization of needs."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the binary choice by suggesting hybrid solutions, such as mixed-use development and integrating green space into housing. The landscape architect explicitly proposes green roofs, courtyards, and public spaces, which are non-obvious and creative solutions."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the site must be either a park or housing, especially through the landscape architect and business owner perspectives. It explores alternatives and hybrid approaches, challenging the initial framing."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is accurate, practical, and grounded in real urban design practices. It recognizes the feasibility of hybrid solutions and the importance of community engagement, planning, and balancing interests, providing actionable and realistic advice."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response presents four distinct perspectives: a parent, a person on the housing waitlist, a local business owner, and a landscape architect. Each frame is explored with its own priorities and reasoning, and the landscape architect synthesizes the others by proposing an integrative solution."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the site must be used for only one purpose, that community engagement is optional, that short-term gains are preferable, and that environmental and maintenance concerns can be ignored. The landscape architect and the 'worst outcome' section both challenge the 'one plot, one use' assumption, though not all assumptions are systematically examined."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the binary park vs. housing framing by proposing hybrid solutions: mixed-use development, green roofs, community gardens, and integrated public amenities. These are non-obvious and align with the success criteria, though they are established best practices in urban design rather than truly unexpected."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the site must be either a park or housing, especially through the landscape architect's perspective and the 'worst outcome' section. It explores alternatives to the binary framing, but does not fundamentally reframe the entire question."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practical, and grounded in real-world urban design principles. It acknowledges community needs, environmental concerns, and maintenance, and proposes viable, actionable solutions that are widely recognized as best practice."
+      }
+    }
+  ]
+}

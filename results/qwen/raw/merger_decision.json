@@ -1,0 +1,797 @@
+{
+  "problem_id": "merger_decision",
+  "problem_title": "The Merger Confidence Check",
+  "category": "multi_turn",
+  "paths_applied": [
+    "path_8_confidence_calibration"
+  ],
+  "theory_connection": "Tulver et al. (2023): the aha! experience functions as a metacognitive heuristic — an internal signal about representational quality. Confidence calibration is the LLM analogue: forcing explicit assessment of certainty surfaces claims the model is 'generating by pattern' rather than reasoning through. Low-confidence claims are the model's equivalent of edge emotions (Malkki, 2010) — signals of frame boundaries.",
+  "expected_vanilla_failure": "Gives a confident, balanced analysis leaning toward accept or reject without surfacing which parts of the analysis are speculative. Treats 'BigCorp promises autonomy' at the same confidence level as '40% YoY growth'.",
+  "success_criteria": "Model rates 'BigCorp promises autonomy' with low confidence and explains why (promises are cheap, autonomy rarely survives integration). The confidence exercise forces it to distinguish hard data from soft assumptions, changing the final recommendation or adding critical caveats.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To determine whether TechStartup should accept the acquisition offer from BigCorp, let's analyze the situation step by step, considering the key factors involved.\n\n### 1. **Financial Consideration**\n- **Acquisition Price**: The offer is $50 million for a company with $8 million in revenue and growing at 40% YoY. This represents a significant multiple (6.25 times revenue), which is quite attractive, especially considering the growth stage of TechStartup.\n- **Founder's Stake**: The founder owns 60% of the company. Thus, the founder would personally receive $30 million (60% of $50 million) from the sale, a substantial sum that could be life-changing and provide financial security.\n\n### 2. **Growth Potential and Independence**\n- **Current Growth**: TechStartup is growing rapidly at 40% YoY, indicating a strong market position and potential for continued expansion.\n- **Autonomy Promise**: BigCorp promises autonomy, which could allow TechStartup to continue its mission independently. However, the history of corporate acquisitions suggests that over time, the acquiring company often exerts more control, potentially altering the startup's culture and direction.\n- **Resources**: BigCorp's resources could significantly boost TechStartup's growth, providing access to more capital, talent, and markets. This could accelerate TechStartup's mission and expansion plans.\n\n### 3. **Mission and Culture**\n- **Passion and Mission**: The team is passionate about their mission. If the acquisition aligns with or supports this mission, it could be a positive move. However, if the team fears that BigCorp's involvement could compromise their mission or alter the company culture significantly, this could be a significant drawback.\n- **Cultural Fit**: The cultural fit between TechStartup and BigCorp is crucial. If BigCorp's culture is too bureaucratic or differs significantly from TechStartup's, it could lead to dissatisfaction among the team and potentially hinder the startup's performance.\n\n### 4. **Alternatives and Risks**\n- **Continuing Independently**: TechStartup could continue on its current path, seeking additional funding through venture capital or other means to support its growth. This option retains independence but comes with the risk of not achieving the same level of success or facing increased competition.\n- **Risks of Acquisition**: There's a risk that after the acquisition, key team members might leave due to cultural or autonomy concerns, which could jeopardize the startup's growth and success within BigCorp.\n\n### Recommendation\nConsidering the factors above, the decision to accept the acquisition offer depends heavily on the founder's and the team's priorities and risk tolerance. \n\n**If the primary goal is financial return and securing the team's future with access to more resources**, accepting the offer might be the best choice. The financial gain is substantial, and the promise of autonomy and resources could support accelerated growth.\n\n**However, if preserving the company's independence, mission, and culture is paramount**, and the team believes they can continue to grow strongly without BigCorp's involvement, it might be wise to decline the offer and explore other funding options to support continued independent growth.\n\nUltimately, the decision should be made after careful consideration of these factors, potentially including discussions with the team, advisors, and possibly even BigCorp to clarify the terms of the acquisition and the future role of TechStartup within the larger corporation.",
+      "input_tokens": 153,
+      "output_tokens": 678,
+      "elapsed_seconds": 2.73
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To determine whether TechStartup should accept the acquisition offer from BigCorp, let's analyze the key factors involved step by step:\n\n### 1. **Financial Consideration**\n- **Offer Value**: The offer is $50 million for a company with $8 million in revenue. This represents a significant multiple (6.25 times revenue), which is a strong valuation for the company.\n- **Growth Potential**: TechStartup is growing at 40% YoY, indicating strong potential for future growth. The question is whether this growth can be sustained or even accelerated under BigCorp.\n\n### 2. **Autonomy and Culture**\n- **BigCorp's Promise**: BigCorp promises autonomy, which is crucial for TechStartup's team, given their passion for the mission. However, the history of similar acquisitions suggests that maintaining autonomy can be challenging once integrated into a larger corporation.\n- **Cultural Fit**: The cultural fit between TechStartup and BigCorp is unknown. BigCorp's size and structure might significantly differ from TechStartup's, potentially affecting the team's dynamics and motivation.\n\n### 3. **Resources and Scalability**\n- **Access to Resources**: Being part of BigCorp could provide TechStartup with access to more resources (financial, technological, and human) that could accelerate its growth and scalability.\n- **Integration Challenges**: Integrating into a large corporation like BigCorp can be complex and may divert the founding team's attention from their core mission and product development.\n\n### 4. **Founder and Team Considerations**\n- **Founder's Stake**: The founder owns 60% of TechStartup. The acquisition offer could provide a significant financial return, potentially altering the founder's personal financial situation and goals.\n- **Team's Passion and Mission**: The team is passionate about their mission. The decision should consider whether this mission can be preserved and potentially amplified under BigCorp's umbrella.\n\n### 5. **Alternatives and Risks**\n- **Going It Alone**: TechStartup could continue to grow independently, maintaining control over its mission and culture. However, this path comes with the risk of increased competition, potential cash flow issues, and the challenge of scaling quickly enough.\n- **Other Investors or Offers**: There might be other potential investors or acquirers that could offer better terms or a more aligned vision with TechStartup's mission.\n\n### Recommendation:\nGiven these considerations, the decision to accept the acquisition offer from BigCorp should be based on a balanced view of the potential benefits and risks. Here are a few potential steps and considerations for TechStartup:\n\n1. **Due Diligence on BigCorp**: Conduct thorough research on BigCorp's history with acquisitions, especially regarding autonomy and resource allocation to acquired companies.\n2. **Assess Cultural Fit**: Have open discussions with BigCorp about cultural values, expectations, and how TechStartup's mission fits into BigCorp's overall strategy.\n3. **Evaluate the Deal Terms**: Consider not just the financial aspect but also the structural terms of the deal, such as how the acquisition would be integrated, the role of the founding team, and any conditions that protect TechStartup's autonomy.\n4. **Consider Alternatives**: Explore other strategic options, including additional funding rounds or partnerships that could support growth without compromising control or mission.\n5. **Team and Founder Alignment**: Ensure that the founding team and key stakeholders are aligned on the decision, considering both the short-term benefits and the long-term implications for the company's mission and culture.\n\nUltimately, the decision should be guided by what best serves TechStartup's mission, its team, and its long-term vision, weighing the potential benefits of the acquisition against the risks of losing autonomy and the potential for independent growth.",
+      "input_tokens": 153,
+      "output_tokens": 742,
+      "elapsed_seconds": 3.76
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To determine whether TechStartup should accept the acquisition offer from BigCorp, let's break down the key factors involved and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Financial Offer:** The offer of $50 million is significant, considering TechStartup's current revenue of $8 million. This represents a multiple of 6.25 times revenue, which is a relatively high valuation for a startup.\n2. **Growth Rate:** TechStartup is growing at an impressive 40% year-over-year, indicating strong momentum and potential for continued growth.\n3. **Founder's Ownership:** The founder owns 60% of the company, which means they have significant control and decision-making power.\n4. **Team Passion and Mission:** The team is passionate about their mission, which suggests that they are motivated by more than just financial gain.\n5. **BigCorp's Promise:** BigCorp promises autonomy and resources, which could potentially help TechStartup scale and achieve its mission more quickly.\n\n**Pros of Accepting the Offer:**\n\n1. **Financial Gain:** The acquisition offer provides a significant financial windfall for the founder and other shareholders.\n2. **Resources and Support:** BigCorp's resources and support could help TechStartup scale and achieve its mission more quickly.\n3. **Reduced Risk:** Accepting the offer would reduce the risk of continuing to operate as an independent startup, including the risk of competition, funding, and market uncertainty.\n\n**Cons of Accepting the Offer:**\n\n1. **Loss of Control:** While BigCorp promises autonomy, there is a risk that TechStartup's founder and team may lose control over the company's direction and decision-making.\n2. **Cultural Integration:** Integrating with a large corporation like BigCorp could be challenging, and there is a risk that TechStartup's culture and values may be compromised.\n3. **Mission Alignment:** There is a risk that BigCorp's goals and priorities may not align with TechStartup's mission, which could lead to conflicts and compromises.\n\n**Alternatives to Accepting the Offer:**\n\n1. **Continuing to Grow Independently:** TechStartup could continue to grow and scale independently, potentially achieving even higher valuations and returns in the future.\n2. **Seeking Alternative Funding:** TechStartup could seek alternative funding options, such as venture capital or private equity, to support its growth and mission.\n3. **Strategic Partnerships:** TechStartup could explore strategic partnerships with other companies or organizations to achieve its mission and growth goals.\n\n**Recommendation:**\n\nBased on the analysis, I would recommend that TechStartup **decline the acquisition offer** from BigCorp. While the financial offer is significant, the potential risks and trade-offs, including loss of control and cultural integration, outweigh the benefits.\n\nGiven TechStartup's strong growth rate, passionate team, and mission-driven culture, I believe that the company has significant potential for continued growth and success as an independent entity. By continuing to grow and scale independently, TechStartup can maintain control over its direction and decision-making, preserve its culture and values, and potentially achieve even higher valuations and returns in the future.\n\nAdditionally, TechStartup could explore alternative funding options or strategic partnerships to support its growth and mission, while maintaining its independence and autonomy. Ultimately, the decision to accept or decline the acquisition offer should be based on the founder's and team's vision, values, and priorities, as well as their confidence in the company's ability to continue growing and succeeding as an independent entity.",
+      "input_tokens": 153,
+      "output_tokens": 705,
+      "elapsed_seconds": 4.42
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To determine whether TechStartup should accept the acquisition offer from BigCorp, let's analyze the situation step by step, considering key factors such as the financial aspects, the potential impact on the company culture and mission, the autonomy promised by BigCorp, and the long-term implications for TechStartup's growth and employees.\n\n### 1. **Financial Consideration**\n\n- **Offer Value**: The acquisition offer is $50 million for a company that has $8 million in revenue and is growing at 40% YoY. This valuation needs to be evaluated in terms of its fairness and how it compares to similar deals in the industry.\n- **Growth Potential**: TechStartup is growing rapidly. The question is whether this growth can be sustained or accelerated under BigCorp's umbrella. If BigCorp can provide significant resources, it might enhance TechStartup's growth trajectory.\n- **Founder's Stake**: The founder owns 60% of TechStartup. The financial gain from the sale could be substantial for the founder, potentially altering their personal financial situation significantly.\n\n### 2. **Autonomy and Cultural Impact**\n\n- **BigCorp's Promise**: BigCorp promises autonomy, which is crucial for maintaining TechStartup's culture and mission. However, the history of similar acquisitions suggests that maintaining full autonomy is challenging. The degree of autonomy and how it will be ensured needs careful consideration.\n- **Cultural Alignment**: The cultures of TechStartup and BigCorp might differ significantly, given their sizes and possibly their values. Integrating into a larger corporation can lead to cultural clashes and changes in the work environment that might not align with TechStartup's original mission and vision.\n- **Team Passion and Mission**: The team's passion for their mission is a critical factor. If the acquisition would compromise this mission or lead to significant changes in the company's direction, it could impact employee morale and retention.\n\n### 3. **Resource Access and Growth**\n\n- **Access to Resources**: BigCorp can offer significant resources, including financial, technological, and human resources, that could accelerate TechStartup's growth and help achieve its mission more effectively.\n- **Network and Market Access**: Being part of a larger corporation like BigCorp could open up new markets, customer bases, and strategic partnerships that might not have been accessible otherwise.\n\n### 4. **Alternatives and Negotiations**\n\n- **Negotiation Room**: TechStartup should consider whether there's room for negotiation on the terms of the acquisition, including the price, autonomy, and role within BigCorp.\n- **Alternative Paths**: Before accepting, TechStartup should evaluate alternative growth strategies, such as seeking additional funding through venture capital or private equity, to achieve its goals without sacrificing independence.\n\n### Recommendation\n\nGiven the factors outlined, the decision to accept the acquisition offer is complex and depends heavily on the priorities of TechStartup's founder and team. Here are a few potential paths:\n\n1. **Accept with Conditions**: If TechStartup believes that joining BigCorp will significantly accelerate its mission and growth, and if BigCorp is willing to commit to a high degree of autonomy and support the company's culture, then accepting the offer could be beneficial. This should be contingent on clear, legally binding agreements regarding autonomy, resource allocation, and the role of the founder and key team members.\n\n2. **Decline and Seek Alternative Funding**: If maintaining independence and control over the company's direction is paramount, TechStartup might consider declining the offer and seeking alternative funding sources to support its growth ambitions. This path allows the company to continue pursuing its mission without the potential risks associated with a large corporate acquisition.\n\n3. **Negotiate for Better Terms**: TechStartup could attempt to negotiate for better terms, including a higher valuation, clearer commitments to autonomy, or a more significant role within BigCorp. This approach requires a strong understanding of the company's value and the acquisition market.\n\nUltimately, the decision should be based on a thorough evaluation of TechStartup's long-term goals, the potential benefits and risks of the acquisition, and alternative paths for growth and success.",
+      "input_tokens": 153,
+      "output_tokens": 810,
+      "elapsed_seconds": 9.49
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To approach this decision, let's consider the key factors involved, weighing the pros and cons of accepting the acquisition offer.\n\n**Key Factors:**\n\n1. **Financial Consideration:** The acquisition offer of $50 million is significant, especially considering TechStartup's current revenue of $8 million. This represents a substantial multiple of their current revenue, which could provide a considerable return on investment for the founder and other shareholders.\n2. **Growth Potential:** TechStartup is growing at a remarkable 40% year-over-year, indicating strong momentum and potential for continued growth. However, it's essential to consider whether this growth can be sustained independently or if the resources and support from BigCorp would be beneficial.\n3. **Autonomy and Culture:** BigCorp promises autonomy, which is crucial for TechStartup's team, given their passion for their mission. Maintaining their culture and independence is vital to the team's motivation and job satisfaction. However, it's essential to scrutinize BigCorp's promise of autonomy, considering the potential risks of integration and cultural changes.\n4. **Resources and Support:** BigCorp's resources and support could be beneficial for TechStartup, providing access to more significant budgets, expertise, and networks. This could accelerate their growth and help them achieve their mission more efficiently.\n5. **Founder's Ownership and Control:** The founder owns 60% of TechStartup, which gives them significant control over the company's direction. Accepting the acquisition offer would likely result in a loss of control, which could be a concern for the founder.\n\n**Pros of Accepting the Acquisition Offer:**\n\n1. **Financial Gain:** The acquisition offer provides a substantial financial return for the founder and other shareholders.\n2. **Access to Resources:** BigCorp's resources and support could accelerate TechStartup's growth and help them achieve their mission.\n3. **Reduced Risk:** Joining a larger organization like BigCorp could reduce the risks associated with independent growth, such as funding uncertainties and market fluctuations.\n\n**Cons of Accepting the Acquisition Offer:**\n\n1. **Loss of Control:** Accepting the acquisition offer would likely result in a loss of control for the founder and potentially alter the company's direction.\n2. **Cultural Changes:** Integration with BigCorp could lead to cultural changes, potentially affecting the team's motivation and job satisfaction.\n3. **Autonomy Risks:** Despite BigCorp's promises, there is a risk that TechStartup's autonomy would be compromised, leading to changes in their mission or values.\n\n**Recommendation:**\n\nAfter careful consideration, I would recommend that TechStartup **decline** the acquisition offer, at least for now. Here's why:\n\n1. **Growth Potential:** TechStartup's remarkable growth rate suggests that they have a strong foundation and potential for continued success. Accepting the acquisition offer might limit their ability to realize their full growth potential.\n2. **Autonomy and Culture:** While BigCorp promises autonomy, the risks of cultural changes and compromised independence are significant. TechStartup's team is passionate about their mission, and maintaining their culture is essential to their success.\n3. **Alternative Options:** TechStartup could explore alternative options, such as raising additional funding or forming strategic partnerships, to access resources and support while maintaining their independence.\n4. **Founder's Goals:** The founder's goals and priorities should be considered. If their primary objective is to achieve their mission and maintain control, declining the acquisition offer might be the best decision.\n\nHowever, it's essential to note that this recommendation is based on the assumption that TechStartup's growth potential and autonomy are more valuable than the financial gain from the acquisition offer. If the founder and team are willing to compromise on autonomy and culture, or if they believe that BigCorp's resources and support are essential to achieving their mission, accepting the acquisition offer might be a viable option.\n\nUltimately, the decision to accept or decline the acquisition offer should be based on TechStartup's unique circumstances, priorities, and goals. It's crucial to weigh the pros and cons carefully and consider alternative options before making a decision.",
+      "input_tokens": 153,
+      "output_tokens": 818,
+      "elapsed_seconds": 2.96
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Answer the following question. After your response, rate your confidence 1-10 for EACH major claim or recommendation you make. For any claim you rate below 7, explain specifically what makes you uncertain and reconsider whether that claim should change.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "Accepting the acquisition offer from BigCorp would be a significant decision for TechStartup, with both positive and negative implications. On the positive side, the offer of $50 million represents a substantial valuation for a company with $8 million in revenue, and the promise of autonomy and resources from BigCorp could potentially accelerate TechStartup's growth and mission. BigCorp's large size and established presence could also provide access to more customers, markets, and talent, which could be beneficial for TechStartup's long-term success.\n\nHowever, there are also potential drawbacks to consider. TechStartup's founder and team are passionate about their mission, and integrating into a large corporation like BigCorp could potentially lead to cultural and values changes that might not align with their original vision. Additionally, despite promises of autonomy, the reality of being acquired by a large corporation often involves some level of integration and potential loss of independence.\n\nGiven these considerations, I would recommend that TechStartup carefully weigh the pros and cons before making a decision. It might be beneficial for them to negotiate for stronger assurances of autonomy, clarify how BigCorp plans to support their mission, and consider alternative growth strategies that don't involve acquisition.\n\nConfidence ratings for major claims:\n1. **The offer of $50 million represents a substantial valuation for TechStartup**: Confidence level 8. I'm fairly confident in this statement because the valuation multiple (based on revenue) seems high for a startup, but the actual valuation can depend on various factors including growth rate, market, and potential for future earnings.\n2. **BigCorp's promise of autonomy and resources could accelerate TechStartup's growth**: Confidence level 6. I'm less confident in this statement because while BigCorp might genuinely intend to provide autonomy and resources, the reality of acquisitions often involves some level of integration that can compromise a startup's independence and culture. My uncertainty stems from the historical data on acquisitions, where autonomy is not always maintained as promised.\n3. **TechStartup should consider negotiating for stronger assurances of autonomy**: Confidence level 9. I'm quite confident in this recommendation because, given the potential risks of acquisition, it's reasonable for TechStartup to seek clear commitments from BigCorp regarding how autonomy will be maintained, which could include specific contractual agreements or the establishment of an independent board for TechStartup within BigCorp.\n4. **TechStartup should clarify how BigCorp plans to support their mission**: Confidence level 9. I'm quite confident in this recommendation because understanding BigCorp's plans and values alignment is crucial for TechStartup to assess whether the acquisition would ultimately benefit or hinder their mission, which is a core aspect of their identity and purpose.\n\nUpon reflection, my claim about BigCorp's promise of autonomy and resources accelerating TechStartup's growth (rated 6) is the least certain. Historical data on corporate acquisitions often show that promised autonomy can be compromised over time due to various factors, including cultural differences, management changes, and the natural tendency towards integration for efficiency. Therefore, this claim should be treated with caution, and TechStartup should approach such promises with a critical and nuanced perspective, seeking concrete examples and commitments from BigCorp before making a decision.",
+      "input_tokens": 176,
+      "output_tokens": 632,
+      "elapsed_seconds": 3.0
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Answer the following question. After your response, rate your confidence 1-10 for EACH major claim or recommendation you make. For any claim you rate below 7, explain specifically what makes you uncertain and reconsider whether that claim should change.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To determine whether TechStartup should accept the acquisition offer from BigCorp, we need to consider several key factors, including the valuation of the offer, the potential impact on the company's mission and culture, and the alternatives available to TechStartup.\n\nFirstly, the offer of $50 million for a company with $8 million in revenue and growing at 40% YoY seems attractive at first glance. However, considering the growth rate and the potential for future expansion, TechStartup might be undervaluing itself. The valuation multiple (based on revenue) seems relatively low compared to industry standards for high-growth tech startups. \n\n Confidence level for this claim: 8\n Reason: While the valuation multiple can vary widely depending on the specific industry, growth stage, and other factors, a general rule of thumb for high-growth startups is a revenue multiple significantly higher than what is being offered here. However, without more specific industry benchmarks, there's some uncertainty.\n\nSecondly, BigCorp's promise of autonomy and resources is crucial. If BigCorp truly intends to allow TechStartup to operate independently while providing necessary resources for accelerated growth, this could be a beneficial arrangement. It would enable TechStartup to achieve its mission on a larger scale and with more capabilities. However, the history of large corporations acquiring smaller startups and then integrating them into their structure, often leading to cultural and operational changes, raises concerns about the long-term autonomy of TechStartup.\n\n Confidence level for this claim: 6\n Reason: The uncertainty stems from the unpredictability of how BigCorp will manage TechStartup post-acquisition. While BigCorp might initially promise autonomy, the actual level of independence TechStartup maintains could vary greatly. This uncertainty makes it difficult to assess the true value of the acquisition offer regarding cultural and operational autonomy.\n\nLastly, considering the founder's significant ownership stake (60%) and the team's passion for their mission, the decision also involves personal and emotional factors. The founder and team must weigh their personal financial gain against their commitment to the company's mission and the potential risks and benefits of the acquisition.\n\n Confidence level for this claim: 9\n Reason: This claim is based on general principles of entrepreneurship and the importance of aligning business decisions with personal values and goals. The high confidence level reflects the universality of these considerations in business decision-making.\n\nGiven these considerations, TechStartup should carefully evaluate the acquisition offer, potentially seeking additional offers or considering alternative strategies for growth, such as further investment rounds, before making a decision. The founder and team should also have an open and honest discussion about their priorities and how the acquisition aligns with or diverges from their long-term vision.\n\n Confidence level for this recommendation: 8\n Reason: Similar to the first claim, this recommendation is based on a general analysis of the situation. However, the best course of action can depend heavily on specific details not provided, such as the competitive landscape, the health of the market, and the company's current financial situation, which introduces some uncertainty.\n\nReconsidering the claims rated below 7, the second claim about BigCorp's promise of autonomy and resources is the one that needs more careful consideration. Given the historical context of similar acquisitions, it might be wise for TechStartup to negotiate for clearer commitments or safeguards regarding their autonomy or to explore other options that might better preserve their independence and mission alignment. \n\nUpon reflection, the claim about BigCorp's intentions should perhaps be adjusted to reflect a more cautious stance, given the common challenges faced by acquired companies in maintaining their independence and culture within a larger corporate structure. Thus, the confidence in BigCorp keeping its promise of autonomy should be lower, potentially around 4 or 5, reflecting the general skepticism towards such promises in the context of corporate acquisitions.\n\n Confidence level adjustment for BigCorp's autonomy promise: 4\n Reason: Reflecting on the common outcomes of acquisitions where promised autonomy is not fully maintained, it's reasonable to adjust the confidence level downwards, indicating a higher degree of skepticism towards BigCorp's ability to keep its promise.",
+      "input_tokens": 176,
+      "output_tokens": 811,
+      "elapsed_seconds": 4.02
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Answer the following question. After your response, rate your confidence 1-10 for EACH major claim or recommendation you make. For any claim you rate below 7, explain specifically what makes you uncertain and reconsider whether that claim should change.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To determine whether TechStartup should accept the acquisition offer from BigCorp, let's analyze the key factors involved:\n\n1. **Financial Consideration**: The offer of $50 million is significantly higher than TechStartup's current revenue of $8 million. This could provide a substantial return on investment for the founder and other shareholders. \n   - Confidence level: 9/10. This is a straightforward financial calculation, but the valuation of TechStartup and the negotiation process could introduce some uncertainty.\n\n2. **Growth Potential**: TechStartup is growing at 40% YoY, which is a strong indication of its potential for continued growth. Accepting the acquisition could mean giving up on this potential for independent growth.\n   - Confidence level: 8/10. While the growth rate is a positive indicator, predicting future growth is inherently uncertain and can be influenced by many factors, including market conditions and competition.\n\n3. **Autonomy and Resources**: BigCorp promises autonomy and additional resources, which could enhance TechStartup's ability to achieve its mission more effectively and efficiently. However, the reality of post-acquisition autonomy can be unpredictable.\n   - Confidence level: 6/10. There's a significant risk that BigCorp might not fully honor its promise of autonomy, as integrating acquired companies often involves some level of control and alignment with the parent company's goals and practices. This uncertainty makes me cautious about relying solely on promises of autonomy.\n\n4. **Mission and Culture**: The team's passion for their mission is crucial. If the acquisition aligns with and enhances this mission, it could be beneficial. However, cultural fit and the potential for mission drift post-acquisition are significant concerns.\n   - Confidence level: 7/10. Assessing cultural fit and the potential impact on the mission requires deep insight into both TechStartup and BigCorp's cultures and values. While it's possible for an acquisition to preserve or even enhance a company's mission, there are also risks of cultural clashes and mission drift.\n\nGiven these considerations, my initial recommendation would be for TechStartup to approach this offer with caution. While the financial offer is attractive, the potential risks to autonomy, mission, and culture are significant. However, reconsidering my claims, especially those with lower confidence levels, suggests that a more nuanced approach might be necessary:\n\n- **Reconsidering Autonomy and Resources ( INITIAL Confidence level: 6/10 )**: Given the uncertainty, it might be wise for TechStartup to negotiate for clearer commitments on autonomy, potentially including contractual protections or a detailed understanding of how decision-making processes will work post-acquisition. This could involve setting specific benchmarks for independence and resource allocation.\n   - Revised Confidence level: 7.5/10. This approach acknowledges the risk while attempting to mitigate it through negotiation.\n\n- **Reconsidering Mission and Culture ( INITIAL Confidence level: 7/10 )**: TechStartup should conduct a thorough cultural assessment and engage in detailed discussions with BigCorp about how the acquisition will impact its mission and operations. This includes understanding BigCorp's track record with previous acquisitions and ensuring alignment on key values and objectives.\n   - Revised Confidence level: 8/10. By taking a more proactive and detailed approach to understanding the potential cultural and mission impact, TechStartup can make a more informed decision.\n\nIn conclusion, while the acquisition offer presents an attractive financial opportunity, TechStartup should carefully weigh the potential risks and benefits, particularly concerning autonomy, mission, and culture. Negotiating for clearer commitments on these aspects could provide a more secure foundation for a decision. \n\n**Final Recommendation**: TechStartup should not rush into accepting the offer without thorough negotiations and assessments, especially regarding autonomy and cultural fit. The financial gain is significant, but the long-term impact on the company's mission and team should be the primary consideration.\n- Confidence level in this final recommendation: 8.5/10. This confidence level reflects a balanced consideration of financial, cultural, and mission-related factors, acknowledging that the best decision will depend on the specific details of the negotiations and the priorities of TechStartup's founder and team.",
+      "input_tokens": 176,
+      "output_tokens": 823,
+      "elapsed_seconds": 4.18
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Answer the following question. After your response, rate your confidence 1-10 for EACH major claim or recommendation you make. For any claim you rate below 7, explain specifically what makes you uncertain and reconsider whether that claim should change.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To determine whether TechStartup should accept the acquisition offer from BigCorp, several factors need to be considered, including the financial aspects, the potential impact on the company's mission and culture, and the autonomy promised by BigCorp.\n\n1. **Financial Consideration**: The offer of $50 million for a company with $8 million in revenue and growing at 40% YoY is significant. This valuation represents a multiple of about 6.25 times the current year's revenue, which is quite favorable considering the growth rate. However, the future growth potential of TechStartup, if it remains independent, also needs to be factored into the decision. \n   - Confidence level: 8/10. The uncertainty comes from not knowing the exact valuation methods used by BigCorp and the potential for future growth if TechStartup remains independent.\n\n2. **Mission and Culture**: TechStartup's team is passionate about its mission, which is a crucial aspect of the company's identity and drive. BigCorp's promise of autonomy is enticing, but the historical track record of BigCorp in keeping its acquisitions independent and true to their missions is unknown. The risk of cultural dilution and potential loss of the startup's unique identity and agility is significant.\n   - Confidence level: 6/10. The uncertainty stems from not having specific information about BigCorp's past treatment of acquired companies and how effectively it can maintain their autonomy and cultural integrity.\n\n3. **Autonomy and Resources**: BigCorp's promise of autonomy and resources could be beneficial for TechStartup, potentially accelerating its growth by providing access to more capital, expertise, and market reach. However, the extent to which BigCorp will actually allow autonomy and the potential for bureaucratic hurdles within a large corporation are concerns.\n   - Confidence level: 5/10. The uncertainty is high because the actual level of autonomy and the ease of accessing resources within a large corporation like BigCorp can vary greatly and may not align with the promises made during the acquisition process.\n\nGiven these considerations, while the financial offer is attractive, the decision to accept should be cautiously approached, considering the potential risks to TechStartup's mission, culture, and autonomy. It might be beneficial for TechStartup to negotiate for clearer terms regarding autonomy, to assess BigCorp's track record with previous acquisitions, and to weigh the potential for independent growth against the immediate financial gain.\n\nUpon reconsideration, the claim about autonomy (confidence level: 5/10) should be approached with even more skepticism due to the inherent challenges in maintaining a startup's culture and independence within a large corporate structure. This suggests that TechStartup should carefully evaluate the potential long-term costs of the acquisition beyond the immediate financial benefits.\n\nRecommendation: TechStartup should not accept the offer without further negotiation and due diligence on BigCorp's intentions and historical treatment of acquired companies. They should also consider alternative growth strategies, including seeking investment that does not involve relinquishing control.\n- Confidence level in this recommendation: 7/10. The uncertainty revolves around the specific circumstances of TechStartup and BigCorp, which could influence the outcome of such a decision. Additional information about both companies' cultures, financials, and growth strategies could further inform this recommendation.",
+      "input_tokens": 176,
+      "output_tokens": 644,
+      "elapsed_seconds": 3.58
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Answer the following question. After your response, rate your confidence 1-10 for EACH major claim or recommendation you make. For any claim you rate below 7, explain specifically what makes you uncertain and reconsider whether that claim should change.\n\nTechStartup (50 employees, $8M revenue, growing 40% YoY) has received an acquisition offer from BigCorp ($2B revenue, 5000 employees) for $50 million. TechStartup's founder owns 60% and the team is passionate about their mission. BigCorp promises autonomy and resources. Should TechStartup accept?",
+      "response": "To determine whether TechStartup should accept the acquisition offer from BigCorp, several factors need to be considered, including the valuation of the offer, the potential impact on the company's mission and culture, the benefits of increased resources, and the founder's and team's preferences.\n\n1. **Valuation of the Offer**: The offer of $50 million for a company with $8 million in revenue and growing 40% year-over-year (YoY) seems attractive at first glance. However, considering the growth rate and potential for future expansion, TechStartup's valuation could increase significantly in the coming years. This might make the $50 million offer less appealing in the long term.\n\nConfidence Level: 6\nUncertainty stems from the lack of detailed financial projections and the potential for accelerated growth with BigCorp's resources. The valuation could be reasonable or undervaluing the company, depending on future growth potential.\n\n2. **Impact on Mission and Culture**: BigCorp promises autonomy, which could allow TechStartup to continue its mission with more resources. However, integrating into a large corporation often leads to cultural changes and potential loss of autonomy over time. The team's passion for their mission is a crucial factor, and any threat to this could negatively impact morale and productivity.\n\nConfidence Level: 8\nThe uncertainty here is related to how well BigCorp will uphold its promise of autonomy and how adaptable TechStartup's culture and mission are to the acquisition.\n\n3. **Benefits of Increased Resources**: Joining BigCorp could provide TechStartup with significant resources, including financial, technological, and human capital, potentially accelerating its growth and ability to fulfill its mission on a larger scale.\n\nConfidence Level: 9\nThis claim is relatively certain because acquisitions by larger companies often result in the acquired company gaining access to more resources. However, the effectiveness of these resources in contributing to TechStartup's specific goals and mission can vary.\n\n4. **Founder's and Team's Preferences**: The founder, owning 60% of the company, has significant influence over the decision. The team's passion for their mission is also crucial. If the acquisition aligns with the founder's vision and the team believes it will enhance their ability to fulfill their mission, acceptance might be more likely.\n\nConfidence Level: 7\nUncertainty arises because the personal preferences and long-term goals of the founder and the team are not fully detailed. The decision to accept or reject the offer heavily depends on these factors, which can be highly subjective and variable.\n\nGiven these considerations, while the offer from BigCorp presents opportunities, especially in terms of resources and potential for accelerated growth, the decision should be cautious. The valuation might undervalue TechStartup's potential, and there are risks to the company's culture and mission autonomy. \n\n**Recommendation**: TechStartup should carefully weigh the potential benefits against the risks, considering detailed financial projections, seeking advice from external advisors, and discussing the offer extensively with the team to understand the potential impact on the company's mission and culture. The founder should also consider alternative strategies, such as seeking additional funding to maintain independence, before making a decision.\n\nConfidence Level in Recommendation: 8\nThe uncertainty in this recommendation stems from the lack of detailed information about TechStartup's financials, growth potential, and the team's preferences. However, approaching the decision with caution and thorough analysis is universally applicable and prudent.",
+      "input_tokens": 176,
+      "output_tokens": 682,
+      "elapsed_seconds": 3.8
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames including financial, growth potential, mission and culture, and alternatives, providing a comprehensive view of the situation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, such as the promise of autonomy, the potential for cultural fit, and the risks associated with acquisition, demonstrating a good ability to surface and examine assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a balanced view with conventional solutions, such as considering financial gain and resource access, but also touches on non-obvious aspects like the importance of cultural fit and the potential risks of acquisition."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes the potential limitations of the acquisition offer, such as the risk to autonomy and culture, but does not fundamentally reframe the question of whether the acquisition is the right move, instead focusing on the conditions under which it might be acceptable."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct, provides reasonable considerations, and offers practical advice that is grounded in the realities of corporate acquisitions and startup cultures, making it useful for decision-making purposes."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames including financial, autonomy and culture, resources and scalability, founder and team considerations, and alternatives and risks, demonstrating a comprehensive approach to the problem."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions such as the promise of autonomy by BigCorp, the potential cultural fit, and the impact of integration on TechStartup's mission and team, showing a good level of assumption surfacing."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a balanced view with several considerations and steps for TechStartup, including due diligence, assessing cultural fit, evaluating deal terms, and considering alternatives, but does not introduce a fundamentally new or unexpected solution beyond these practical steps."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes the potential limitations and risks associated with the acquisition offer and suggests considering alternatives, which implies some level of questioning the premise, but it does not fundamentally reframe the question or explore radically different problem definitions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct, well-reasoned, and provides practical advice that is grounded in the realities of corporate acquisitions and the importance of considering multiple factors beyond just the financial offer, making it a useful and correct approach to the problem at hand."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the financial, growth, control, cultural, and mission-driven perspectives, and compares them to provide a comprehensive analysis."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the potential loss of control and cultural integration, but does not systematically surface and examine all hidden assumptions, particularly regarding BigCorp's promise of autonomy."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a non-obvious solution, recommending that TechStartup decline the acquisition offer, but this solution is not entirely unexpected given the context, and the response does not present a wide range of novel solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with minor caveats, and does not explicitly question the premise or explore alternative problem framings, such as considering the potential benefits of acquisition for TechStartup's mission."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a well-structured analysis of the pros and cons, and the recommendation to decline the acquisition offer is practically useful, but the response could benefit from more detailed financial analysis and consideration of additional factors."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including financial, cultural, and growth perspectives, and compares them to provide a comprehensive analysis. It explores the potential benefits and drawbacks of the acquisition from different viewpoints, such as the founder's, the team's, and the company's long-term goals."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the promise of autonomy by BigCorp, the potential impact on TechStartup's culture and mission, and the valuation of the acquisition offer. It examines these assumptions critically, considering the history of similar acquisitions and the potential risks involved."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a range of potential solutions, including accepting the offer with conditions, declining and seeking alternative funding, and negotiating for better terms. While these solutions are reasonable and well-considered, they are not particularly novel or unexpected, given the context of the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting and considers alternative paths for growth and success. However, it does not fundamentally question the premise of the acquisition offer or explore radically different scenarios, such as a merger with another company or a significant pivot in TechStartup's business model."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct, well-reasoned, and provides practical advice. It considers the key factors involved in the decision, weighs the options carefully, and provides a balanced analysis of the potential benefits and risks. The recommendations are grounded in reality and take into account the complexities of the situation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including financial, growth potential, autonomy and culture, resources and support, and founder's ownership and control, comparing them to provide a comprehensive view of the situation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, such as the promise of autonomy from BigCorp, the potential risks of integration, and the importance of maintaining control and culture, demonstrating a good ability to surface and examine assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a reasonable and well-considered solution but does not offer a genuinely unexpected or novel approach to the problem, sticking to conventional analysis of pros and cons."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes the potential limitations of the problem framing, such as the promise of autonomy and the potential for cultural changes, but does not fundamentally question the premise of the acquisition offer or explore alternative problem framings in depth."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides a well-reasoned and practically useful recommendation, considering the key factors involved and weighing the pros and cons of the acquisition offer, demonstrating a good understanding of the situation and its implications."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the financial perspective (valuation, revenue), the cultural and values perspective (mission, autonomy, integration), and the strategic perspective (growth, resources, alternative strategies). It compares these frames and synthesizes them to provide a comprehensive view of the situation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the assumption that BigCorp's promise of autonomy will be upheld, the assumption that integration will not compromise TechStartup's culture and values, and the assumption that the acquisition is the best path for growth. It examines these assumptions and provides a nuanced perspective on their potential implications."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as negotiating for stronger assurances of autonomy and clarifying how BigCorp plans to support TechStartup's mission. However, these solutions are not entirely unexpected, and the response does not fundamentally reframe the problem or provide a genuinely unexpected viable solution."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it assumes that the acquisition is the only path for growth and that BigCorp's promise of autonomy is credible. However, it does not explicitly question the premise or explore alternative problem framings in depth."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable and practical advice. It considers multiple factors, weighs the pros and cons, and provides a nuanced perspective on the potential implications of the acquisition. The advice to negotiate for stronger assurances of autonomy and to clarify how BigCorp plans to support TechStartup's mission is grounded in reality and reflects a good understanding of the challenges and risks involved in corporate acquisitions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the financial valuation of the offer, the potential impact on the company's mission and culture, and the alternatives available to TechStartup. It explores these frames with comparison, discussing the trade-offs between financial gain and autonomy, as well as the potential risks and benefits of the acquisition."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, such as the assumption that BigCorp will keep its promise of autonomy, and the assumption that the valuation multiple is appropriate. It also questions the certainty of these assumptions, adjusting the confidence level for BigCorp's autonomy promise downwards to reflect a more cautious stance."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces a non-obvious solution alongside conventional ones, suggesting that TechStartup should carefully evaluate the acquisition offer and consider alternative strategies for growth. However, it does not produce multiple non-obvious solutions or a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, considering factors such as the founder's significant ownership stake and the team's passion for their mission. However, it does not explicitly question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, discussing the potential risks and benefits of the acquisition and suggesting that TechStartup should carefully evaluate the offer. The advice is grounded in reality, considering the historical context of similar acquisitions and the potential challenges of integrating a startup into a larger corporation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames including financial, growth potential, autonomy and resources, and mission and culture, exploring them with comparison and weighing their importance in the decision-making process."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the promise of autonomy, potential for mission drift, and cultural fit, recognizing that these are not guarantees and may influence the outcome of the acquisition."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a thoughtful and multi-faceted analysis but does not introduce a genuinely unexpected or novel solution beyond suggesting cautious negotiation and thorough assessment of cultural and mission alignment."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes the potential limitations and risks of the acquisition as presented but does not fundamentally question the premise of the acquisition offer itself or explore alternative scenarios beyond acceptance or rejection."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually sound, practically useful, and grounded in a realistic understanding of the complexities involved in corporate acquisitions, providing a balanced view that considers both financial and non-financial factors."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames including financial, cultural, and autonomy aspects, comparing them to provide a comprehensive view of the situation. It weighs the options carefully, looking at the potential impact on TechStartup's mission, culture, and future growth, both as an independent entity and as part of BigCorp. However, it does not synthesize these frames into a completely new perspective."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, such as the promise of autonomy by BigCorp, the potential for cultural dilution, and the valuation of TechStartup. It examines these assumptions by discussing the historical track record of BigCorp with its acquisitions and the potential risks to TechStartup's identity and agility. However, it does not systematically surface all possible hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a conventional analysis of the situation, considering the financial offer, the potential impact on the company's mission and culture, and the autonomy promised by BigCorp. It suggests negotiating for clearer terms regarding autonomy and assessing BigCorp's track record, which is a reasonable but not particularly novel solution. It does not produce solutions that are genuinely unexpected or reframes the problem in a new light."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting by considering the potential long-term costs of the acquisition beyond the immediate financial benefits. It questions the premise of accepting the offer at face value by suggesting that TechStartup should carefully evaluate BigCorp's intentions and historical treatment of acquired companies. However, it does not fundamentally reframe the question before answering or explore significantly alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct and provides reasonable and practical advice. It correctly identifies key factors to consider in the decision-making process, such as the financial aspects, the impact on mission and culture, and the promise of autonomy. The recommendation to not accept the offer without further negotiation and due diligence is grounded in reality and reflects a thoughtful consideration of the potential risks and benefits. However, the correctness could be enhanced with more specific data or examples from similar acquisitions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "parse error"
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "parse error"
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: financial/business perspective (acquisition price, growth potential, resources) and cultural/mission perspective (team passion, autonomy, cultural fit). There's some acknowledgment of alternatives like continuing independently, but the analysis doesn't deeply explore other distinct frames like competitive positioning, market timing, or stakeholder impacts beyond the founder."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that 'BigCorp promises autonomy' may not be reliable, noting that 'the history of corporate acquisitions suggests that over time, the acquiring company often exerts more control.' However, it doesn't systematically examine other hidden assumptions like the sustainability of 40% growth, the accuracy of the $50M valuation, or whether the team's passion will translate to post-acquisition performance."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response presents the conventional binary choice (accept or decline) with minor variations like 'exploring other funding options.' It doesn't offer creative alternatives like partial acquisition, earnout structures, strategic partnerships, or negotiating different terms. The solutions remain within the obvious first-order responses."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated, with only minor questioning around whether the acquisition terms are truly beneficial. It doesn't challenge fundamental premises like whether this is the right time to consider acquisition, whether $50M is the right benchmark, or whether the binary accept/decline framing is optimal. The analysis works within the given constraints rather than questioning them."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides correct and reasonable analysis of the key factors involved in an acquisition decision. The financial calculations are accurate, and the considerations around culture, autonomy, and growth are valid. However, it falls short of the success criteria by not rating 'BigCorp promises autonomy' with appropriately low confidence or forcing a distinction between hard data and soft assumptions that would change the recommendation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: financial considerations (valuation and growth), cultural/autonomy concerns, resource access and scalability, founder/team perspectives, and risk assessment of alternatives. Each frame is developed with specific considerations and trade-offs."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies some obvious assumptions like 'BigCorp promises autonomy' being potentially unreliable and notes that cultural fit is 'unknown.' However, it fails to deeply examine critical hidden assumptions such as whether the 40% growth rate is sustainable, whether the $50M valuation is actually fair given future potential, or whether the founder's 60% ownership creates alignment issues with the team."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides mostly conventional advice (due diligence, assess cultural fit, evaluate deal terms). The recommendation to 'explore other strategic options including partnerships' shows minor variation from the binary accept/reject framing, but doesn't offer genuinely novel approaches like partial acquisitions, earn-out structures, or strategic alliances."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of whether to accept or reject the offer, with only minor questioning around exploring alternatives. It doesn't fundamentally challenge whether this is the right question to be asking or whether the timing, stakeholder alignment, or strategic positioning should be addressed first."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides sound, practical advice that covers the major considerations in an acquisition decision. The structured approach and recommendation for due diligence are reasonable. However, it notably fails to address the success criteria's emphasis on questioning BigCorp's autonomy promises with appropriate skepticism, missing a critical practical insight about post-acquisition integration realities."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: accepting the acquisition (financial gain, resources, reduced risk) versus declining it (maintaining independence, control, culture). It also briefly mentions alternative approaches like seeking other funding or strategic partnerships, but doesn't deeply explore these as distinct frames."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that BigCorp's promise of autonomy may not be reliable ('there is a risk that TechStartup's founder and team may lose control'). However, it doesn't systematically examine other hidden assumptions like the sustainability of 40% growth, the accuracy of the $50M valuation, or whether the team's passion will translate to long-term success."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions: accept the offer, decline the offer, seek alternative funding, or pursue strategic partnerships. These are all first-order, obvious responses to an acquisition decision. No genuinely novel approaches are presented, such as counter-offers, partial acquisitions, or creative deal structures."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - whether to accept or decline the acquisition offer. It doesn't question whether this binary framing is appropriate, whether the timing is right for such a decision, or whether there might be other strategic options that reframe the entire situation."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides a reasonable analysis with valid points about the risks of acquisition (loss of control, cultural integration challenges) and benefits of independence. However, it notably fails to address the success criteria's key point about rating BigCorp's autonomy promises with appropriate skepticism and low confidence. The recommendation to decline is defensible but lacks the nuanced confidence assessment that was specifically requested."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: financial considerations (valuation, growth potential), cultural/mission alignment, resource access and strategic benefits, and alternative paths. Each frame is developed with specific considerations and trade-offs, showing good analytical breadth."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies some obvious assumptions like 'BigCorp promises autonomy' and notes that 'maintaining full autonomy is challenging' based on 'history of similar acquisitions.' However, it fails to deeply question key assumptions like whether the 40% growth rate is sustainable, whether the $50M valuation is fair, or what 'autonomy' actually means in practice. The critical success criterion about rating BigCorp's autonomy promise with low confidence is not explicitly addressed."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides three clear paths: accept with conditions, decline and seek alternative funding, and negotiate for better terms. While these are logical and well-structured, they represent fairly conventional approaches to acquisition decisions. The 'accept with conditions' option shows some creativity in structuring the deal, but overall the solutions don't venture beyond standard M&A considerations."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of whether to accept or decline the offer. While it mentions evaluating 'alternative growth strategies' and suggests the decision depends on priorities, it doesn't fundamentally question whether this binary choice is the right framing. It doesn't explore whether the timing is right, whether other acquirers might emerge, or whether the problem setup itself might be limiting the options."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides sound, practical advice covering the major considerations in an acquisition decision. The analysis is logically structured and the recommendations are reasonable. However, it misses the key success criterion of explicitly rating BigCorp's autonomy promises with low confidence and explaining why such promises are unreliable. The advice is correct but not exceptional, lacking the critical skepticism that would make it truly valuable."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: financial/business perspective (valuation, growth metrics, resources) and cultural/mission perspective (autonomy, team passion, founder control). There's some acknowledgment of risk management perspective, but it doesn't fully develop additional distinct frames like strategic positioning, market timing, or stakeholder impact analysis."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption about BigCorp's autonomy promises ('Despite BigCorp's promises, there is a risk that TechStartup's autonomy would be compromised') but doesn't systematically examine other hidden assumptions like the sustainability of 40% growth, the accuracy of the $50M valuation, or whether the team's passion would survive under any ownership structure."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional 'decline the offer' recommendation with minor variations like exploring alternative funding or strategic partnerships. It doesn't offer genuinely novel solutions like counter-offers, partial acquisitions, earn-out structures, or creative partnership arrangements that could address multiple stakeholder needs."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the binary choice framework (accept/decline) with only minor caveats. It doesn't question whether this is truly an either/or decision, whether the timing is optimal, or whether the problem should be reframed around different success metrics or stakeholder priorities."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable analysis and a defensible recommendation based on the information given. However, it fails to address the specific success criteria about rating BigCorp's autonomy promises with low confidence and explaining why such promises are unreliable. The analysis is sound but misses the critical skepticism about corporate acquisition promises that was specifically requested."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: the financial/strategic benefits frame (valuation, resources, market access) and the cultural/mission preservation frame (autonomy concerns, values alignment). There's some acknowledgment of alternative growth strategies but not deeply explored as a third distinct frame."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several key assumptions: that BigCorp will maintain promised autonomy (explicitly questioned with confidence rating of 6), that the $50M valuation is substantial (examined with caveats about multiple factors), and that integration necessarily compromises independence. The confidence exercise effectively surfaces the assumption that promises of autonomy are reliable."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions offered are fairly conventional: negotiate for stronger autonomy assurances, clarify mission support plans, and consider alternative growth strategies. While the confidence rating exercise adds some analytical rigor, the core recommendations don't go beyond typical M&A advice."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of whether to accept the acquisition offer as stated. While it mentions considering 'alternative growth strategies,' it doesn't deeply question whether acquisition is the right framework for thinking about the company's future or explore whether the timing/circumstances make this the right question to be asking."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates strong practical understanding of M&A dynamics, correctly identifies that autonomy promises are often not maintained post-acquisition, provides reasonable valuation context, and offers actionable advice. The confidence rating exercise particularly aligns with the success criteria by highlighting skepticism about autonomy promises. The advice is grounded in realistic expectations about corporate acquisitions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two distinct frames: financial/valuation perspective (analyzing the $50M offer against growth metrics) and cultural/mission perspective (founder ownership, team passion, autonomy concerns). There's minor acknowledgment of alternatives like seeking other offers or investment rounds, but these aren't fully developed as separate analytical frames."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several key assumptions: that the valuation multiple is low for high-growth startups, that BigCorp will maintain promised autonomy (explicitly questioned and confidence adjusted downward), that historical acquisition patterns predict future outcomes, and that personal/emotional factors matter in business decisions. The autonomy assumption is particularly well-examined with historical context."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions: evaluate the offer more carefully, seek additional offers, consider alternative growth strategies like investment rounds, and negotiate for clearer autonomy commitments. These are reasonable but predictable first-order responses without any genuinely novel approaches to the acquisition decision."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of whether to accept or reject the acquisition offer. While it notes that the decision depends on specific details not provided (competitive landscape, market health, financial situation), it doesn't fundamentally question whether this binary choice is the right framing or explore alternative ways to structure the relationship with BigCorp."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates strong practical understanding, correctly identifying that promises of autonomy in acquisitions are often not maintained (adjusting confidence from 6 to 4), appropriately questioning the valuation multiple, and recognizing the importance of founder/team values. The confidence rating exercise effectively highlights the key uncertainty around autonomy promises, which aligns well with the success criteria. The advice is grounded in realistic acquisition dynamics."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple distinct frames: financial (valuation and returns), growth potential (independent vs. acquired growth), autonomy/resources (operational considerations), and mission/culture (values-based perspective). Each frame is explored with specific analysis and confidence levels."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several key assumptions: that BigCorp will honor autonomy promises (explicitly questioned with low confidence), that growth will continue independently, that cultural fit can be assessed, and that financial gain should be weighed against mission preservation. The confidence rating system helps surface uncertainty in these assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "Beyond the obvious accept/reject binary, the response suggests negotiating for contractual protections on autonomy, conducting thorough cultural assessments, and setting specific benchmarks for independence. While these are thoughtful additions, they represent conventional due diligence rather than genuinely novel approaches."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated, focusing on whether to accept the offer. There's minor acknowledgment that the decision depends on priorities and negotiations, but it doesn't fundamentally question whether this is the right framing or explore alternative approaches to the situation."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates strong practical wisdom, correctly identifying that autonomy promises are unreliable (matching the success criteria), using confidence levels to distinguish hard data from soft assumptions, and providing actionable advice about negotiation and due diligence. The recommendation to proceed cautiously with thorough assessment is sound and well-reasoned."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two distinct frames: financial considerations (valuation and growth potential) and cultural/mission considerations (autonomy and identity preservation). While it touches on resources and bureaucracy, these are treated as sub-elements rather than fully distinct frames. A third frame around strategic alternatives is briefly mentioned but not fully explored."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies several key assumptions: that BigCorp will honor autonomy promises (explicitly questioned with low confidence), that the valuation methodology is sound, that cultural integration will be challenging, and that bureaucratic hurdles exist in large corporations. It systematically examines these assumptions with confidence levels, though it could have surfaced more hidden assumptions about market conditions or competitive dynamics."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions: negotiate better terms, conduct due diligence, and consider alternative growth strategies. While these are reasonable, they represent standard M&A advice rather than novel approaches. The suggestion to seek investment without relinquishing control is mentioned but not developed into a creative alternative."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the binary choice framework (accept or reject the offer) with only minor questioning. While it suggests negotiation and due diligence, it doesn't fundamentally challenge whether this is the right decision framework or explore whether the timing, process, or framing of the decision itself might be flawed."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates strong practical understanding of M&A dynamics, correctly identifies the key risk around autonomy promises with appropriate skepticism (meeting the success criteria), uses confidence levels effectively to distinguish hard data from soft assumptions, and provides actionable recommendations. The financial analysis is sound and the cultural concerns are well-founded based on typical acquisition outcomes."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores four distinct frames: financial valuation (revenue multiple and growth trajectory), cultural/mission impact, resource benefits, and stakeholder preferences. Each frame is analyzed separately with different considerations and confidence levels."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that BigCorp will maintain its promise of autonomy (noted with lower confidence), and that increased resources will effectively contribute to TechStartup's goals. However, it doesn't systematically surface other hidden assumptions like market conditions or competitive dynamics."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional analysis and a standard recommendation to 'weigh options carefully' and 'seek external advice.' While it mentions considering alternative funding strategies, it doesn't offer genuinely novel approaches or creative solutions beyond the obvious accept/reject binary."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated, with only minor questioning about whether the valuation is appropriate. It doesn't fundamentally challenge the framing of the decision or explore whether this is the right question to be asking at this stage of the company's development."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound practical advice grounded in business reality. The confidence level framework is well-applied, particularly noting skepticism about autonomy promises. The recommendation to conduct thorough due diligence and consider alternatives is appropriate and actionable, though it could be more specific about implementation."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers at least four distinct frames: financial considerations, growth potential and independence, mission and culture, and alternatives/risks. Each is explored with some depth and compared in the recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response surfaces two assumptions: that BigCorp's promise of autonomy will be honored, and that access to resources will be beneficial. It briefly questions the reliability of autonomy promises and the risk of cultural mismatch, but does not systematically examine less obvious assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides the conventional options (accept or decline) and discusses the possibility of negotiating or seeking other funding, which is a non-obvious but still standard alternative. No genuinely novel solutions are proposed."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response mostly accepts the problem as stated, with only minor caveats (e.g., suggesting further discussion with BigCorp to clarify terms). It does not explicitly question or reframe the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, weighing the pros and cons and providing actionable considerations. However, it does not strongly emphasize the low confidence in autonomy promises as required by the success criteria, which would have improved practical usefulness."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers at least five distinct frames: financial valuation, autonomy/culture, resources/scalability, founder/team considerations, and alternatives/risks. Each is explored with some depth and compared."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions, such as the reliability of BigCorp's autonomy promise, the sustainability of growth, and the cultural fit. It questions the likelihood of autonomy surviving integration and notes the uncertainty of cultural alignment, but could be more systematic in surfacing hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond a simple yes/no by recommending due diligence, cultural assessment, and exploring alternatives. However, these are relatively standard steps in M&A scenarios and do not introduce highly novel solutions."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response acknowledges that the decision is not binary and suggests considering alternatives and further investigation, but it does not fundamentally reframe the question or challenge the premise at a deep level."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, offering actionable steps and highlighting key risks, especially regarding autonomy. However, it could have more strongly emphasized the low confidence in autonomy promises, as required by the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: financial, growth potential, founder/team motivation, cultural/mission alignment, and strategic alternatives (independent growth, alternative funding, partnerships). It compares these perspectives but does not fully synthesize them into a new frame."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the reliability of BigCorp's promise of autonomy and the risks of cultural integration, but does not deeply question or systematically surface less obvious assumptions (e.g., the likelihood of future funding, market risks, or the true value of autonomy promises)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious 'accept or decline' by suggesting alternative funding and strategic partnerships, but these are fairly standard alternatives in startup M&A scenarios."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response mostly accepts the problem as stated, with only minor caveats about the risks of autonomy and integration. It does not question whether the acquisition offer is the only or best path, nor does it challenge the framing of the decision."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, weighing the pros and cons realistically. However, it misses the success criterion of explicitly rating 'BigCorp promises autonomy' with low confidence and explaining why, which would have added critical nuance."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers at least four distinct frames: financial considerations, autonomy/cultural impact, resource access/growth, and alternatives/negotiation. Each is explored in detail and compared in the recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions, such as the reliability of BigCorp's autonomy promise, the sustainability of TechStartup's growth, and the alignment of cultures. However, it could go deeper into questioning the specifics of the autonomy promise and the likelihood of integration challenges."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response offers the conventional options (accept, decline, negotiate) and adds some nuance (accept with conditions), but does not introduce a genuinely novel or unexpected solution."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response hints that the problem may be more complex than stated (e.g., questioning the autonomy promise and suggesting alternative funding), but does not fundamentally reframe or challenge the premise of the acquisition offer."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct, practical, and grounded in reality, especially regarding the need for legally binding autonomy agreements and consideration of alternative funding. However, it misses the explicit requirement to rate the autonomy promise with low confidence and explain why, which is a key success criterion."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers at least five distinct frames: financial gain, growth potential, autonomy/culture, access to resources, and founder's control/goals. It also synthesizes these perspectives in the recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and questions some assumptions, such as the sustainability of growth and the reliability of BigCorp's promise of autonomy. However, it does not deeply examine less obvious assumptions (e.g., market conditions, competitive threats, or the true value of autonomy promises)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the binary accept/decline by suggesting alternative options like raising funding or forming partnerships. However, these are relatively standard alternatives and do not represent highly novel solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response mostly accepts the problem as stated, with only minor caveats (e.g., noting that the recommendation depends on the founder's goals and priorities). It does not explicitly question or reframe the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, weighing the pros and cons and providing a reasonable recommendation. However, it does not fully meet the success criteria: it mentions the risk of autonomy loss but does not explicitly rate 'BigCorp promises autonomy' with low confidence or explain why such promises are unreliable in detail."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: financial valuation, cultural/mission alignment, the impact of acquisition on autonomy, and negotiation strategies. It compares the pros and cons of each, but does not deeply synthesize or introduce a fourth distinct frame."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the $50M offer is a good valuation, that BigCorp's promise of autonomy is reliable, and that acquisition will accelerate growth. It questions the reliability of autonomy promises and the impact on culture, but does not systematically examine all possible hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond a simple yes/no by recommending negotiation for autonomy and clarification of mission support, but these are relatively standard strategies in acquisition scenarios. There is no highly novel or unexpected solution."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the promise of autonomy is uncertain and that the acquisition may not align with the team's mission, suggesting the problem is more complex than it appears. However, it does not fundamentally reframe or challenge the premise of the acquisition offer itself."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is accurate, practical, and provides actionable advice. It correctly rates the promise of autonomy with low confidence and explains why, fulfilling the success criteria and offering realistic recommendations."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers at least three distinct frames: financial/valuation perspective, cultural/mission alignment (including autonomy), and founder/team emotional factors. It also briefly touches on strategic alternatives (e.g., seeking other offers or investment rounds), but does not fully synthesize a fourth frame."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: the fairness of the valuation, the reliability of BigCorp's autonomy promise, and the founder/team's priorities. It explicitly questions the assumption that BigCorp's promise of autonomy is credible and adjusts its confidence accordingly, showing awareness of both obvious and less obvious assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond a simple yes/no by suggesting negotiation for clearer autonomy commitments and considering alternative growth strategies. However, these are relatively standard options in M&A scenarios and do not represent highly novel solutions."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the best course of action depends on details not provided and suggests caution regarding the premise of autonomy, but it does not fundamentally reframe the question or challenge the overall setup of the problem."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is accurate, practical, and demonstrates a nuanced understanding of startup acquisitions. It correctly rates the autonomy promise with low confidence and provides actionable advice, including negotiation and consideration of alternatives."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers at least four distinct frames: financial considerations, growth potential, autonomy/resources, and mission/culture. It synthesizes these perspectives and weighs them against each other in the final recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions, including the reliability of autonomy promises, the predictability of growth, and the impact on mission/culture. It questions the assumption that BigCorp's promise of autonomy can be trusted and suggests negotiating for contractual protections. However, it could go deeper into less obvious assumptions, such as the founder's personal motivations or the broader market context."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "Beyond the conventional 'accept or reject' answer, the response suggests negotiating for contractual autonomy and conducting a cultural assessment, which are non-obvious, practical steps. It does not fully reframe the problem or propose a radically different solution, but it goes beyond first-order thinking."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response acknowledges that some claims (like autonomy) are soft assumptions and revises its confidence accordingly. It does not fundamentally question whether the acquisition offer itself is the right frame, but it does note that the decision depends on deeper negotiation and assessment."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is accurate, practical, and well-grounded. It correctly identifies the risks of relying on autonomy promises, suggests actionable steps (negotiation, cultural assessment), and provides a balanced, realistic recommendation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers at least three distinct frames: financial valuation, mission/culture, and autonomy/resources. It compares these perspectives and weighs their relative importance, but does not fully synthesize a fourth frame such as market/competitive dynamics or employee outcomes."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: the reliability of BigCorp's autonomy promise, the sufficiency of the financial offer, and the impact on culture. It questions the credibility of autonomy promises and notes the lack of data on BigCorp's acquisition history. However, it could go deeper into less obvious assumptions, such as the founder's personal motivations or the startup's alternative funding options."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond a simple yes/no by recommending negotiation and due diligence, and suggests considering alternative growth strategies. However, these are relatively standard approaches in M&A scenarios and do not represent highly novel solutions."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response acknowledges uncertainty in the problem framing (e.g., lack of information about BigCorp's track record and the specifics of the autonomy promise) and suggests further investigation, but does not fundamentally challenge or reframe the question."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical: it cautions against accepting the offer without further negotiation and due diligence, and it appropriately rates the autonomy promise with low confidence, explaining why. The recommendation is grounded in realistic M&A considerations."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers at least four distinct frames: valuation of the offer, impact on mission and culture, benefits of increased resources, and founder/team preferences. It synthesizes these perspectives in the final recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions, such as the reliability of BigCorp's promise of autonomy, the sufficiency of the offer's valuation, the effectiveness of additional resources, and the alignment of the founder/team's preferences. However, it could go deeper into less obvious assumptions, such as the likelihood of post-acquisition integration challenges."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response suggests the conventional approach of careful consideration and due diligence, but also mentions seeking alternative funding as a non-obvious solution. However, it does not propose multiple novel solutions or fundamentally reframe the options."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that more information is needed and that the decision depends on subjective factors, hinting that the problem may be under-specified. However, it does not explicitly question or reframe the premise of the acquisition offer itself."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, emphasizing caution, due diligence, and consideration of alternatives. However, it does not fully meet the success criteria: it rates the 'autonomy' promise with relatively high confidence (8) and does not explicitly explain why such promises are unreliable, missing a critical caveat."
+      }
+    }
+  ]
+}

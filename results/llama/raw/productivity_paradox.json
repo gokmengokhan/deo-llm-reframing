@@ -1,0 +1,798 @@
+{
+  "problem_id": "productivity_paradox",
+  "problem_title": "The Productivity Paradox",
+  "category": "false_binary",
+  "paths_applied": [
+    "path_5_invert",
+    "path_1_name_the_frame"
+  ],
+  "theory_connection": "De Brabandere (2005): 'velocity' is a stereotype that constrains thought to speed-related solutions. Inversion (how to guarantee worse output) often reveals that the team is already doing those things. Frame-naming exposes that 'velocity' may be the wrong metric entirely.",
+  "expected_vanilla_failure": "Proposes process improvements: better sprint planning, remove blockers, reduce meeting load, improve CI/CD, pair programming, tech debt sprints. All assume the problem is speed.",
+  "success_criteria": "Identifies that the problem may not be speed: building the wrong things (scope), too many people causing coordination overhead (Brooks's law), unclear ownership, excessive process, or measuring the wrong metric. The competitor's team of 4 may be faster BECAUSE it's smaller.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "To improve development velocity, let's break down the problem into key factors and analyze them step by step.\n\n**Understand the Current State**\n\n1. **Team Size and Composition**: Our team has 12 developers, while the competitor's team has 4 developers. This suggests that our team might be experiencing inefficiencies or difficulties in coordination, despite having a larger team.\n2. **Tech Stack**: Both teams use the same tech stack, which means that the technology itself is not the primary bottleneck.\n3. **Declining Sprint Velocity**: Our sprint velocity has been declining for 3 quarters, indicating a downward trend in productivity.\n\n**Identify Potential Causes**\n\n1. **Communication Overhead**: With a larger team, communication overhead can increase, leading to slower decision-making and reduced productivity.\n2. **Inefficient Processes**: Our team's processes might be overly complex, bureaucratic, or not well-suited for the team's size and composition.\n3. **Lack of Focus**: With a larger team, it's possible that individual developers are working on too many tasks or features, leading to context switching and reduced productivity.\n4. **Technical Debt**: Our team might be struggling with technical debt, such as outdated code, poor architecture, or insufficient testing, which can slow down development.\n5. **Skillset and Expertise**: The competitor's team of 4 developers might have a more balanced skillset or higher expertise in certain areas, allowing them to work more efficiently.\n\n**Recommendations**\n\n1. **Streamline Communication and Processes**: Implement agile methodologies, such as Scrum or Kanban, to simplify communication and focus on delivering working software in short iterations. Reduce meeting overhead and encourage open, transparent communication.\n2. **Focus on High-Impact Features**: Prioritize features that have the greatest impact on the business and customers. Reduce the number of features in progress and focus on completing a smaller set of high-priority tasks.\n3. **Technical Debt Management**: Identify and prioritize technical debt, and allocate dedicated time for refactoring, testing, and improving the codebase.\n4. **Skillset and Expertise Assessment**: Evaluate the team's skillset and expertise, and provide training or mentorship to address any gaps. Consider hiring specialized talent to supplement the team's capabilities.\n5. **Team Restructuring**: Consider restructuring the team into smaller, more focused squads, each responsible for a specific set of features or components. This can help reduce communication overhead and increase productivity.\n6. **Velocity Metrics and Feedback**: Establish clear, measurable velocity metrics, and provide regular feedback to the team on their progress. This will help identify areas for improvement and track the effectiveness of changes.\n7. **Competitor Analysis**: Study the competitor's team and processes to identify potential best practices or areas for improvement that can be applied to our team.\n\n**Implementation Roadmap**\n\n1. **Short-Term (0-3 months)**: Implement agile methodologies, streamline communication and processes, and focus on high-impact features.\n2. **Medium-Term (3-6 months)**: Address technical debt, assess and improve the team's skillset and expertise, and consider team restructuring.\n3. **Long-Term (6-12 months)**: Continuously monitor and improve velocity metrics, provide regular feedback, and refine the team's processes and structure as needed.\n\nBy following this step-by-step approach, we can identify and address the key factors affecting our development velocity, and implement changes to improve our team's productivity and competitiveness.",
+      "input_tokens": 129,
+      "output_tokens": 708,
+      "elapsed_seconds": 2.41
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "To improve development velocity, we need to identify the root causes of the issue and address them systematically. Let's break down the problem step by step:\n\n1. **Compare teams**: Although both teams use the same tech stack, there might be differences in team composition, experience, or work dynamics. Consider the following:\n\t* Are the 4 developers in the competitor's team more experienced or skilled?\n\t* Do they have a more efficient workflow or better communication?\n\t* Are there any differences in team leadership, management, or culture?\n2. **Analyze sprint velocity decline**: A decline in sprint velocity over 3 quarters indicates a persistent issue. Possible causes include:\n\t* Increasing complexity of features or technical debt\n\t* Inefficient meeting schedules, stand-ups, or retrospectives\n\t* Insufficient testing, code review, or quality assurance\n\t* Lack of clear goals, priorities, or requirements\n\t* Team burnout, low morale, or high turnover\n3. **Examine team size and dynamics**: With 12 developers, the team might be experiencing:\n\t* Communication overhead: More people can lead to more meetings, emails, and discussions, slowing down decision-making and progress.\n\t* Coordination challenges: Larger teams can struggle with task allocation, dependencies, and synchronization.\n\t* Diverse skill sets and expertise: While beneficial, this can also lead to knowledge gaps, inconsistent coding styles, or conflicting opinions.\n4. **Identify potential bottlenecks**: Look for areas where the team might be getting stuck:\n\t* Are there specific features or components that consistently take longer to develop?\n\t* Are there dependencies on external teams, stakeholders, or third-party services?\n\t* Are there any single points of failure or knowledge silos within the team?\n5. **Gather data and feedback**: Collect metrics and insights from:\n\t* Sprint reports, velocity charts, and burn-down charts\n\t* Team member surveys, feedback sessions, or one-on-ones\n\t* Code reviews, testing, and quality assurance metrics\n\t* Customer feedback, support tickets, or feature requests\n\nBased on this analysis, here are some recommendations to improve development velocity:\n\n**Short-term (next 1-3 sprints)**\n\n1. **Streamline meetings and communication**: Reduce the number of meetings, set clear agendas, and establish a robust asynchronous communication channel (e.g., Slack, Microsoft Teams).\n2. **Focus on high-priority features**: Prioritize features based on customer feedback, business value, and technical feasibility. Ensure the team is working on the most important features first.\n3. **Implement a 'stop doing' list**: Identify and eliminate non-essential tasks, features, or processes that are consuming resources without adding significant value.\n\n**Medium-term (next 3-6 sprints)**\n\n1. **Reorganize the team structure**: Consider splitting the team into smaller, more focused groups (e.g., 2-4 developers) to reduce communication overhead and improve coordination.\n2. **Introduce pair programming or coding buddies**: Pair developers with complementary skill sets to improve knowledge sharing, code quality, and reduce knowledge silos.\n3. **Enhance testing and quality assurance**: Implement automated testing, code reviews, and continuous integration to reduce manual testing and improve overall quality.\n\n**Long-term (next 6-12 months)**\n\n1. **Develop a skills matrix and training plan**: Identify skill gaps and create a plan to address them through training, mentorship, or hiring.\n2. **Establish a clear technical vision and roadmap**: Define a technical strategy that aligns with business goals and ensures the team is working towards a common objective.\n3. **Foster a culture of continuous improvement**: Encourage experimentation, learning from failures, and retrospectives to drive ongoing improvement and innovation.\n\nBy addressing these areas and implementing these recommendations, the team should be able to improve their development velocity and close the gap with their competitor. Regularly review and adjust these strategies to ensure they are having the desired impact.",
+      "input_tokens": 129,
+      "output_tokens": 815,
+      "elapsed_seconds": 3.68
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "To improve development velocity, we need to analyze the key factors contributing to the current situation and identify areas for improvement. Let's break down the problem step by step:\n\n1. **Team size and composition**: Our team has 12 developers, while the competitor's team has 4. This suggests that our team might be experiencing inefficiencies due to its larger size. With more developers, there's a higher likelihood of:\n\t* Increased communication overhead\n\t* More complex decision-making processes\n\t* Potential for duplicated effort or conflicting work\n2. **Sprint velocity decline**: The decline in sprint velocity over three quarters indicates a trend that needs to be addressed. Possible reasons for this decline include:\n\t* Decreased team motivation or engagement\n\t* Inadequate sprint planning or goal setting\n\t* Insufficient feedback mechanisms or retrospectives\n\t* Technical debt or legacy code issues\n3. **Tech stack**: Since both teams use the same tech stack, this factor is unlikely to be the primary cause of the difference in development velocity.\n\nConsidering these factors, here are some potential areas for improvement:\n\n**Short-term recommendations**:\n\n1. **Streamline team communication**: Implement regular, focused meetings to ensure everyone is aligned on goals and objectives. Consider adopting techniques like daily stand-ups, weekly reviews, or bi-weekly planning sessions.\n2. **Sprint planning and goal setting**: Review and refine the sprint planning process to ensure realistic goals and clear priorities. Encourage the team to set achievable objectives and provide regular feedback on progress.\n3. **Retrospectives and feedback**: Schedule regular retrospectives to identify areas for improvement and implement changes. Encourage team members to share their concerns, ideas, and suggestions for improving the development process.\n\n**Mid-term recommendations**:\n\n1. **Team restructuring or reorganization**: Consider dividing the team into smaller, more focused groups (e.g., feature teams or component teams). This could help reduce communication overhead and increase accountability.\n2. **Process optimization**: Analyze the development workflow and identify bottlenecks or inefficiencies. Implement changes to simplify the process, reduce manual effort, or automate repetitive tasks.\n3. **Technical debt management**: Prioritize and address technical debt issues, such as refactoring legacy code, improving testing coverage, or optimizing infrastructure.\n\n**Long-term recommendations**:\n\n1. **Developer skills and training**: Invest in ongoing education and training for team members to improve their skills and knowledge. This could include workshops, conferences, or online courses.\n2. **Team culture and motivation**: Foster a positive team culture by recognizing and rewarding individual contributions, providing opportunities for growth and development, and promoting a sense of ownership and responsibility.\n3. **Continuous improvement**: Establish a culture of continuous improvement, where the team regularly reflects on their processes and identifies areas for improvement.\n\nTo measure the effectiveness of these recommendations, track key metrics such as:\n\n* Sprint velocity\n* Cycle time\n* Lead time\n* Team satisfaction and engagement\n* Code quality and technical debt\n\nBy implementing these changes and monitoring their impact, the team should be able to improve its development velocity and become more competitive with the competitor's team.",
+      "input_tokens": 129,
+      "output_tokens": 634,
+      "elapsed_seconds": 2.23
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "To address the issue of declining development velocity, let's break down the key factors involved and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Team size and composition**: Our team has 12 developers, while the competitor's team has 4. This suggests that our team might be experiencing inefficiencies or communication overhead due to its larger size.\n2. **Tech stack**: Both teams use the same tech stack, which rules out any potential advantages or disadvantages due to technology differences.\n3. **Sprint velocity trend**: The decline in sprint velocity over three quarters indicates a persistent issue that needs to be addressed.\n4. **Comparison to competitor**: The fact that a smaller team is outperforming our larger team suggests that there might be process or cultural issues hindering our team's productivity.\n\n**Options to Consider:**\n\n1. **Process optimization**: Analyze our development process to identify bottlenecks, unnecessary complexity, or inefficiencies. Streamline the process by eliminating unnecessary steps, improving communication, and reducing meetings.\n2. **Team restructuring**: Consider reorganizing the team into smaller, more focused groups, each with a specific set of responsibilities. This could help reduce communication overhead and increase accountability.\n3. **Skillset and expertise**: Assess the skillset and expertise of our developers to ensure they are well-suited for the tasks at hand. Provide training or hire additional team members to fill any gaps.\n4. **Agile practices**: Review our agile practices to ensure we are following the principles of iterative development, continuous improvement, and customer satisfaction. Consider adopting new practices or refining existing ones to improve velocity.\n5. **Technical debt management**: Evaluate our technical debt and prioritize paying it down to reduce the burden on future development.\n6. **Velocity metrics**: Re-examine our velocity metrics to ensure they accurately reflect the team's progress and productivity. Consider using alternative metrics, such as cycle time or lead time, to gain a more comprehensive understanding of our development process.\n7. **Culture and motivation**: Assess the team's culture and motivation to identify any potential issues that might be impacting velocity. Foster a culture of transparency, open communication, and continuous improvement.\n\n**Recommendation:**\n\nBased on the analysis, I recommend a multi-faceted approach to improve development velocity:\n\n1. **Conduct a process optimization workshop**: Gather the team to identify areas for improvement in our development process. Streamline the process, eliminate unnecessary steps, and implement changes to reduce communication overhead.\n2. **Reorganize the team into smaller groups**: Divide the team into smaller, focused groups (e.g., 3-4 developers) to reduce communication overhead and increase accountability.\n3. **Provide training and skillset development**: Offer training and development opportunities to ensure our developers have the necessary skills and expertise to excel in their roles.\n4. **Implement agile practices refinement**: Review and refine our agile practices to ensure we are following the principles of iterative development, continuous improvement, and customer satisfaction.\n5. **Establish a technical debt management plan**: Prioritize and address technical debt to reduce its impact on future development.\n6. **Monitor and adjust velocity metrics**: Re-examine our velocity metrics and adjust them as needed to ensure they accurately reflect the team's progress and productivity.\n7. **Foster a culture of continuous improvement**: Encourage a culture of transparency, open communication, and continuous improvement to motivate the team and drive velocity growth.\n\nBy addressing these key factors and implementing a combination of these recommendations, we can improve our development velocity and become more competitive with our smaller, more agile competitor.",
+      "input_tokens": 129,
+      "output_tokens": 721,
+      "elapsed_seconds": 3.43
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "To improve development velocity, we need to analyze the key factors involved and identify areas for improvement. Here's a step-by-step approach to address the issue:\n\n**Understand the current situation**\n\n1. **Team size and composition**: Our team has 12 developers, while the competitor's team has 4. This suggests that our team might be experiencing inefficiencies or communication overhead due to its larger size.\n2. **Tech stack**: Both teams use the same tech stack, which rules out any technological advantages or disadvantages.\n3. **Sprint velocity**: Our team's sprint velocity has been declining for 3 quarters, indicating a worsening trend.\n\n**Identify potential bottlenecks**\n\n1. **Communication overhead**: With a larger team, communication can become more complex, leading to misunderstandings, delays, or unnecessary meetings.\n2. **Task distribution and allocation**: Are tasks being distributed evenly among team members? Are there any bottlenecks or dependencies that are slowing down the development process?\n3. **Code quality and technical debt**: Is our team accumulating technical debt or writing code that's hard to maintain? This can slow down future development and reduce velocity.\n4. **Process inefficiencies**: Are our development processes, such as testing, review, or deployment, optimized for speed and efficiency?\n5. **Team motivation and engagement**: Are team members motivated, engaged, and working effectively together?\n\n**Recommendations for improvement**\n\n1. **Streamline communication**:\n\t* Implement regular, focused meetings to ensure everyone is aligned and informed.\n\t* Use collaboration tools, such as project management software, to facilitate communication and reduce email overhead.\n2. **Optimize task distribution and allocation**:\n\t* Use agile methodologies, such as Scrum or Kanban, to manage work and prioritize tasks.\n\t* Ensure that each team member has a clear understanding of their responsibilities and deadlines.\n3. **Address technical debt and code quality**:\n\t* Allocate time for refactoring and technical debt reduction.\n\t* Implement code reviews and pair programming to improve code quality and knowledge sharing.\n4. **Improve process efficiencies**:\n\t* Automate testing, deployment, and other repetitive tasks where possible.\n\t* Implement continuous integration and continuous deployment (CI/CD) pipelines to reduce manual effort.\n5. **Boost team motivation and engagement**:\n\t* Encourage open feedback and recognize individual contributions.\n\t* Provide opportunities for growth, training, and skill development.\n6. **Consider team restructuring**:\n\t* If the team is too large, consider breaking it down into smaller, more focused teams.\n\t* Ensure that each team member has a clear role and responsibilities.\n\n**Action plan**\n\n1. **Short-term (next sprint)**:\n\t* Implement regular team meetings and collaboration tools.\n\t* Start tracking and measuring sprint velocity, cycle time, and lead time.\n2. **Medium-term (next quarter)**:\n\t* Introduce agile methodologies and optimize task distribution.\n\t* Allocate time for technical debt reduction and code quality improvement.\n3. **Long-term (next 6-12 months)**:\n\t* Continue to monitor and improve process efficiencies.\n\t* Evaluate team structure and consider restructuring if necessary.\n\t* Develop a comprehensive training and growth plan for team members.\n\nBy following this structured approach, we can identify and address the key factors affecting our development velocity, ultimately improving our team's performance and competitiveness.",
+      "input_tokens": 129,
+      "output_tokens": 686,
+      "elapsed_seconds": 2.87
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before suggesting improvements, do two things:\n1. How would you GUARANTEE this team produces even LESS output? List 5 specific decisions that would make velocity worse.\n2. List every assumption embedded in the word 'velocity.' What if the problem is NOT speed?\n\nAfter answering both, then address the original question.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "### 1. Decisions to Guarantee Less Output\n\nTo intentionally decrease the team's velocity, the following decisions could be made:\n\n1. **Introduce Excessive Bureaucracy**: Implement a lengthy and complex approval process for every minor change or decision, ensuring that even the smallest tasks are bogged down in red tape.\n2. **Increase Meeting Frequencies**: Mandate daily, hour-long meetings for the entire team, regardless of the topic's relevance to each member, ensuring significant time is spent in meetings rather than coding.\n3. **Reduce Focus on Core Tasks**: Assign developers multiple, unrelated side projects simultaneously, diluting their focus and reducing the time they can dedicate to primary tasks.\n4. **Implement Overly Stringent Code Review Processes**: Require that every line of code be reviewed by at least three senior developers, with a mandatory wait period of at least a week for feedback, slowing down the development cycle.\n5. **Disrupt Team Dynamics**: Rotate team members' roles and responsibilities every quarter, preventing anyone from gaining deep expertise in any area and ensuring a constant learning curve that hampers productivity.\n\n### 2. Assumptions Embedded in 'Velocity'\n\nThe term 'velocity' in the context of software development assumes several things:\n\n- **Speed is the Primary Issue**: The assumption is that the team's main problem is how quickly they can develop and ship features.\n- **Output is Measurable and Comparable**: It assumes that the team's output (features, code, etc.) can be quantitatively measured and compared over time or against another team.\n- **Quality is Not Compromised**: The focus on velocity might overlook the quality of the output, assuming that faster development does not compromise the quality of the software.\n- **Team Size and Composition are Optimal**: It assumes that the team of 12 developers is the right size and composition for the tasks at hand, and that the comparison to a team of 4 developers is fair in terms of skills and experience.\n- **Technology and Tools are Not a Limiting Factor**: The assumption is that the tech stack used by both teams does not inherently limit the development speed, and any differences in velocity are due to team performance rather than technological constraints.\n- **Process and Methodology are Effective**: It assumes that the development methodologies, sprint planning, and execution processes are optimal and not a significant factor in the velocity.\n\nIf the problem is not speed, other factors could be at play, such as:\n- **Quality Issues**: Perhaps the team is focusing on producing high-quality code, which takes longer but results in fewer bugs and less maintenance.\n- **Complexity of Features**: The features being developed might be significantly more complex than those of the competitor, requiring more time and resources.\n- **Team Morale and Motivation**: Low morale or motivation within the team could be impacting productivity, regardless of the team's technical capabilities.\n- **Process Inefficiencies**: The development process might be fraught with inefficiencies, bottlenecks, or unnecessary steps that slow down development.\n\n### Addressing the Original Question\n\nGiven the assumptions and potential issues outlined, improving development velocity should start with a thorough analysis of the team's current process, output quality, and challenges. Here are some steps to consider:\n\n1. **Conduct a Retrospective Analysis**: Look back at the projects and sprints from the last three quarters to identify patterns, bottlenecks, and areas for improvement.\n2. **Assess Team Morale and Engagement**: Engage with team members to understand their perspectives on the current state of development, challenges they face, and suggestions they might have for improvement.\n3. **Evaluate the Tech Stack and Tools**: Consider whether the current technology and tools are optimal for the team's needs and if there are more efficient alternatives.\n4. **Review and Refine the Development Process**: Streamline the development process by eliminating unnecessary steps, improving code review efficiency, and enhancing collaboration tools and methodologies.\n5. **Focus on Quality and Efficiency**: Ensure that the pursuit of velocity does not compromise the quality of the output. Implement efficient testing, continuous integration, and continuous deployment (CI/CD) to reduce bugs and downtime.\n6. **Provide Training and Development Opportunities**: Invest in the team's skills, especially in areas that are critical for the current and future projects, to enhance their capabilities and adaptability.\n7. **Set Realistic Goals and Metrics**: Establish clear, achievable goals for velocity improvement and track progress with meaningful metrics that consider both speed and quality.\n\nBy taking a holistic approach that addresses potential underlying issues and focuses on sustainable, quality-driven development practices, the team can work towards improving its velocity in a way that benefits the overall quality and efficiency of their output.",
+      "input_tokens": 169,
+      "output_tokens": 954,
+      "elapsed_seconds": 4.71
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before suggesting improvements, do two things:\n1. How would you GUARANTEE this team produces even LESS output? List 5 specific decisions that would make velocity worse.\n2. List every assumption embedded in the word 'velocity.' What if the problem is NOT speed?\n\nAfter answering both, then address the original question.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "### Guaranteeing Reduced Output\n\nTo deliberately reduce the team's output or velocity, the following decisions could be made:\n\n1. **Increase Meeting Frequency and Duration**: Schedule more frequent and longer meetings, which could include unnecessary participants. This would reduce the time available for actual development work.\n2. **Complexify Code Reviews**: Implement overly stringent and time-consuming code review processes. This could involve multiple rounds of review, requiring developers to make excessive changes or wait for extended periods for feedback.\n3. **Introduce Unnecessary Layers of Approval**: Add more layers of management or approval for even minor changes or decisions. This would slow down the development process by requiring more time for approvals and potentially leading to bureaucratic bottlenecks.\n4. **Mandate the Use of Unfamiliar Technologies**: Require the team to use new, unfamiliar technologies or tools for every project without providing adequate training or support. This would lead to a steep learning curve, reducing productivity.\n5. **Reduce Team Stability**: Frequently change team members' roles, responsibilities, or even reassign them to different projects. This constant reshuffling would disrupt team dynamics, reduce cohesion, and make it difficult for the team to gain momentum on any single project.\n\n### Assumptions Embedded in 'Velocity'\n\nThe term 'velocity' in the context of software development assumes several things:\n- **Speed is the Primary Issue**: It assumes that the problem lies in how quickly the team can develop and ship features.\n- **Output is Measurable**: It implies that the team's output can be quantitatively measured, usually in terms of story points, lines of code, or features shipped.\n- **Team's Capacity is Underutilized**: The focus on velocity suggests that the team has the capacity to produce more but is not doing so, possibly due to inefficiencies or bottlenecks.\n- **Quality is Not the Primary Concern**: While velocity metrics often account for quality to some extent (e.g., through acceptance criteria), the primary focus is on the quantity of work completed within a certain timeframe.\n- **Process Optimization is Key**: It assumes that improving velocity is largely about optimizing the development process, possibly through better agile practices, tooling, or team dynamics.\n- **Comparison to Competitors is Relevant**: Comparing velocity to a competitor's team of a different size (4 vs. 12 developers) assumes that such comparisons are meaningful and that factors like team experience, project complexity, and company culture are either similar or insignificant.\n\nHowever, what if the problem is not speed? Other potential issues could include:\n- **Quality of Output**: Perhaps the team is prioritizing quality over speed, leading to slower but more reliable and maintainable code.\n- **Project Complexity**: The projects undertaken by the team of 12 might be significantly more complex or larger in scope than those of the competitor's team.\n- **Team Morale or Motivation**: Low morale, poor management, or lack of motivation could be affecting the team's productivity, regardless of their technical capabilities.\n- **Different Business Objectives**: The company might have different business objectives or priorities that do not emphasize development speed, such as focusing on customer support, marketing, or research and development.\n\n### Addressing the Original Question\n\nTo improve the development velocity of the engineering team, consider the following steps:\n\n1. **Analyze the Root Cause**: Conduct a thorough analysis to understand why the team's velocity has been declining. This could involve feedback sessions with team members, a review of project complexities, and an examination of the development process.\n2. **Set Realistic Goals and Metrics**: Ensure that the metrics used to measure velocity are meaningful and aligned with the team's and company's goals. Consider both quantitative (e.g., story points completed) and qualitative (e.g., customer satisfaction, code quality) metrics.\n3. **Optimize the Development Process**: Look for inefficiencies in the development process and address them. This could involve streamlining code reviews, improving continuous integration and deployment (CI/CD) pipelines, or enhancing collaboration tools.\n4. **Invest in Team Development**: Provide training, workshops, or conferences to help team members improve their skills and stay updated with the latest technologies and best practices.\n5. **Enhance Team Dynamics and Morale**: Foster a positive team culture by promoting open communication, recognizing achievements, and addressing any morale issues. Ensure that team members are motivated and engaged with their work.\n6. **Consider External Factors**: Evaluate how external factors, such as comparisons to competitors, are influencing perceptions of the team's performance. Focus on internal goals and improvements rather than direct comparisons.\n\nBy taking a holistic approach that considers both the potential root causes of the issue and the broader context of the team's work, it's possible to implement meaningful changes that improve development velocity in a sustainable way.",
+      "input_tokens": 169,
+      "output_tokens": 966,
+      "elapsed_seconds": 4.72
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before suggesting improvements, do two things:\n1. How would you GUARANTEE this team produces even LESS output? List 5 specific decisions that would make velocity worse.\n2. List every assumption embedded in the word 'velocity.' What if the problem is NOT speed?\n\nAfter answering both, then address the original question.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "### Guaranteeing Reduced Output\n\nTo guarantee that the team produces even less output, here are five specific decisions that could worsen velocity:\n\n1. **Introduce More Meetings**: Implement daily, hour-long meetings for the entire team to discuss progress, regardless of whether there are actual updates. This would significantly reduce the time developers have to write code.\n\n2. **Increase Bureaucracy**: Mandate that every line of code must be reviewed by at least three senior developers, and that each review must be followed by a written report detailing every suggestion and critique. This would introduce a lot of overhead and slow down the development process.\n\n3. **Reduce Training and Feedback**: Stop all professional development activities, such as workshops, conferences, and one-on-one mentoring sessions. This would prevent developers from learning new skills and improving their current ones, leading to inefficiencies and mistakes that slow down development.\n\n4. **Implement Overly Complex Processes**: Introduce a very detailed, step-by-step process for every task, no matter how small. This could include requiring a full specification document for every minor bug fix or feature tweak, complete with diagrams, user stories, and a detailed breakdown of estimated time and resources.\n\n5. **Foster a Culture of Fear**: Encourage a culture where mistakes are severely punished, leading to a fear of trying new things or taking any risks. This would cause developers to be overly cautious and hesitant, significantly slowing down their work.\n\n### Assumptions Embedded in 'Velocity'\n\nThe term 'velocity' in software development typically refers to the amount of work a team can complete during a sprint. However, several assumptions are embedded in this concept:\n\n- **Speed is the Problem**: The assumption that the issue is with how fast the team is working, rather than with other factors like the quality of work, the complexity of tasks, or external factors affecting the team's productivity.\n- **Work is Quantifiable**: The assumption that all work can be measured and quantified in a uniform way, which might not always be the case, especially with tasks that involve a lot of planning, research, or innovative problem-solving.\n- **Team Size and Composition are Optimal**: The assumption that the team's size and composition are appropriate for the tasks at hand. If the team is too large or lacks certain critical skills, its velocity might suffer.\n- **Technology and Tools are Not a Bottleneck**: The assumption that the tech stack and tools being used are not hindering the team's productivity. Sometimes, outdated or inefficient tools can significantly slow down development.\n- **External Factors are Constant**: The assumption that external factors such as stakeholder demands, market conditions, and team morale are constant and do not affect velocity. In reality, these factors can fluctuate and have a significant impact on the team's output.\n\nIf the problem is not speed, other factors could be at play, such as the quality of the work, the team's morale, or external pressures. For instance, the team might be spending a lot of time on rework due to poor initial quality, or they might be dealing with a high volume of support requests that take away from development time.\n\n### Addressing the Original Question\n\nGiven the information and the assumptions that might not hold, improving development velocity requires a more nuanced approach than simply trying to work faster. Here are some steps to consider:\n\n1. **Analyze the Root Cause**: Conduct a thorough analysis to understand why the team's velocity is declining. This could involve reviewing sprint data, conducting team interviews, and assessing external factors.\n\n2. **Focus on Quality**: Ensure that the team is prioritizing quality over speed. High-quality work reduces the need for rework and can improve overall efficiency in the long run.\n\n3. **Optimize Processes**: Review the team's processes and tools to identify bottlenecks and areas for improvement. This could involve streamlining workflows, adopting more efficient tools, or adjusting the team's workflow to better match its strengths and weaknesses.\n\n4. **Invest in Team Development**: Provide opportunities for professional growth and skill development. A more skilled and motivated team is likely to be more productive.\n\n5. **Manage External Factors**: Work to mitigate the impact of external factors such as stakeholder demands and support requests. This could involve setting clear expectations, implementing efficient support processes, or adjusting the team's workload to better match its capacity.\n\n6. **Re-evaluate Team Size and Composition**: Consider whether the team's size and composition are optimal for the tasks at hand. Sometimes, adding or removing team members, or adjusting the roles within the team, can significantly impact productivity.\n\nBy taking a comprehensive approach that addresses the root causes of the issue and considers all the factors that might be affecting the team's velocity, it's possible to develop a strategy that truly improves the team's productivity and efficiency.",
+      "input_tokens": 169,
+      "output_tokens": 972,
+      "elapsed_seconds": 3.64
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before suggesting improvements, do two things:\n1. How would you GUARANTEE this team produces even LESS output? List 5 specific decisions that would make velocity worse.\n2. List every assumption embedded in the word 'velocity.' What if the problem is NOT speed?\n\nAfter answering both, then address the original question.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "**Guaranteeing Less Output: 5 Decisions to Decrease Velocity**\n\nTo intentionally decrease the team's output, the following decisions could be made:\n\n1. **Increase meeting frequency and duration**: Schedule more frequent and longer meetings, reducing the time available for actual development work. This could include daily stand-ups, lengthy planning sessions, and frequent progress updates.\n2. **Introduce excessive documentation requirements**: Mandate detailed, time-consuming documentation for every minor change, slowing down the development process and diverting attention from coding.\n3. **Implement a rigid, bureaucratic change management process**: Establish a complex, multi-step process for approving and implementing changes, involving multiple stakeholders and requiring extensive justification for even minor modifications.\n4. **Reduce collaboration and encourage siloed work**: Discourage teamwork and communication among developers, instead assigning each team member to work on isolated components with minimal interaction or knowledge sharing.\n5. **Prioritize perfection over progress**: Emphasize the importance of flawless, bug-free code, encouraging developers to spend excessive time on testing and refinement, even if it means delaying feature releases.\n\n**Assumptions Embedded in 'Velocity'**\n\nThe term 'velocity' implies a focus on speed, assuming that the primary goal is to increase the rate at which features are developed and shipped. However, this assumption might not always be accurate. Other potential issues could be:\n\n* **Quality**: Perhaps the team is prioritizing quality over speed, ensuring that features are thoroughly tested and reliable before release.\n* **Complexity**: The team might be working on more complex features or tackling technical debt, which requires more time and effort.\n* **Process**: Inefficient processes, inadequate tooling, or insufficient training could be hindering the team's ability to deliver features quickly.\n* **Team dynamics**: Communication breakdowns, lack of trust, or inadequate leadership might be impacting the team's overall performance.\n* **Prioritization**: The team might be working on low-priority features or tasks, which are not critical to the business or users.\n\nIf the problem is not speed, but rather one of these other factors, focusing solely on increasing velocity might not address the underlying issues.\n\n**Addressing the Original Question**\n\nGiven the team's declining velocity and the competitor's team of 4 outperforming them, it's essential to investigate the root causes of the issue. To improve development velocity, consider the following:\n\n1. **Analyze the team's workflow and processes**: Identify bottlenecks, inefficiencies, and areas for improvement in the development process.\n2. **Assess the team's skills and training**: Ensure that developers have the necessary skills and training to work efficiently with the tech stack.\n3. **Evaluate the team's dynamics and communication**: Foster an open, collaborative environment, and address any communication breakdowns or trust issues.\n4. **Re-examine priorities and focus**: Ensure that the team is working on high-priority features and tasks that align with business goals and user needs.\n5. **Consider external factors**: Investigate whether external factors, such as inadequate tooling, infrastructure, or support, are impacting the team's performance.\n6. **Benchmark against the competitor**: Study the competitor's team structure, processes, and practices to identify potential areas for improvement.\n7. **Set realistic goals and expectations**: Establish achievable targets for velocity improvement, taking into account the team's strengths, weaknesses, and constraints.\n\nBy addressing these factors and considering the complexities of the issue, it's possible to develop a tailored plan to improve the team's development velocity and overall performance.",
+      "input_tokens": 169,
+      "output_tokens": 718,
+      "elapsed_seconds": 3.31
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before suggesting improvements, do two things:\n1. How would you GUARANTEE this team produces even LESS output? List 5 specific decisions that would make velocity worse.\n2. List every assumption embedded in the word 'velocity.' What if the problem is NOT speed?\n\nAfter answering both, then address the original question.\n\nOur engineering team of 12 developers consistently ships features slower than a competitor's team of 4. We use the same tech stack. Our sprint velocity has been declining for 3 quarters. How do we improve our development velocity?",
+      "response": "**Guaranteeing Reduced Output: 5 Decisions to Make Velocity Worse**\n\nTo intentionally decrease the team's output, here are five specific decisions that could be made:\n\n1. **Increase Meeting Frequency and Duration**: Schedule more frequent and longer meetings, ensuring that developers spend more time discussing and less time coding. This could include daily stand-ups, bi-weekly team meetings, and weekly one-on-one check-ins with managers.\n2. **Introduce Excessive Code Review and Approval Processes**: Implement a multi-layered code review process, requiring each change to be reviewed and approved by at least three team members, including a technical lead, a QA engineer, and a DevOps specialist. This would significantly slow down the development process.\n3. **Mandate Unnecessary and Time-Consuming Documentation**: Require developers to create and maintain exhaustive documentation for every feature, including detailed design documents, technical specifications, and user manuals. This would divert time and energy away from actual coding.\n4. **Rotate Team Members Across Projects Frequently**: Assign developers to work on multiple projects simultaneously, with frequent rotations (e.g., every two weeks) to ensure they are always adjusting to new contexts and requirements. This would lead to significant context-switching overhead and decreased productivity.\n5. **Implement a 'Perfectionist' Culture**: Foster an environment where developers are encouraged to strive for absolute perfection in every feature, with no tolerance for minor bugs or imperfections. This would lead to an excessive focus on polishing individual features, causing significant delays in overall project delivery.\n\n**Assumptions Embedded in 'Velocity'**\n\nThe term 'velocity' assumes that:\n\n1. **Speed is the primary concern**: The focus is on delivering features quickly, rather than considering other factors like quality, reliability, or customer satisfaction.\n2. **Output is directly measurable**: Velocity implies that the team's output can be easily quantified and compared, which might not be the case if the work involves complex, nuanced, or creative tasks.\n3. **Team size and composition are optimal**: The assumption is that the team of 12 developers is the right size and composition to achieve the desired velocity, which might not be true if there are issues with communication, collaboration, or skill distribution.\n4. **Technology and tools are not a limiting factor**: The use of the same tech stack as the competitor's team implies that technology is not a bottleneck, which might not be the case if the team is struggling with outdated or inadequate tools.\n5. **The problem is solely with the development team**: The focus on velocity improvement might overlook other factors that could be contributing to the slower feature delivery, such as inadequate product management, insufficient testing, or inefficient deployment processes.\n\n**Addressing the Original Question**\n\nGiven the declining velocity and the competitor's team delivering features faster with a smaller team, it's essential to re-examine the assumptions and consider alternative perspectives. Instead of solely focusing on increasing velocity, the team should:\n\n1. **Re-evaluate priorities and goals**: Consider whether the current priorities and goals are aligned with the company's overall strategy and customer needs.\n2. **Assess team dynamics and collaboration**: Examine the team's communication, collaboration, and skill distribution to identify potential bottlenecks or areas for improvement.\n3. **Investigate technology and tooling**: Evaluate the tech stack and tools used by the team to ensure they are adequate and not hindering progress.\n4. **Analyze the development process**: Map out the entire development process, from product management to deployment, to identify inefficiencies and areas for improvement.\n5. **Consider alternative metrics and KPIs**: Instead of focusing solely on velocity, explore other metrics that might better capture the team's performance and progress, such as customer satisfaction, feature quality, or business outcomes.\n\nBy taking a more holistic and nuanced approach, the team can identify the root causes of the declining velocity and develop a more effective strategy to improve their development process and deliver features that meet customer needs.",
+      "input_tokens": 169,
+      "output_tokens": 802,
+      "elapsed_seconds": 3.16
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including team size and composition, tech stack, declining sprint velocity, communication overhead, inefficient processes, lack of focus, technical debt, and skillset and expertise. It explores these frames with comparison, discussing how they might impact development velocity and suggesting ways to address them."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that a larger team should be more productive, the assumption that the tech stack is not a bottleneck, and the assumption that the team's current processes are effective. It also considers non-obvious assumptions, such as the potential impact of technical debt and the importance of skillset and expertise."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including streamlining communication and processes, focusing on high-impact features, managing technical debt, assessing and improving skillset and expertise, and restructuring the team into smaller squads. These solutions go beyond the obvious first-order answer of simply 'working harder' or 'hiring more people'."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, suggesting that the issue may not be solely with development velocity, but also with other factors such as scope, coordination overhead, and unclear ownership. However, it does not explicitly question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides a clear and well-structured analysis of the problem, identifies potential causes, and offers actionable recommendations for improvement. The response demonstrates a strong understanding of the factors that can impact development velocity and provides excellent practical advice for addressing them."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including team composition, workflow, communication, team size, and dynamics. It also explores potential bottlenecks and areas for improvement, demonstrating a comprehensive understanding of the problem. However, it does not explicitly synthesize these frames into a unified perspective, which prevents it from receiving a perfect score."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the impact of team size, communication overhead, and the potential for knowledge gaps. It also questions the assumption that the competitor's team is faster due to their smaller size. However, it does not systematically surface and examine all hidden assumptions, which is why it does not receive a perfect score."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces several non-obvious solutions, such as streamlining meetings and communication, implementing a 'stop doing' list, and reorganizing the team structure. It also suggests introducing pair programming and coding buddies, which is a less conventional approach. However, some of the solutions, such as focusing on high-priority features, are more conventional, which prevents the response from receiving a perfect score."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it assumes that the issue is solely with development velocity. It also considers alternative explanations, such as the competitor's team being faster due to their smaller size. However, it does not explicitly question the premise of the problem or explore alternative problem framings, which is why it does not receive a higher score."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response provides excellent practical advice grounded in reality. The suggestions for improving development velocity, such as streamlining meetings and communication, focusing on high-priority features, and reorganizing the team structure, are all reasonable and well-supported. The response also demonstrates a good understanding of the potential challenges and limitations of the suggested solutions, which adds to its correctness and practical usefulness."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including team size and composition, sprint velocity decline, and tech stack. It also explores different areas for improvement, such as streamlining team communication, sprint planning, and technical debt management. However, it does not synthesize these frames into a comprehensive framework."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the idea that a larger team size may be causing inefficiencies, and that the decline in sprint velocity may be due to decreased team motivation or inadequate sprint planning. It also notes that the tech stack is unlikely to be the primary cause of the difference in development velocity. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as streamlining team communication and implementing regular retrospectives. However, many of the solutions, such as sprint planning and goal setting, are conventional and not particularly novel. The response does not provide a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, and that the competitor's team of 4 may be faster because it's smaller. However, it does not explicitly question the premise and explore alternative problem framings. It largely accepts the problem as stated and focuses on finding solutions within that framework."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is largely correct and provides reasonable and practical advice. The solutions proposed are grounded in reality and take into account the complexities of team dynamics and software development. However, the response could benefit from more specific examples and data to support its recommendations."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including team size and composition, tech stack, sprint velocity trend, and comparison to the competitor. It also explores different options such as process optimization, team restructuring, skillset and expertise, agile practices, technical debt management, velocity metrics, and culture and motivation. This demonstrates a good diversity of perspectives, but may not fully synthesize them into a cohesive whole."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the problem is solely with speed, the assumption that the team's size is not a factor, and the assumption that the current velocity metrics are accurate. It also considers the potential impact of communication overhead, unnecessary complexity, and inefficiencies in the development process. However, it may not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as reorganizing the team into smaller groups and implementing a technical debt management plan. However, many of the solutions, such as process optimization and agile practices refinement, are fairly conventional and do not necessarily represent a significant departure from standard approaches."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, suggesting that the issue may not be solely with speed, but also with scope, coordination overhead, unclear ownership, or excessive process. However, it does not fundamentally reframe the question or explore alternative problem definitions in depth."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is generally correct and provides reasonable and practical advice. The recommendations are grounded in reality and take into account the complexities of the situation. However, the response may not provide a complete or definitive solution, and some of the recommendations may require further refinement or adaptation to the specific context."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including team size and composition, communication overhead, task distribution, code quality, process inefficiencies, and team motivation. It explores these different perspectives to identify areas for improvement, demonstrating a good understanding of the complexities involved in development velocity."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, such as the impact of team size on communication overhead, the potential for process inefficiencies, and the role of technical debt in slowing down development. It also considers the possibility that the competitor's smaller team size might be an advantage, showing an awareness of potential biases in the initial problem statement."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides a range of solutions, including streamlining communication, optimizing task distribution, addressing technical debt, improving process efficiencies, and boosting team motivation. While these solutions are practical and reasonable, they are not particularly novel or unexpected, as they align with common agile methodologies and team management practices."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, particularly in assuming that the issue is solely with development velocity. It suggests considering alternative factors, such as team size and composition, but does not fundamentally reframe the question before answering. The response still largely accepts the premise that improving development velocity is the primary goal."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides a well-structured and practical approach to addressing the issue of declining development velocity. The recommendations are grounded in reality and aligned with established best practices in software development, such as agile methodologies and continuous integration. The action plan is also clear and actionable, making the response practically useful for the team looking to improve its performance."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including the potential issues with measuring velocity, the impact of team size, the role of quality in development, and the importance of process efficiency. It synthesizes these frames to provide a comprehensive approach to improving development velocity."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, such as the assumption that speed is the primary issue, that output is measurable and comparable, and that team size and composition are optimal. It questions these assumptions and explores their implications."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, such as considering the potential downsides of increasing velocity and the importance of focusing on quality and efficiency. While the solutions are not entirely unexpected, they are well-reasoned and practical."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, questioning whether the problem is well-posed and exploring alternative perspectives on the issue. It considers the possibility that the competitor's team of 4 may be faster due to its smaller size and that the focus on velocity may be misguided."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a thoughtful and comprehensive approach to improving development velocity, taking into account multiple factors and potential pitfalls. The advice is grounded in reality and reflects a deep understanding of the complexities of software development."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including the potential issues of scope, team size, coordination overhead, unclear ownership, excessive process, and measuring the wrong metric. It also explores the competitor's team size and how it might affect their velocity, as well as the importance of quality, project complexity, team morale, and different business objectives. The response synthesizes these frames to provide a comprehensive understanding of the problem."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, including the assumption that speed is the primary issue, that output is measurable, that the team's capacity is underutilized, that quality is not the primary concern, and that process optimization is key. It also questions the assumption that comparing velocity to a competitor's team of a different size is meaningful."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response provides multiple non-obvious solutions, including analyzing the root cause of the declining velocity, setting realistic goals and metrics, optimizing the development process, investing in team development, enhancing team dynamics and morale, and considering external factors. While these solutions are not entirely unexpected, they are thoughtful and well-reasoned."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, considering whether the problem is well-posed and exploring alternative explanations for the team's declining velocity. It questions the premise that the problem is solely about speed and velocity, and instead considers a broader range of factors that might be contributing to the issue."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a thoughtful and comprehensive analysis of the problem, and offers a range of sensible and actionable solutions. The response is grounded in reality and takes into account the complexities and nuances of the situation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including the possibility that the problem may not be with speed, but with other factors such as scope, coordination overhead, unclear ownership, excessive process, or measuring the wrong metric. It also explores the idea that the competitor's team of 4 may be faster due to its smaller size, and discusses various assumptions embedded in the concept of 'velocity'."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, including the assumption that speed is the problem, that all work can be measured and quantified, that the team's size and composition are optimal, and that technology and tools are not a bottleneck. It also questions the assumption that external factors are constant and do not affect velocity."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including analyzing the root cause of the declining velocity, focusing on quality, optimizing processes, investing in team development, managing external factors, and re-evaluating team size and composition. However, these solutions, while comprehensive, do not necessarily reframe the problem in a fundamentally new way."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise of the problem by exploring whether the issue is truly with the team's velocity, or if other factors are at play. It notes that the problem may not be well-posed and that the team's velocity may be declining due to reasons other than a lack of speed, such as poor quality, excessive process, or external pressures."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides a comprehensive and nuanced approach to addressing the issue of declining development velocity, and its recommendations are well-supported by software development best practices and principles."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including the potential issues with the team's workflow, skills, dynamics, priorities, and external factors, as well as the competitor's team structure and practices. It synthesizes these frames to provide a comprehensive understanding of the problem and potential solutions."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, including the assumption that the primary goal is to increase speed, the assumption that the team is working on the right features, and the assumption that the competitor's team is faster due to their size. It explicitly questions these assumptions and explores alternative explanations."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response provides multiple non-obvious solutions, including analyzing the team's workflow and processes, assessing the team's skills and training, evaluating the team's dynamics and communication, re-examining priorities and focus, and considering external factors. While these solutions are not entirely unexpected, they are thoughtful and well-reasoned."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, questioning whether the problem is well-posed and whether the focus on increasing velocity is the right approach. It explores alternative explanations for the team's declining velocity and considers the possibility that the competitor's team is faster due to their smaller size."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides excellent advice grounded in reality, taking into account the complexities of the issue and the potential pitfalls of focusing solely on increasing velocity. The solutions provided are thoughtful and actionable, making the response a valuable contribution to addressing the problem."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames and perspectives, including the potential issues with team size, coordination overhead, unclear ownership, excessive process, and measuring the wrong metric. It also explores alternative metrics and KPIs, such as customer satisfaction and feature quality, demonstrating a high level of frame diversity."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, including the assumption that speed is the primary concern, that output is directly measurable, that team size and composition are optimal, and that technology and tools are not a limiting factor. This demonstrates a high level of assumption surfacing."
+      },
+      "solution_novelty": {
+        "score": 5,
+        "justification": "The response produces genuinely unexpected and viable solutions that reframe the problem, such as re-evaluating priorities and goals, assessing team dynamics and collaboration, investigating technology and tooling, analyzing the development process, and considering alternative metrics and KPIs. This demonstrates a high level of solution novelty."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, questioning whether the problem is well-posed and exploring alternative perspectives. It notes that the competitor's team of 4 may be faster because it's smaller, and that the focus on velocity may be misguided. This demonstrates a high level of premise questioning."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides excellent practical advice, such as re-evaluating priorities and goals, assessing team dynamics and collaboration, and considering alternative metrics and KPIs. This demonstrates a high level of correctness."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers multiple distinct frames: process/communication inefficiencies, technical debt issues, and team composition/structure problems. However, it doesn't deeply explore the fundamental question of whether building features faster is the right goal, or whether the competitor's smaller team size might be an advantage rather than a disadvantage."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that having more developers should lead to faster delivery - and notes communication overhead as a potential issue. However, it doesn't question deeper assumptions like whether velocity is the right metric, whether both teams are building equivalent features, or whether the competitor's success is actually due to their smaller size."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional: streamline processes, focus on high-impact features, manage technical debt, and restructure teams. While team restructuring into smaller squads shows some creativity, most recommendations are standard agile/productivity advice without novel insights about the core problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise that faster feature delivery is the goal and that having more developers should yield better results. It makes a minor acknowledgment that team size might be causing coordination issues, but doesn't fundamentally question whether the problem framing is correct or whether the competitor's smaller team might be inherently more effective."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally sound and practical - agile processes, technical debt management, and team restructuring are reasonable approaches. However, it misses the key insight highlighted in the success criteria: that the competitor's team of 4 may be faster BECAUSE it's smaller, and that the real issues might be scope, coordination overhead (Brooks's law), or measuring the wrong metrics entirely."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: team composition/experience differences, process inefficiencies, team size/coordination overhead (Brooks's law), technical debt/complexity, and organizational structure. It considers velocity from skill, process, communication, and structural perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the competitor's team is necessarily better (questioning experience/skill differences) and that more developers should mean faster delivery (touching on coordination overhead). However, it doesn't deeply question the assumption that 'velocity' is the right metric to optimize for."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While most solutions are conventional (streamline meetings, reorganize teams, improve testing), the response does include some less obvious approaches like implementing a 'stop doing' list and the systematic breakdown of team restructuring. However, it doesn't offer genuinely unexpected solutions."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting by questioning whether team size is actually beneficial and touching on Brooks's law. It implicitly questions whether faster shipping is always better by mentioning the need to focus on 'high-priority features' and eliminate non-essential work, but doesn't explicitly reframe the core premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound, practical advice grounded in software engineering principles. It correctly identifies Brooks's law implications, offers realistic timelines for improvements, and provides actionable recommendations. The analysis of team dynamics and coordination overhead is particularly well-founded and addresses the success criteria effectively."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: (1) team size and coordination overhead issues, and (2) process/workflow optimization. It touches on technical debt and team culture as additional perspectives, but doesn't fully develop these as distinct analytical frames."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that larger teams should be faster (noting communication overhead issues) and that declining velocity indicates a process problem. However, it doesn't question deeper assumptions like whether they're building the right features or measuring the right metrics."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are mostly conventional (better meetings, retrospectives, team restructuring, process optimization). While team restructuring into smaller groups shows some insight, the overall approach follows standard agile/process improvement playbooks without truly novel thinking."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the core premise that 'development velocity' needs improvement and that shipping features slower is inherently bad. It doesn't question whether they might be building the wrong things, whether velocity is the right metric, or whether the comparison to the competitor is meaningful."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally sound and practical - addressing communication overhead, process optimization, and team structure are reasonable approaches. However, it misses the key insight from the success criteria about potentially building the wrong things or measuring the wrong metrics, making it incomplete rather than excellent."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers multiple distinct frames: process optimization (efficiency frame), team structure/coordination overhead (organizational frame), and skills/culture (human factors frame). However, it doesn't deeply explore the strategic frame of whether they're building the right things or the measurement frame of whether velocity is the right metric."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that larger teams should be faster than smaller ones - and notes this might be wrong. However, it doesn't surface other critical assumptions like whether both teams are working on comparable features, whether velocity is the right success metric, or whether the competitor comparison is even valid."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are mostly conventional agile/process improvement approaches: process optimization, team restructuring, training, agile refinement, technical debt management. While reorganizing into smaller teams shows some insight, the overall approach lacks truly novel solutions that reframe the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the core premise that development velocity needs to be improved and that the competitor comparison is valid. It briefly questions whether velocity metrics are accurate but doesn't fundamentally challenge whether speed is the right goal or whether the teams are working on comparable problems."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound, practical advice grounded in software engineering best practices. The recommendation to break into smaller teams aligns with Brooks's Law, and the multi-faceted approach addresses real issues that large development teams face. The advice is actionable and likely to produce improvements, even if it doesn't fully address the deeper strategic questions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers multiple perspectives including communication overhead, process inefficiencies, and team structure issues. However, it doesn't deeply explore the fundamental question of whether building features faster is the right goal, or whether the team might be building the wrong things entirely."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption about team size causing communication overhead, but fails to surface other critical assumptions like whether velocity is the right metric to optimize, whether the competitor is actually building equivalent features, or whether 'shipping features' equates to delivering value."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional (better communication, agile processes, CI/CD, team restructuring). While team restructuring shows some recognition of Brooks's Law, the response doesn't offer genuinely novel approaches like questioning the feature scope or measuring different outcomes."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the core premise that faster feature shipping is the goal and that velocity is the right metric. It only briefly questions whether the team might be 'too large' but doesn't fundamentally challenge whether speed of feature delivery is what should be optimized."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally sound and practical for improving development processes. However, it misses the key insight from the success criteria that the problem may not be speed at all, but rather scope, coordination overhead, or measuring the wrong metrics. The competitor's smaller team may be faster precisely because it's smaller, not despite being smaller."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: process inefficiency (bureaucracy, meetings), team dynamics (coordination overhead, role rotation), quality vs speed trade-offs, and organizational factors (morale, complexity). It considers velocity from speed, quality, process, and human factors perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response systematically identifies multiple assumptions embedded in 'velocity': that speed is the primary issue, output is measurable/comparable, quality isn't compromised, team size is optimal, technology isn't limiting, and processes are effective. It goes beyond obvious assumptions to examine deeper ones about team composition and fair comparison."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response includes conventional solutions (retrospectives, process improvement, training), it offers some non-obvious insights like questioning whether the 12-person team might be too large and considering that the competitor's 4-person team might be faster BECAUSE it's smaller. However, it doesn't fully develop these novel framings."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by asking whether the problem is actually speed, noting that 'velocity' assumptions may be flawed, and suggesting the issue might be building wrong things, team size causing coordination overhead, or measuring wrong metrics. It explores alternatives to the stated problem framing."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates solid understanding of software development challenges and Brooks's Law implications. The practical recommendations are sound and grounded in reality. It correctly identifies that larger teams can be slower due to coordination overhead and that velocity metrics can be misleading. The advice is actionable and well-reasoned."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: process optimization (meetings, code reviews), team dynamics (stability, morale), quality vs speed trade-offs, project complexity differences, and business objective alignment. It considers both internal inefficiencies and external comparison validity."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response systematically identifies and examines multiple assumptions embedded in 'velocity' including: speed as primary issue, output measurability, underutilized capacity, quality as secondary concern, process optimization focus, and meaningful competitor comparisons. It goes beyond obvious assumptions to examine deeper ones."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response includes conventional solutions (process optimization, training), it offers some non-obvious insights like questioning whether the 4-person team's speed advantage comes from size itself, and considering that different business objectives might make speed comparisons irrelevant. However, it doesn't fully develop truly novel reframings."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the core premise by asking 'what if the problem is not speed?' and explores alternative explanations like quality focus, project complexity differences, and misaligned business objectives. It challenges the validity of comparing teams of different sizes and questions whether velocity is the right metric."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates solid understanding of software development challenges and provides practical, evidence-based advice. It correctly identifies Brooks's Law implications (though not by name), recognizes coordination overhead in larger teams, and offers actionable steps for root cause analysis and improvement."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: process/bureaucracy issues, team dynamics and culture, quality vs speed trade-offs, external factors, and team composition/size optimization. It moves beyond just 'work faster' to consider systemic issues."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response systematically identifies several key assumptions embedded in 'velocity': that speed is the problem, work is quantifiable, team size is optimal, technology isn't a bottleneck, and external factors are constant. It goes beyond obvious assumptions to examine deeper ones about measurement and team dynamics."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response includes conventional solutions like process optimization and team development, it offers some less obvious approaches like focusing on quality over speed and managing external factors. The 'guaranteeing reduced output' section creatively illustrates anti-patterns, though the main solutions remain fairly standard."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that velocity/speed is the core problem and explores alternative framings. It challenges the assumption that a larger team should be faster and considers that the competitor's smaller team might be advantageous, directly addressing the success criteria."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates solid understanding of software development challenges and Brooks's Law implications. The advice is practical and grounded in reality, correctly identifying that team size can create coordination overhead and that velocity metrics can be misleading. The solutions are actionable and address real organizational issues."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: process inefficiency (meetings, documentation, bureaucracy), team dynamics (collaboration, communication), quality vs speed trade-offs, and structural issues (team size, complexity). It also considers external factors like tooling and infrastructure."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response explicitly identifies and examines several key assumptions: that velocity equals success, that speed is the primary goal, that more people should equal faster delivery, and that the problem is necessarily about development speed rather than other factors like quality or prioritization."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response includes conventional solutions like process analysis and skills assessment, it offers some non-obvious insights like the counterintuitive section on 'decisions to decrease velocity' and the recognition that a smaller team might inherently be faster due to coordination overhead."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the core premise by challenging the assumption that velocity is the right metric to optimize for, suggesting the problem might be quality, complexity, process, team dynamics, or prioritization rather than pure speed. It notes that 'focusing solely on increasing velocity might not address the underlying issues.'"
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates solid understanding of software development principles including Brooks's Law (though not explicitly named), coordination overhead in larger teams, and the importance of measuring the right metrics. The practical recommendations are sound and the recognition that a 4-person team might outperform a 12-person team due to structural advantages aligns with the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: (1) process/coordination overhead frame (excessive meetings, reviews), (2) team size/Brooks's law frame (implicit in the structure), (3) measurement/metrics frame (questioning velocity as the right metric), and (4) systemic/holistic frame (looking beyond just the dev team to product management, deployment, etc.). The response synthesizes these perspectives well."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically identifies and examines multiple hidden assumptions embedded in the concept of 'velocity': that speed is primary, output is measurable, team size is optimal, technology isn't limiting, and the problem is solely with developers. It goes beyond obvious assumptions to surface non-obvious ones like the assumption that velocity itself is the right metric to optimize."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response includes some conventional solutions (process analysis, team assessment), it offers the novel approach of deliberately listing what would make velocity worse as a way to illuminate the problem. The reframing toward alternative metrics and holistic analysis is somewhat non-obvious, though not groundbreaking."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise by challenging whether velocity is the right focus, whether the problem is actually with the development team, and whether speed should be the primary concern. It explicitly reframes the question from 'how to increase velocity' to 'what are we really trying to achieve and what's actually causing the problem.'"
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response demonstrates strong understanding of software development realities, correctly identifies Brooks's law implications (though not by name), recognizes coordination overhead issues, and provides practical advice about examining the full development pipeline. The suggestions are grounded in real software engineering challenges and align well with the success criteria."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: team size/coordination (Brooks's law), process inefficiency, technical debt, skillset/expertise, and focus/scope. It also briefly mentions competitor analysis. These are distinct perspectives, though the synthesis could be deeper."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that a larger team should be faster, that the tech stack is not the issue, and that process or skillset could be bottlenecks. It also hints at the possibility that the competitor's small size is an advantage, though it could more explicitly question the assumption that velocity is the right metric."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "Most solutions are conventional (agile, process improvement, technical debt, team restructuring), but the suggestion to split into smaller squads and to analyze the competitor's practices adds some non-obvious elements."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that a larger team can be slower and that the competitor's small size may be an advantage, which questions the premise that more people should mean more velocity. However, it does not deeply challenge whether velocity is the right metric or whether building the right things is the real issue."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical, actionable, and grounded in real-world software engineering principles. It covers both process and structural changes, though it could be stronger by more directly addressing scope and product direction."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: team composition and experience, workflow/process, team size and coordination overhead, bottlenecks, and data/feedback. It synthesizes these perspectives to provide a holistic view of the problem."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the problem is purely technical, that more people should mean more output, that process is helping rather than hindering, and that the right things are being built. It questions whether the team is working on the right priorities and whether the team structure is optimal, but could go deeper on measurement assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional advice by recommending splitting the team, implementing a 'stop doing' list, and focusing on team structure and culture, not just process tweaks. These are less common solutions and show creative thinking."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response questions the premise by noting that a smaller team may be faster due to less coordination overhead and that velocity may not be the right metric. It does not fully reframe the problem but does challenge the initial assumptions."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, actionable, and grounded in established engineering management principles (e.g., Brooks's Law, prioritization, team structure). The recommendations are likely to be effective in real-world scenarios."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: team size and coordination overhead, process and communication, technical debt, team motivation/culture, and skill development. It also briefly touches on metrics and workflow optimization. However, it does not deeply synthesize these frames or explicitly compare them, so it falls short of a 5."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the tech stack not being the issue and that team size may be causing inefficiency. It also hints at the possibility that process or motivation could be factors. However, it does not systematically surface less obvious assumptions, such as whether the team is building the right things or if velocity is the right metric."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response provides mostly conventional solutions (process improvement, team splitting, retrospectives, training), but does include the less-obvious suggestion of restructuring the team into smaller groups and emphasizes culture and continuous improvement. It does not, however, propose any truly novel or unexpected solutions."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response acknowledges that team size may be a factor and that the tech stack is not the issue, but it does not explicitly question whether velocity is the right metric or whether the team is building the right things. It does not fundamentally reframe the problem, but it does note that the competitor's smaller team may be faster because of its size."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, covering a range of actionable steps that are grounded in common engineering management practices. It addresses both short-term and long-term improvements. However, it misses some key points from the success criteria, such as questioning if the team is building the right things or if velocity is the right metric, so it is not a perfect 5."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: team size and coordination overhead, process inefficiency, skillset and expertise, agile practices, technical debt, metrics/measurement, and team culture/motivation. It synthesizes these perspectives into a multi-faceted recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that a larger team should be faster, that process or culture may be the root cause, that metrics may not reflect true productivity, and that skillset may be a limiting factor. It does not systematically question every hidden assumption, but it addresses several non-obvious ones."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional advice (e.g., 'work harder' or 'add more people') by suggesting team restructuring into smaller groups, re-examining metrics, and focusing on culture and technical debt. These are not the most obvious first-order solutions."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response hints that the problem may not be just speed (e.g., questioning metrics and comparing team sizes), but it does not explicitly challenge the premise or fundamentally reframe the question. It mostly accepts the problem as stated but with some caveats."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, actionable, and grounded in established software engineering principles (e.g., Brooks's Law, agile best practices, technical debt management). The recommendations are likely to be effective in real-world scenarios."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: team size/coordination overhead, process inefficiencies, technical debt/code quality, task allocation, and team motivation. It also briefly mentions team restructuring, which touches on organizational design. However, it does not deeply synthesize these frames or explicitly discuss scope or building the wrong things."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the impact of team size and the lack of tech stack differences. It questions whether communication overhead and process inefficiencies are at play. However, it does not systematically surface less obvious assumptions, such as whether the team is building the right features or if velocity is the right metric."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "Most solutions are conventional (process improvement, agile, CI/CD, code quality, team restructuring). The suggestion to consider breaking the team into smaller units is somewhat non-obvious, but the response does not propose truly novel or unexpected solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response mostly accepts the problem as stated, with only a minor caveat about team size and communication overhead. It does not explicitly question whether velocity is the right metric or whether the team is building the right things, missing a deeper challenge to the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, covering actionable steps for process improvement, communication, and team structure. However, it misses some key factors from the success criteria (scope, measuring the right metric), so it is not fully comprehensive."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: process inefficiency, team size and coordination (Brooks's law), quality vs. speed, team morale, complexity of work, and even the possibility that velocity is the wrong metric. It also contrasts the team's situation with the competitor's, and synthesizes these perspectives in the recommendations."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions about velocity, team size, quality, process, and technology. It explicitly lists and questions several non-obvious assumptions, such as whether output is comparable, whether quality is being compromised, and whether the tech stack is a limiting factor."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional solutions by suggesting a holistic analysis, including retrospective analysis, morale assessment, and process refinement. While some recommendations are standard, the breadth and integration of perspectives (including questioning the metric itself) elevate the novelty."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response explicitly questions the premise that velocity is the right problem to solve, discusses alternative explanations, and suggests that the competitor's smaller team may be faster because of its size. It fundamentally reframes the question before offering solutions."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, grounded in real-world software engineering principles, and addresses both the surface and underlying issues. The recommendations are actionable and reflect best practices for diagnosing and improving team performance."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: process inefficiency, team size and coordination overhead, quality vs. speed, project complexity, team morale, business objectives, and even the validity of comparing teams. It synthesizes these perspectives rather than treating them in isolation."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, such as the idea that speed is the primary issue, that output is measurable and comparable, that the team's capacity is underutilized, and that process optimization is the key lever. It also questions the relevance of comparing teams of different sizes."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "While some solutions are conventional (process optimization, team development), the response also suggests less obvious approaches, such as questioning the metrics used, focusing on team morale, and considering business objectives. It doesn't fully reframe the solution space, but it goes beyond first-order answers."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response explicitly questions whether velocity is the right metric, whether the comparison to the competitor is meaningful, and whether the problem is even about speed. It explores alternative framings and suggests that the problem may be ill-posed."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, grounded in reality, and addresses both the surface and underlying issues. It avoids simplistic solutions and provides actionable steps that are likely to be effective in a real-world context."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: process overhead, team size and composition, quality vs. speed, external factors, tooling, and even cultural issues. It also contrasts what would worsen velocity, explores assumptions about velocity, and provides a nuanced set of recommendations."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions: that speed is the problem, that work is quantifiable, that team size/composition is optimal, that tools are not a bottleneck, and that external factors are constant. It also questions whether velocity is the right metric."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional advice by suggesting a root cause analysis, re-evaluating team size, and considering external factors and team morale. While not radically novel, it avoids the obvious 'just work faster' answer and provides a multi-faceted approach."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response explicitly questions whether velocity is the right problem to solve, discusses the limitations of the metric, and suggests that the competitor's smaller team may be faster because of its size. It fundamentally reframes the question before answering."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, grounded in real-world software engineering principles, and addresses both the symptoms and root causes. It avoids simplistic solutions and provides actionable steps that would be useful to a real team."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: process inefficiency, team dynamics, prioritization, quality vs. speed, complexity of work, external factors, and even the possibility that velocity is not the right metric. It also contrasts the team's situation with the competitor's, and synthesizes these perspectives in the recommendations."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response explicitly surfaces and questions several hidden assumptions: that velocity is the right metric, that speed is the main problem, that more people should mean more output, and that the competitor's smaller team is faster for reasons other than size. It also questions whether the team is building the right things."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional solutions by suggesting analysis of workflow, team dynamics, and external factors, and by benchmarking against the competitor. While most suggestions are grounded in best practices, the initial section humorously inverts the problem (how to decrease velocity), which is a novel way to highlight anti-patterns."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise that velocity is the right or only problem, and that increasing it should be the goal. It explores alternative explanations and reframes the question before offering solutions."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, actionable, and grounded in real-world engineering management principles. It avoids simplistic answers and addresses the complexities of team performance, making it highly useful."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: process overhead, team size and coordination (Brooks's law), scope/prioritization, tooling/technology, metrics, and even the possibility that velocity is not the right metric. It synthesizes these perspectives rather than treating them in isolation."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, such as the primacy of speed, the adequacy of team size, the sufficiency of the tech stack, and the focus on the development team alone. It explicitly lists and questions these assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional solutions (e.g., 'work faster') by suggesting a holistic review of priorities, team dynamics, tooling, process, and metrics. While not radically novel, it avoids first-order answers and suggests less obvious, systemic interventions."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise that velocity is the right metric and that the problem is simply about speed. It reframes the question to focus on whether the team is building the right things and whether the process/structure is optimal."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, grounded in established software engineering principles (e.g., Brooks's law, process overhead), and directly addresses the success criteria. The recommendations are actionable and relevant to the scenario."
+      }
+    }
+  ]
+}

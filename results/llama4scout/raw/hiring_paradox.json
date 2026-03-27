@@ -1,0 +1,797 @@
+{
+  "problem_id": "hiring_paradox",
+  "problem_title": "The Hiring Paradox",
+  "category": "false_binary",
+  "paths_applied": [
+    "path_6_premise_reflection"
+  ],
+  "theory_connection": "Ohlsson (1984): the problem is encoded as 'attract senior talent cheaply' (D1), which makes only recruitment-strategy operators available. Premise reflection re-encodes as 'fill a capability gap' (D2), which opens operators like consulting, tooling, training, or restructuring.",
+  "expected_vanilla_failure": "Accepts the premise and tries to solve 'attract senior talent cheaply': offer equity, emphasise mission, allow remote work, hire from cheaper markets. Does not question whether a full-time senior hire is the actual need.",
+  "success_criteria": "Identifies that the real need is a capability (code quality, architecture decisions, mentorship) not a person. Suggests alternatives: part-time senior consultant, fractional CTO, invest in tooling/linting/CI, hire a strong mid-level + a code review service, or contract for the specific skill needed.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Attracting senior talent on a junior budget can be challenging, but it's not impossible. Given the significant salary gap between what you can offer ($70k) and the market rate for senior developers in your area ($150-180k), you'll need to think creatively to appeal to the right candidate. Here's a step-by-step approach to help you attract senior talent:\n\n**Understand your constraints and goals**\n\n1. Recognize that you're looking for a senior backend developer, but your budget only allows for a junior-level salary.\n2. Identify your non-negotiables: What are the essential skills and qualifications you need in a candidate?\n3. Determine your goals: Are you looking for someone to lead your backend development, mentor junior team members, or drive specific projects?\n\n**Alternative compensation and benefits**\n\n1. **Equity**: Offer a significant amount of equity (e.g., 1-2% of the company) to compensate for the lower salary. This can be a attractive option for senior developers who believe in your startup's potential.\n2. **Flexible work arrangements**: Provide flexible working hours, remote work options, or a compressed workweek to appeal to senior developers who value work-life balance.\n3. **Professional development**: Offer opportunities for professional growth, such as conference attendance, online courses, or mentorship programs.\n4. **Autonomy and ownership**: Give the senior developer significant autonomy and ownership of projects, allowing them to make meaningful contributions and decisions.\n\n**Creative recruitment strategies**\n\n1. **Network and referrals**: Leverage your personal and professional networks to find senior developers who might be interested in your startup. Referrals can be a powerful way to find candidates who are a good fit.\n2. **Part-time or contract work**: Consider hiring a senior developer on a part-time or contract basis. This can help you attract talent who might not be available for a full-time position.\n3. **Internally promote a junior developer**: If you have a junior developer on your team who shows promise, consider investing in their growth and development. This can help you build a senior developer from within, saving on recruitment costs.\n4. **Look for 'misfits'**: Target senior developers who might not fit the traditional mold, such as those looking for a change of pace, semi-retired, or interested in a startup environment.\n\n**Reframe your job description and pitch**\n\n1. **Highlight your startup's unique aspects**: Emphasize the benefits of working in a startup environment, such as the opportunity to make a significant impact, work on innovative projects, and collaborate with a small, agile team.\n2. **Focus on the role's responsibilities and challenges**: Instead of leading with salary, focus on the exciting challenges and responsibilities the senior developer will face in this role.\n3. **Showcase your company culture**: Share your company's values, mission, and culture to attract candidates who align with your vision.\n\n**Example job posting**\n\nHere's an example job posting that incorporates some of these strategies:\n\n\"Join our innovative startup as a senior backend developer and play a key role in shaping our technology stack. We're looking for a talented individual who is passionate about building scalable, efficient systems. While our budget is limited, we offer a competitive equity package, flexible work arrangements, and opportunities for professional growth. If you're a senior developer looking for a new challenge and are excited about the prospect of working in a startup environment, let's talk.\"\n\nBy thinking creatively and highlighting the unique aspects of your startup, you can attract senior talent on a junior budget. Be prepared to negotiate and find a mutually beneficial arrangement that works for both your company and the candidate.",
+      "input_tokens": 136,
+      "output_tokens": 741,
+      "elapsed_seconds": 2.56
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Attracting senior talent on a junior budget can be challenging, but it's not impossible. To increase the chances of hiring a senior backend developer, consider the following steps and recommendations:\n\n### 1. **Re-evaluate Your Budget and Priorities**\nBefore attempting to attract senior talent, reassess your budget and priorities. Consider the following:\n* Are there any areas where costs can be optimized or reduced to allocate more funds for the senior developer's salary?\n* Are there any other benefits or perks that can be offered to compensate for the lower salary?\n* What are the must-have skills and qualifications for the role, and can any compromises be made?\n\n### 2. **Offer Non-Monetary Benefits and Perks**\nSince you can't compete with the salary, focus on offering attractive non-monetary benefits and perks that can appeal to senior developers:\n* **Flexible work arrangements**: Offer remote work options, flexible hours, or compressed workweeks to provide a better work-life balance.\n* **Professional development opportunities**: Provide training, conferences, or workshops to help the developer stay up-to-date with the latest technologies and trends.\n* **Autonomy and ownership**: Offer the developer the freedom to make technical decisions, lead projects, or mentor junior team members.\n* **Stock options or equity**: Consider offering equity or stock options to give the developer a stake in the company's success.\n* **Access to cutting-edge technologies**: Provide the developer with the latest tools, software, and hardware to work with.\n\n### 3. **Target Specific Candidate Profiles**\nInstead of targeting the entire senior developer pool, focus on specific candidate profiles that may be more open to a junior-level salary:\n* **Recent immigrants or visa holders**: Developers who have recently moved to the area may not have an established network or be familiar with the local market rates.\n* **Career changers**: Individuals who are transitioning from a different field or industry may be more open to a junior-level salary.\n* **Developers with non-traditional backgrounds**: Candidates who are self-taught or have non-traditional educational backgrounds may not have the same salary expectations as those with traditional degrees.\n* **Retirees or semi-retirees**: Experienced developers who are looking to scale back their work or transition into a part-time role may be interested in a junior-level salary.\n\n### 4. **Leverage Your Network and Personal Connections**\n Utilize your professional and personal network to find potential candidates:\n* **Employee referrals**: Encourage your current team members to refer their friends and acquaintances.\n* **LinkedIn and social media**: Leverage your social media presence to reach a wider audience and post job ads.\n* **Industry events and meetups**: Attend local meetups, conferences, and events to connect with potential candidates in person.\n\n### 5. **Consider Alternative Hiring Models**\nExplore alternative hiring models that can help you attract senior talent on a junior budget:\n* **Part-time or contract work**: Hire a senior developer on a part-time or contract basis to work on specific projects or tasks.\n* **Mentorship or consulting**: Bring in a senior developer as a mentor or consultant to work with your junior team members and provide guidance.\n* **Internship or co-op**: Hire a senior developer as an intern or co-op student to work on specific projects or tasks while they are still in school or transitioning to a new role.\n\n### 6. **Be Transparent and Flexible**\nWhen approaching potential candidates, be transparent about your budget constraints and flexible with your expectations:\n* **Clearly communicate your budget**: Be upfront about your salary range and explain the reasons behind it.\n* **Be open to negotiations**: Be willing to negotiate and find creative solutions that work for both parties.\n* **Highlight your company's unique selling points**: Emphasize your company's mission, culture, and values to attract candidates who are passionate about your cause.\n\nBy following these steps and recommendations, you can increase your chances of attracting senior backend developer talent on a junior budget. Remember to be creative, flexible, and transparent throughout the hiring process.",
+      "input_tokens": 136,
+      "output_tokens": 822,
+      "elapsed_seconds": 3.3
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Attracting senior talent on a junior budget can be challenging, but it's not impossible. To approach this problem, let's break it down into key factors and weigh the options carefully.\n\n**Key Factors:**\n\n1. **Budget constraint**: The startup has a limited budget of $70k, which is significantly lower than the market rate for senior backend developers.\n2. **Senior talent requirements**: The startup needs a senior backend developer with advanced skills and experience to drive the company's growth.\n3. **Market rates**: Senior developers in the area command high salaries, ranging from $150-180k.\n\n**Options:**\n\n1. **Compromise on experience**: Consider hiring a mid-level developer with some senior-level experience, but not necessarily a full-fledged senior developer. This could help bridge the gap between the budget and the required skills.\n2. **Non-monetary benefits**: Offer attractive non-monetary benefits, such as:\n\t* Equity or stock options\n\t* Flexible working hours or remote work arrangements\n\t* Professional development opportunities (e.g., conference sponsorships, online courses)\n\t* A dynamic, startup environment with opportunities for growth and innovation\n3. **Part-time or contract work**: Explore the possibility of hiring a senior developer on a part-time or contract basis. This could be a win-win, as the developer may be looking for flexibility, and the startup can benefit from their expertise without breaking the bank.\n4. **Look beyond local talent**: Consider hiring a senior developer from a different location, where the cost of living is lower, and the salary expectations are more aligned with the budget. This could be done through remote work arrangements.\n5. **Re-evaluate the budget**: If possible, revisit the budget and explore options to allocate more funds for the senior developer position. This could involve adjusting other expenses, seeking additional funding, or prioritizing this hire over other budget items.\n6. **Apprenticeship or mentorship**: Hire a junior developer and provide them with mentorship and training to help them grow into a senior role. This approach may take longer, but it can be a cost-effective way to develop talent in-house.\n7. **Partner with a contractor or consulting firm**: Collaborate with a contractor or consulting firm that specializes in backend development. This can provide access to senior-level expertise without the long-term salary commitment.\n\n**Recommendation:**\n\nBased on the options above, I recommend exploring a combination of non-monetary benefits and compromising on experience. Here's a potential approach:\n\n1. **Reframe the job description**: Emphasize the startup's mission, culture, and opportunities for growth, rather than just listing technical requirements.\n2. **Offer attractive non-monetary benefits**: Provide a competitive package of non-monetary benefits, such as equity, flexible working hours, or professional development opportunities.\n3. **Target mid-level developers**: Look for mid-level developers with some senior-level experience who may be looking for a new challenge or a more dynamic work environment.\n4. **Be transparent about the budget**: Be open with candidates about the budget constraints and the reasons behind them. This can help manage expectations and attract developers who are motivated by factors beyond salary.\n5. **Consider a trial or contract period**: Offer a trial or contract period to test the candidate's skills and fit with the team, before committing to a full-time hire.\n\nBy taking a creative and flexible approach, the startup can increase its chances of attracting senior talent on a junior budget. However, it's essential to be realistic about the limitations of this approach and to prioritize finding the best fit for the team and the company's needs.",
+      "input_tokens": 136,
+      "output_tokens": 734,
+      "elapsed_seconds": 2.66
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Attracting senior talent on a junior budget can be challenging, but it's not impossible. Considering your startup's constraints, here's a step-by-step approach to help you attract a senior backend developer:\n\n**Understand the challenge:**\n\n1. **Salary disparity**: The significant difference between your budget ($70k) and the market rate ($150-180k) for senior developers in your area.\n2. **Limited budget**: Your startup's budget constraints, which may not allow for significant salary adjustments.\n\n**Potential solutions:**\n\n1. **Re-evaluate your requirements**: Consider whether you truly need a senior developer or if a mid-level developer with strong potential could fill the role. This might help you find a candidate who is more affordable.\n2. **Look for non-traditional candidates**: Target developers who may not be actively looking for a new job but are open to new opportunities. This could include:\n\t* Developers who are transitioning from a different industry or field.\n\t* Those who are looking for a change of pace or a more challenging role.\n\t* Freelancers or consultants who want to transition to a full-time position.\n3. **Offer alternative benefits**: Since you can't compete on salary, focus on offering other benefits that might attract senior talent:\n\t* **Equity**: Offer a significant amount of equity in your startup, which could provide a potential long-term financial gain.\n\t* **Flexible work arrangements**: Provide flexible working hours, remote work options, or a compressed workweek.\n\t* **Professional development opportunities**: Offer training, mentorship, or conference attendance to help the developer grow professionally.\n\t* **Autonomy and ownership**: Give the developer ownership of projects and the freedom to make technical decisions.\n4. **Network and referrals**: Leverage your professional network, including:\n\t* **Personal connections**: Ask your team members, advisors, or mentors if they know any senior developers who might be interested.\n\t* **Industry events**: Attend conferences, meetups, and other industry events to connect with potential candidates.\n\t* **Online communities**: Engage with online forums, social media groups, and Reddit to reach a wider audience.\n5. **Consider a \" trial period\" or contract-to-hire**: Propose a trial period or contract-to-hire arrangement, where the developer works with your team for a few months before converting to a full-time employee. This can help you assess their fit and performance while also giving them a taste of your company culture.\n6. **Be transparent and honest**: When approaching potential candidates, be open about your budget constraints and the benefits you can offer. This will help you attract developers who are motivated by factors beyond salary.\n\n**Recommendation:**\n\nBased on the above considerations, I recommend the following approach:\n\n1. **Re-evaluate your requirements**: Assess whether a mid-level developer could fill the role, and adjust your job description accordingly.\n2. **Offer alternative benefits**: Develop a competitive benefits package that includes equity, flexible work arrangements, professional development opportunities, and autonomy.\n3. **Network and referrals**: Utilize your professional network to find potential candidates who might be interested in your startup's mission and culture.\n4. **Consider a trial period or contract-to-hire**: Propose a trial period or contract-to-hire arrangement to attract senior developers who are willing to take a chance on your startup.\n\nBy following this approach, you can increase your chances of attracting senior talent on a junior budget. However, be prepared to be flexible and creative in your recruitment process, and don't be discouraged if it takes time to find the right candidate.",
+      "input_tokens": 136,
+      "output_tokens": 729,
+      "elapsed_seconds": 3.56
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Attracting senior talent on a junior budget can be challenging, but it's not impossible. Let's break down the key factors and weigh the options to provide a well-reasoned recommendation.\n\n**Key Factors:**\n\n1. **Budget constraint**: The startup has a limited budget of $70k, which is significantly lower than the market rate for senior backend developers.\n2. **Senior talent requirements**: The startup needs a senior backend developer with expertise and experience to drive the project forward.\n3. **Market rates**: Senior developers in the area command high salaries, making it difficult to attract top talent with a junior-level budget.\n\n**Options:**\n\n1. **Compromise on experience**: Consider hiring a developer with less experience, but a strong potential for growth. This could be a mid-level developer or a junior developer with a proven track record of learning quickly.\n2. **Non-monetary benefits**: Offer non-monetary benefits that can attract senior talent, such as:\n\t* Equity or stock options\n\t* Flexible working hours or remote work arrangements\n\t* Professional development opportunities (e.g., conference sponsorships, training, or mentorship)\n\t* A dynamic and innovative work environment\n\t* Autonomy and ownership of projects\n3. **Creative compensation structures**: Explore alternative compensation structures that can provide more value to the developer without exceeding the budget, such as:\n\t* Performance-based bonuses or incentives\n\t* Profit-sharing models\n\t* Deferred compensation or stock options that vest over time\n4. **Recruit from non-traditional sources**: Look beyond traditional job boards and recruitment channels to find senior talent who may be interested in a junior-level salary, such as:\n\t* Online communities (e.g., GitHub, Reddit, or Stack Overflow)\n\t* Networking events or meetups\n\t* Personal referrals or word-of-mouth\n\t* Recent graduates or bootcamp attendees with strong potential\n5. **Part-time or contract work**: Consider hiring a senior developer on a part-time or contract basis, which can be more affordable than a full-time salary.\n\n**Recommendation:**\n\nBased on the factors and options considered, I recommend a multi-faceted approach:\n\n1. **Re-evaluate your budget**: If possible, consider allocating a slightly higher budget for the senior developer position. Even an additional $10-20k could make a significant difference in attracting more experienced candidates.\n2. **Emphasize non-monetary benefits**: Highlight the non-monetary benefits your startup offers, such as flexible working hours, professional development opportunities, or a dynamic work environment. This can help attract senior talent who value these benefits and are willing to compromise on salary.\n3. **Explore creative compensation structures**: Consider alternative compensation structures, such as performance-based bonuses or profit-sharing models, to provide more value to the developer without exceeding the budget.\n4. **Recruit from non-traditional sources**: Utilize online communities, networking events, and personal referrals to find senior talent who may be interested in a junior-level salary.\n5. **Be prepared to sell your vision**: Be prepared to pitch your startup's vision, mission, and culture to attract senior talent who are passionate about your project and willing to take a chance on a junior-level salary.\n\nBy combining these strategies, you can increase your chances of attracting senior talent on a junior budget. However, be prepared to be flexible and creative in your approach, and be willing to negotiate and compromise to find the right fit for your startup.",
+      "input_tokens": 136,
+      "output_tokens": 703,
+      "elapsed_seconds": 2.72
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before solving this problem, ask: why does this startup need a 'senior developer' specifically? What capability gap are they actually trying to fill? Is 'hire a senior developer' the real need, or is it a SOLUTION masquerading as a problem? What is the problem behind the problem?\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Before diving into potential solutions, let's take a step back and explore the underlying needs and potential capability gaps that this startup is trying to address.\n\nThe startup has identified the need for a \"senior backend developer,\" but what specific challenges or problems are they trying to solve by hiring someone with this title? Are they looking to:\n\n1. **Improve the quality and scalability of their backend infrastructure**? Perhaps they're experiencing performance issues, scalability concerns, or difficulties in maintaining their current codebase.\n2. **Enhance their development velocity and efficiency**? Maybe they're struggling to deliver new features or iterate on existing ones quickly enough, and a senior developer could help streamline their processes.\n3. **Fill a technical leadership gap**? Are they looking for someone to guide their technical direction, mentor junior team members, and make strategic decisions about their technology stack?\n4. **Address specific technical debt or complexity**? Do they have particular technical challenges, such as integrating with third-party services, implementing security measures, or optimizing database performance?\n\nBy understanding the underlying problems or challenges, we can begin to explore alternative solutions that might not necessarily require hiring a senior developer at a high salary. For instance:\n\n* Could they **upskill or reskill** their existing team members to address specific technical gaps?\n* Might they **outsource or contract** specific tasks or projects to freelance developers or specialized agencies, allowing them to access senior-level expertise on a project-by-project basis?\n* Could they **adopt new technologies or tools** that simplify their backend infrastructure, reduce the need for senior-level expertise, or provide more efficient development workflows?\n* Would **partnerships or collaborations** with other companies or organizations help them access the technical expertise they need without having to hire a full-time senior developer?\n\nOnly by understanding the root causes of their challenges can we begin to explore creative solutions that might not require breaking the bank to attract a senior developer. \n\nWith that in mind, let's reframe the question: What are the specific problems or challenges that this startup is trying to solve, and what are the most effective and efficient ways to address them, given their budget constraints?",
+      "input_tokens": 172,
+      "output_tokens": 432,
+      "elapsed_seconds": 2.29
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before solving this problem, ask: why does this startup need a 'senior developer' specifically? What capability gap are they actually trying to fill? Is 'hire a senior developer' the real need, or is it a SOLUTION masquerading as a problem? What is the problem behind the problem?\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Before attempting to find a solution to the initial problem, I'd like to take a step back and explore the underlying needs and motivations.\n\nWhy does this startup specifically need a 'senior developer'? What are the key challenges or pain points that the current team is facing, and how do they think a senior developer would address them? Are they struggling with:\n\n1. **Technical debt**: Is the codebase becoming unwieldy, and they need someone with experience to refactor and improve it?\n2. **Scalability**: Are they experiencing rapid growth, and their current infrastructure is struggling to keep up, requiring someone with expertise in scaling backend systems?\n3. **Complex problem-solving**: Are there specific, complex technical problems that the current team is unable to solve, and they believe a senior developer would have the necessary expertise?\n4. **Mentorship and guidance**: Are the junior team members struggling with certain aspects of development, and the startup wants a senior developer to provide guidance and mentorship?\n5. **Leadership and architecture**: Is the startup looking for someone to take ownership of the technical direction, architecture, and strategy of the backend systems?\n\nBy understanding the underlying reasons for needing a senior developer, we can determine if hiring a senior developer is indeed the best solution or if there are alternative approaches to address the capability gap.\n\nSome potential alternative solutions could be:\n\n1. **Up-skilling existing team members**: Providing training, mentorship, or online courses to help the current team develop the necessary skills to tackle complex problems.\n2. **Hiring a part-time consultant**: Bringing in a senior developer on a part-time or contract basis to provide guidance, mentorship, and expertise on specific projects or challenges.\n3. **Re-evaluating priorities**: Assessing the startup's priorities and focusing on the most critical projects, allowing the current team to work on high-impact tasks and potentially delaying less critical projects.\n4. **Exploring alternative hiring options**: Considering hiring a developer with a non-traditional background, such as a self-taught developer or someone with transferable skills from a related field.\n\nNow, assuming that hiring a senior developer is indeed the best solution, we can explore creative strategies to attract senior talent on a junior budget, such as:\n\n1. **Offering equity or stock options**: Providing a share of the company to compensate for the lower salary.\n2. **Flexible work arrangements**: Offering remote work, flexible hours, or compressed workweeks to attract senior developers who value work-life balance.\n3. **Professional development opportunities**: Providing opportunities for conferences, training, and education to help the senior developer stay up-to-date with industry trends.\n4. **Autonomy and ownership**: Giving the senior developer ownership of specific projects or domains, allowing them to work independently and make meaningful contributions.\n5. **Company culture and mission**: Highlighting the startup's mission, values, and culture to attract senior developers who are passionate about the company's goals and values.\n\nHowever, it's essential to acknowledge that these strategies may not be enough to attract a senior developer on a junior budget, especially in a competitive job market. The startup may need to reconsider their budget or explore alternative solutions to address their capability gap.",
+      "input_tokens": 172,
+      "output_tokens": 650,
+      "elapsed_seconds": 3.09
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before solving this problem, ask: why does this startup need a 'senior developer' specifically? What capability gap are they actually trying to fill? Is 'hire a senior developer' the real need, or is it a SOLUTION masquerading as a problem? What is the problem behind the problem?\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Before diving into potential solutions, let's take a step back and examine the underlying needs of the startup.\n\nThe question posed is: \"How do we attract senior talent on a junior budget?\" However, this might be a solution masquerading as a problem. The real issue might be more complex and multifaceted.\n\nWhy does this startup need a 'senior developer' specifically? What capability gap are they trying to fill? Is it:\n\n1. **Technical expertise**: Are they struggling with a particular technical challenge that requires advanced skills?\n2. **Leadership and mentorship**: Do they need someone to guide and mentor the existing team members, helping them grow and develop their skills?\n3. **Project management**: Are they looking for someone to oversee and manage backend development projects, ensuring timely delivery and quality?\n4. **Innovation and strategy**: Do they require a seasoned developer to help drive technical innovation, architecture, and strategy for the company?\n\nBy understanding the underlying needs, the startup might realize that hiring a senior developer is not the only solution. Alternative approaches could be:\n\n* **Hire a junior developer and provide training and mentorship** to help them grow into the role.\n* **Outsource specific projects or tasks** to freelancers or contractors with senior-level expertise, rather than hiring a full-time employee.\n* **Partner with a technical consultant** who can provide guidance and expertise on a part-time or project basis.\n* **Develop the skills of existing team members** through training, workshops, or online courses, rather than relying on external talent.\n\nGiven the significant gap between the desired salary range ($150-180k) and the available budget ($70k), it's unlikely that the startup will be able to attract a senior developer with the desired level of experience. Instead of trying to force a square peg into a round hole, the startup should reassess their needs and explore alternative solutions that can help bridge the capability gap.\n\nSome potential questions to ask themselves:\n\n* What are the must-have skills and qualifications for this role, and what are the nice-to-haves?\n* Can we restructure the role or responsibilities to make it more appealing to a junior developer or someone with non-traditional experience?\n* Are there other benefits or perks we can offer to offset the lower salary, such as flexible working hours, professional development opportunities, or equity?\n\nBy taking a step back and reevaluating their needs, the startup may discover that the problem behind the problem is not just about attracting senior talent, but about finding creative solutions to bridge their capability gap.",
+      "input_tokens": 172,
+      "output_tokens": 517,
+      "elapsed_seconds": 2.4
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before solving this problem, ask: why does this startup need a 'senior developer' specifically? What capability gap are they actually trying to fill? Is 'hire a senior developer' the real need, or is it a SOLUTION masquerading as a problem? What is the problem behind the problem?\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Before attempting to solve the problem as stated, let's take a step back and explore the underlying needs and potential capability gaps that this startup is trying to address.\n\nThe startup is seeking a \"senior backend developer,\" which implies they require someone with significant experience, expertise, and possibly leadership skills to drive their backend development efforts. However, the budget constraint of only being able to offer a junior-level salary ($70k) versus the market rate for senior developers ($150-180k) in their area poses a significant challenge.\n\nTo understand the problem behind the problem, we need to consider a few questions:\n\n1. **What specific challenges or gaps is the startup facing** that they believe a senior backend developer would solve? Is it related to the complexity of their current projects, the need for technical leadership, scaling issues, or perhaps improving the quality and reliability of their backend infrastructure?\n\n2. **Are there other ways to address these challenges** without necessarily hiring a senior developer at a market rate that exceeds their budget? For example, could they:\n   - Hire a less experienced developer and provide training and mentorship to grow into the role?\n   - Outsource specific tasks or projects to freelancers or consulting firms that specialize in backend development, potentially on a project basis rather than a full-time employment basis?\n   - Invest in automation tools or platforms that simplify backend development and reduce the need for highly specialized labor?\n   - Consider remote hiring, as salaries can vary significantly by location, potentially allowing them to find senior talent at a lower cost?\n\n3. **Is the requirement for a \"senior\" developer absolute**, or are there aspects of the role that could be flexed? For instance, could they consider someone who is very skilled but doesn't fit the traditional mold of a \"senior\" developer in terms of years of experience? Alternatively, are there specific skills or areas of expertise within backend development that are more critical to the startup's immediate needs, and thus could they target their search more narrowly?\n\n4. **What benefits beyond salary** could the startup offer to attract senior talent, even if they can't meet market rates? This might include equity, flexible working conditions, professional development opportunities, a dynamic and challenging work environment, or a strong mission and culture that resonates with potential candidates.\n\nBy exploring these questions, the startup can better understand the root causes of their needs and potentially identify solutions that are more feasible within their budget constraints. It may turn out that hiring a senior developer at market rate is not the only, or even the best, way to address their capability gaps.",
+      "input_tokens": 172,
+      "output_tokens": 520,
+      "elapsed_seconds": 3.21
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before solving this problem, ask: why does this startup need a 'senior developer' specifically? What capability gap are they actually trying to fill? Is 'hire a senior developer' the real need, or is it a SOLUTION masquerading as a problem? What is the problem behind the problem?\n\nWe're a 4-person startup. We need to hire a senior backend developer but our budget only allows for a junior-level salary ($70k). Senior developers in our area command $150-180k. How do we attract senior talent on a junior budget?",
+      "response": "Before trying to find a solution to the problem of attracting senior talent on a junior budget, let's take a step back and examine the underlying needs and assumptions.\n\nThe stated problem is that the startup needs a senior backend developer but can only afford to pay a junior-level salary. However, this raises several questions:\n\n1. **What specific capabilities or skills is the startup lacking that a senior backend developer would provide?** Is it technical expertise, leadership, architecture, or something else? Are there particular projects or challenges that require a senior developer's expertise?\n2. **Can the startup's needs be met through other means, such as**:\n\t* Hiring a less experienced developer and providing training or mentorship to help them grow into the role?\n\t* Outsourcing specific tasks or projects to freelancers or contractors with senior-level expertise?\n\t* Partnering with other companies or organizations to access senior talent on a project basis?\n\t* Investing in automation, tools, or processes that reduce the need for senior-level expertise?\n3. **Are there other factors that could be contributing to the perceived need for a senior developer**, such as:\n\t* Inefficient processes or workflows that require more expertise to manage?\n\t* Lack of clear goals, priorities, or technical vision?\n\t* Insufficient documentation, testing, or quality assurance?\n4. **What are the startup's priorities, and how does hiring a senior backend developer align with those priorities?** Is this hire intended to drive growth, improve efficiency, or address specific technical challenges?\n\nBy exploring these questions, the startup may discover that their needs can be met through alternative solutions, such as:\n\n* Hiring a mid-level developer with potential for growth and providing training or mentorship\n* Focusing on process improvements, automation, or tooling to reduce the need for senior-level expertise\n* Seeking out senior developers who are looking for a change of pace, a new challenge, or a more flexible work arrangement, and who may be willing to accept a lower salary in exchange for other benefits\n* Considering non-traditional hiring approaches, such as hiring a senior developer on a part-time or contract basis, or offering equity or other forms of compensation to supplement the salary\n\nUltimately, the startup may find that their problem is not just about attracting senior talent on a junior budget, but about identifying the root causes of their capability gaps and finding creative solutions to address them.",
+      "input_tokens": 172,
+      "output_tokens": 484,
+      "elapsed_seconds": 2.09
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily focuses on a single frame of attracting senior talent through creative compensation and benefits, with minor acknowledgment of alternative approaches such as part-time or contract work, but does not explore multiple distinct frames in depth."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the assumption that senior developers are only motivated by salary, but does not systematically examine other hidden assumptions, such as the assumption that a senior developer is necessary or that the current job description is optimal."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as offering equity or flexible work arrangements, alongside conventional ones, but does not present a genuinely unexpected viable solution that reframes the problem, such as questioning the need for a senior developer or exploring alternative team structures."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem premise with minor caveats, but does not explicitly question whether the problem is well-posed or explore alternative problem framings, such as considering the capabilities needed rather than the title of the role."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable and practical advice, but may not be entirely grounded in reality, as it does not fully address the significant salary gap or provide a comprehensive solution that meets the success criteria, such as suggesting alternatives like a part-time senior consultant or investing in tooling and code review services."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames and perspectives, including re-evaluating budget and priorities, offering non-monetary benefits, targeting specific candidate profiles, leveraging networks, and exploring alternative hiring models. However, it does not synthesize these frames into a comprehensive strategy."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need to attract senior talent on a junior budget, and examines them to some extent. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that a senior developer is necessary for the company's success."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including targeting specific candidate profiles, offering non-monetary benefits, and exploring alternative hiring models. These solutions go beyond the conventional response of simply trying to find a way to pay a senior developer a higher salary."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response does not fundamentally question the premise of the problem, which is to attract senior talent on a junior budget. It accepts the problem as stated and provides solutions within that framework, without exploring alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable and practical advice for attracting senior talent on a junior budget. The suggestions are grounded in reality and take into account the constraints of the problem. However, the response could be improved by providing more specific examples and details to support the suggestions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including compromising on experience, offering non-monetary benefits, part-time or contract work, looking beyond local talent, re-evaluating the budget, apprenticeship or mentorship, and partnering with a contractor or consulting firm. This demonstrates a good range of perspectives, but may not fully explore all possible alternatives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need for a full-time senior developer and the limitations of the budget. However, it does not systematically examine all hidden assumptions, such as the potential consequences of hiring a mid-level developer or the impact of non-monetary benefits on candidate attraction."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as offering non-monetary benefits, looking beyond local talent, and partnering with a contractor or consulting firm. However, these solutions are not entirely unexpected, and the response does not provide a genuinely novel or reframed solution to the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only minor caveats. It does not explicitly question the premise or explore alternative problem framings, such as whether the need is for a senior developer or for specific capabilities."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is largely correct and provides reasonable advice. The suggestions for attracting senior talent on a junior budget are practical and grounded in reality. However, the response may not fully address the underlying needs of the startup, such as the requirement for senior-level capabilities or the potential consequences of compromising on experience."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily focuses on a single frame of attracting senior talent on a junior budget, with minor acknowledgment of alternatives such as re-evaluating requirements or offering alternative benefits."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the obvious assumption that senior developers require high salaries, but does not systematically examine other hidden assumptions, such as the necessity of hiring a full-time senior developer."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions such as offering alternative benefits, networking, and considering a trial period, but does not produce genuinely unexpected or novel solutions beyond these first-order answers."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with a minor caveat of re-evaluating requirements, but does not fundamentally question the premise or explore alternative problem framings, such as considering part-time senior consultants or fractional CTOs."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and correct advice, such as offering alternative benefits and networking, but lacks good practical detail and does not fully address the challenge of attracting senior talent on a junior budget, as it does not consider the success criteria's suggested alternatives."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including compromising on experience, offering non-monetary benefits, creative compensation structures, recruiting from non-traditional sources, and part-time or contract work. However, it does not fully explore the frame of investing in tooling, linting, or CI, or hiring a strong mid-level developer with a code review service, which are mentioned in the success criteria."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need for a senior developer and the limitations of the budget. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that a senior developer is necessary for the project's success."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as offering non-monetary benefits and exploring creative compensation structures. However, most of the solutions are conventional and do not fundamentally reframe the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only minor caveats. It does not explicitly question the premise or explore alternative problem framings, such as whether a senior developer is truly necessary or whether there are other ways to achieve the desired capabilities."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is generally correct and provides reasonable and practical advice. However, it may not be entirely grounded in reality, as some of the suggested solutions may not be feasible or effective in practice, such as attracting senior talent with a junior-level salary and non-monetary benefits alone."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including improving code quality, enhancing development velocity, filling a technical leadership gap, and addressing specific technical debt or complexity. It also explores alternative solutions such as upskilling existing team members, outsourcing or contracting specific tasks, adopting new technologies or tools, and partnerships or collaborations."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several hidden assumptions, including the assumption that a senior backend developer is the only solution to the startup's problems, and the assumption that the startup needs to hire a full-time senior developer. It also examines the potential capability gaps that the startup is trying to address."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including upskilling or reskilling existing team members, outsourcing or contracting specific tasks, adopting new technologies or tools, and partnerships or collaborations. These solutions go beyond the conventional answer of hiring a senior backend developer."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question by exploring the underlying needs and potential capability gaps that the startup is trying to address. It questions whether the problem is well-posed and whether hiring a senior backend developer is the best solution."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides excellent practical advice and explores alternative solutions that are tailored to the startup's specific needs and budget constraints."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames and perspectives, including the need for a senior developer, the challenges faced by the current team, and alternative solutions such as up-skilling existing team members, hiring a part-time consultant, and re-evaluating priorities. It also explores different strategies to attract senior talent on a junior budget, such as offering equity or stock options, flexible work arrangements, and professional development opportunities. However, it does not synthesize these frames into a comprehensive framework."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several hidden assumptions, including the assumption that a senior developer is necessary, the assumption that the current team cannot handle complex problems, and the assumption that the startup's priorities are fixed. It also examines the assumption that a senior developer would be the best solution to the startup's challenges. However, it does not systematically surface and examine all possible hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including hiring a part-time consultant, up-skilling existing team members, and re-evaluating priorities. It also suggests offering equity or stock options, flexible work arrangements, and professional development opportunities to attract senior talent on a junior budget. However, it does not present a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise of the problem by asking why the startup needs a senior developer and what challenges the current team is facing. It explores alternative problem framings, such as the need for technical debt reduction, scalability, complex problem-solving, mentorship, and leadership. This questioning of the premise allows for a more nuanced and effective solution."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides a thorough analysis of the problem and offers a range of viable solutions that take into account the startup's budget constraints and the competitive job market. The response also acknowledges the potential limitations of its suggested strategies and encourages the startup to reconsider their budget or explore alternative solutions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames and perspectives, including technical expertise, leadership and mentorship, project management, and innovation and strategy. It also explores alternative solutions such as hiring a junior developer and providing training, outsourcing specific projects, partnering with a technical consultant, and developing the skills of existing team members."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several hidden assumptions, including the assumption that a senior developer is the only solution, the assumption that the startup needs a full-time employee, and the assumption that the desired salary range is non-negotiable. It also encourages the startup to reevaluate their needs and explore alternative solutions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions beyond the obvious first-order answer, including outsourcing specific projects, partnering with a technical consultant, and developing the skills of existing team members. These solutions demonstrate a high degree of novelty and creativity."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise of the problem, asking why the startup needs a senior developer and what capability gap they are trying to fill. It encourages the startup to reframe the problem and explore alternative solutions, demonstrating a high degree of premise questioning."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides excellent practical advice and encourages the startup to think creatively about their needs and explore alternative solutions. The response is well-reasoned and demonstrates a deep understanding of the problem and its potential solutions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames and perspectives, including the possibility of hiring less experienced developers, outsourcing tasks, investing in automation tools, and offering non-salary benefits to attract senior talent. It explores these alternatives with comparison, demonstrating a good understanding of the various options available to the startup."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the necessity of hiring a senior developer, the limitations of the startup's budget, and the potential for non-traditional solutions. It examines these assumptions in a thoughtful and systematic way, considering both obvious and non-obvious possibilities."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including outsourcing specific tasks, investing in automation tools, and offering non-salary benefits to attract senior talent. These solutions demonstrate a high degree of creativity and thinking outside the box, and are likely to be useful to the startup in addressing its capability gaps."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, asking whether the problem is well-posed and whether the startup's underlying needs are being properly addressed. It explicitly questions the premise of hiring a senior developer and explores alternative solutions, demonstrating a deep understanding of the startup's challenges and a willingness to challenge assumptions."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides excellent practical advice and demonstrates a thorough understanding of the startup's challenges and the various options available to address them. The response is well-reasoned, well-organized, and likely to be highly useful to the startup in addressing its capability gaps."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames and perspectives, including hiring a less experienced developer, outsourcing tasks, partnering with other companies, and investing in automation and tools. It also explores non-traditional hiring approaches and alternative forms of compensation, demonstrating a wide range of distinct frames and perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, including the assumption that a senior backend developer is necessary, the assumption that the startup's needs cannot be met through other means, and the assumption that the startup's priorities and goals are fixed. It questions these assumptions and explores alternative solutions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including hiring a mid-level developer with potential for growth, focusing on process improvements and automation, and seeking out senior developers who are looking for a change of pace or a more flexible work arrangement. These solutions go beyond the conventional answer of trying to attract a senior developer with a junior budget."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, questioning whether the problem is well-posed and exploring alternative solutions. It examines the underlying needs and assumptions of the startup and challenges the premise that a senior backend developer is necessary."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, reasonable, and practically useful. It provides excellent practical advice grounded in reality, taking into account the startup's budget constraints and the current market conditions for senior developers. The suggested solutions are creative, feasible, and aligned with the startup's priorities and goals."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within one frame - how to attract senior developers with limited budget through compensation alternatives and recruitment strategies. There's minor acknowledgment of alternatives like part-time work and internal promotion, but it doesn't explore fundamentally different approaches like questioning whether a senior developer is actually needed."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the budget constraint is fixed - and works around it. However, it doesn't question deeper assumptions like whether they actually need a 'senior developer' specifically, whether the capability gap requires a full-time hire, or whether the problem is correctly framed."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response offers some non-obvious solutions like targeting 'misfits' (semi-retired developers, those seeking change), equity compensation, and internal promotion alongside conventional approaches like flexible work and networking. However, it misses more creative alternatives like fractional CTOs, consulting arrangements, or tooling solutions."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response completely accepts the problem as stated - that they need to hire a senior backend developer. It doesn't question whether this is the right solution to their underlying needs or explore whether the capability they seek could be obtained through other means."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally sound and practical for the problem as stated. The suggestions about equity, flexibility, and creative recruitment are reasonable. However, it misses the key insight from the success criteria that the real need might be capabilities rather than a specific person, which limits its practical value for this specific situation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a single frame of 'how to attract senior developers for less money' with minor acknowledgment of alternative hiring models like part-time work. It doesn't explore fundamentally different approaches like addressing the underlying capability need through other means."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about budget constraints and suggests re-evaluating priorities, but doesn't question deeper assumptions like whether a senior developer is actually needed or whether the problem is correctly framed as a hiring challenge."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional (equity, flexible work, targeting specific demographics). The part-time/consulting suggestion shows some creativity but the response largely stays within expected territory of 'how to make a low salary more attractive' rather than reframing the problem."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - that they need to hire a senior backend developer. It doesn't question whether hiring a senior person is the right solution or whether the underlying need could be met differently."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally sound and practical for the problem as stated. The suggestions about non-monetary benefits, targeting specific candidates, and alternative hiring models are reasonable. However, it misses the key insight from the success criteria about addressing capability needs rather than just hiring challenges."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers multiple distinct frames: budget optimization (working within constraints), talent acquisition strategy (attracting candidates through non-monetary benefits), and alternative employment models (part-time, contract, remote). However, it doesn't deeply explore the capability-focused frame that the success criteria emphasizes."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one main assumption - that they need to hire a full-time senior developer - and suggests alternatives like part-time work. However, it doesn't question deeper assumptions like whether they actually need a senior person versus senior capabilities, or whether hiring is the only solution."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response includes some non-obvious solutions like geographic arbitrage, apprenticeship models, and partnering with consulting firms. However, it misses more innovative approaches like fractional CTOs, code review services, or investing in tooling/automation to reduce the need for senior expertise."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise that they need to hire a senior developer, with only minor questioning around whether it needs to be full-time. It doesn't fundamentally challenge whether hiring a person is the right approach versus acquiring the capabilities they need through other means."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally sound and practical for traditional hiring approaches. The suggestions about equity, non-monetary benefits, and geographic flexibility are realistic. However, it doesn't address the core insight from the success criteria that the real need is capabilities, not necessarily a person, which limits its effectiveness for this specific problem."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within the traditional hiring frame (finding a person to fill a role) with minor acknowledgment of alternative approaches like contract-to-hire. It doesn't explore fundamentally different frames like capability-focused solutions, fractional arrangements, or tooling investments."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about the salary disparity but doesn't question deeper assumptions like whether they actually need a full-time senior person, whether the capability gap could be filled through other means, or whether the problem is correctly framed as a hiring challenge."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional hiring tactics (networking, alternative benefits, equity, flexible work). The contract-to-hire suggestion is somewhat less obvious, but the response misses more innovative approaches like fractional CTOs, consulting arrangements, or capability-building through tooling and processes."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response briefly suggests re-evaluating requirements and considering a mid-level developer, but it doesn't fundamentally question whether hiring a person is the right solution. It accepts the framing as a hiring problem rather than exploring whether the underlying need could be met differently."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally sound and practical for traditional hiring approaches. The suggestions about equity, networking, and transparency are reasonable. However, it misses the key insight from the success criteria that the real need is capability, not necessarily a person, which limits its effectiveness for this specific situation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily operates within a single frame of 'how to attract senior talent with limited budget' with minor acknowledgment of alternatives like part-time work. It doesn't explore fundamentally different approaches like questioning whether senior talent is actually needed or considering alternative ways to achieve the underlying capability."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about budget constraints but doesn't question deeper assumptions like whether a senior developer is actually needed, whether the $70k budget is truly fixed, or whether hiring a person is the only way to get senior-level capabilities."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional (equity, flexible hours, non-monetary benefits, part-time work). While these are reasonable, they don't go beyond first-order thinking to more creative solutions like fractional CTOs, consulting arrangements, or investing in tooling/automation to reduce the need for senior expertise."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - that they need to hire a senior backend developer. It doesn't question whether hiring a person is the right approach, whether senior-level capability could be achieved through other means, or whether the role definition itself might be flawed."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally correct and reasonable for the problem as stated. The suggestions about equity, flexible benefits, and creative compensation are practical and commonly used by startups. However, it misses the key insight from the success criteria about focusing on capabilities rather than hiring a specific person type."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: technical capability gaps (infrastructure/scalability), development velocity, technical leadership/mentorship, and specific technical debt. It also considers alternative approaches like upskilling, outsourcing, technology adoption, and partnerships."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines the hidden assumption that hiring a 'senior backend developer' is the right solution. It questions what specific problems they're trying to solve, whether the title matches the actual need, and challenges the assumption that a full-time hire is necessary."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response suggests some non-obvious alternatives like upskilling existing team members, adopting new technologies, and partnerships, it doesn't provide the specific creative solutions mentioned in the success criteria (fractional CTO, code review services, part-time consultants, etc.)."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question by questioning whether they actually need a 'senior backend developer' versus specific capabilities. It explicitly states 'let's reframe the question' and challenges the problem as originally posed."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is correct in its analytical approach and identifies the right underlying issue (capability vs. person), but it stops short of providing the specific practical alternatives that would make it excellent. It's more diagnostic than prescriptive."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: (1) capability gap analysis (technical debt, scalability, mentorship needs), (2) alternative solutions to hiring (upskilling, consulting, priority reassessment), (3) non-traditional hiring approaches, and (4) compensation/attraction strategies. Each frame is developed with specific examples and considerations."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response systematically identifies and questions several key assumptions: that a 'senior developer' is actually needed, that hiring full-time is the only option, that the budget constraint is absolute, and that traditional hiring approaches are the only path. It explicitly asks 'Why does this startup specifically need a senior developer?' which surfaces the core assumption."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response includes some non-obvious solutions like part-time consulting, upskilling existing team members, and re-evaluating priorities alongside more conventional approaches like equity compensation and flexible work. However, it doesn't fully explore some of the more innovative solutions mentioned in the success criteria like fractional CTOs, code review services, or specific tooling investments."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise by asking whether hiring a senior developer is actually the right solution. It explicitly states 'Before attempting to find a solution to the initial problem, I'd like to take a step back and explore the underlying needs' and systematically examines whether the stated need (senior developer) matches the actual capability requirements."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides practical, realistic advice that acknowledges market constraints while offering viable alternatives. The solutions are grounded in startup realities and the analysis of underlying needs is sound. The acknowledgment that creative strategies 'may not be enough' shows realistic expectations about market dynamics."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: technical expertise needs, leadership/mentorship requirements, project management capabilities, and innovation/strategy roles. It also considers alternative approaches like training existing staff, outsourcing, consulting, and skill development, showing good breadth of perspective."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response effectively identifies and questions several key assumptions: that a 'senior developer' is needed (vs. specific capabilities), that full-time hiring is the only solution, that the salary gap can't be bridged, and that the problem is correctly framed. It systematically examines these assumptions rather than taking them at face value."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response offers some non-obvious solutions like partnering with technical consultants and developing existing team members, it doesn't fully explore the more creative alternatives mentioned in the success criteria such as fractional CTOs, code review services, or investing in tooling/CI. The solutions are reasonable but not particularly innovative."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response excellently questions the fundamental premise by stating 'this might be a solution masquerading as a problem' and 'the real issue might be more complex and multifaceted.' It explicitly reframes the question from 'how to attract senior talent on junior budget' to 'what capability gap needs to be filled' before proposing solutions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound, practical advice that acknowledges the reality of the salary gap while offering viable alternatives. The guidance to reassess needs, consider alternative structures, and explore creative solutions is grounded in startup realities. However, it could be more specific about implementation details for the suggested alternatives."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: (1) capability gaps and underlying needs analysis, (2) alternative hiring approaches (junior + training, outsourcing, remote), (3) technology/tooling solutions to reduce need for senior talent, and (4) non-monetary compensation strategies. Each frame is developed with specific examples and considerations."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response systematically identifies several key assumptions: that a 'senior' developer is absolutely required, that the problem requires a full-time hire, that market salary rates are non-negotiable, and that years of experience define seniority. It also questions the assumption that hiring is the only solution to their capability needs."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response includes some conventional solutions (remote hiring, equity compensation), it also presents less obvious approaches like investing in automation tools to reduce complexity, targeting specific skills rather than broad seniority, and project-based outsourcing. However, it doesn't fully develop the most innovative solutions mentioned in the success criteria like fractional CTOs or code review services."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise by asking 'what specific challenges or gaps is the startup facing' and explicitly states the need to 'understand the problem behind the problem.' It reframes the question from 'how to hire senior talent cheaply' to 'how to address capability gaps within budget constraints,' which is exactly the type of reframing the success criteria seeks."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides practical, realistic advice that addresses the core insight that the need is for capabilities rather than a specific person type. The suggested alternatives are feasible and well-reasoned. While it doesn't explicitly mention all the specific solutions in the success criteria (like fractional CTOs or code review services), the framework it provides would naturally lead to discovering these options."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: (1) capability/skills gap analysis, (2) alternative sourcing methods (outsourcing, partnerships), (3) process/tooling improvements to reduce need, and (4) non-traditional compensation approaches. Each frame is developed with specific examples and considerations."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically identifies and questions multiple hidden assumptions: that a senior developer is actually needed vs. specific capabilities, that full-time hiring is the only option, that salary is the only form of compensation, that current inefficiencies require senior expertise rather than process improvements, and that the problem is correctly framed as a hiring challenge."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "Goes well beyond obvious solutions by suggesting process improvements and automation to reduce expertise needs, partnership approaches for accessing talent, focusing on root cause analysis of capability gaps, and reframing compensation beyond just salary. These are non-obvious approaches that reframe the problem creatively."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "Fundamentally questions the premise by asking 'what specific capabilities are actually needed?' and suggests the real problem may not be hiring at all, but rather identifying root causes of capability gaps. Explicitly states the problem may not be 'about attracting senior talent on a junior budget' but about finding creative solutions to capability gaps."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "Provides practical, realistic advice that aligns well with startup constraints. The suggestions are actionable and grounded in common startup realities. While it doesn't provide the specific alternatives mentioned in success criteria (fractional CTO, code review services), it covers the core insight about capabilities vs. people and offers practical alternatives."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple frames: compensation alternatives (equity, flexibility), recruitment strategies (networking, part-time/contract, internal promotion, targeting 'misfits'), reframing the job description, and company culture. It does not fully synthesize these or explicitly compare them, but it does present at least three distinct approaches."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies the assumption that a senior developer must be hired full-time and at market rate, and questions it by suggesting part-time/contract and internal promotion. However, it does not deeply examine less obvious assumptions, such as whether a senior developer is truly needed or if the need could be met by other means (e.g., tooling, code review services)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious (just offering equity) by suggesting part-time/contract work, internal promotion, and targeting non-traditional candidates. However, it does not suggest more novel alternatives like fractional CTO, code review services, or investing in tooling, which would have demonstrated greater novelty."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response mostly accepts the premise that a senior developer must be hired, with only minor caveats (e.g., internal promotion, part-time/contract). It does not explicitly question whether the real need is a capability rather than a person, nor does it reframe the problem in terms of alternative solutions to the underlying needs."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, offering actionable steps and realistic strategies for a startup with a limited budget. However, it misses some of the most effective alternatives (like code review services or investing in tooling) that could be even more practical for the situation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple frames: budget reallocation, non-monetary benefits, targeting atypical candidate profiles, leveraging networks, alternative hiring models (part-time, consulting, mentorship), and transparency/flexibility. These are distinct approaches, though there is some overlap between them. There is some synthesis, but not a full integration of all frames."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response questions the assumption that only a full-time senior hire is possible by suggesting part-time, contract, and consulting options. It also questions whether salary is the only lever by suggesting non-monetary benefits. However, it does not deeply examine less obvious assumptions, such as whether a senior developer is truly needed or if the capability could be achieved through other means (e.g., tooling, code review services)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response includes some non-obvious solutions (e.g., targeting retirees, career changers, or recent immigrants; using part-time or consulting arrangements), but most suggestions are relatively standard for startups. It does not suggest more novel alternatives like investing in tooling, code review services, or fractional CTOs."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response mostly accepts the premise that a senior developer must be hired, with only minor caveats (e.g., considering part-time or consulting arrangements). It does not explicitly question whether the real need is for a person or a capability, nor does it reframe the problem as one of achieving certain outcomes rather than filling a specific role."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical for a startup: it covers realistic ways to attract talent on a budget, including non-monetary benefits and alternative hiring models. However, it misses some of the most effective alternatives (like code review services or investing in tooling) that could be more practical for a small team."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames: hiring a mid-level developer, offering non-monetary benefits, hiring part-time/contract, remote hiring, budget reevaluation, mentorship/apprenticeship, and partnering with contractors/consultants. It synthesizes these options and compares their merits."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies the assumption that only a full-time senior developer can meet the startup's needs and questions it by suggesting alternatives. However, it does not deeply examine less obvious assumptions, such as whether the real need is for senior-level capability rather than a specific person."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious solution of simply trying to hire a senior developer for less money. It suggests non-obvious alternatives like part-time/contract work, remote hiring, and mentorship, though it does not mention some of the most creative options like code review services or investing in tooling."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response hints that the problem may be more about capability than a specific hire by suggesting alternatives to a full-time senior developer, but it does not explicitly reframe the problem or deeply question the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical, realistic, and grounded in startup hiring realities. It covers actionable steps and acknowledges limitations, but could be improved by more directly addressing the success criteria's focus on capability over person and mentioning technical solutions like code review services or tooling."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames: (1) how to attract a senior developer despite budget constraints (via alternative benefits, networking, trial periods), and (2) whether a mid-level developer could suffice. However, it does not consider more distinct alternatives such as fractional CTOs, part-time consultants, or investing in tooling/services instead of hiring a person."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response briefly questions whether a senior developer is truly needed, suggesting a mid-level developer might suffice. However, it does not deeply examine other assumptions, such as whether the need is for a person or for specific capabilities, or whether the work could be accomplished through other means."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "Most solutions are conventional: offering equity, flexible work, professional development, and networking. The suggestion to consider a mid-level developer is somewhat less obvious, but the response does not propose more novel alternatives like fractional CTOs, code review services, or contracting for specific skills."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response makes a minor caveat by suggesting a mid-level developer might be sufficient, but otherwise accepts the premise that a full-time hire is needed and does not fundamentally question whether hiring is the right approach."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical for startups: it covers realistic ways to attract talent on a budget and acknowledges the difficulty. However, it misses some of the most effective alternatives (fractional/freelance/consultant arrangements) that would be highly relevant in this scenario."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: hiring less experienced talent, offering non-monetary benefits, creative compensation, recruiting from non-traditional sources, and part-time/contract work. These are distinct approaches, though they are not deeply synthesized or compared."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response implicitly acknowledges the budget constraint and the need for senior talent, but does not explicitly question whether a full-time senior hire is the only way to meet the startup's needs. It does not surface deeper assumptions about what 'senior' capabilities are required or whether alternative solutions (like tooling or code review services) could substitute."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the most conventional answer (just hiring a junior or offering equity) by suggesting part-time/contract work and creative compensation, but it does not propose more novel alternatives like fractional CTOs, investing in tooling, or code review services."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response largely accepts the problem as stated, with only a minor caveat in suggesting part-time or contract work. It does not question whether the real need is a capability rather than a person, nor does it reframe the problem."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is practical and correct for a startup in this situation, offering actionable steps and realistic options. However, it misses some of the most effective alternatives (like fractional CTO or code review services) that would directly address the capability gap."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: the specific technical needs (quality, scalability, leadership, technical debt), upskilling/reskilling, outsourcing/contracting, adopting new tools/technologies, and partnerships/collaborations. It synthesizes these perspectives to suggest a broader approach."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and questions the assumption that a senior backend developer is needed, probing for the underlying challenges and needs. It also questions whether hiring is the only or best solution."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious answer of 'hire a senior for less' and suggests several non-obvious alternatives (upskilling, outsourcing, tooling, partnerships). However, it does not propose a truly unexpected or groundbreaking solution."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question, asking what the real needs are and whether hiring a senior developer is the right approach, rather than accepting the premise as stated."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, offering actionable alternatives. However, it could be improved with more concrete examples or specific recommendations (e.g., names of services or tools), but it is still highly useful."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: (1) questioning the underlying need for a senior developer, (2) exploring the specific challenges faced (technical debt, scalability, mentorship, etc.), (3) suggesting alternatives to hiring (up-skilling, part-time consultant, re-evaluating priorities, alternative hiring), and (4) creative compensation strategies (equity, flexibility, culture). These are synthesized to provide a broad perspective."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, such as whether a senior developer is truly needed, what specific problems are being solved, and whether alternative solutions could address the capability gap. It questions the default assumption that hiring a senior full-time is the only or best solution."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional answers by suggesting up-skilling, part-time consultants, and alternative hiring strategies, as well as creative compensation. However, it does not mention some of the most novel alternatives from the success criteria (e.g., fractional CTO, code review services, investing in tooling/CI), so it falls just short of a 5."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question, asking whether the need is for a person or a capability, and explores whether the problem is well-posed before offering solutions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, offering actionable alternatives and realistic strategies. However, it could be improved by mentioning more specific alternatives (like code review services or investing in tooling) as per the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: technical expertise, leadership/mentorship, project management, innovation/strategy, and also explores alternatives like training, outsourcing, consulting, and restructuring the role. It synthesizes these perspectives to suggest a broader approach."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and questions several hidden assumptions: that a senior developer is needed, that hiring is the only solution, and that the role cannot be restructured or filled in alternative ways. It also prompts the startup to clarify must-have vs. nice-to-have skills."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious answer of 'try to hire a senior for less' and suggests multiple non-obvious solutions: part-time consulting, upskilling, outsourcing, and role restructuring. However, it does not propose a truly unexpected or radical solution."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question, challenging the premise that a senior developer must be hired and encouraging the startup to reconsider their actual needs and alternative ways to meet them."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, realistic, and directly addresses the constraints and needs of a small startup. It avoids impractical suggestions and provides actionable alternatives grounded in real-world startup practices."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: (1) the underlying capability need vs. the job title, (2) alternative hiring strategies (training, outsourcing, automation, remote hiring), (3) flexibility in the definition of 'senior', and (4) non-monetary benefits. These are synthesized to suggest a broad approach."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and questions several assumptions: that a senior developer is needed, that only a full-time hire can solve the problem, that salary is the only lever, and that the definition of 'senior' is fixed. It also questions whether the need is for a person or a capability."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious (just hiring a developer) and suggests multiple non-obvious solutions: training a junior, outsourcing, automation, remote hiring, and leveraging non-salary benefits. However, it does not mention some of the most creative alternatives from the success criteria (e.g., fractional CTO, code review service), so it falls just short of a 5."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question, asking what the real need is and whether hiring a senior developer is the only or best solution. It explicitly questions the premise and explores alternatives."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, offering actionable alternatives and a realistic assessment of the situation. It could be improved by mentioning even more specific alternatives (like code review services or fractional CTOs), but overall it is grounded and useful."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: (1) direct hiring, (2) training/mentorship, (3) outsourcing/contracting, (4) process/tooling improvements, (5) alternative compensation, and (6) questioning whether the need is for a person or a capability. These are synthesized and compared."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, such as whether the need is for a senior developer or for specific capabilities, whether process issues are driving the need, and whether the problem is about hiring or about addressing capability gaps."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional answers by suggesting non-obvious solutions like process/tooling investment, part-time/contract/fractional arrangements, and alternative compensation. It does not introduce a truly unexpected solution, but covers a wide range of creative options."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question, asking whether the real need is for a senior developer or for specific capabilities, and explores alternatives to the original premise."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, grounded in reality, and directly addresses the startup's constraints and needs. It offers actionable alternatives that are feasible for a small startup."
+      }
+    }
+  ]
+}

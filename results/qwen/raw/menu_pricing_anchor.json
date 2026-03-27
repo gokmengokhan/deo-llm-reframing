@@ -1,0 +1,798 @@
+{
+  "problem_id": "menu_pricing_anchor",
+  "problem_title": "The Restaurant Menu Pricing",
+  "category": "anchoring",
+  "paths_applied": [
+    "path_1_name_the_frame",
+    "path_2_decompose_to_generic"
+  ],
+  "theory_connection": "Tversky & Kahneman (1974): competitor prices anchor pricing decisions even when the products are not comparable. Decomposition from cost and value components decouples pricing from the anchor — a restaurant with genuinely differentiated product and higher costs might correctly price at $28, while a quick-service format might correctly price at $9. Both are invisible when anchored to the competitive range.",
+  "expected_vanilla_failure": "Anchors to the $14-16 competitive range. Recommends Lucia price at $13 (undercut to attract customers), $16 (match premium), or $17-18 (slight premium). All recommendations navigate relative to the anchor.",
+  "success_criteria": "Calculates from Lucia's actual costs and value proposition. Arrives at a price that may be $9 (if she is a fast-casual format with efficient prep) or $26-28 (if she is running a craft experience with high-cost ingredients). Explicitly notes that competitor prices are only relevant if the product and context are comparable.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the optimal pricing for Lucia's pasta dishes, let's consider the key factors involved:\n\n1. **Quality and uniqueness**: Lucia's handmade pasta recipes, high-quality imported ingredients, and slow fermentation process differentiate her dishes from the competition. This unique value proposition may justify higher prices.\n2. **Competitor pricing**: The competitive analysis reveals that other Italian restaurants in the area charge between $14 and $16 for pasta dishes. This sets a baseline for consumer expectations.\n3. **Target audience**: Understanding the target audience is crucial. If Lucia's restaurant is aiming to attract a more upscale or foodie crowd, they may be willing to pay a premium for high-quality, unique pasta dishes.\n4. **Restaurant positioning**: Lucia's restaurant can position itself as a premium or specialty Italian restaurant, focusing on the quality and craftsmanship of the handmade pasta.\n\nConsidering these factors, here are some pricing options:\n\n**Option 1: Competitive pricing**\nLucia could price her pasta dishes within the $14-$16 range to remain competitive with other Italian restaurants in the area. This approach would help attract price-sensitive customers and quickly gain market share.\n\n**Option 2: Premium pricing**\nGiven the unique value proposition of Lucia's handmade pasta, she could consider pricing her dishes at a premium, e.g., $18-$22. This would reflect the higher quality and care that goes into preparing each dish. This approach would attract customers willing to pay more for a unique culinary experience.\n\n**Option 3: Tiered pricing**\nLucia could introduce a tiered pricing structure, offering a range of pasta dishes at different price points. For example:\n\t* Classic pasta dishes (using simpler recipes and ingredients) at $14-$16\n\t* Signature pasta dishes (featuring handmade pasta and high-quality ingredients) at $18-$22\n\t* Premium pasta dishes (with rare or specialty ingredients) at $25-$30\n\nThis approach would allow customers to choose their price point based on their preferences and budget.\n\nBased on these considerations, I would recommend **Option 2: Premium pricing** or **Option 3: Tiered pricing**. By pricing her pasta dishes at a premium or introducing a tiered pricing structure, Lucia can:\n\n* Differentiate her restaurant from the competition\n* Attract customers willing to pay for high-quality, unique pasta dishes\n* Reflect the value and craftsmanship that goes into each dish\n* Create a revenue stream that supports the use of high-quality ingredients and slow fermentation process\n\nUltimately, the pricing strategy will depend on Lucia's target audience, restaurant positioning, and business goals. It's essential to test and refine the pricing strategy based on customer feedback and sales data to ensure the optimal balance between revenue and customer demand.",
+      "input_tokens": 176,
+      "output_tokens": 550,
+      "elapsed_seconds": 1.84
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the optimal pricing strategy for Lucia's new Italian restaurant, we need to consider several key factors:\n\n1. **Unique Selling Point (USP)**: Lucia's handmade pasta recipes, high-quality imported ingredients, and slow fermentation process are a unique selling point. This could justify a premium pricing strategy, as customers may be willing to pay more for the exceptional quality and craftsmanship.\n2. **Competitor Analysis**: The competitive analysis shows that other Italian restaurants in the area charge between $14 and $16 for pasta dishes. This provides a benchmark for pricing, but it's essential to consider whether Lucia's restaurant offers a significantly different value proposition.\n3. **Target Audience**: Who is Lucia's target audience? Are they foodies, families, or budget-conscious diners? Understanding the target audience's willingness to pay and their expectations will help inform the pricing decision.\n4. **Cost Structure**: Lucia should consider the costs associated with producing her high-quality pasta dishes, including the cost of imported ingredients, labor, and overheads. This will help determine the minimum price required to maintain profitability.\n5. **Brand Positioning**: How does Lucia want to position her restaurant in the market? Does she aim to be a premium, high-end destination, or a more affordable, casual option?\n\nConsidering these factors, here are some pricing strategy options:\n\n**Option 1: Premium Pricing**\nPrice pasta dishes between $18 and $22, highlighting the unique quality and craftsmanship of Lucia's handmade pasta. This approach targets foodies and customers willing to pay a premium for exceptional quality.\n\n**Option 2: Competitive Pricing**\nPrice pasta dishes between $14 and $16, matching the competitors' prices. This approach focuses on attracting price-sensitive customers and building a loyal customer base through excellent service and quality food.\n\n**Option 3: Tiered Pricing**\nOffer a range of pasta dishes at different price points, such as:\n\t* Classic pasta dishes (e.g., spaghetti Bolognese) at $14-$16\n\t* Premium pasta dishes (e.g., handmade fettuccine with truffles) at $18-$22\n\t* Signature pasta dishes (e.g., unique, creative recipes) at $25-$30\n\nThis tiered approach allows customers to choose their price point based on their preferences and budget.\n\n**Recommendation**\nBased on the unique selling point and the desire to differentiate Lucia's restaurant from competitors, I recommend **Option 3: Tiered Pricing**. This approach:\n\n* Allows customers to choose their price point and experience level\n* Highlights the quality and craftsmanship of Lucia's handmade pasta\n* Provides an opportunity to upsell and increase average ticket size\n* Enables Lucia to maintain profitability while offering a range of options to attract a broader customer base\n\nBy implementing a tiered pricing strategy, Lucia can effectively communicate the value proposition of her restaurant, attract a loyal customer base, and establish a strong reputation in the market.",
+      "input_tokens": 176,
+      "output_tokens": 592,
+      "elapsed_seconds": 2.83
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the optimal pricing strategy for Lucia's Italian restaurant, let's break down the key factors involved:\n\n1. **Unique Selling Point (USP)**: Lucia's handmade pasta recipes, high-quality imported ingredients, and slow fermentation process differentiate her restaurant from competitors. This uniqueness can justify a premium price.\n2. **Competitor Analysis**: The price range of $14-$16 for pasta dishes in the area provides a benchmark. However, since Lucia's restaurant offers a unique product, she may not need to match these prices exactly.\n3. **Target Audience**: Understanding the target audience is crucial. If Lucia's restaurant aims to attract foodies, special occasion diners, or those seeking an authentic Italian experience, they may be willing to pay a premium for high-quality, unique dishes.\n4. **Cost Structure**: Lucia's use of high-quality imported ingredients and a slow fermentation process likely increases her costs. She needs to ensure that her prices cover these costs and provide a reasonable profit margin.\n5. **Brand Positioning**: Lucia's pricing strategy will contribute to her restaurant's brand positioning. If she prices her dishes too low, it may undermine the perceived value of her unique products. If she prices them too high, it may deter potential customers.\n\nConsidering these factors, here are some pricing strategy options:\n\n**Option 1: Premium Pricing**\nPrice pasta dishes between $18-$22, emphasizing the unique, high-quality ingredients, and slow fermentation process. This strategy targets customers willing to pay a premium for an authentic, unique Italian experience.\n\n**Option 2: Competitive Pricing with a Twist**\nPrice pasta dishes at the higher end of the competitor range ($16-$18) and offer additional value-added services, such as a complimentary antipasto or a side dish, to differentiate the restaurant and justify the price.\n\n**Option 3: Value-Based Pricing**\nPrice pasta dishes based on the value they offer to customers. For example, if a dish features a particularly expensive ingredient or a complex preparation process, it could be priced higher ($19-$22). Simpler dishes could be priced lower ($15-$18).\n\nBased on these considerations, I recommend **Option 1: Premium Pricing**. Lucia's unique selling point, high-quality ingredients, and slow fermentation process justify a premium price. By pricing her pasta dishes between $18-$22, she can:\n\n* Differentiate her restaurant from competitors\n* Attract customers willing to pay a premium for unique, high-quality dishes\n* Maintain a healthy profit margin\n* Establish a strong brand positioning as a high-end Italian restaurant\n\nHowever, it's essential to monitor customer feedback and sales data to adjust the pricing strategy if necessary. Lucia should also consider offering a range of price points, including smaller or lunch-sized portions, to cater to a broader audience and increase average ticket sales.",
+      "input_tokens": 176,
+      "output_tokens": 568,
+      "elapsed_seconds": 2.88
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the optimal pricing for Lucia's pasta dishes, we need to consider several key factors:\n\n1. **Quality and uniqueness of the product**: Lucia's handmade pasta recipes, high-quality imported ingredients, and slow fermentation process set her apart from the competition. This uniqueness can justify a premium price.\n2. **Competitor pricing**: The competitive analysis reveals that other Italian restaurants in the area charge between $14 and $16 for pasta dishes. This provides a benchmark for pricing.\n3. **Target audience and perceived value**: Lucia's restaurant will attract customers who appreciate high-quality, authentic Italian cuisine. These customers may be willing to pay a premium for the unique experience and superior taste.\n4. **Restaurant positioning and brand image**: Lucia's restaurant can position itself as a premium or upscale Italian eatery, emphasizing the care and attention that goes into crafting each dish.\n5. **Profit margins and operational costs**: Lucia needs to ensure that her pricing covers operational costs, including ingredient costs, labor, and overheads, while maintaining a reasonable profit margin.\n\nConsidering these factors, here are some pricing options to weigh:\n\n**Option 1: Competitive pricing ($14-$16)**: Pricing within the competitive range could help Lucia's restaurant attract price-sensitive customers and quickly gain market share. However, this approach may not fully capitalize on the unique value proposition of her handmade pasta dishes.\n\n**Option 2: Premium pricing ($18-$22)**: Given the high-quality ingredients, unique recipes, and slow fermentation process, Lucia could justify a premium price for her pasta dishes. This approach would position her restaurant as a high-end Italian eatery, attracting customers willing to pay more for an exceptional dining experience.\n\n**Option 3: Tiered pricing**: Lucia could offer a range of pasta dishes at different price points, with the higher-end options featuring more premium ingredients or complex preparations. This approach would allow customers to choose their price point and perceived value.\n\nBased on these considerations, I would recommend **Option 2: Premium pricing ($18-$22)**. This approach will:\n\n1. Reflect the unique value proposition of Lucia's handmade pasta dishes.\n2. Position her restaurant as a premium Italian eatery, attracting customers who appreciate high-quality cuisine.\n3. Provide a reasonable profit margin to cover operational costs and invest in the business.\n4. Allow Lucia to differentiate her restaurant from competitors and establish a strong brand image.\n\nTo mitigate potential risks, Lucia could:\n\n1. Offer a limited-time discount or promotion to attract initial customers and build buzz around the restaurant.\n2. Provide exceptional service and ensure that the dining experience justifies the premium price point.\n3. Continuously monitor customer feedback and adjust pricing or menu offerings as needed to maintain a competitive edge.\n\nBy adopting a premium pricing strategy, Lucia's Italian restaurant can establish itself as a unique and high-end dining destination, attracting customers who appreciate the value of handmade pasta dishes crafted with care and attention.",
+      "input_tokens": 176,
+      "output_tokens": 586,
+      "elapsed_seconds": 1.98
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the optimal price for Lucia's pasta dishes, we need to consider several key factors:\n\n1. **Quality and uniqueness of the product**: Lucia's handmade pasta recipes, high-quality imported ingredients, and slow fermentation process differentiate her products from those of her competitors. This unique value proposition may justify a premium price.\n2. **Competitor pricing**: The competitive analysis reveals that other Italian restaurants in the area charge between $14 and $16 for pasta dishes. This sets a benchmark for customer expectations and price sensitivity.\n3. **Target audience and customer willingness to pay**: Lucia's target audience may be willing to pay a premium for high-quality, unique, and authentic Italian cuisine. However, they may also be influenced by the prices of competing restaurants.\n4. **Restaurant positioning and brand image**: Lucia's restaurant can position itself as a premium or upscale Italian dining experience, emphasizing the quality and craftsmanship of its handmade pasta dishes.\n5. **Cost structure and profit margins**: Lucia needs to ensure that her pricing strategy covers her costs, including ingredient costs, labor, and overheads, while also generating a reasonable profit margin.\n\nConsidering these factors, here are some pricing options to evaluate:\n\n**Option 1: Competitive pricing ($14-$16)**: Lucia could price her pasta dishes within the same range as her competitors, ensuring that her restaurant remains competitive and attractive to price-sensitive customers. However, this approach may not fully capitalize on the unique value proposition of her handmade pasta dishes.\n\n**Option 2: Premium pricing ($18-$22)**: Lucia could position her restaurant as a premium Italian dining experience and charge a higher price for her pasta dishes, reflecting the quality and craftsmanship that goes into each dish. This approach may attract customers who are willing to pay a premium for unique and high-quality cuisine.\n\n**Option 3: Tiered pricing**: Lucia could offer a tiered pricing structure, with different price points for different types of pasta dishes. For example, she could offer a \"classic\" pasta dish at a competitive price ($14-$16) and a \"signature\" or \"artisanal\" pasta dish at a higher price point ($18-$22).\n\nBased on these considerations, I would recommend **Option 2: Premium pricing ($18-$22)**. This approach allows Lucia to:\n\n* Differentiate her restaurant from competitors and emphasize the unique value proposition of her handmade pasta dishes\n* Attract customers who are willing to pay a premium for high-quality and authentic Italian cuisine\n* Generate higher revenue and profit margins, which can help to offset the costs of using high-quality ingredients and labor-intensive production processes\n\nHowever, it's essential to test and validate this pricing strategy with Lucia's target audience to ensure that it resonates with customers and does not deter them from visiting the restaurant. Lucia may also consider offering specials, discounts, or promotions to incentivize customers to try her premium pasta dishes and build a loyal customer base.",
+      "input_tokens": 176,
+      "output_tokens": 586,
+      "elapsed_seconds": 2.42
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before looking at what competitors charge, answer this for Lucia's restaurant specifically: what are the actual costs for each pasta dish (ingredients, labour, overhead per cover)? What dining experience is Lucia delivering — describe it without mentioning any competitor. What is the customer paying for when they order her pasta: ingredients, craft, atmosphere, a story, convenience? Calculate Lucia's price from those factors, without reference to the $14-16 range.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the actual costs for each pasta dish at Lucia's restaurant, we need to consider the following factors:\n\n1. **Ingredients**: The cost of high-quality imported ingredients, including the type and quantity of flour, eggs, and other components used in the pasta dough, as well as any additional ingredients such as meats, cheeses, and vegetables used in the sauces. Let's assume the average cost of ingredients per pasta dish is around $4-$5.\n2. **Labour**: The cost of labour involved in preparing each pasta dish, including the time and skill required to make the handmade pasta and sauces. Assuming a skilled chef or pasta maker spends around 10-15 minutes preparing each dish, and the hourly wage is around $15-$20, the labour cost per dish would be around $2.50-$3.75.\n3. **Overhead**: The cost of overheads, including rent, utilities, equipment, and other expenses, per cover (customer). Let's assume the average overhead cost per cover is around $5-$6.\n\nTotal cost per pasta dish: $4-$5 (ingredients) + $2.50-$3.75 (labour) + $5-$6 (overhead) = $11.50-$15.75\n\nNow, let's describe the dining experience Lucia is delivering:\n\nLucia's restaurant offers an authentic, high-quality Italian dining experience, with a focus on handmade pasta and slow fermentation processes. The atmosphere is warm and inviting, with a cozy and intimate setting that makes customers feel like they're in a traditional Italian trattoria. The service is attentive and knowledgeable, with staff happy to guide customers through the menu and recommend wine pairings.\n\nWhen customers order Lucia's pasta, they are paying for:\n\n* **Ingredients**: High-quality, imported ingredients that are carefully selected and prepared to create a delicious and authentic Italian dish.\n* **Craft**: The skill and craftsmanship that goes into making each pasta dish, including the time and effort required to perfect the recipes and techniques.\n* **Atmosphere**: The warm and inviting atmosphere of the restaurant, which creates a memorable and enjoyable dining experience.\n* **A story**: The story behind Lucia's passion for Italian cuisine and her commitment to using traditional techniques and high-quality ingredients to create a unique and authentic dining experience.\n* **Convenience**: The convenience of being able to enjoy a high-quality, handmade pasta dish in a comfortable and welcoming setting, without having to cook it themselves.\n\nConsidering these factors, a suitable price range for Lucia's pasta dishes could be:\n\n* **Low-end**: $18-$20, which reflects the high-quality ingredients, skilled labour, and unique atmosphere, while also providing a reasonable profit margin.\n* **Mid-range**: $22-$25, which takes into account the added value of the dining experience, including the story and craftsmanship behind each dish.\n* **High-end**: $28-$30, which reflects the premium quality of the ingredients, the expertise of the chef, and the exclusive atmosphere of the restaurant.\n\nThese prices are calculated based on the actual costs, the value proposition, and the target customer segment, without reference to the competitive pricing range of $14-$16.",
+      "input_tokens": 239,
+      "output_tokens": 644,
+      "elapsed_seconds": 2.92
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before looking at what competitors charge, answer this for Lucia's restaurant specifically: what are the actual costs for each pasta dish (ingredients, labour, overhead per cover)? What dining experience is Lucia delivering — describe it without mentioning any competitor. What is the customer paying for when they order her pasta: ingredients, craft, atmosphere, a story, convenience? Calculate Lucia's price from those factors, without reference to the $14-16 range.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the actual costs for each pasta dish at Lucia's restaurant, we need to break down the expenses into ingredients, labor, and overhead per cover.\n\n1. **Ingredients:** The cost of high-quality imported ingredients, such as Italian \"00\" flour, extra-virgin olive oil, and Parmigiano-Reggiano cheese, can range from $3 to $6 per serving, depending on the specific pasta dish. For example:\n\t* Spaghetti Carbonara: $4 (guanciale, eggs, Parmigiano-Reggiano)\n\t* Fettuccine Alfredo: $5 (high-quality butter, Parmigiano-Reggiano, Italian parsley)\n\t* Pappardelle Bolognese: $5.50 (ground beef, pork, tomatoes, red wine)\n2. **Labor:** The time and skill required to prepare each pasta dish will also impact the cost. Assuming a skilled chef or pasta maker is preparing each dish, labor costs can range from $4 to $6 per serving, depending on the complexity of the dish.\n3. **Overhead per cover:** This includes the costs of rent, utilities, marketing, and other expenses divided by the number of customers served. Assuming an average overhead cost of $10 per cover, this will be added to the total cost of each pasta dish.\n\nNow, let's calculate the total cost for each pasta dish:\n\n* Spaghetti Carbonara: $4 (ingredients) + $4 (labor) + $10 (overhead) = $18\n* Fettuccine Alfredo: $5 (ingredients) + $5 (labor) + $10 (overhead) = $20\n* Pappardelle Bolognese: $5.50 (ingredients) + $6 (labor) + $10 (overhead) = $21.50\n\nThe dining experience Lucia is delivering can be described as an authentic, high-quality Italian culinary journey. The slow fermentation process and handmade pasta-making technique create a unique and delicious product. The atmosphere is likely to be cozy and inviting, with a focus on showcasing the beauty of Italian cuisine.\n\nWhen customers order Lucia's pasta, they are paying for:\n\n* **High-quality ingredients:** The best imported ingredients, carefully selected to create an authentic Italian flavor profile.\n* **Craft:** The skill and time required to prepare each pasta dish, including the slow fermentation process and handmade pasta-making technique.\n* **Atmosphere:** The cozy and inviting ambiance of the restaurant, which enhances the overall dining experience.\n* **A story:** The story behind Lucia's passion for Italian cuisine, her commitment to using high-quality ingredients, and the care that goes into preparing each dish.\n* **Convenience:** The convenience of having a delicious, authentic Italian meal prepared and served in a comfortable and welcoming environment.\n\nConsidering these factors, Lucia's price for each pasta dish should reflect the value she is providing to her customers. A suitable price range could be:\n\n* Spaghetti Carbonara: $22-$25\n* Fettuccine Alfredo: $25-$28\n* Pappardelle Bolognese: $28-$30\n\nThese prices take into account the high-quality ingredients, labor, and overhead costs, as well as the unique value proposition of Lucia's handmade pasta and the dining experience she is offering. While they may be higher than the $14-$16 range charged by competitors, they reflect the premium quality and authenticity of Lucia's pasta dishes.",
+      "input_tokens": 239,
+      "output_tokens": 714,
+      "elapsed_seconds": 2.61
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before looking at what competitors charge, answer this for Lucia's restaurant specifically: what are the actual costs for each pasta dish (ingredients, labour, overhead per cover)? What dining experience is Lucia delivering — describe it without mentioning any competitor. What is the customer paying for when they order her pasta: ingredients, craft, atmosphere, a story, convenience? Calculate Lucia's price from those factors, without reference to the $14-16 range.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the actual costs for each pasta dish at Lucia's restaurant, we need to consider the following factors:\n\n1. **Ingredients**: The cost of high-quality imported ingredients, including the type and quantity of flour, eggs, and other components used in the handmade pasta. Let's assume the ingredient cost per dish is around $4-$5.\n2. **Labour**: The cost of labour involved in preparing each dish, including the time and skill required for handmade pasta production, sauce preparation, and plating. Assuming a skilled labour cost of $15-$20 per hour, and an average preparation time of 15-20 minutes per dish, the labour cost per dish would be around $3.75-$5.\n3. **Overhead per cover**: This includes the costs of maintaining the restaurant, such as rent, utilities, marketing, and other expenses, divided by the number of customers served. Let's assume an overhead cost per cover of $8-$10.\n\nTotal cost per dish: $4 (ingredients) + $4.375 (labour) + $9 (overhead) = $17.375\n\nNow, let's describe the dining experience Lucia is delivering:\n\nLucia's restaurant offers an authentic Italian experience, with a focus on traditional techniques and high-quality ingredients. The handmade pasta is crafted with love and care, using a slow fermentation process that enhances the flavor and texture. The dishes are carefully plated, and the atmosphere is warm and inviting, with a cozy decor that transports customers to the Tuscan countryside. The staff is knowledgeable and passionate about the food, happy to share stories about the ingredients, recipes, and Italian traditions.\n\nWhen customers order Lucia's pasta, they are paying for:\n\n1. **High-quality ingredients**: Fresh, imported ingredients that are carefully selected to ensure the best flavor and texture.\n2. **Craft**: The skill and time that goes into crafting each dish, including the handmade pasta production and sauce preparation.\n3. **Atmosphere**: The warm and inviting ambiance of the restaurant, which creates a comfortable and enjoyable dining experience.\n4. **A story**: The story behind the food, including the traditional Italian recipes, the slow fermentation process, and the passion of the chef and staff.\n5. **Convenience**: The convenience of having a delicious, authentic Italian meal prepared and served in a convenient location.\n\nConsidering these factors, a fair price for Lucia's pasta dishes could be calculated as follows:\n\n1. **Food cost**: $17.375 (as calculated above)\n2. **Desirability factor**: Add 10%-20% to the food cost to reflect the high-quality ingredients, craft, and atmosphere. This would add $1.74-$3.48 to the food cost, making the total $19.12-$20.83.\n3. **Premium for story and experience**: Add an additional 10%-20% to reflect the unique story and experience offered by Lucia's restaurant. This would add $1.91-$4.17 to the total, making the final price $21.03-$25.\n\nBased on these calculations, a suitable price range for Lucia's pasta dishes could be $22-$28. This price range reflects the high-quality ingredients, skilled labour, and unique dining experience offered by the restaurant, without referencing the competitor prices.",
+      "input_tokens": 239,
+      "output_tokens": 670,
+      "elapsed_seconds": 3.08
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before looking at what competitors charge, answer this for Lucia's restaurant specifically: what are the actual costs for each pasta dish (ingredients, labour, overhead per cover)? What dining experience is Lucia delivering — describe it without mentioning any competitor. What is the customer paying for when they order her pasta: ingredients, craft, atmosphere, a story, convenience? Calculate Lucia's price from those factors, without reference to the $14-16 range.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the optimal price for Lucia's pasta dishes, let's first calculate the actual costs involved in preparing each dish.\n\n**Cost Calculation:**\n\n1. **Ingredients:** The cost of high-quality imported ingredients, including Italian \"00\" flour, extra-virgin olive oil, Parmigiano-Reggiano cheese, and other specialty items, is estimated to be around $4 per serving.\n2. **Labour:** Lucia's handmade pasta requires a significant amount of skilled labor to prepare. Assuming a labor cost of $15 per hour and an average preparation time of 30 minutes per serving, the labor cost per serving is approximately $7.50.\n3. **Overhead:** The overhead cost per cover, including rent, utilities, marketing, and other expenses, is estimated to be around $8 per serving.\n\nTotal cost per serving: $4 (ingredients) + $7.50 (labor) + $8 (overhead) = $19.50\n\n**Dining Experience:**\nLucia's restaurant offers a unique and authentic Italian dining experience. The atmosphere is warm and inviting, with a rustic-chic decor that transports customers to the Tuscan countryside. The aroma of freshly baked bread and simmering sauces fills the air, teasing the senses and building anticipation. The service is attentive and knowledgeable, with staff happy to guide customers through the menu and offer pairing suggestions.\n\n**Customer Value:**\nWhen customers order Lucia's pasta, they are paying for more than just the ingredients. They are paying for:\n\n1. **Craft:** The skill and care that goes into handcrafting each pasta dish, using traditional techniques and high-quality ingredients.\n2. **Atmosphere:** The warm and inviting ambiance of the restaurant, which enhances the overall dining experience.\n3. **Story:** The story behind Lucia's passion for Italian cuisine, her commitment to using only the best ingredients, and her dedication to preserving traditional techniques.\n4. **Convenience:** The convenience of having a delicious, authentic Italian meal prepared for them, without the need to cook or clean up.\n\n**Pricing Calculation:**\nConsidering the total cost per serving ($19.50) and the value that customers are paying for (craft, atmosphere, story, and convenience), a reasonable price range for Lucia's pasta dishes could be between $25 and $35 per serving. This price range reflects the premium quality of the ingredients, the skill and care that goes into preparing each dish, and the unique dining experience that Lucia's restaurant offers.\n\nIn conclusion, while competitors may be charging between $14 and $16 for pasta dishes, Lucia's restaurant offers a unique and premium experience that justifies a higher price point. By focusing on the value that customers are paying for, rather than just the cost of ingredients and labor, Lucia can set a price that reflects the true worth of her handmade pasta dishes.",
+      "input_tokens": 239,
+      "output_tokens": 579,
+      "elapsed_seconds": 2.3
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before looking at what competitors charge, answer this for Lucia's restaurant specifically: what are the actual costs for each pasta dish (ingredients, labour, overhead per cover)? What dining experience is Lucia delivering — describe it without mentioning any competitor. What is the customer paying for when they order her pasta: ingredients, craft, atmosphere, a story, convenience? Calculate Lucia's price from those factors, without reference to the $14-16 range.\n\nLucia is opening a new Italian restaurant in a mid-size city. She has spent six months perfecting her handmade pasta recipes using high-quality imported ingredients and a slow fermentation process. Before setting her menu prices, she did a competitive analysis and found that every other Italian restaurant in a five-mile radius charges between $14 and $16 for pasta dishes. She has asked a restaurant consultant: how should I price my pasta dishes given that competitors charge $14-16?",
+      "response": "To determine the optimal price for Lucia's pasta dishes, we need to consider the actual costs involved and the value proposition she offers to her customers.\n\n**Actual Costs:**\n\n1. **Ingredients:** The cost of high-quality imported ingredients, such as Italian \"00\" flour, extra-virgin olive oil, and Parmigiano-Reggiano cheese, is significantly higher than average. Let's assume the ingredient cost per pasta dish is around $4-$5.\n2. **Labour:** Lucia's handmade pasta requires skilled labour and a significant amount of time. Assuming a labour cost of $15 per hour, and considering the time it takes to prepare each dish (approximately 30 minutes), the labour cost per dish is around $7.50.\n3. **Overhead:** Rent, utilities, marketing, and other expenses will add up to a significant amount. Assuming an average overhead cost of $10 per cover (customer), this includes the costs of maintaining a welcoming atmosphere, décor, and amenities.\n\nTotal cost per pasta dish: $4 (ingredients) + $7.50 (labour) + $10 (overhead) = $21.50\n\n**Dining Experience:**\n\nLucia's restaurant offers a unique and authentic Italian dining experience. The atmosphere is warm and inviting, with a focus on traditional Italian cuisine and high-quality ingredients. The slow fermentation process and handmade pasta-making technique demonstrate a commitment to craftsmanship and attention to detail. The dining experience is intimate and immersive, with a focus on storytelling and sharing the passion for Italian cuisine.\n\n**What the Customer is Paying For:**\n\nWhen customers order Lucia's pasta, they are paying for:\n\n1. **High-quality ingredients:** The best imported ingredients, carefully selected to provide an authentic Italian taste experience.\n2. **Craft:** The time, skill, and attention to detail that goes into making each pasta dish by hand.\n3. **Atmosphere:** A warm and inviting ambiance that transports customers to Italy.\n4. **A story:** The story behind Lucia's passion for Italian cuisine, her family traditions, and the history of the dishes she serves.\n5. **Convenience:** The convenience of enjoying a delicious, authentic Italian meal without having to travel to Italy.\n\n**Pricing Calculation:**\n\nConsidering the total cost per pasta dish ($21.50) and the value proposition Lucia offers, a fair and reasonable price would be around $25-$30 per dish. This price reflects the high-quality ingredients, skilled labour, and unique dining experience, while also providing a reasonable profit margin for the restaurant.\n\nIn this calculation, we have not considered the prices charged by competitors. Instead, we have focused on the actual costs and the value proposition Lucia offers to her customers. The resulting price range of $25-$30 per pasta dish is higher than the competitor range of $14-$16, but it reflects the unique selling points and high-quality experience that Lucia's restaurant provides.",
+      "input_tokens": 239,
+      "output_tokens": 593,
+      "elapsed_seconds": 2.13
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including competitive pricing, premium pricing, and tiered pricing, and compares them to determine the best approach. It also takes into account the target audience, restaurant positioning, and business goals, demonstrating a comprehensive understanding of the problem from different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the idea that competitor prices are relevant only if the product and context are comparable. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that customers will pay a premium for high-quality ingredients and slow fermentation process."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as the tiered pricing structure, alongside conventional ones like competitive and premium pricing. However, these solutions are not entirely unexpected and do not reframe the problem in a fundamentally new way."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response notes that competitor prices are only relevant if the product and context are comparable, which is a minor caveat. However, it does not explicitly question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a well-reasoned and practical approach to pricing Lucia's pasta dishes. The recommendations are grounded in an understanding of the target audience, restaurant positioning, and business goals, making them useful and applicable to the problem at hand."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the unique selling point, competitor analysis, target audience, cost structure, and brand positioning. It explores different pricing strategies, such as premium pricing, competitive pricing, and tiered pricing, demonstrating a range of perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the idea that customers may be willing to pay a premium for high-quality pasta dishes. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the target audience is willing to pay more for unique and high-quality products."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including the tiered pricing strategy, which allows customers to choose their price point and experience level. This solution is not immediately obvious and demonstrates a level of creativity and thinking beyond conventional pricing strategies."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it considers the competitor prices and the unique selling point of Lucia's restaurant. However, it does not fundamentally reframe the question before answering, as it still focuses on determining the optimal pricing strategy within the given context."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, as it considers the costs associated with producing high-quality pasta dishes and the target audience's willingness to pay. The recommended tiered pricing strategy is also a reasonable and practical solution that takes into account the unique selling point and the competitive landscape."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the unique selling point, competitor analysis, target audience, cost structure, and brand positioning, and explores different pricing strategies such as premium pricing, competitive pricing with a twist, and value-based pricing."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the idea that competitor prices are relevant only if the product and context are comparable, and notes that Lucia's unique product may justify a premium price, but does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple solutions beyond the obvious first-order answer, including premium pricing, competitive pricing with a twist, and value-based pricing, and considers the potential impact of each on the restaurant's brand positioning and customer appeal."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, in that it assumes competitor prices are directly relevant, but does not fundamentally reframe the question before answering, instead working within the given context to develop pricing strategies."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, including the consideration of different pricing strategies and their potential impact on the restaurant's brand positioning and customer appeal, but could be improved with more explicit calculation of costs and value proposition to determine the optimal price point."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the quality and uniqueness of the product, competitor pricing, target audience and perceived value, restaurant positioning and brand image, and profit margins and operational costs. It explores these frames with comparison, weighing the pros and cons of different pricing options."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines some assumptions, such as the assumption that competitor prices are relevant and the assumption that customers will pay a premium for high-quality ingredients and unique recipes. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the target audience is willing to pay a premium for an authentic Italian experience."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as the tiered pricing option, alongside conventional ones like competitive pricing and premium pricing. However, the solutions are not genuinely unexpected or groundbreaking, and the response does not reframe the problem in a fundamentally new way."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only relevant if the product and context are comparable, which questions the premise of the problem to some extent. However, it does not explicitly question the premise and explore alternative problem framings, such as considering the potential for a completely different business model or target market."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a well-reasoned and practical recommendation for pricing Lucia's pasta dishes. The analysis is sound, and the proposed solution takes into account various factors that could impact the business. However, the response could be improved with more detailed financial analysis and consideration of potential risks and mitigants."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple distinct frames, including the quality and uniqueness of the product, competitor pricing, target audience and customer willingness to pay, restaurant positioning and brand image, and cost structure and profit margins. It explores these frames with comparison, weighing the pros and cons of different pricing options."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines some assumptions, such as the assumption that customers will be willing to pay a premium for high-quality and unique pasta dishes. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the target audience is willing to pay more for authentic Italian cuisine."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces one non-obvious solution, the tiered pricing structure, alongside conventional pricing options. However, the other solutions, such as competitive pricing and premium pricing, are relatively conventional and do not reframes the problem in a significantly new way."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response notes that competitor prices are only relevant if the product and context are comparable, but it does not explicitly question the premise of the problem or explore alternative problem framings. It largely accepts the problem as stated and focuses on finding a solution within that framework."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a well-reasoned and practical approach to pricing Lucia's pasta dishes. It considers multiple factors and provides a clear recommendation, along with a discussion of the potential risks and benefits of different pricing options."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the cost-based frame, the value proposition frame, and the customer experience frame. It also explores different pricing tiers, providing a range of options. However, it does not synthesize these frames into a fully integrated perspective."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the assumption that competitor prices are relevant, the assumption that customers are primarily motivated by price, and the assumption that the restaurant's unique features do not justify a price premium. It also examines the assumption that the restaurant's costs and value proposition are the primary drivers of pricing."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including the idea of pricing based on the value proposition and the customer experience, rather than just on costs or competitor prices. It also explores the possibility of offering different pricing tiers to cater to different customer segments."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the problem is solely about pricing pasta dishes in relation to competitor prices. It explores alternative perspectives, including the idea that the restaurant's unique features and value proposition should drive pricing decisions."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a clear and detailed analysis of the factors that should influence pricing decisions, and offers a range of pricing options that are grounded in reality. The response also demonstrates a deep understanding of the restaurant industry and the factors that drive customer demand and willingness to pay."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the cost-based perspective (breaking down expenses into ingredients, labor, and overhead), the value proposition perspective (high-quality ingredients, craft, atmosphere, story, and convenience), and implicitly compares these to the competitor pricing frame, demonstrating an understanding of different perspectives and their relevance to pricing strategy."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the assumption that competitor prices are relevant (noting they are only relevant if the product and context are comparable), the assumption about the target audience's willingness to pay for high-quality, authentic Italian cuisine, and the assumption about the costs and their impact on pricing, showing a good level of assumption surfacing and examination."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer by considering not just the cost but the value proposition and the unique selling points of Lucia's restaurant, such as the slow fermentation process and handmade pasta-making technique, leading to a pricing strategy that reflects the premium quality and authenticity of the pasta dishes."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only relevant if the product and context are comparable, which implies some questioning of the premise that Lucia's pricing should directly follow competitor pricing, but it does not fundamentally reframe the question before answering, as it still operates within the premise of setting prices based on costs and value proposition."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality, providing a detailed breakdown of costs, a consideration of the value proposition, and a pricing strategy that reflects both, making it excellent practical advice for Lucia's restaurant."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the cost-based frame, the value proposition frame, and the competitive landscape frame, although it explicitly notes that competitor prices are only relevant if the product and context are comparable. It explores these frames with comparison, examining how they intersect to inform the pricing decision."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that high-quality ingredients and skilled labor will result in a premium product, the assumption that customers will pay for the unique story and experience offered by Lucia's restaurant, and the assumption that the restaurant's overhead costs are accurately estimated. It also considers non-obvious assumptions, such as the potential impact of the restaurant's atmosphere on customer willingness to pay."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including the idea of adding a 'desirability factor' to the food cost to reflect the high-quality ingredients and craft, and the idea of adding a 'premium for story and experience' to reflect the unique story and experience offered by Lucia's restaurant. These solutions go beyond the conventional response of simply calculating the food cost and adding a markup."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, in that it focuses on competitor prices without considering the unique value proposition of Lucia's restaurant. However, it does not explicitly question the premise of the problem or explore alternative problem framings."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a clear and detailed analysis of the factors that should inform Lucia's pricing decision, and offers a range of potential prices that are grounded in reality. The response also demonstrates a deep understanding of the restaurant industry and the factors that drive customer willingness to pay."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the cost calculation, dining experience, customer value, and competitor pricing, and compares them to arrive at a pricing recommendation. It explores the frames of cost, value, and experience, but does not synthesize four or more frames."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the assumption that competitor prices are directly comparable, and the assumption that customers are only paying for ingredients and labor. It examines non-obvious assumptions, such as the value of the dining experience and the story behind Lucia's passion for Italian cuisine."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including the idea that customers are paying for more than just ingredients, and that the price should reflect the craft, atmosphere, and story behind the pasta dishes. It goes beyond the conventional response of simply matching competitor prices."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that competitor prices are relevant, and explores alternative perspectives on what customers are paying for. It notes that the problem framing may be limiting, and that a more nuanced approach is needed to determine the optimal price."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, and provides a well-reasoned and practical approach to determining the optimal price for Lucia's pasta dishes. It takes into account the actual costs involved, the value proposition, and the unique aspects of the dining experience, and provides a clear and actionable recommendation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the cost structure of Lucia's restaurant, the value proposition offered to customers, and the unique selling points of the handmade pasta dishes. It also acknowledges the competitor prices, but only to distinguish Lucia's offering from theirs, demonstrating an understanding of different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies several assumptions, such as the cost of ingredients, labor, and overhead, and examines how these factors contribute to the overall pricing of the pasta dishes. It also questions the assumption that competitor prices are directly relevant to Lucia's pricing decision, recognizing that her product and context may be different."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answer of simply matching competitor prices. It considers the unique aspects of Lucia's restaurant, such as the high-quality ingredients and handmade pasta, and uses these factors to justify a pricing strategy that is distinct from the competition."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that competitor prices should be the primary factor in determining Lucia's prices. It recognizes that Lucia's restaurant offers a unique value proposition and that her prices should reflect this, rather than simply following the competition."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a clear and detailed analysis of the factors that should influence Lucia's pricing decision and offers a sensible and realistic pricing strategy based on these factors."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: competitive pricing (matching market rates) and premium pricing (charging more for quality). It also mentions tiered pricing as a hybrid approach. However, it doesn't explore fundamentally different business models or cost-based pricing approaches."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption about target audience preferences ('foodie crowd willing to pay premium') but doesn't deeply examine other critical assumptions like restaurant format, cost structure, or whether competitor products are actually comparable to Lucia's offering."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions presented (competitive pricing, premium pricing, tiered pricing) are fairly conventional restaurant pricing strategies. The tiered approach shows some creativity but these are standard industry practices rather than novel solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the framing of using competitor prices as a reference point with only minor questioning. It doesn't challenge whether competitor pricing is relevant given the potentially different product quality and restaurant format, which is a key limitation noted in the success criteria."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response provides reasonable general pricing advice, it fails to address the core success criteria requirement to calculate from Lucia's actual costs and value proposition. It doesn't consider that her costs and restaurant format could justify prices as low as $9 or as high as $26-28, and doesn't adequately note that competitor prices may not be relevant if products aren't comparable."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple distinct frames: premium positioning (targeting foodies), competitive positioning (price-sensitive customers), brand positioning (high-end vs casual), cost-based pricing, and value-based pricing. It explores three specific pricing options with different strategic approaches."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that competitor prices are relevant benchmarks, and assumptions about target audience preferences. It asks important questions about who the target audience is and their willingness to pay, but doesn't deeply examine other hidden assumptions like restaurant format or operational model."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the three pricing options (premium, competitive, tiered) are somewhat conventional, the tiered pricing approach with specific price ranges and the systematic breakdown of factors shows some creative thinking beyond the most obvious 'match competitor prices' response."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of needing to price relative to competitors with only minor questioning. It briefly acknowledges that competitor prices are relevant 'if the product and context are comparable' but doesn't deeply challenge whether competitor analysis is the right starting point for a differentiated product."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "The response fails to meet the key success criteria. It doesn't calculate from Lucia's actual costs or arrive at prices that reflect her value proposition ($9 for fast-casual or $26-28 for craft experience). Instead, it suggests conventional pricing ranges ($14-22) that don't account for her high-quality ingredients and artisanal process. The advice is generic rather than specific to her unique situation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two distinct frames: premium positioning based on unique value proposition, and competitive positioning relative to market rates. It explores three pricing options but they're variations within these two main frames rather than fundamentally different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption about target audience willingness to pay premium prices, but doesn't deeply examine other hidden assumptions like restaurant format, service style, or whether the competitive analysis is actually relevant given the product differentiation."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are conventional pricing strategies (premium, competitive, value-based) with minor variations. The recommendation to offer different portion sizes is a slight innovation, but overall the approach follows standard restaurant pricing playbooks."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise of using competitor prices as a starting point with only minor questioning. It notes that Lucia 'may not need to match these prices exactly' but doesn't fundamentally challenge whether competitor analysis is relevant for a differentiated product."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "The response fails to meet the success criteria by not calculating from actual costs or considering restaurant format. It recommends $18-22 pricing without knowing if this covers costs or fits the restaurant concept. The advice is generic and doesn't address the key insight that competitor prices may be irrelevant for a differentiated product."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: competitive pricing (matching competitors at $14-16) and premium pricing ($18-22), with a brief mention of tiered pricing as a third option. However, it doesn't explore fundamentally different business models or restaurant formats that could justify vastly different price points."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption about target customers being willing to pay premium prices for quality, but fails to surface other critical assumptions like restaurant format (fine dining vs. fast-casual), actual cost structure, or whether the competitive analysis is comparing like-for-like establishments."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions presented are fairly conventional - competitive pricing, premium pricing, and tiered pricing are standard restaurant pricing strategies. There's no exploration of innovative approaches like cost-plus pricing based on actual ingredient costs or dramatically different positioning strategies."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the framing that competitor prices should be the primary reference point, with only minor acknowledgment that Lucia's offering might be different. It doesn't question whether the competitive analysis is comparing comparable restaurants or whether focusing on competitor prices is the right approach at all."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response provides reasonable general advice, it fails to address the key success criteria. It doesn't calculate pricing from Lucia's actual costs and value proposition, and doesn't recognize that competitor prices are only relevant if products and contexts are comparable. The recommended $18-22 range falls short of what might be justified for a true craft experience with high-cost ingredients."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers multiple perspectives including quality/differentiation, competitive positioning, and customer willingness to pay. It explores three distinct pricing options (competitive, premium, tiered) but doesn't deeply examine other frames like cost-based pricing or different restaurant formats."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption about customer willingness to pay for premium products, but fails to surface other critical assumptions like whether Lucia's restaurant format is comparable to competitors, what her actual cost structure is, or whether the competitive analysis is relevant given her different value proposition."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions presented (competitive pricing, premium pricing, tiered pricing) are fairly conventional approaches. The tiered pricing option shows some creativity but overall the response stays within expected pricing strategies without exploring more innovative approaches."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the framing that competitor prices should be the primary reference point. While it mentions that Lucia's unique value proposition may justify different pricing, it doesn't fundamentally question whether competitor pricing is relevant given the potentially different restaurant format and product quality."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "The response fails to meet the key success criteria. It doesn't calculate pricing from Lucia's actual costs or fully recognize that competitor prices may be irrelevant if the products and contexts aren't comparable. The recommended $18-22 range falls short of recognizing that a true craft experience with high-cost ingredients could justify $26-28, and it doesn't consider that efficient operations might allow for $9 pricing."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-plus pricing frame, calculating costs and adding margin. It briefly acknowledges value-based pricing through the dining experience description, but doesn't explore other frames like competitive positioning, market penetration strategies, or different restaurant formats."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and makes explicit several assumptions about ingredient costs ($4-5), labor costs ($2.50-3.75), and overhead ($5-6). It also assumes a specific dining format (traditional trattoria). However, it doesn't question deeper assumptions about target market, restaurant format, or whether the cost estimates are realistic."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional cost-plus pricing approach with three price tiers (low, mid, high-end). While the price ranges ($18-30) are higher than competitors, the methodology is standard. There's no exploration of creative pricing strategies, different service models, or innovative approaches."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly states that prices should be 'calculated based on the actual costs, the value proposition, and the target customer segment, without reference to the competitive pricing range of $14-$16.' This directly questions the premise that competitor pricing should drive Lucia's pricing decisions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response correctly identifies that pricing should be based on costs and value rather than just competitor prices. The cost breakdown is reasonable, and the final price range ($18-30) aligns with the success criteria for a craft experience. The methodology is sound and practically useful, though some cost assumptions could be more thoroughly justified."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-plus pricing frame, calculating ingredients + labor + overhead and adding markup. There's minor acknowledgment of value-based pricing through discussion of the dining experience and story, but this isn't developed into a distinct analytical framework."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that overhead should be $10 per cover - but doesn't examine this critically or surface other hidden assumptions like restaurant format, target market, or whether the competitive analysis is relevant to Lucia's positioning."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional cost-plus pricing approach with minor variation in considering the 'story' and experience value. The final prices ($22-30) are predictable given the cost calculations, with no exploration of alternative pricing strategies or business models."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated, with only a minor implicit caveat that Lucia's offering is different from competitors. It doesn't explicitly question whether competitor pricing is relevant or whether the problem framing might be limiting Lucia's strategic options."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response correctly identifies that cost-based pricing is essential and arrives at reasonable prices ($22-30) that align with the success criteria for a craft experience. The cost breakdowns are realistic, and the final recommendation properly reflects the premium positioning. However, it misses the key insight that competitor prices are only relevant if products/contexts are comparable."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-plus pricing frame, calculating ingredient, labor, and overhead costs then adding markup percentages. There's minor acknowledgment of value-based pricing through the 'desirability factor' and 'premium for story and experience,' but these are treated as simple percentage additions rather than distinct pricing frameworks."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and makes explicit several key assumptions: ingredient costs ($4-5), labor rates ($15-20/hour), preparation time (15-20 minutes), and overhead per cover ($8-10). However, it doesn't question whether these assumptions are realistic or examine the assumption that cost-plus pricing is the right approach for this situation."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response follows a conventional cost-plus pricing methodology with standard markup percentages. While it attempts to account for the experiential value through percentage premiums, this is a fairly standard approach in restaurant pricing. No genuinely novel pricing strategies are explored."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated and doesn't question whether competitor pricing should be relevant at all. It doesn't explore whether Lucia should be comparing herself to existing Italian restaurants or whether her unique value proposition might put her in a different competitive category entirely."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response arrives at a price range of $22-28, which aligns well with the success criteria for a craft experience with high-cost ingredients. The cost calculations are reasonable and the methodology is sound. The response correctly focuses on Lucia's actual costs and value proposition rather than simply matching competitor prices. The final recommendation is practically useful and well-grounded."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two distinct frames: cost-plus pricing (calculating actual costs and adding markup) and value-based pricing (focusing on the premium experience and craft). It touches on competitive pricing but dismisses it. However, it doesn't explore other relevant frames like market positioning, customer segmentation, or operational efficiency models."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that competitor prices are only relevant if products are comparable - which aligns with the success criteria. However, it makes several unexamined assumptions about labor costs ($15/hour, 30 minutes prep time), overhead allocation ($8 per serving), and customer willingness to pay premium prices without questioning these assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional cost-plus pricing approach with value-based justification. While it correctly dismisses simple competitive matching, it doesn't explore creative solutions like tiered pricing, different formats (fast-casual vs fine dining), or alternative business models that could justify different price points."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response does note that competitor prices are only relevant if products are comparable, which questions the implicit premise that competitive pricing should be the primary consideration. However, it doesn't deeply explore whether the problem framing around 'pricing pasta dishes' might be limiting - for instance, questioning restaurant format, target market, or business model assumptions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response arrives at a price range ($25-35) that aligns well with the success criteria for a craft experience with high-cost ingredients. The cost calculations are reasonable, and the emphasis on value proposition over competitive pricing is correct. The practical advice about focusing on unique value rather than competitor matching is sound, though some cost assumptions could be more rigorously justified."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-plus pricing frame, calculating costs and adding margin. It briefly acknowledges the value proposition frame by discussing the dining experience and what customers pay for, but doesn't explore other pricing frameworks like market positioning, psychological pricing, or competitive strategy."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that competitor prices are only relevant for comparable products/contexts (explicitly stated at the end), and assumptions about specific cost figures ($4-5 ingredients, $7.50 labor, $10 overhead). However, it doesn't question other assumptions like the restaurant format or target customer segment."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional cost-plus pricing approach with minor variation in considering the experiential value. The $25-30 price range is a straightforward calculation based on costs plus margin, without exploring creative pricing strategies like tiered pricing, value-based pricing models, or alternative positioning strategies."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by stating that competitor prices are only relevant if the product and context are comparable, and focuses on actual costs and value proposition instead. It effectively challenges the assumption that competitive pricing should be the primary consideration, though it could have gone further in questioning the restaurant format or business model."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually sound and practically useful. The cost calculations are reasonable, the methodology is appropriate, and the final price range of $25-30 aligns well with the success criteria for a craft experience with high-cost ingredients. The advice to ignore competitor pricing when offering a differentiated product is correct and actionable."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: quality/uniqueness, competitor pricing, target audience, and restaurant positioning. It also explores three pricing strategies (competitive, premium, tiered), comparing their merits."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies assumptions about customer willingness to pay for quality, the relevance of competitor pricing, and the importance of restaurant positioning. However, it does not deeply question less obvious assumptions, such as the actual cost structure or whether the competitive set is truly comparable."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious by suggesting tiered pricing and premium pricing, not just matching competitors. However, these are relatively standard strategies in restaurant pricing and do not introduce highly novel solutions."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are a baseline and that Lucia's unique value proposition may justify different pricing, indicating some questioning of the premise. However, it does not fundamentally challenge the framing or deeply explore whether competitor prices are truly relevant."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is generally correct and reasonable, but it does not explicitly calculate from Lucia's actual costs or fully address the importance of cost structure in setting prices, as required by the success criteria. It also does not explicitly state that competitor prices are only relevant if the product/context are comparable."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple frames: unique selling point (quality/craft), competitor pricing, target audience, cost structure, and brand positioning. It also presents three distinct pricing strategies (premium, competitive, tiered), synthesizing these perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that Lucia's quality justifies a premium, that competitor prices are a relevant benchmark, that target audience matters, and that cost structure is key. It could go further by questioning deeper assumptions (e.g., whether pasta should be the profit driver), but it does a good job overall."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The tiered pricing strategy is a non-obvious, nuanced solution that goes beyond simply matching or exceeding competitor prices. It allows for differentiation and customer choice, which is more creative than standard pricing approaches."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only a benchmark if the product/context are comparable and emphasizes the importance of Lucia's unique value proposition. However, it does not fundamentally question the premise or reframe the problem."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, emphasizing cost structure, value proposition, and market positioning. However, it does not explicitly calculate from Lucia's actual costs or specify when a $9 or $26-28 price would be appropriate, as per the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: unique selling point, competitor analysis, target audience, cost structure, and brand positioning. It also presents three distinct pricing strategies, comparing their merits. However, it does not fully synthesize four or more perspectives into a new approach."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses several assumptions, such as the relevance of competitor pricing, the willingness of customers to pay a premium, and the impact of high-quality ingredients on costs. However, it does not deeply question less obvious assumptions, such as whether the local market can actually support premium pricing or if the format (fast-casual vs. fine dining) is appropriate."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious by offering three pricing strategies, including value-based pricing and value-added services, not just matching competitors. However, it does not present a genuinely unexpected or highly novel solution."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only a benchmark and may not be directly relevant if Lucia's offering is different, which questions the premise to some extent. However, it does not fundamentally reframe the problem or deeply challenge the initial setup."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, emphasizing the need to cover costs, differentiate based on value, and monitor customer feedback. However, it does not explicitly calculate from Lucia's actual costs or fully address the possibility of a lower price point if the format is fast-casual, as required by the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: quality/uniqueness, competitor pricing, target audience, restaurant positioning, and operational costs. It also explores three pricing strategies (competitive, premium, tiered), comparing their merits. However, it does not fully synthesize four or more frames into a new approach."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses some assumptions, such as the value of uniqueness justifying a premium and the relevance of competitor pricing. However, it does not deeply question less obvious assumptions, such as whether Lucia's costs might require pricing outside the suggested ranges or if her target market exists in the area."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious by suggesting tiered pricing and promotional strategies, not just matching competitors. However, it does not propose genuinely novel or unexpected solutions, such as radically undercutting or exceeding the market, or alternative business models."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only a benchmark and that Lucia's unique value proposition may justify different pricing. It does not, however, explicitly question whether the problem is well-posed or fundamentally reframe the question."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is reasonable and generally correct, but it does not explicitly calculate from Lucia's actual costs or fully address the possibility that her costs or format could justify prices much lower or higher than the competitor range. It misses the success criteria of explicitly noting that competitor prices are only relevant if the product and context are comparable, and does not provide a cost-based calculation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers at least four distinct frames: product quality/uniqueness, competitor pricing, target audience/willingness to pay, and restaurant positioning/brand image. It also briefly touches on cost structure/profit margins. These are compared and synthesized into a recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses at least two assumptions: that competitor prices are relevant benchmarks, and that Lucia's unique value proposition justifies a premium. It also hints at assumptions about customer willingness to pay and the need to cover costs, but does not deeply examine less obvious assumptions (e.g., whether the local market can support premium pricing, or if the format matches the price)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious by suggesting tiered pricing and premium pricing, not just matching competitors. However, it does not propose truly novel or unexpected solutions (e.g., radically different formats or pricing models)."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only a benchmark and that Lucia's context may justify different pricing, indicating some questioning of the problem's framing. However, it does not fundamentally challenge or reframe the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, emphasizing the need to align pricing with value proposition and costs, and to test with the target audience. However, it does not explicitly calculate from Lucia's actual costs or fully address the possibility of a much higher or lower price point depending on format, as required by the success criteria."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: cost-based pricing (ingredients, labor, overhead), value proposition (craft, atmosphere, story, convenience), and customer experience. It also presents low, mid, and high-end pricing options, but does not explicitly compare fast-casual vs. craft/experience models or discuss market positioning in depth."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response surfaces assumptions about costs (providing explicit estimates for ingredients, labor, and overhead) and the value proposition, but does not question whether these cost estimates are accurate for Lucia's specific context or whether the target customer segment will pay the suggested prices. It does not address assumptions about demand elasticity or local market differences."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond simply matching competitor prices by building up from costs and value, and offers a tiered pricing suggestion. However, it does not propose truly novel solutions such as dynamic pricing, menu engineering, or alternative business models."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are not referenced in the final recommendation, implicitly questioning the premise that Lucia should price based on competitors. However, it does not explicitly challenge the framing or explore whether the competitive set is appropriate or whether other factors (e.g., format, target market) should drive pricing."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and practical: it calculates plausible cost ranges, considers value, and provides actionable price ranges. However, it could be improved by more explicitly tying the price recommendation to Lucia's specific format (e.g., fast-casual vs. fine dining) and by noting that the suggested prices may be high relative to the local market unless the value proposition is clearly communicated."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: cost breakdown (ingredients, labor, overhead), value proposition (quality, craft, atmosphere, story, convenience), competitor pricing, and customer experience. It synthesizes these to justify a premium price, but does not deeply explore fast-casual or alternative business models."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response surfaces assumptions about costs, value, and customer willingness to pay for premium experiences. It does not question the overhead allocation or whether the market will bear such a premium, but it does note that Lucia's offering is different from competitors."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The solution goes beyond simply matching competitor prices by building a cost-based and value-based argument for premium pricing. However, it does not propose radically different pricing strategies or formats (e.g., fast-casual, tiered pricing, or loss-leader strategies)."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only relevant if the product and context are comparable, which questions the premise that Lucia should price within the $14-16 range. However, it does not fundamentally reframe the question or explore whether the market can support such high prices."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct in its cost breakdown and value-based pricing logic. The practical advice is sound for a premium, craft-focused restaurant, but it could be improved by more explicitly considering market demand and alternative formats."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: cost-based pricing (ingredients, labor, overhead) and value-based pricing (experience, story, atmosphere). It does not explicitly compare fast-casual vs. craft/experience models, nor does it synthesize multiple market positioning strategies."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response surfaces assumptions about ingredient costs, labor, and overhead, and acknowledges the value proposition. However, it does not question whether the cost estimates are accurate for Lucia's specific context or whether the desirability and premium percentages are justified."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The solution goes beyond simply matching competitor prices by building up from costs and value, but it does not propose any truly novel or unexpected pricing strategies (e.g., tiered pricing, loss leaders, or menu engineering)."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response briefly notes that competitor prices are not referenced in the final calculation, but it does not explicitly question the premise or explore whether the competitive set is the right benchmark."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides a practical, detailed breakdown of costs and value, resulting in a reasonable price range. However, it could be more precise about the context (e.g., fast-casual vs. fine dining) and more explicit about why competitor prices may or may not be relevant."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: cost-based pricing, value-based pricing (craft, atmosphere, story, convenience), and competitor-based pricing. It synthesizes these perspectives to justify a premium price, but does not deeply explore fast-casual or alternative business models."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: the cost structure (ingredients, labor, overhead), the value customers place on experience, and the relevance of competitor pricing. It could go further by questioning the accuracy of cost estimates or the market's willingness to pay."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The solution goes beyond simply matching competitor prices by recommending a premium price based on value and cost. However, it does not propose radically different pricing strategies or formats (e.g., fast-casual, tiered pricing)."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only relevant if the product and context are comparable, which questions the premise that Lucia should price within the competitor range. However, it does not fundamentally reframe the problem."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and practical: it calculates costs, considers value, and justifies a higher price point. The cost estimates are plausible, and the reasoning is sound, though more detail on market testing or customer willingness to pay would strengthen it."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: cost-based pricing (ingredients, labor, overhead), value proposition (craft, atmosphere, story), customer perspective (what they're paying for), and competitor pricing (explicitly noting its limited relevance). It synthesizes these perspectives to justify a higher price point."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: the actual costs of ingredients, labor, and overhead; the uniqueness and value of the dining experience; and the relevance (or irrelevance) of competitor pricing. It questions the assumption that competitor prices should dictate Lucia's pricing, but does not deeply interrogate all cost estimates or market demand."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The solution goes beyond simply matching competitor prices by focusing on cost and value, which is a non-obvious step. However, it does not propose multiple pricing strategies (e.g., tiered pricing, introductory offers) or unexpected approaches."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that competitor prices are only relevant if the product and context are comparable, thus questioning the premise that Lucia should price within the competitor range. However, it does not fundamentally reframe the question or explore whether the problem is well-posed in a broader sense."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical, detailed advice based on cost structure and value proposition. The cost breakdown is plausible, and the recommendation aligns with the success criteria. However, it could be improved by discussing market demand or price elasticity."
+      }
+    }
+  ]
+}

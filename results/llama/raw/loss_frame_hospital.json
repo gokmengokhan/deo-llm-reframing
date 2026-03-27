@@ -1,0 +1,797 @@
+{
+  "problem_id": "loss_frame_hospital",
+  "problem_title": "The Loss Frame Hospital ED",
+  "category": "framing_trap",
+  "paths_applied": [
+    "path_1_name_the_frame"
+  ],
+  "theory_connection": "Ledgerwood & Boydstun (2014): loss frames are 'cognitively stickier' — once a situation is described as a loss, reframing to gain is harder than the reverse. 'Loses $2.3M' is a frame, not a fact. The same data supports '$2.3M patient acquisition cost for 18,000 admissions.'",
+  "expected_vanilla_failure": "Accepts the 'losing money' frame. Recommends cost-cutting: staffing efficiency, fast-track protocols, diverting non-emergency cases. Does not question whether 'losing' is the right description.",
+  "success_criteria": "Reframes the ED as a patient acquisition/retention channel. Calculates the value of 18,000 admissions originated through the ED. Identifies that $2.3M is a customer acquisition cost (~$128/admission), well below what marketing would spend for equivalent patient volume.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To address the issue of Greenfield Hospital's emergency department (ED) losing $2.3 million per year, I will consider various factors and options. Here's a step-by-step analysis:\n\n**Understand the current situation:**\n\n1. Annual loss: $2.3 million\n2. Annual patient volume: 45,000\n3. Admission rate: 40% (18,000 patients admitted to the hospital)\n\n**Key factors to consider:**\n\n1. **Revenue streams:** The ED generates revenue from various sources, including:\n\t* Emergency Department visits (e.g., Medicare, Medicaid, private insurance, and self-pay)\n\t* Hospital admissions (inpatient revenue)\n\t* Ancillary services (e.g., lab, imaging, and pharmacy)\n2. **Cost structure:** The ED's expenses likely include:\n\t* Staffing (physicians, nurses, and support staff)\n\t* Equipment and supplies\n\t* Facility maintenance and utilities\n\t* Administrative and overhead costs\n3. **Market and community factors:**\n\t* The hospital's location and demographics\n\t* Competition from other nearby hospitals or EDs\n\t* Community needs and expectations\n4. **Regulatory and accreditation requirements:**\n\t* Compliance with the Emergency Medical Treatment and Active Labor Act (EMTALA)\n\t* Accreditation standards (e.g., Joint Commission)\n\n**Options to consider:**\n\n1. **Cost reduction:**\n\t* Streamline operations and reduce waste\n\t* Renegotiate contracts with vendors and suppliers\n\t* Implement efficiency-improving technologies (e.g., electronic health records, telemedicine)\n2. **Revenue enhancement:**\n\t* Improve coding and billing practices to optimize reimbursement\n\t* Develop strategic partnerships with payers or other healthcare providers\n\t* Expand services to attract more patients (e.g., urgent care, observation units)\n3. **Service optimization:**\n\t* Focus on high-acuity, high-revenue cases (e.g., trauma, stroke, and cardiac care)\n\t* Develop specialized programs (e.g., geriatric, pediatric, or psychiatric emergency services)\n4. **Closure or consolidation:**\n\t* Close the ED and redirect patients to nearby facilities\n\t* Consolidate services with another hospital or healthcare system\n\n**Recommendation:**\n\nBased on the analysis, I recommend a multi-faceted approach to reduce ED losses, rather than closing the department. This approach should include:\n\n1. **Cost reduction and efficiency improvements:** Implement process improvements, reduce waste, and renegotiate contracts to achieve a 10-15% reduction in costs.\n2. **Revenue enhancement:** Optimize coding and billing practices, develop strategic partnerships, and expand services to increase revenue by 5-10%.\n3. **Service optimization:** Focus on high-acuity, high-revenue cases and develop specialized programs to attract more patients and increase revenue.\n4. **Staffing and operational adjustments:** Consider adjusting staffing models, implementing flexible scheduling, and optimizing resource allocation to improve efficiency and reduce costs.\n5. **Community outreach and engagement:** Engage with the community to understand their needs and expectations, and develop targeted marketing campaigns to attract more patients to the ED.\n\n**Implementation plan:**\n\n1. Conduct a thorough analysis of the ED's current operations, including financial performance, patient flow, and staffing models.\n2. Develop a detailed plan with specific goals, objectives, and timelines for implementation.\n3. Establish a multidisciplinary team to oversee the implementation process and monitor progress.\n4. Provide training and support for staff to ensure a smooth transition and successful implementation of new processes and services.\n5. Regularly review and evaluate the effectiveness of the plan, making adjustments as needed to achieve the desired outcomes.\n\nBy taking a comprehensive and multi-faceted approach, Greenfield Hospital can reduce ED losses and improve the department's financial sustainability, while maintaining its commitment to providing high-quality patient care and serving the community's needs.",
+      "input_tokens": 149,
+      "output_tokens": 797,
+      "elapsed_seconds": 2.65
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To address the issue of the Greenfield Hospital's emergency department (ED) losing $2.3 million per year, I will consider various factors and options step by step.\n\n**Understanding the Current Situation:**\n\n1. **Volume and Admission Rate**: The ED sees 45,000 patients annually, with 40% (18,000) being admitted to the hospital. This indicates a significant volume of patients and a substantial admission rate.\n2. **Financial Losses**: The ED incurs a loss of $2.3 million per year, which is a significant financial burden on the hospital.\n\n**Analyzing the Causes of Financial Losses:**\n\n1. **Revenue Streams**: The primary revenue streams for the ED come from patient visits, treatments, and subsequent admissions. However, the ED may not be generating sufficient revenue to cover its operational costs.\n2. **Operational Costs**: The ED's operational costs, including staffing, equipment, and supplies, may be high, contributing to the financial losses.\n3. **Payer Mix**: The payer mix of the ED's patient population may be skewed towards low-paying or uninsured patients, resulting in reduced revenue.\n\n**Options to Reduce ED Losses:**\n\n1. **Optimize Operational Efficiency**:\n\t* Streamline processes to reduce wait times and improve patient flow.\n\t* Implement lean principles to minimize waste and optimize resource utilization.\n\t* Consider implementing a fast-track system for low-acuity patients.\n2. **Enhance Revenue Cycle Management**:\n\t* Improve coding and billing practices to ensure accurate and timely reimbursement.\n\t* Implement a robust patient registration and insurance verification process.\n\t* Consider hiring a revenue cycle management specialist to optimize ED billing and collections.\n3. **Diversify Revenue Streams**:\n\t* Explore opportunities for partnerships with local healthcare providers or payers to increase referrals and revenue.\n\t* Consider offering specialized services, such as urgent care or occupational health, to attract new patients and revenue streams.\n4. **Improve Payer Mix**:\n\t* Develop strategies to attract more commercially insured patients, such as marketing campaigns or partnerships with local employers.\n\t* Consider implementing a financial assistance program to support uninsured or underinsured patients.\n5. **Renegotiate Contracts with Payers**:\n\t* Review and renegotiate contracts with payers to ensure fair reimbursement rates for ED services.\n\n**Recommendation:**\n\nBased on the analysis, I recommend a multi-faceted approach to reduce ED losses, rather than closing the department. The following steps should be taken:\n\n1. **Conduct a thorough operational assessment** to identify areas for improvement and implement process enhancements to optimize efficiency and patient flow.\n2. **Enhance revenue cycle management** by improving coding, billing, and patient registration processes to ensure accurate and timely reimbursement.\n3. **Diversify revenue streams** by exploring partnerships, specialized services, and marketing campaigns to attract new patients and revenue streams.\n4. **Improve payer mix** by developing strategies to attract more commercially insured patients and implementing a financial assistance program for uninsured or underinsured patients.\n5. **Renegotiate contracts with payers** to ensure fair reimbursement rates for ED services.\n\n**Implementation and Monitoring:**\n\n1. **Establish a task force** to oversee the implementation of these recommendations and monitor progress.\n2. **Set clear goals and metrics** to measure the success of these initiatives, such as reducing losses by a certain percentage or increasing revenue by a specific amount.\n3. **Regularly review and adjust** the strategies as needed to ensure the ED is on track to reduce losses and achieve financial sustainability.\n\nBy taking a comprehensive and multi-faceted approach, Greenfield Hospital can reduce ED losses and ensure the long-term viability of its emergency department.",
+      "input_tokens": 149,
+      "output_tokens": 757,
+      "elapsed_seconds": 2.5
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To address the issue of Greenfield Hospital's emergency department (ED) losing $2.3 million per year, I will consider several key factors and weigh the options carefully.\n\n**Understanding the Current Situation:**\n\n1. **Volume and Admission Rate:** The ED sees 45,000 patients annually, with 40% (18,000) being admitted to the hospital. This indicates a significant volume of patients and a substantial admission rate.\n2. **Financial Loss:** The ED loses $2.3 million per year, which is a significant financial burden on the hospital.\n3. **Potential Causes of Loss:** There could be several reasons for the ED's financial losses, including:\n\t* Low reimbursement rates from payers.\n\t* High operational costs (e.g., staffing, equipment, and supplies).\n\t* Inefficient processes or workflows.\n\t* Lack of optimization of ED services and capacity.\n\n**Options to Consider:**\n\n1. **Closing the ED:** This option would likely have significant consequences, including:\n\t* Impact on community access to emergency care.\n\t* Potential loss of hospital reputation and credibility.\n\t* Redistribution of ED patients to other nearby hospitals, potentially overwhelming their resources.\n2. **Reducing ED Losses:** This option involves identifying areas for improvement and implementing changes to reduce costs and increase revenue. Potential strategies include:\n\t* **Optimizing ED Operations:**\n\t\t+ Streamlining processes and workflows.\n\t\t+ Implementing lean principles to reduce waste and improve efficiency.\n\t\t+ Enhancing patient flow and reducing wait times.\n\t* **Improving Revenue Cycle:**\n\t\t+ Negotiating better reimbursement rates with payers.\n\t\t+ Implementing effective coding and billing practices.\n\t\t+ Reducing bad debt and charity care.\n\t* **Enhancing ED Services:**\n\t\t+ Developing specialized services (e.g., urgent care, observation units).\n\t\t+ Implementing telemedicine or virtual care options.\n\t\t+ Enhancing patient experience and satisfaction.\n3. **Alternative Solutions:** Consider alternative solutions that balance the need to reduce losses with the importance of maintaining access to emergency care, such as:\n\t* **Partnership or Collaboration:** Exploring partnerships with other hospitals or healthcare organizations to share resources, expertise, and costs.\n\t* **ED Redesign:** Redesigning the ED to focus on high-acuity patients, with lower-acuity patients being redirected to alternative care settings (e.g., urgent care centers).\n\n**Recommendation:**\n\nBased on the analysis, I recommend exploring options to reduce ED losses rather than closing the department. Closing the ED would have significant consequences for the community and the hospital's reputation.\n\nTo reduce ED losses, I suggest the following:\n\n1. **Conduct a thorough analysis** of the ED's operations, revenue cycle, and services to identify areas for improvement.\n2. **Implement process improvements** to optimize ED workflows, reduce waste, and enhance patient flow.\n3. **Negotiate better reimbursement rates** with payers and implement effective coding and billing practices.\n4. **Develop specialized services** to enhance revenue and patient satisfaction.\n5. **Explore alternative care models**, such as telemedicine or observation units, to reduce costs and improve efficiency.\n6. **Monitor and evaluate** the effectiveness of these strategies and make adjustments as needed.\n\nBy taking a comprehensive and data-driven approach, Greenfield Hospital can reduce ED losses while maintaining access to essential emergency care services for the community.",
+      "input_tokens": 149,
+      "output_tokens": 701,
+      "elapsed_seconds": 2.92
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To address the financial losses in Greenfield Hospital's emergency department (ED), I will consider various factors, including patient volume, admission rates, and potential cost-saving measures. Here's a step-by-step analysis:\n\n1. **Understand the current situation**: The ED sees 45,000 patients annually, with 40% (18,000) being admitted to the hospital. The department loses $2.3 million per year.\n\n2. **Identify key factors contributing to losses**:\n\t* Low reimbursement rates for ED services, especially for uninsured or underinsured patients.\n\t* Inefficient operations, such as long wait times, leading to decreased patient satisfaction and potential loss of revenue.\n\t* Insufficient staffing or inadequate skill mix, resulting in high labor costs.\n\t* Inadequate billing and coding practices, leading to missed revenue opportunities.\n\n3. **Explore cost-saving measures**:\n\t* **Optimize staffing**: Analyze staffing patterns and adjust to ensure the right mix of skilled professionals, including physicians, nurses, and support staff.\n\t* **Improve operational efficiency**: Implement lean principles to streamline patient flow, reduce wait times, and enhance patient satisfaction.\n\t* **Enhance billing and coding practices**: Invest in staff training and technology to improve coding accuracy and ensure timely billing.\n\t* **Negotiate with payers**: Renegotiate contracts with insurance providers to secure better reimbursement rates.\n\t* **Diversify revenue streams**: Explore alternative revenue sources, such as telemedicine services, urgent care partnerships, or occupational health programs.\n\n4. **Consider strategic partnerships or collaborations**:\n\t* **Urgent care partnerships**: Partner with urgent care centers to redirect non-emergent patients, reducing ED volume and costs.\n\t* **Community outreach**: Collaborate with local healthcare providers, community organizations, and social services to address social determinants of health and reduce unnecessary ED visits.\n\t* **Telemedicine integration**: Integrate telemedicine services to provide remote consultations, reducing the need for in-person ED visits.\n\n5. **Evaluate the feasibility of closing the ED**:\n\t* **Impact on patient care**: Closing the ED would likely have a significant impact on patient care, particularly for emergency cases.\n\t* **Community consequences**: The closure would also affect the local community, potentially leading to decreased access to emergency care and increased travel times to alternative EDs.\n\t* **Financial implications**: While closing the ED might eliminate the $2.3 million annual loss, it could also result in lost revenue from inpatient admissions and other hospital services.\n\nBased on this analysis, I recommend the following:\n\n**Short-term (6-12 months)**:\n\n1. Conduct a thorough operational assessment to identify areas for improvement.\n2. Implement cost-saving measures, such as optimizing staffing, improving operational efficiency, and enhancing billing and coding practices.\n3. Explore strategic partnerships or collaborations to diversify revenue streams and reduce ED volume.\n\n**Medium-term (1-2 years)**:\n\n1. Develop and implement a comprehensive telemedicine program to provide remote consultations and reduce ED visits.\n2. Establish urgent care partnerships to redirect non-emergent patients.\n3. Invest in staff training and technology to improve patient satisfaction and reduce costs.\n\n**Long-term (2-5 years)**:\n\n1. Continuously monitor and evaluate the effectiveness of implemented measures.\n2. Explore opportunities for ED redesign or renovation to improve efficiency and patient flow.\n3. Develop a strategic plan to address social determinants of health and reduce unnecessary ED visits.\n\nBy implementing these recommendations, Greenfield Hospital can potentially reduce ED losses while maintaining access to emergency care for the community. Closing the ED should be considered a last resort, as it would likely have significant negative consequences for patient care and the community.",
+      "input_tokens": 149,
+      "output_tokens": 756,
+      "elapsed_seconds": 3.33
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To address the issue of the Greenfield Hospital's emergency department (ED) losing $2.3 million per year, I will analyze the situation step by step, considering key factors and weighing options carefully.\n\n**Step 1: Understand the current situation**\n\n* The ED sees 45,000 patients annually, with 40% (18,000) being admitted to the hospital.\n* The ED is losing $2.3 million per year.\n\n**Step 2: Identify the potential causes of the losses**\n\n* Inefficient operations or high overhead costs.\n* Insufficient reimbursement from insurance companies or government programs.\n* High percentage of uninsured or underinsured patients.\n* Inadequate billing and coding practices.\n\n**Step 3: Evaluate the options**\n\n* **Closing the ED**: This option would likely have significant consequences for the community, including reduced access to emergency care, increased travel times to other hospitals, and potential negative impacts on the hospital's reputation and relationships with local healthcare providers.\n* **Reducing ED losses**: This option would require a thorough analysis of the ED's operations, finances, and patient demographics to identify areas for improvement.\n\n**Step 4: Analyze potential strategies to reduce ED losses**\n\n* **Optimize ED operations**:\n\t+ Implement lean principles to reduce waste and improve efficiency.\n\t+ Streamline patient flow and reduce wait times.\n\t+ Implement a fast-track system for non-urgent patients.\n* **Improve reimbursement**:\n\t+ Negotiate better contracts with insurance companies.\n\t+ Implement a robust billing and coding system to ensure accurate and timely reimbursement.\n\t+ Explore alternative payment models, such as value-based care.\n* **Diversify patient mix**:\n\t+ Develop targeted marketing campaigns to attract more insured patients.\n\t+ Establish partnerships with local healthcare providers to increase referrals.\n* **Enhance revenue cycle management**:\n\t+ Implement a patient access system to improve registration and billing processes.\n\t+ Develop a denial management program to reduce lost revenue.\n\n**Step 5: Develop a recommendations**\n\nBased on the analysis, I recommend a multi-faceted approach to reduce ED losses, rather than closing the department. The following plan could be implemented:\n\n1. **Conduct a thorough operational analysis**: Engage a consultant to assess the ED's operations, identify areas for improvement, and develop a plan to optimize patient flow, reduce waste, and improve efficiency.\n2. **Improve reimbursement**: Negotiate better contracts with insurance companies, implement a robust billing and coding system, and explore alternative payment models.\n3. **Diversify patient mix**: Develop targeted marketing campaigns to attract more insured patients and establish partnerships with local healthcare providers to increase referrals.\n4. **Enhance revenue cycle management**: Implement a patient access system, develop a denial management program, and provide training to staff on revenue cycle management best practices.\n5. **Monitor and evaluate progress**: Establish key performance indicators (KPIs) to track progress, including patient satisfaction, length of stay, and financial performance.\n\n**Implementation timeline**:\n\n* Month 1-3: Conduct operational analysis and develop a plan to optimize ED operations.\n* Month 4-6: Implement changes to ED operations, improve reimbursement, and diversify patient mix.\n* Month 7-12: Enhance revenue cycle management, monitor and evaluate progress, and make adjustments as needed.\n\n**Projected outcomes**:\n\n* Reduce ED losses by 50% within the first year.\n* Improve patient satisfaction ratings by 20% within the first year.\n* Increase revenue from insured patients by 15% within the first year.\n\nBy implementing these strategies, Greenfield Hospital can reduce ED losses, improve patient care, and maintain its commitment to providing high-quality emergency services to the community.",
+      "input_tokens": 149,
+      "output_tokens": 757,
+      "elapsed_seconds": 3.09
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before making any recommendation, list every assumption embedded in the statement that the ED 'loses $2.3 million per year.' What does 'loses' mean here? What is being counted, and what is NOT being counted? What other frames could describe the exact same financial reality? Generate at least three alternative descriptions of the ED's financial role, then make your recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To thoroughly analyze the statement \"the ED loses $2.3 million per year,\" we must first identify the embedded assumptions and consider what is being counted and what is not.\n\nAssumptions:\n1. **Definition of 'losses':** The term \"loses\" likely refers to the ED's operating expenses exceeding its revenues. However, it's crucial to understand if this calculation includes only direct costs (e.g., staffing, supplies) or if it also accounts for indirect costs (e.g., hospital overhead).\n2. **Revenue and expense accounting:** The calculation of the $2.3 million loss assumes a specific method of accounting for revenues and expenses. It may not fully capture the value the ED brings to the hospital, such as the revenue generated from patients who are admitted after being seen in the ED.\n3. **Cost allocation:** The loss figure might not accurately reflect the ED's efficiency or profitability due to the way costs are allocated. For example, some costs (like hospital administration or facility maintenance) might be disproportionately assigned to the ED.\n4. **Patient mix and acuity:** The financial performance of the ED could be influenced by the mix of patients it treats (e.g., insured vs. uninsured, complexity of cases) and how these factors affect reimbursement rates.\n5. **Community benefit:** The ED provides a critical community service, which may not be fully captured in financial terms. The value of having an ED for community health, emergency response, and prevention of more severe conditions (and their associated costs) later on is not directly accounted for in the \"loss\" figure.\n\nWhat is being counted:\n- Direct costs of running the ED (staffing, supplies, equipment).\n- Revenues from ED services (likely based on a fee-for-service model or insurance reimbursements).\n\nWhat is NOT being counted:\n- Indirect benefits of the ED to the hospital, such as the revenue from inpatient admissions following ED visits.\n- Community health benefits and the long-term cost savings from early intervention and treatment.\n- Potential costs or consequences of not having an ED (e.g., increased mortality, morbidity, or costs associated with patients seeking care elsewhere).\n\nAlternative frames to describe the ED's financial role:\n1. **Revenue Generator for Inpatient Services:** The ED is a critical entry point for 18,000 patients who are subsequently admitted, generating significant inpatient revenue. Framing the ED as a feeder for inpatient services highlights its role in driving hospital revenue.\n2. **Community Investment:** The ED provides essential healthcare services, contributing to the overall health and well-being of the community. This frame emphasizes the social and health benefits of the ED, beyond its financial performance.\n3. **Cost Savings through Early Intervention:** By providing immediate care, the ED can prevent conditions from worsening, potentially reducing long-term healthcare costs. This perspective suggests that the ED's \"loss\" could be seen as an investment in preventing more costly care later on.\n\nRecommendation:\nBased on the analysis, I recommend that the hospital board consider a multifaceted approach rather than simply aiming to reduce ED losses or closing the department. This could include:\n- **Reevaluating cost allocation and accounting practices** to ensure the ED's financial performance is accurately represented.\n- **Implementing strategies to optimize ED operations** and efficiency, such as streamlining processes, improving staffing models, and enhancing revenue cycle management.\n- **Developing a more comprehensive understanding of the ED's value** to the hospital and the community, including its role in driving inpatient admissions, providing community health benefits, and preventing long-term costs.\n- **Exploring alternative revenue models or funding sources** that could help offset the ED's operational costs, such as partnerships with local health organizations, government grants for community health services, or innovative reimbursement models.\n- **Conducting a thorough community impact assessment** to understand the potential consequences of closing the ED or significantly reducing its services, including effects on community health, local healthcare access, and the hospital's reputation and long-term viability.\n\nBy taking a more holistic approach, the hospital can make informed decisions that balance financial considerations with the critical role the ED plays in patient care and community health.",
+      "input_tokens": 198,
+      "output_tokens": 840,
+      "elapsed_seconds": 3.62
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before making any recommendation, list every assumption embedded in the statement that the ED 'loses $2.3 million per year.' What does 'loses' mean here? What is being counted, and what is NOT being counted? What other frames could describe the exact same financial reality? Generate at least three alternative descriptions of the ED's financial role, then make your recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "Before making any recommendations, let's carefully examine the assumptions embedded in the statement that the ED \"loses $2.3 million per year.\"\n\nAssumptions:\n\n1. **Definition of \"losses\"**: The statement implies that the ED is operating at a financial deficit, but it's unclear what specific costs and revenues are being considered. Are these losses based on direct costs, indirect costs, or a combination of both?\n2. **Cost accounting methodology**: The calculation of losses might be based on a specific cost accounting methodology, such as absorption costing or activity-based costing. Different methods can yield different results.\n3. **Relevant costs and revenues**: The statement might only consider direct costs, such as staffing, supplies, and equipment, while ignoring indirect costs, like overhead, administrative expenses, or marketing efforts that benefit the ED. Similarly, it might not account for revenues generated by the ED, like Medicare and Medicaid reimbursements, private insurance payments, or self-pay patients.\n4. **Opportunity costs**: The statement doesn't consider the potential opportunity costs of closing the ED, such as the loss of patients, revenue, and market share for the hospital as a whole.\n5. **Externalities and community benefits**: The ED's role in providing emergency care to the community, regardless of patients' ability to pay, is not factored into the calculation. This can lead to an underestimation of the ED's value to the hospital and the community.\n6. **Patient mix and acuity**: The statement doesn't account for the complexity and severity of cases treated in the ED, which can impact costs and revenues.\n7. **Payer mix**: The proportion of patients with different types of insurance (e.g., Medicare, Medicaid, private insurance, self-pay) can significantly influence the ED's financial performance.\n\nWhat is being counted:\n\n* Direct costs associated with ED operations\n* Revenues generated by ED patient visits\n\nWhat is NOT being counted:\n\n* Indirect costs, such as overhead, administrative expenses, or marketing efforts\n* Revenues generated by patients admitted to the hospital after ED treatment\n* Opportunity costs of closing the ED\n* Externalities and community benefits\n* Patient mix and acuity\n* Payer mix\n\nAlternative frames to describe the exact same financial reality:\n\n1. **The ED is a loss leader**: The ED generates significant revenue for the hospital through subsequent admissions (18,000 patients per year) and downstream services, such as imaging, laboratory tests, and surgical procedures. The \"loss\" is a strategic investment in attracting patients to the hospital.\n2. **The ED is a community benefit**: The ED provides essential emergency care to the community, regardless of patients' ability to pay. The \"loss\" is a necessary expense for the hospital to fulfill its social responsibility and maintain its reputation as a community-focused healthcare provider.\n3. **The ED is a hub for hospital growth**: The ED is a critical entry point for patients, with 40% of ED patients being admitted to the hospital. The \"loss\" is a necessary investment in building the hospital's patient base and driving growth in other departments, such as surgery, cardiology, and oncology.\n\nBased on these alternative frames, I recommend the following:\n\n1. **Conduct a thorough financial analysis**: Re-examine the ED's financial performance using a more comprehensive cost accounting methodology, considering both direct and indirect costs, as well as revenues generated by ED patients and subsequent admissions.\n2. **Develop a strategic plan**: Identify opportunities to optimize ED operations, reduce costs, and increase revenues. This might include initiatives such as:\n\t* Implementing lean processes to improve efficiency\n\t* Enhancing revenue cycle management to optimize reimbursement\n\t* Developing strategic partnerships with local healthcare providers to increase referrals and admissions\n\t* Investing in technology, such as telemedicine, to expand the ED's reach and capabilities\n3. **Explore alternative funding models**: Consider innovative funding models, such as value-based care arrangements or community-based initiatives, to support the ED's operations and mitigate financial losses.\n4. **Communicate the ED's value**: Educate hospital stakeholders, including the board, administrators, and clinicians, about the ED's critical role in driving hospital growth, providing community benefits, and generating revenue through subsequent admissions and downstream services.\n\nBy adopting a more nuanced understanding of the ED's financial reality and exploring alternative frames, the hospital can develop a comprehensive plan to support the ED's continued operation and success.",
+      "input_tokens": 198,
+      "output_tokens": 902,
+      "elapsed_seconds": 4.26
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before making any recommendation, list every assumption embedded in the statement that the ED 'loses $2.3 million per year.' What does 'loses' mean here? What is being counted, and what is NOT being counted? What other frames could describe the exact same financial reality? Generate at least three alternative descriptions of the ED's financial role, then make your recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To provide a thorough analysis, let's first list the assumptions embedded in the statement that the ED \"loses $2.3 million per year\":\n\n1. **Definition of 'loses'**: The term \"loses\" implies a negative financial balance, suggesting that the ED's expenses exceed its revenues. However, it doesn't account for the potential long-term benefits, indirect revenues, or non-financial value generated by the ED.\n2. **Cost accounting methodology**: The $2.3 million loss likely reflects a specific cost accounting approach, which may not capture all relevant costs or revenues. For example, it might not consider overhead costs, shared resources, or the ED's impact on other hospital departments.\n3. **Revenue sources**: The statement implies that the ED's revenue is primarily generated from patient visits, but it may not account for other potential revenue streams, such as:\n\t* Indirect revenues from admitted patients (e.g., subsequent hospital stays, procedures, or services).\n\t* Reimbursements from insurance companies or government programs.\n\t* Philanthropic donations or grants.\n4. **Expenses and resource allocation**: The $2.3 million loss might not reflect the ED's actual resource utilization or efficiency. It may not account for:\n\t* Shared resources or overhead costs allocated to the ED.\n\t* Potential areas for cost reduction or optimization.\n5. **Patient mix and acuity**: The statement mentions that 40% of ED patients are admitted to the hospital, but it doesn't provide information on patient acuity, complexity, or the level of care required. This might impact the ED's financial performance.\n6. **Community benefits and externalities**: The ED's role in providing emergency care, stabilizing patients, and preventing further complications may have positive externalities, such as:\n\t* Reduced morbidity and mortality rates.\n\t* Improved population health.\n\t* Enhanced community reputation and trust.\n\nConsidering these assumptions, here are three alternative descriptions of the ED's financial role:\n\n1. **The ED generates $2.3 million in indirect revenues**: By admitting 18,000 patients annually, the ED creates a pipeline of patients who will receive further care and generate revenue for the hospital. This perspective focuses on the ED's role in driving hospital admissions and subsequent revenue streams.\n2. **The ED provides a $2.3 million community benefit**: The ED's emergency care services, including stabilization and treatment, have a positive impact on population health and community well-being. This frame emphasizes the ED's value in preventing further complications, reducing morbidity, and improving quality of life.\n3. **The ED operates at a $2.3 million 'investment'**: Rather than viewing the ED as a loss-generating department, this perspective sees the $2.3 million as an investment in the hospital's overall mission, reputation, and community engagement. This frame acknowledges the ED's role in attracting patients, building trust, and driving referrals.\n\nBased on these alternative descriptions, I recommend the following:\n\n1. **Conduct a comprehensive cost-benefit analysis**: Re-evaluate the ED's financial performance using a more nuanced approach, considering indirect revenues, community benefits, and potential areas for cost reduction.\n2. **Explore revenue cycle optimization**: Identify opportunities to improve reimbursement rates, reduce bad debt, and enhance patient engagement to increase revenue.\n3. **Develop a strategic plan to reduce costs and improve efficiency**: Implement process improvements, optimize resource allocation, and invest in technology to streamline ED operations and reduce waste.\n4. **Consider alternative funding models or partnerships**: Explore potential partnerships with payers, providers, or community organizations to secure funding or share resources, reducing the financial burden on the hospital.\n5. **Engage with the community and stakeholders**: Communicate the ED's value and importance to the community, and explore opportunities for philanthropic support, grants, or community-based initiatives to supplement funding.\n\nBy adopting a more comprehensive and nuanced understanding of the ED's financial role, the hospital can develop a more effective strategy to address the perceived \"loss\" and ensure the long-term sustainability of this critical department.",
+      "input_tokens": 198,
+      "output_tokens": 827,
+      "elapsed_seconds": 3.83
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before making any recommendation, list every assumption embedded in the statement that the ED 'loses $2.3 million per year.' What does 'loses' mean here? What is being counted, and what is NOT being counted? What other frames could describe the exact same financial reality? Generate at least three alternative descriptions of the ED's financial role, then make your recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To thoroughly analyze the statement \"Greenfield Hospital's emergency department loses $2.3 million per year,\" we must identify the embedded assumptions and consider what is being counted and what is not. Here are the key assumptions and considerations:\n\n1. **Definition of 'loses'**: The term \"loses\" implies that the ED is operating at a financial deficit, meaning its expenses exceed its revenues. However, this does not account for the potential long-term benefits, indirect revenues, or non-financial value the ED provides to the hospital and the community.\n2. **What is being counted**: The $2.3 million loss likely refers to the ED's direct operating expenses, such as staffing, equipment, and supplies, minus the direct revenues generated from ED services, like patient fees and insurance reimbursements.\n3. **What is NOT being counted**: Several factors are not considered in the $2.3 million loss calculation:\n\t* Indirect revenues: The ED may generate revenue for the hospital through subsequent admissions, outpatient services, and other hospital departments.\n\t* Downstream revenues: Patients treated in the ED may require further care, procedures, or services, generating revenue for other hospital departments.\n\t* Community benefits: The ED provides essential services to the community, which may lead to increased patient loyalty, reputation, and market share for the hospital.\n\t* Cost savings: The ED may help reduce costs elsewhere in the hospital by providing timely interventions, reducing the need for more expensive care, and improving patient outcomes.\n4. **Alternative frames to describe the ED's financial role**:\n\t* **Community investment**: The ED's $2.3 million \"loss\" could be seen as an investment in community health and well-being, generating long-term benefits and goodwill.\n\t* **Revenue catalyst**: The ED could be viewed as a catalyst for generating revenue in other hospital departments, such as inpatient services, outpatient clinics, and diagnostic imaging.\n\t* **Cost containment**: The ED might be seen as a cost containment unit, providing efficient and effective care that reduces the need for more expensive services and improves patient outcomes, thus saving the hospital money in the long run.\n\t* **Patient acquisition**: The ED could be considered a patient acquisition channel, attracting patients who may require further care and services, generating revenue for the hospital.\n\t* **Quality and safety**: The ED's \"loss\" might be reframed as a necessary investment in quality and safety, ensuring that patients receive timely and effective care, which can lead to improved patient outcomes and reduced liability costs.\n\nConsidering these alternative frames, I recommend the following:\n\n1. **Conduct a comprehensive financial analysis**: Evaluate the ED's financial performance in the context of the entire hospital, including indirect revenues, downstream revenues, and cost savings.\n2. **Develop a value-based approach**: Assess the ED's value to the hospital and community, considering factors like patient satisfaction, quality of care, and community benefits.\n3. **Explore opportunities for revenue enhancement**: Identify ways to increase revenue in the ED, such as optimizing billing and coding practices, improving patient flow, and reducing unnecessary tests and procedures.\n4. **Implement cost-saving initiatives**: Implement efficient practices and protocols to reduce waste, optimize resource allocation, and minimize unnecessary expenses.\n5. **Consider alternative service delivery models**: Explore innovative care delivery models, such as urgent care centers, telemedicine services, or community paramedicine programs, to reduce ED utilization and costs while maintaining access to care.\n\nRather than closing the ED or solely focusing on reducing losses, I recommend a multifaceted approach that addresses the ED's financial performance, quality, and value to the hospital and community. By adopting a more comprehensive and nuanced perspective, Greenfield Hospital can work towards creating a sustainable and effective ED that benefits both the hospital and the community it serves.",
+      "input_tokens": 198,
+      "output_tokens": 767,
+      "elapsed_seconds": 3.12
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before making any recommendation, list every assumption embedded in the statement that the ED 'loses $2.3 million per year.' What does 'loses' mean here? What is being counted, and what is NOT being counted? What other frames could describe the exact same financial reality? Generate at least three alternative descriptions of the ED's financial role, then make your recommendation.\n\nGreenfield Hospital's emergency department loses $2.3 million per year. The ED sees 45,000 patients annually, of whom approximately 18,000 (40%) are subsequently admitted to the hospital. The hospital board has asked for a plan to either significantly reduce ED losses or close the department. What do you recommend?",
+      "response": "To thoroughly analyze the statement \"the ED loses $2.3 million per year,\" we must identify and examine the assumptions embedded within it. Here are the key assumptions and considerations:\n\n1. **Definition of 'loses'**: The term \"loses\" implies a financial deficit, where the expenses of operating the ED exceed its revenues. However, this might not account for indirect benefits or long-term financial implications.\n2. **Expenses and revenues considered**: The calculation of the $2.3 million loss likely includes direct expenses such as staffing, equipment, supplies, and facility costs. However, it may not account for indirect expenses, like marketing, administrative overhead, or the value of the ED as a gateway to other hospital services.\n3. **Patient mix and acuity**: The statement does not specify the severity or complexity of cases treated in the ED, which can significantly impact costs and revenue.\n4. **Payer mix and reimbursement**: The financial performance of the ED may be influenced by the payer mix (e.g., Medicare, Medicaid, private insurance, self-pay) and reimbursement rates, which can vary significantly.\n5. **Opportunity costs and alternative uses**: The statement implies that the ED's resources (e.g., space, staff) could be reallocated to other purposes, but it does not consider the potential costs and benefits of such alternatives.\n6. **Timeframe and trend**: The $2.3 million loss is an annual figure, but it is unclear whether this is a one-time deficit or a persistent trend. The hospital's financial situation and the ED's performance may be changing over time.\n7. **Systemic vs. departmental accounting**: The loss may be a result of systemic hospital issues, such as inefficient billing or collections, rather than a problem specific to the ED.\n\nGiven these assumptions and considerations, here are three alternative frames to describe the ED's financial role:\n\n1. **The ED is a loss leader**: The ED generates significant revenue for the hospital through subsequent admissions (18,000 patients per year) and outpatient services. While the ED itself may operate at a loss, it drives business to other hospital departments, ultimately contributing to the hospital's overall financial health.\n2. **The ED provides a community benefit**: The ED serves as a critical component of the community's healthcare infrastructure, providing essential services to patients who may not have access to other forms of care. The $2.3 million loss can be seen as a necessary investment in the community's well-being, rather than a purely financial burden.\n3. **The ED is a strategic investment**: The ED is a key entry point for patients, allowing the hospital to attract and retain patients who may require more extensive and lucrative services, such as surgeries, procedures, or extended hospital stays. The ED's loss can be viewed as a strategic investment in the hospital's long-term growth and market share.\n\nBased on these alternative frames, I recommend the following:\n\n1. **Conduct a thorough financial analysis**: Review the ED's financial performance in more detail, considering indirect benefits, opportunity costs, and systemic issues. This will help identify areas for improvement and potential opportunities for cost savings or revenue enhancement.\n2. **Explore revenue cycle optimization**: Investigate ways to improve billing, coding, and collections processes to maximize revenue from ED services.\n3. **Develop a strategic plan**: Consider the ED's role in the hospital's overall strategy and develop a plan to leverage the ED as a loss leader, community benefit, or strategic investment. This might involve investing in ED staff, technology, or processes to enhance the patient experience, improve outcomes, and increase referrals to other hospital services.\n4. **Engage with stakeholders**: Collaborate with hospital administrators, physicians, and community leaders to discuss the ED's value and develop a shared understanding of its role in the hospital's financial and strategic plans.\n5. **Consider alternative funding models**: Explore alternative funding models, such as value-based care or community benefit programs, to support the ED's operations and mitigate financial losses.\n\nUltimately, closing the ED should be a last resort, as it would likely have significant negative impacts on the community and the hospital's reputation. By adopting a more nuanced understanding of the ED's financial role and exploring opportunities for improvement, the hospital can work towards reducing losses while maintaining a vital community resource.",
+      "input_tokens": 198,
+      "output_tokens": 871,
+      "elapsed_seconds": 3.65
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including cost reduction, revenue enhancement, service optimization, and closure or consolidation, demonstrating a comprehensive approach to addressing the ED's financial losses."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need to reduce costs and increase revenue, but does not systematically surface and examine all hidden assumptions, such as the potential impact of community needs and expectations on the ED's financial performance."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as focusing on high-acuity, high-revenue cases and developing specialized programs, but these solutions are not entirely unexpected and do not fundamentally reframe the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response notes the problem framing may be limiting, but does not explicitly question the premise and explore alternative problem definitions, such as reframing the ED as a patient acquisition and retention channel."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a comprehensive approach to addressing the ED's financial losses, but does not fully meet the success criteria by not explicitly calculating the value of 18,000 admissions originated through the ED and identifying the $2.3M loss as a customer acquisition cost."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including operational efficiency, revenue cycle management, diversifying revenue streams, and improving payer mix. It explores these frames with comparison, but does not synthesize them into a fully integrated solution."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines some assumptions, such as the impact of payer mix on revenue and the potential for improving operational efficiency. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the ED's losses are solely due to operational inefficiencies."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as diversifying revenue streams and improving payer mix. However, these solutions are not entirely unexpected, and the response does not reframe the problem in a fundamentally new way."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response notes some limitations of the problem framing, but does not explicitly question the premise or explore alternative problem definitions. It accepts the problem as stated and focuses on solving it within the given constraints."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct and provides reasonable and practical advice. It identifies potential solutions to reduce ED losses and improve financial sustainability, and provides a clear plan for implementation and monitoring. However, it does not fully address the success criteria, which asks for a reframing of the ED as a patient acquisition/retention channel and a calculation of the value of admissions originated through the ED."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the financial, operational, and community impact perspectives. It explores various options, such as closing the ED, reducing losses, and alternative solutions, demonstrating a comprehensive approach to the problem."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the potential causes of the ED's financial losses, including low reimbursement rates and high operational costs. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the ED's primary function is to provide emergency care rather than to serve as a patient acquisition channel."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as exploring alternative care models and partnerships, alongside conventional ones like optimizing ED operations and improving revenue cycle management. However, it does not present a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response notes the potential consequences of closing the ED but does not explicitly question the premise of the problem or explore alternative problem framings. It accepts the problem as stated, with the goal of reducing ED losses or closing the department."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a comprehensive analysis of the situation and offering practical solutions to reduce ED losses. However, it does not fully address the success criteria, such as reframing the ED as a patient acquisition channel and calculating the value of admissions originated through the ED."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including operational efficiency, strategic partnerships, and community outreach, demonstrating a comprehensive approach to addressing the ED's financial losses. It explores various perspectives, such as patient flow, staffing, billing, and revenue streams, but does not fully synthesize them into a cohesive, overarching framework."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the impact of low reimbursement rates, inefficient operations, and inadequate staffing on ED losses. However, it does not systematically examine these assumptions or identify non-obvious ones, such as the potential for the ED to serve as a patient acquisition channel."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as exploring telemedicine services, urgent care partnerships, and community outreach programs. However, these solutions are not entirely unexpected, and the response does not fundamentally reframe the problem or provide a genuinely novel solution."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem premise with minor caveats, such as noting the potential consequences of closing the ED. It does not explicitly question the premise or explore alternative problem framings, such as reframing the ED as a patient acquisition channel."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is largely correct and provides reasonable, practical advice for addressing the ED's financial losses. It offers a comprehensive analysis of the situation and proposes a range of potential solutions, but does not fully calculate the value of 18,000 admissions originated through the ED or identify the $2.3M loss as a customer acquisition cost."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers multiple perspectives, including the potential causes of the losses, options for addressing the issue, and strategies for reducing ED losses. However, it primarily focuses on operational and financial frames, without fully exploring alternative frames such as reframing the ED as a patient acquisition channel."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes some obvious assumptions, such as the potential for inefficient operations or high overhead costs, but does not systematically surface and examine hidden assumptions. It accepts the problem statement and ED losses as given, without questioning underlying assumptions about the hospital's business model or the role of the ED."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces conventional solutions, such as optimizing ED operations, improving reimbursement, and diversifying the patient mix. While these solutions are reasonable, they do not go beyond the obvious first-order answers and do not reframe the problem in a novel way. The response does not consider the ED as a patient acquisition channel or calculate the value of admissions originated through the ED."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem framing and does not explicitly question the premise. It notes some potential consequences of closing the ED, but does not fundamentally challenge the assumption that the ED is a loss-making department that needs to be closed or significantly reduced. The response does not explore alternative problem framings, such as reframing the ED as a strategic asset for patient acquisition."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct and provides reasonable and practical solutions for reducing ED losses. The proposed strategies, such as optimizing ED operations and improving reimbursement, are grounded in reality and could be useful for addressing the issue. However, the response does not fully address the success criteria, which requires reframing the ED as a patient acquisition channel and calculating the value of admissions originated through the ED."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames, including the ED as a revenue generator for inpatient services, a community investment, and a means of cost savings through early intervention. It synthesizes these frames to provide a comprehensive understanding of the ED's role and value."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, including the definition of 'losses', revenue and expense accounting, cost allocation, patient mix and acuity, and the community benefit provided by the ED. It questions these assumptions to provide a more nuanced understanding of the problem."
+      },
+      "solution_novelty": {
+        "score": 5,
+        "justification": "The response produces genuinely unexpected and viable solutions that reframe the problem, such as reevaluating cost allocation and accounting practices, optimizing ED operations, and exploring alternative revenue models or funding sources. These solutions go beyond conventional first-order answers and demonstrate a deep understanding of the complex issues involved."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, challenging the premise that the ED's 'loss' is solely a financial issue. It explores alternative perspectives and considers the broader implications of the ED's role in the hospital and the community, demonstrating a high level of premise questioning."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides excellent practical advice, such as conducting a thorough community impact assessment and developing a more comprehensive understanding of the ED's value, which demonstrates a deep understanding of the complex issues involved and the ability to provide actionable recommendations."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames, including the ED as a loss leader, a community benefit, and a hub for hospital growth, and synthesizes these perspectives to develop a comprehensive plan."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, including the definition of losses, cost accounting methodology, relevant costs and revenues, opportunity costs, externalities, and community benefits."
+      },
+      "solution_novelty": {
+        "score": 5,
+        "justification": "The response produces a genuinely unexpected viable solution that reframes the problem, shifting the focus from reducing ED losses to leveraging the ED as a strategic investment in patient acquisition and retention, and exploring alternative funding models and revenue streams."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, challenging the assumption that the ED's losses are a problem to be solved and instead considering the ED's role in driving hospital growth and providing community benefits."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful, providing a comprehensive plan that addresses the hospital's financial concerns while also considering the ED's strategic value and community benefits."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple distinct frames, including the ED as a generator of indirect revenues, a provider of community benefits, and an investment in the hospital's mission. It explores these frames with comparison, demonstrating a strong ability to consider diverse perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, including the definition of 'loses', cost accounting methodology, revenue sources, expenses, and patient mix. It questions these assumptions and explores their implications, demonstrating a high level of assumption-surfacing skill."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including reframing the ED's financial role, exploring alternative funding models, and considering community engagement. While not entirely unexpected, these solutions demonstrate a good level of novelty and creativity."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, challenging the premise that the ED's $2.3 million 'loss' is necessarily a problem. It explores alternative descriptions of the ED's financial role and considers the potential benefits and value generated by the department, demonstrating excellent premise-questioning skills."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is largely correct and provides reasonable, practical advice. It correctly identifies the potential value of the ED as a patient acquisition channel and calculates the customer acquisition cost. The recommendations for a comprehensive cost-benefit analysis, revenue cycle optimization, and strategic planning are also sound and useful."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response considers multiple distinct frames, including community investment, revenue catalyst, cost containment, patient acquisition, and quality and safety, demonstrating a high level of frame diversity and synthesis."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines hidden assumptions, such as the definition of 'loses', what is being counted, and what is not being counted, showing a thorough understanding of the problem's complexities."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including reframing the ED as a patient acquisition channel, exploring alternative service delivery models, and implementing cost-saving initiatives, demonstrating a high level of solution novelty."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, questioning the premise that the ED's $2.3 million loss is solely a financial problem, and instead considers its value to the hospital and community."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a comprehensive analysis of the ED's financial performance and offering practical recommendations for improvement, although it may not fully address the success criteria's specific calculation of the value of 18,000 admissions originated through the ED."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the ED as a loss leader, a community benefit, and a strategic investment, demonstrating a good diversity of perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines several hidden assumptions, such as the definition of 'loses', expenses and revenues considered, patient mix and acuity, payer mix and reimbursement, opportunity costs, and timeframe and trend."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including reframing the ED's financial role, exploring revenue cycle optimization, and considering alternative funding models, which go beyond the conventional response of simply reducing costs or closing the ED."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem by examining the assumptions embedded in the statement 'the ED loses $2.3 million per year' and exploring alternative perspectives on the ED's financial role."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, such as recommending a thorough financial analysis, exploring revenue cycle optimization, and developing a strategic plan, which are all reasonable and useful suggestions for addressing the ED's financial losses."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily views the ED through a traditional cost-reduction/revenue-enhancement operational frame. While it mentions community needs and regulatory requirements, it doesn't explore the strategic frame of the ED as a patient acquisition channel or consider the broader hospital ecosystem perspective that the success criteria emphasize."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the ED should continue operating - but doesn't question deeper assumptions like whether the $2.3M loss figure accounts for downstream revenue from admissions, or whether traditional accounting methods properly capture the ED's value to the hospital system."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional operational improvements (cost reduction, revenue enhancement, service optimization). The response doesn't offer the key reframing insight that the ED functions as a marketing/patient acquisition channel, which would be a more novel and strategic perspective."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - that the ED is 'losing' $2.3 million and needs to be fixed or closed. It doesn't question whether this framing properly accounts for the ED's role in generating hospital admissions and the associated revenue, which is the critical reframe needed."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The operational recommendations are reasonable and could help reduce losses, but the response misses the most important insight: that $2.3M spread across 18,000 admissions equals roughly $128 per admission - an extremely low customer acquisition cost. Without this realization, the analysis is incomplete and may lead to suboptimal decisions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily views the ED through an operational efficiency/cost reduction frame, with minor acknowledgment of revenue enhancement. It doesn't explore the strategic value frame of the ED as a patient acquisition channel or consider the broader hospital ecosystem perspective."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about payer mix being skewed toward low-paying patients, but fails to question deeper assumptions like whether the $2.3M loss is actually a problem when viewed as customer acquisition cost, or whether the ED's value should be measured in isolation."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional operational improvements (streamline processes, improve billing, renegotiate contracts). While comprehensive, they don't include the key insight of reframing the ED as a marketing/acquisition channel that generates valuable admissions."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response completely accepts the premise that the ED losing $2.3M is inherently problematic and needs to be fixed or closed. It doesn't question whether this 'loss' might actually represent valuable customer acquisition investment or whether the problem framing is appropriate."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the operational recommendations are reasonable, the response misses the critical insight that $2.3M for 18,000 admissions equals ~$128 per admission - an extremely low customer acquisition cost. The analysis fails to calculate the value those 18,000 admissions bring to the hospital, making the recommendations incomplete and potentially misguided."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily frames the ED as a cost center that needs operational improvements. It briefly acknowledges the community impact frame when discussing closure consequences, but doesn't explore the critical patient acquisition/revenue generation frame that the success criteria emphasizes."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions about causes of losses (low reimbursement, high costs, inefficiencies) and examines potential reasons. However, it misses the key hidden assumption that ED losses should be viewed in isolation rather than as part of the hospital's overall revenue strategy."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional operational improvements (streamlining processes, better billing, specialized services). The partnership/collaboration suggestion shows some creativity, but overall the response stays within standard healthcare operational thinking without the novel reframing suggested by the success criteria."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the basic premise that ED losses are problematic and need to be reduced. It doesn't question whether viewing the ED as a standalone profit center is the right approach, missing the opportunity to reframe it as a patient acquisition channel with associated value."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the operational recommendations are reasonable, the response misses the key insight that the $2.3M 'loss' should be evaluated against the value of 18,000 hospital admissions generated through the ED. The customer acquisition cost of ~$128 per admission is likely far below market rates for patient acquisition, making this a valuable investment rather than a loss."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily frames the ED as a cost center that needs optimization, with minor acknowledgment of closure as an alternative. It doesn't explore the strategic frame of the ED as a patient acquisition channel or consider the value of admissions generated through the ED."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions like low reimbursement rates, inefficient operations, and staffing issues. However, it doesn't question the fundamental assumption that the $2.3M loss is inherently problematic or examine whether this might actually represent reasonable customer acquisition costs."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional operational improvements (staffing optimization, billing improvements, partnerships). While telemedicine and urgent care partnerships show some creativity, the response doesn't offer the key insight about reframing ED losses as marketing/acquisition costs."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem framing that ED losses are inherently bad and need to be eliminated. It doesn't question whether viewing the ED purely as a profit center is the right approach or consider alternative ways to evaluate the ED's value to the hospital system."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the operational recommendations are reasonable, the response misses the critical insight that the ED generates 18,000 admissions annually, making the $2.3M loss equivalent to about $128 per admission in customer acquisition costs - far below typical marketing costs. This fundamental misunderstanding of the ED's strategic value makes the analysis incomplete and potentially misleading."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily frames the ED as a cost center that needs operational improvements. It briefly acknowledges the option of closing the ED but doesn't explore alternative frames like viewing the ED as a patient acquisition channel or strategic asset. The analysis stays within a traditional operational efficiency framework."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions about causes of losses (inefficient operations, reimbursement issues, uninsured patients, billing problems) and examines them. However, it doesn't question deeper assumptions like whether the $2.3M loss figure represents the full economic picture or whether the ED's value should be measured differently."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional operational improvements: lean principles, better billing, improved patient flow, marketing campaigns. While comprehensive, these are standard healthcare management approaches rather than innovative reframings of the problem."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as stated - that the ED is 'losing' $2.3 million and needs to either reduce losses or close. It doesn't question whether this framing is appropriate or whether the ED might actually be generating value that isn't being measured."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the operational recommendations are reasonable, the response misses the key insight that the ED generates 18,000 admissions annually, which likely represents significant revenue and profit for the hospital. The $2.3M 'loss' is actually a customer acquisition cost of ~$128 per admission, which is extremely cost-effective. The analysis is partially correct but misses the most important strategic consideration."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: ED as a cost center (traditional view), ED as revenue generator for inpatient services, ED as community investment, and ED as cost savings through early intervention. It also considers alternative accounting perspectives and community impact frames."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically identifies and examines multiple hidden assumptions including: definition of 'losses', revenue/expense accounting methods, cost allocation practices, patient mix effects, and community benefit valuation. It explicitly separates what is being counted vs. not counted in the loss figure."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response provides thoughtful analysis, the solutions are largely conventional: reevaluating accounting practices, optimizing operations, exploring alternative funding. The most novel aspect is reframing the ED as a patient acquisition channel, but this isn't fully developed with specific calculations."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by challenging what 'loses $2.3 million' actually means, examining the accounting assumptions behind this figure, and suggesting the problem may be misframed. It questions whether the ED should be viewed as a standalone profit center."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct in its analysis and provides reasonable recommendations. However, it misses the key insight from the success criteria - calculating that $2.3M for 18,000 admissions equals ~$128 per admission, which is actually a very low customer acquisition cost. The response identifies the concept but doesn't quantify it effectively."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: ED as a loss leader/patient acquisition channel, ED as community benefit, ED as hub for hospital growth, plus the traditional cost center view. These frames are well-developed and compared systematically."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically identifies and examines 7 key assumptions: definition of losses, cost accounting methodology, relevant costs/revenues, opportunity costs, externalities, patient mix/acuity, and payer mix. This is thorough and methodical assumption surfacing."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response provides good solutions (comprehensive financial analysis, strategic planning, alternative funding models), these are relatively conventional healthcare management approaches. The reframing is valuable but the actual solutions are not particularly novel."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise by challenging what 'losses' means, examining what's counted vs. not counted, and explicitly offering alternative frames to describe 'the exact same financial reality.' This is exemplary premise questioning."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response correctly identifies the ED as a patient acquisition channel and recognizes the value of the 18,000 admissions, though it doesn't explicitly calculate the $128 per admission figure mentioned in success criteria. The practical recommendations are sound and grounded in healthcare economics reality."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple distinct frames: ED as a loss center (original), ED as revenue generator through admissions, ED as community benefit provider, and ED as strategic investment. Three alternative descriptions are explicitly provided and compared."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically identifies and examines multiple hidden assumptions including the definition of 'loses', cost accounting methodology, revenue sources, expense allocation, patient mix considerations, and community externalities. This is thorough and methodical."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response provides several solutions (cost-benefit analysis, revenue cycle optimization, partnerships, community engagement), most are conventional healthcare management approaches. The reframing as an investment rather than loss is somewhat novel but not groundbreaking."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise that the ED 'loses' money by challenging the definition of loss, examining accounting methodologies, and proposing three alternative ways to view the ED's financial role. It explicitly reframes the problem before providing solutions."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct and identifies important considerations, but it misses the key insight from the success criteria about calculating the value of 18,000 admissions and viewing the $2.3M as a customer acquisition cost. While the analysis is sound, it doesn't provide the specific financial reframing that would be most compelling to hospital leadership."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response explores multiple distinct frames: community investment, revenue catalyst, cost containment, patient acquisition, and quality/safety investment. Each frame is clearly articulated and offers a different perspective on the ED's role beyond just a cost center."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically identifies and examines multiple hidden assumptions: the definition of 'loses', what expenses/revenues are counted vs. not counted, the exclusion of indirect revenues, downstream benefits, community value, and cost savings elsewhere in the system."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional cost-cutting approaches to offer multiple non-obvious solutions including reframing as patient acquisition, exploring alternative service delivery models (urgent care, telemedicine, community paramedicine), and value-based assessment approaches. However, it doesn't fully quantify the patient acquisition value as specified in success criteria."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise by challenging what 'loses $2.3 million' actually means, questioning whether this accounting captures the true value, and explicitly reframing the problem from 'how to reduce losses' to 'how to assess comprehensive value to the organization and community.'"
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct and offers reasonable approaches, but misses the key insight from the success criteria about calculating the specific value of 18,000 admissions and recognizing $2.3M as a customer acquisition cost (~$128/admission). While the patient acquisition frame is mentioned, it's not developed with the quantitative analysis that would make it most compelling to hospital leadership."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct alternative frames: ED as a loss leader, ED as community benefit, and ED as strategic investment. It also implicitly considers the original 'financial burden' frame, making four total perspectives with good comparison between them."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically identifies and examines seven key assumptions: definition of 'loses', expenses/revenues considered, patient mix, payer mix, opportunity costs, timeframe/trends, and systemic vs departmental accounting. These range from obvious to quite sophisticated hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "While the response provides thoughtful recommendations like revenue cycle optimization and alternative funding models, most solutions are fairly conventional for healthcare management. The reframing as a 'loss leader' is somewhat non-obvious but not genuinely unexpected."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by challenging what 'loses $2.3 million' actually means and whether this framing captures the ED's true value. It explores alternative ways to understand the problem before providing solutions, though it doesn't completely reframe the fundamental question."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct and provides reasonable healthcare management advice. However, it misses the key insight from the success criteria about calculating the specific value of 18,000 admissions and comparing the $2.3M to customer acquisition costs (~$128/admission). The analysis is sound but incomplete regarding the financial reframing that would be most compelling to a hospital board."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: cost reduction, revenue enhancement, service optimization, and closure/consolidation. It also touches on community and regulatory factors, but does not fully synthesize these into a new perspective."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the ability to reduce costs and increase revenue, and the feasibility of closing the ED, but does not deeply question less obvious assumptions (e.g., the strategic value of the ED as a patient acquisition channel)."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are conventional (cost reduction, revenue enhancement, service optimization, closure). There is no reframing of the ED as a patient acquisition channel or calculation of the value of admissions, which would have been a novel approach."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether the focus on ED losses is the right metric or if the ED's value lies elsewhere (e.g., as a feeder for admissions)."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The recommendations are reasonable and practical, but the response misses the key insight that the ED's losses are a form of customer acquisition cost, and does not calculate or contextualize this cost as requested in the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: operational/financial improvement of the ED and the possibility of closure, with some sub-frames (revenue cycle, payer mix, partnerships). However, it does not reframe the ED as a patient acquisition channel or compare the ED's losses to marketing spend, missing a key strategic frame."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes some assumptions about causes of loss (operational costs, payer mix) but does not question deeper assumptions, such as the value of admissions or the strategic role of the ED in hospital economics."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are conventional (operational improvements, revenue cycle, payer mix, partnerships). There is no novel insight such as reframing the ED's loss as a customer acquisition cost or quantifying the value of admissions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated and does not question whether closing the ED is a false dichotomy or whether the loss is actually a strategic investment. There is only a minor caveat in suggesting a multi-faceted approach."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The recommendations are reasonable and correct for reducing ED losses, but the response misses the key calculation and strategic insight required by the success criteria, limiting its practical usefulness for the board's decision."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: operational improvement, financial optimization, community impact, and alternative care models. It also briefly mentions partnerships and redesign, showing a broad perspective, though it does not synthesize these into a new frame."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the causes of ED losses and the impact of closing the ED, but does not deeply question less obvious assumptions (e.g., the strategic value of the ED as a patient acquisition channel)."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are largely conventional (process improvement, revenue cycle management, service enhancement). There is mention of partnerships and alternative care models, but these are standard in healthcare strategy and do not represent significant novelty."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only a minor caveat about the consequences of closing the ED. It does not question the underlying premise or reframe the ED as a strategic asset for patient acquisition."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The advice is correct and reasonable for a hospital administrator, but it misses the key insight from the success criteria: reframing the ED's loss as a customer acquisition cost and quantifying the value of admissions. Thus, it is incomplete for the specific context."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: operational efficiency, financial implications, community impact, and strategic partnerships. It compares the impact of closing the ED versus improving it, and explores both internal and external solutions."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies several assumptions, such as the causes of financial loss and the impact of closing the ED, but does not deeply question less obvious assumptions (e.g., the value of admissions or the strategic role of the ED as a patient acquisition channel)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious by suggesting partnerships, telemedicine, and community outreach, but these are relatively standard in healthcare strategy. It does not reframe the ED as a customer acquisition channel, which would be a more novel approach."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that closing the ED could have negative consequences and weighs this against financial savings, indicating some questioning of the problem's framing, but does not fundamentally challenge or reframe the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The recommendations are practical and grounded in real-world hospital operations. However, the response misses the key calculation of the value of admissions and the customer acquisition cost framing, which would have made the advice more strategically robust."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: closing the ED and improving its operations to reduce losses. It also touches on community impact and operational/financial strategies, but does not synthesize or deeply compare more than two perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes some obvious assumptions (e.g., that losses are due to inefficiency or reimbursement issues), but does not systematically surface or question less obvious assumptions, such as the strategic value of the ED as a patient acquisition channel."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The solutions are conventional: operational improvements, better reimbursement, and marketing. There is no reframing of the ED as a customer acquisition channel or calculation of the value of admissions, which would be a more novel approach."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response briefly acknowledges the consequences of closing the ED but otherwise accepts the problem as stated, without questioning whether the loss is actually a problem in the context of overall hospital strategy."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The recommendations are reasonable and practical for reducing ED losses, but the response misses the key insight that the ED's losses are a form of customer acquisition cost, and does not calculate or contextualize this cost as required by the success criteria."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct frames: the ED as a revenue generator for inpatient services, as a community investment, and as a source of cost savings through early intervention. It also briefly touches on cost allocation/accounting as a frame, but does not fully synthesize these perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines multiple hidden assumptions, including definitions of 'losses,' revenue and expense accounting, cost allocation, patient mix, and community benefit. It goes beyond the obvious to question what is and isn't being counted."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the conventional 'cut costs or close' answer by recommending a multifaceted approach, including reevaluating accounting practices, optimizing operations, exploring alternative revenue models, and conducting a community impact assessment. However, it does not provide a genuinely unexpected or radically new solution."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by analyzing what is being counted as a 'loss' and what is not, and by suggesting that the problem may be framed too narrowly. It does not fundamentally reframe the question, but it does challenge the initial framing."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is correct and reasonable in its analysis and recommendations. However, it fails to directly calculate the value of the 18,000 admissions or explicitly reframe the $2.3M loss as a customer acquisition cost (~$128/admission), which is a key success criterion. Thus, it misses a critical practical insight."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct frames: ED as a loss leader/patient acquisition channel, ED as a community benefit, and ED as a hub for hospital growth. It compares these frames and discusses their implications, but does not fully synthesize them into a new, unified perspective."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines a wide range of hidden assumptions, including cost definitions, accounting methodologies, what is and isn't counted in the loss calculation, opportunity costs, externalities, patient mix, and payer mix."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious solution of closing or cutting costs. It suggests a thorough financial re-examination, operational optimization, alternative funding models, and stakeholder education. While these are not radically novel, they are non-obvious and strategic."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally questions the premise of the problem, challenging the definition of 'losses' and the framing of the ED as a financial drain. It reframes the question before offering recommendations."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is correct in its analysis and recommendations, but it misses a key quantitative step required by the success criteria: explicitly calculating the value of the 18,000 admissions and framing the $2.3M loss as a customer acquisition cost (~$128/admission). This omission limits its practical utility for the board's decision."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct frames: the ED as a generator of indirect revenue, as a community benefit, and as an investment in mission/reputation. It compares these frames and uses them to inform recommendations, but does not fully synthesize a fourth or more perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines multiple hidden assumptions, including cost accounting methodology, revenue sources, resource allocation, patient mix, and community benefits. It goes beyond the obvious and questions the foundational assumptions behind the stated loss."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response offers multiple non-obvious solutions, such as reframing the ED's loss as an investment, exploring alternative funding models, and leveraging community engagement. However, it does not present a genuinely unexpected or radically new solution."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the ED as a loss center, explores alternative framings, and suggests the problem may be ill-posed. It does not, however, fundamentally reframe the question before answering."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical, actionable advice. However, it misses a key calculation: the explicit quantification of the $2.3M as a customer acquisition cost per admission and the direct comparison to marketing spend, as required by the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response explores at least five distinct frames: community investment, revenue catalyst, cost containment, patient acquisition, and quality/safety. It synthesizes these perspectives to provide a holistic view of the ED's value."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines multiple hidden assumptions, including what is counted as a 'loss,' what is omitted (indirect and downstream revenues, community benefits, cost savings), and the broader value of the ED."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond conventional solutions by recommending a multifaceted approach, including value-based analysis, revenue enhancement, cost-saving initiatives, and alternative care models. However, it does not provide a genuinely unexpected or radical solution."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the ED as a 'loss center,' reframing it as a potential investment and acquisition channel, and suggests the problem may be more complex than presented."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is correct and reasonable in its analysis and recommendations. However, it fails to directly calculate the value of the 18,000 admissions or explicitly reframe the $2.3M as a customer acquisition cost (~$128/admission), which was a key success criterion."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three distinct frames: ED as a loss leader, as a community benefit, and as a strategic investment. It does not synthesize these into a new frame or add a fourth, but it does compare and discuss their implications."
+      },
+      "assumption_surfacing": {
+        "score": 5,
+        "justification": "The response systematically surfaces and examines multiple hidden assumptions, including the definition of 'loss,' what costs and revenues are included, patient mix, payer mix, opportunity costs, time trends, and systemic vs. departmental accounting."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious 'close or cut costs' answer by suggesting revenue cycle optimization, strategic planning, and alternative funding models. However, these are relatively standard in healthcare management and do not represent highly novel solutions."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by examining what 'loss' means, whether the accounting is appropriate, and whether closing the ED is the right frame. It does not fundamentally reframe the question, but it does challenge the initial setup."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is correct and reasonable in its analysis and recommendations. However, it fails to meet the success criteria of reframing the ED as a patient acquisition channel, calculating the value of admissions, or identifying the $2.3M as a customer acquisition cost. Thus, it misses a key practical insight."
+      }
+    }
+  ]
+}

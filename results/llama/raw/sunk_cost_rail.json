@@ -1,0 +1,798 @@
+{
+  "problem_id": "sunk_cost_rail",
+  "problem_title": "The Sunk Cost Light Rail",
+  "category": "framing_trap",
+  "paths_applied": [
+    "path_5_invert",
+    "path_6_premise_reflection"
+  ],
+  "theory_connection": "Tversky & Kahneman (1981): framing effects. The binary framing (A or B) plus sunk cost anchoring ($800M spent) constrains the solution space. Inversion reveals hidden assumptions. Premise reflection surfaces that 'complete vs. switch' is itself a frame, not the real decision.",
+  "expected_vanilla_failure": "Agonises over the A/B binary. Likely recommends completing the rail because of sunk costs, 'commitment', or 'the 70% already built'. Even if it recognises sunk cost fallacy, stays within the two-option frame.",
+  "success_criteria": "Identifies Option C possibilities: hybrid (complete a partial segment + bus for the rest), repurpose the corridor (autonomous vehicles, freight), or redefine the problem entirely (the city needs flexible transit, not a specific technology). Explicitly names sunk cost as irrelevant.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "To determine whether Metro City should complete the light rail line or switch to the bus rapid transit system, let's analyze the situation step by step, considering the key factors involved.\n\n1. **Current Investment and Completion Status**: Metro City has already invested $800 million in the light rail project over 12 years, with the project being 70% complete. This significant investment is a sunk cost, meaning it has already been incurred and cannot be recovered.\n\n2. **Remaining Costs**: Completing the remaining 30% of the light rail project will require an additional $400 million. This brings the total cost of the light rail project to $1.2 billion if completed.\n\n3. **Ridership Projections**: Due to the pandemic, there has been a shift towards remote work, with 40% of the workforce now working remotely. As a result, updated ridership projections indicate that the light rail line will carry only 35% of the originally forecast passengers. This reduction in demand significantly impacts the project's viability and potential return on investment.\n\n4. **Alternative Option - Bus Rapid Transit (BRT) System**: An express bus rapid transit system serving the same corridor could be built for $150 million. This alternative is substantially cheaper than completing the light rail project.\n\n5. **Comparison of Costs and Benefits**:\n    - **Light Rail Completion**: Total cost of $1.2 billion for a project that will serve only 35% of the originally projected ridership.\n    - **Bus Rapid Transit System**: Total cost of $150 million, potentially serving a similar or adequate portion of the reduced demand, given its significantly lower cost and the flexibility of bus systems to adjust routes and frequencies as needed.\n\n6. **Decision Factors**:\n    - **Cost-Effectiveness**: The bus rapid transit system is more cost-effective, with a much lower upfront cost.\n    - **Adaptability**: Bus systems can be more easily adjusted or expanded based on future demand changes, offering flexibility that fixed rail lines do not.\n    - **Demand Uncertainty**: With the shift towards remote work potentially being a long-term or permanent change, there's uncertainty about future public transportation demand, making a less costly, more adaptable solution appealing.\n\n7. **Conclusion**: Given the significantly reduced ridership projections and the high cost of completing the light rail project, switching to the bus rapid transit system appears to be the more prudent decision. The $150 million cost for the BRT system is substantially lower than the $400 million needed to complete the light rail line, and it provides a more flexible and potentially more cost-effective solution for serving the reduced demand. This approach allows the city to conserve resources while still providing a public transportation solution for its citizens.\n\nTherefore, based on the analysis, the recommendation is for Metro City to switch to the bus rapid transit system instead of completing the light rail line. This decision prioritizes cost-effectiveness, adaptability, and responsiveness to changed circumstances, ensuring that the city's transportation investments are aligned with current and anticipated future needs.",
+      "input_tokens": 199,
+      "output_tokens": 612,
+      "elapsed_seconds": 2.59
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "To solve this problem, let's consider the key factors involved and weigh the options carefully.\n\n**Current Situation:**\n\n1. The light rail project is 70% complete, with $800 million already spent over 12 years.\n2. The remaining 30% of the project will cost an additional $400 million.\n3. Updated ridership projections show the line will carry only 35% of originally forecast passengers, primarily due to the shift to remote work.\n\n**Option 1: Complete the Light Rail Project**\n\nPros:\n\n1. Significant investment already made: $800 million has been spent, and completing the project would allow the city to realize some return on this investment.\n2. Potential for future growth: Although ridership projections are currently lower, the city may experience future growth, and the light rail line could accommodate increased demand.\n\nCons:\n\n1. High additional cost: Completing the remaining 30% of the project will cost $400 million, which is a substantial additional investment.\n2. Lower-than-expected ridership: With only 35% of originally forecast passengers, the light rail line may not be as efficient or effective as initially planned.\n\n**Option 2: Switch to the Express Bus Rapid Transit System**\n\nPros:\n\n1. Lower cost: The alternative bus system can be built for $150 million, which is significantly less than the $400 million required to complete the light rail project.\n2. Flexibility: Bus systems can be more easily adapted to changing demand and routes, which could be beneficial in a post-pandemic environment with shifting work patterns.\n\nCons:\n\n1. Loss of sunk investment: Abandoning the light rail project would mean that the $800 million already spent would not yield the expected return.\n2. Potential for lower capacity: Bus systems may not have the same capacity as light rail, which could lead to congestion and reduced efficiency during peak hours.\n\n**Recommendation:**\n\nBased on the analysis, I would recommend that Metro City switch to the express bus rapid transit system. Here's why:\n\n1. **Cost savings**: The bus system is significantly cheaper than completing the light rail project, with a cost difference of $250 million ($400 million - $150 million).\n2. **Adaptability**: The bus system can be more easily adapted to changing demand and routes, which is important in a post-pandemic environment with shifting work patterns.\n3. **Efficiency**: Although the bus system may not have the same capacity as light rail, it can still provide efficient and reliable transportation for the reduced number of commuters.\n4. **Opportunity cost**: The $400 million required to complete the light rail project could be better spent on other transportation initiatives or infrastructure projects that might have a higher return on investment.\n\nWhile abandoning the light rail project may seem like a significant loss, it's essential to consider the changing circumstances and prioritize the most efficient and effective use of resources. In this case, the express bus rapid transit system appears to be a more cost-effective and adaptable solution for Metro City's transportation needs.",
+      "input_tokens": 199,
+      "output_tokens": 613,
+      "elapsed_seconds": 2.08
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "To determine whether Metro City should complete the light rail line or switch to the bus rapid transit system, let's analyze the key factors involved step by step:\n\n1. **Investment Already Made**: The city has already invested $800 million in the light rail project over 12 years. This is a significant sunk cost that should be considered, but it's essential to remember that sunk costs should not dictate future decisions if they no longer align with the best interests of the city.\n\n2. **Completion Costs and Alternatives**: Completing the remaining 30% of the light rail project will require an additional $400 million. In contrast, an express bus rapid transit system serving the same corridor could be built for $150 million, which is significantly less expensive.\n\n3. **Ridership Projections**: The updated ridership projections indicate that the light rail line will carry only 35% of the originally forecast passengers. This significant decrease in projected usage suggests that the demand for the light rail may not justify the additional investment required to complete it.\n\n4. **Cost-Effectiveness and Efficiency**: The cost-effectiveness of the light rail project must be questioned given the reduced demand. With the bus rapid transit system offering a much lower completion cost, it presents a more cost-effective alternative for providing public transportation in the corridor.\n\n5. **Flexibility and Adaptability**: The shift towards remote work, which is now permanent for 40% of the workforce, indicates a structural change in how people commute. This change suggests that the city's transportation infrastructure needs to adapt to new realities. The bus rapid transit system, being less capital-intensive and potentially more flexible in terms of route adjustments, might offer better adaptability to future changes in commuting patterns.\n\n6. **Opportunity Cost**: The $400 million required to complete the light rail project could be redirected to other pressing needs within the city, including potentially enhancing the bus rapid transit system further or investing in other infrastructure projects that might have a higher return on investment or better meet the city's current needs.\n\nConsidering these factors, the recommendation is to switch to the bus rapid transit system. This decision is based on the significantly lower cost of the bus system ($150 million vs. $400 million for the light rail completion), the reduced demand for the light rail due to changes in work patterns, and the potential for the bus system to offer more flexibility and adaptability in meeting the city's evolving transportation needs.\n\nWhile there's a substantial investment already made in the light rail project, it's crucial to prioritize future value and efficiency over sunk costs. The city should consider the long-term benefits and cost-effectiveness of its transportation investments, and in this scenario, the bus rapid transit system appears to be the more prudent choice.",
+      "input_tokens": 199,
+      "output_tokens": 551,
+      "elapsed_seconds": 2.08
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "To determine whether Metro City should complete the light rail line or switch to the bus rapid transit system, let's consider the key factors involved:\n\n1. **Cost**: The city has already spent $800 million on the light rail project, and completing the remaining 30% will require an additional $400 million, bringing the total cost to $1.2 billion. In contrast, the bus rapid transit system can be built for $150 million.\n\n2. **Ridership Projections**: The updated ridership projections indicate that the light rail line will carry only 35% of the originally forecast passengers. This significant reduction in projected ridership affects the cost-benefit analysis of the project.\n\n3. **Remote Work Impact**: With 40% of the workforce adopting permanent remote work arrangements, the demand for commuting to downtown areas may have decreased substantially, potentially reducing the need for a high-capacity transportation system like the light rail.\n\n4. **Opportunity Cost**: The $400 million required to complete the light rail project could be invested in alternative transportation solutions or other city infrastructure projects that might yield higher returns or better meet the changing needs of the community.\n\n5. **Sunk Cost**: The $800 million already spent on the light rail project is a sunk cost, which should not influence the decision on whether to continue with the project. The focus should be on the additional costs required to complete the project and the expected benefits.\n\nConsidering these factors, here are the options:\n\n- **Complete the Light Rail**: Investing an additional $400 million to complete the light rail line, which would then operate at a significantly reduced capacity compared to original projections.\n- **Switch to Bus Rapid Transit**: Abandoning the light rail project and investing $150 million in a bus rapid transit system that serves the same corridor.\n\n**Recommendation**:\n\nGiven the reduced ridership projections and the significant cost difference between completing the light rail and implementing the bus rapid transit system, the most economically viable option for Metro City would be to switch to the bus rapid transit system. The $150 million required for the bus system is substantially less than the $400 million needed to complete the light rail line, and it would still provide a reliable public transportation option for the community.\n\nAdditionally, choosing the bus rapid transit system allows the city to avoid sinking further funds into a project that may not meet its original usage expectations, thereby minimizing potential financial losses. The saved funds could be redirected towards other pressing infrastructure needs or initiatives that better align with the city's updated priorities and the new reality of remote work arrangements.\n\nIn conclusion, while abandoning a project that is 70% complete is a difficult decision, the changed circumstances and the significant cost savings of the alternative option make switching to the bus rapid transit system the most prudent choice for Metro City.",
+      "input_tokens": 199,
+      "output_tokens": 560,
+      "elapsed_seconds": 2.22
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "To approach this problem, let's break it down into key factors and analyze them step by step:\n\n1. **Current Investment and Completion Status**:\n   - The city has already invested $800 million in the light rail project.\n   - The project is 70% complete, meaning there is 30% of the work left to be done.\n\n2. **Cost to Complete the Light Rail**:\n   - The remaining 30% of the project will cost an additional $400 million.\n   - Total cost for the light rail project, if completed, would be $800 million (already spent) + $400 million (to complete) = $1.2 billion.\n\n3. **Ridership Projections**:\n   - Due to the pandemic and the shift to remote work, only 35% of the originally forecasted passengers are expected to use the light rail.\n   - This significant reduction in expected ridership impacts the project's viability and potential return on investment.\n\n4. **Alternative Option - Express Bus Rapid Transit System**:\n   - An alternative express bus rapid transit system could be built for $150 million.\n   - This option serves the same corridor as the proposed light rail but at a fraction of the cost to complete the light rail project.\n\n5. **Comparison and Considerations**:\n   - **Cost**: The bus rapid transit system is significantly cheaper ($150 million) compared to completing the light rail ($400 million for the remaining work, on top of the $800 million already spent).\n   - **Ridership**: With only 35% of the original forecasted ridership expected, the cost per rider for the light rail increases substantially, potentially making the project less cost-effective.\n   - **Flexibility and Adaptability**: The bus rapid transit system might offer more flexibility in terms of route adjustments and operational changes, which could be beneficial given the uncertain future of work and transportation needs.\n   - **Sunk Cost**: The $800 million already spent on the light rail is a sunk cost. The decision should be based on the future benefits and costs, not on the past investment.\n\n6. **Decision Recommendation**:\n   - Given the significantly reduced ridership projections and the high additional cost to complete the light rail, switching to the express bus rapid transit system seems to be the more financially prudent decision.\n   - The bus system offers a cheaper alternative that still serves the transportation needs of the community, albeit in a different form. It allows the city to allocate the $400 million (required to complete the light rail) to other pressing needs or to enhance the bus rapid transit system further.\n   - The city should consider the long-term implications of each option, including operational costs, maintenance, and the potential for future expansion or adjustments.\n\nIn conclusion, based on the provided information and considering the key factors involved, the recommendation is to switch to the express bus rapid transit system. This option better aligns with the changed circumstances, such as reduced ridership projections, and offers a more cost-effective solution for serving the transportation needs of Metro City's residents.",
+      "input_tokens": 199,
+      "output_tokens": 619,
+      "elapsed_seconds": 2.75
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before choosing between these two options, answer two preliminary questions:\n1. How would you guarantee the WORST possible outcome for Metro City's transit situation? List 5 specific decisions that would maximise waste and minimise public benefit.\n2. Is 'complete the rail vs. switch to buses' actually the right question? What is the question BEHIND this question — what problem is the city actually trying to solve?\nAfter answering both, then address the original question.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "**Preliminary Question 1: Guaranteeing the Worst Possible Outcome**\n\nTo guarantee the worst possible outcome for Metro City's transit situation, the following 5 decisions could be made:\n\n1. **Continue with the light rail project without reassessing its feasibility**: Despite the significant changes in ridership projections, the city could choose to complete the project as originally planned, ignoring the potential waste of resources and the reduced demand for the service.\n2. **Ignore alternative transportation modes**: The city could dismiss the express bus rapid transit system as a viable alternative, failing to consider the potential benefits of a more flexible and cost-effective solution.\n3. **Fail to engage with the community and stakeholders**: The city could neglect to involve residents, businesses, and other stakeholders in the decision-making process, potentially leading to a solution that does not meet the needs of the community and lacks public support.\n4. **Prioritize sunk costs over future benefits**: The city could prioritize the $800 million already invested in the light rail project over the potential benefits of a more efficient and effective transportation system, even if it means wasting additional resources.\n5. **Neglect to consider the long-term maintenance and operational costs**: The city could overlook the ongoing expenses associated with the light rail system, such as maintenance, staffing, and energy costs, which could further exacerbate the financial burden on the city and its residents.\n\n**Preliminary Question 2: The Question Behind the Question**\n\nThe question \"complete the rail vs. switch to buses\" is not the fundamental issue the city is trying to solve. The underlying question is: **How can Metro City provide an efficient, effective, and sustainable transportation system that meets the evolving needs of its residents and businesses, given the significant changes in work patterns and ridership projections?**\n\nThe city is trying to solve a problem of adapting to a new reality, where remote work has reduced the demand for commuting, and the original light rail project may no longer be the best solution. The question is not just about choosing between two options, but about re-evaluating the city's transportation strategy and identifying the most suitable solution for the current and future needs of the community.\n\n**Addressing the Original Question**\n\nGiven the significant changes in ridership projections and the reduced demand for commuting, it is likely that completing the light rail project would not be the most efficient use of resources. The estimated $400 million required to complete the remaining 30% of the project could be better spent on a more flexible and cost-effective solution.\n\nThe express bus rapid transit system, which could be built for $150 million, appears to be a more attractive option. It would provide a similar level of service, with the potential for greater flexibility and adaptability to changing demand patterns. Additionally, the bus system would likely have lower maintenance and operational costs, making it a more sustainable solution in the long run.\n\nTherefore, considering the city's goal of providing an efficient, effective, and sustainable transportation system, **switching to the bus system** seems to be the more prudent decision. However, it is essential to conduct further analysis, engage with the community and stakeholders, and carefully evaluate the potential benefits and drawbacks of each option before making a final decision.",
+      "input_tokens": 268,
+      "output_tokens": 648,
+      "elapsed_seconds": 4.98
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before choosing between these two options, answer two preliminary questions:\n1. How would you guarantee the WORST possible outcome for Metro City's transit situation? List 5 specific decisions that would maximise waste and minimise public benefit.\n2. Is 'complete the rail vs. switch to buses' actually the right question? What is the question BEHIND this question — what problem is the city actually trying to solve?\nAfter answering both, then address the original question.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "**Preliminary Question 1: Guaranteeing the Worst Possible Outcome for Metro City's Transit Situation**\n\nTo guarantee the worst possible outcome for Metro City's transit situation, the following 5 specific decisions could be made:\n\n1. **Overextend and Diversify Unnecessarily**: Implement a multitude of different, uncoordinated transit projects simultaneously, spreading resources too thin and ensuring that none of them are completed efficiently or effectively. This would lead to a fragmented and confusing transit system that fails to provide comprehensive service to any single area or community.\n\n2. **Ignore Integrated Planning**: Develop transit projects without considering the overall urban planning and development strategy of Metro City. This would result in transit infrastructure that does not support or complement the city's growth, leading to inefficient use of resources and a lack of synergy between transportation and urban development.\n\n3. **Prioritize Projects Based on Political Favoritism**: Allocate funding and resources to transit projects based on political influence rather than need, demand, or strategic importance. This could lead to underutilized infrastructure in some areas and neglected needs in others, maximizing waste and minimizing public benefit.\n\n4. **Fail to Adopt Technological Advancements and Innovations**: Refuse to integrate modern technologies and innovative solutions into the transit system, such as smart traffic management systems, green technologies, or advanced public transit information systems. This would keep the transit system outdated, inefficient, and unappealing to users, especially in comparison to private transportation options.\n\n5. **Neglect Maintenance and Upkeep**: Once transit infrastructure is built, neglect regular maintenance and upkeep, allowing the condition of the transit system to deteriorate over time. This would not only reduce the lifespan of the infrastructure but also lead to safety issues, further diminishing the appeal and reliability of the public transit system.\n\n**Preliminary Question 2: Is 'Complete the Rail vs. Switch to Buses' the Right Question?**\n\nThe question of whether to complete the light rail or switch to an express bus rapid transit system might not be the right question. The underlying issue that Metro City is trying to solve is how to provide the most effective, efficient, and sustainable public transportation solution given the changed circumstances, particularly the shift towards remote work and the resulting decrease in projected ridership.\n\nThe city should be asking: \"What is the best way to meet the current and future transportation needs of Metro City's residents and commuters, considering the new realities of work patterns, environmental concerns, and budget constraints?\" This question opens up a broader range of potential solutions that might include, but are not limited to, completing the light rail, implementing a bus rapid transit system, enhancing existing public transit services, investing in alternative modes of transportation (such as cycling infrastructure or walkable community designs), or even exploring innovative transportation technologies.\n\n**Addressing the Original Question**\n\nGiven the significant change in projected ridership due to the pandemic and the shift to remote work, the original investment rationale for the light rail may no longer be valid. Completing the light rail would require an additional $400 million, which is a substantial investment considering the reduced demand. On the other hand, the express bus rapid transit system offers a much lower upfront cost of $150 million and could potentially be adapted or expanded more easily in response to future changes in demand or urban development.\n\nConsidering the need for flexibility, efficiency, and fiscal responsibility, switching to the express bus rapid transit system could be the more prudent decision. This option allows the city to provide a public transportation solution that meets the current needs of its residents while minimizing financial risk and preserving the ability to reassess and adjust transportation strategies as the city and its commuters' needs evolve.\n\nMoreover, the $250 million saved (by not spending the additional $400 million for the light rail and instead opting for the $150 million bus system) could be allocated to other critical transportation or urban development projects that might offer higher returns in terms of public benefit, environmental sustainability, and economic vitality for Metro City.",
+      "input_tokens": 268,
+      "output_tokens": 797,
+      "elapsed_seconds": 3.45
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before choosing between these two options, answer two preliminary questions:\n1. How would you guarantee the WORST possible outcome for Metro City's transit situation? List 5 specific decisions that would maximise waste and minimise public benefit.\n2. Is 'complete the rail vs. switch to buses' actually the right question? What is the question BEHIND this question — what problem is the city actually trying to solve?\nAfter answering both, then address the original question.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "**Preliminary Question 1: Guaranteeing the WORST possible outcome for Metro City's transit situation**\n\nTo guarantee the worst possible outcome for Metro City's transit situation, here are 5 specific decisions that would maximize waste and minimize public benefit:\n\n1. **Proceed with the original plan without reassessing demand**: Ignore the updated ridership projections and complete the light rail line as initially planned, despite the significant reduction in forecasted passengers. This would result in a costly and underutilized system.\n2. **Reject alternative solutions without evaluation**: Dismiss the express bus rapid transit system proposal without conducting a thorough analysis of its potential benefits, costs, and feasibility. This would limit the city's options and potentially overlook a more efficient and effective solution.\n3. **Prioritize political interests over public needs**: Make decisions based on political agendas, personal interests, or to satisfy special interest groups, rather than prioritizing the needs and concerns of the broader community. This could lead to inefficient allocation of resources and a transit system that fails to serve the public effectively.\n4. **Fail to integrate the transit system with other modes of transportation**: Design and implement the transit system in isolation, without considering how it will interact with other modes of transportation, such as pedestrian and cycling infrastructure, ride-hailing services, or existing public transportation networks. This would create a fragmented and inconvenient transit experience for users.\n5. **Neglect maintenance and upkeep**: Underfund or neglect regular maintenance and upkeep of the transit system, leading to deteriorating infrastructure, frequent disruptions, and a poor overall user experience. This would further erode public trust and confidence in the transit system.\n\n**Preliminary Question 2: The question behind the question**\n\nThe question \"complete the rail vs. switch to buses\" is not the fundamental question the city should be asking. The underlying question is: **How can Metro City create an efficient, effective, and sustainable transit system that meets the evolving needs of its residents and workforce, while making the best use of available resources?**\n\nThe city is trying to solve the problem of providing a reliable and efficient transportation system that connects the suburbs to downtown, while adapting to the significant changes in work patterns and ridership demand brought about by the pandemic. The question behind the question is about finding the optimal solution that balances costs, benefits, and user needs, rather than simply choosing between two specific modes of transportation.\n\n**Addressing the original question**\n\nConsidering the updated ridership projections and the significant reduction in forecasted passengers, it is likely that completing the light rail line as initially planned would not be the most efficient use of resources. The additional $400 million required to complete the remaining 30% of the project would be a substantial investment, and the resulting system might still not meet the original expectations.\n\nIn contrast, the express bus rapid transit system proposal offers a more affordable and potentially more flexible solution, with a significantly lower upfront cost of $150 million. This option could provide a similar level of service to the light rail line, while being more adaptable to changing demand patterns and potentially easier to maintain and operate.\n\nGiven the changed circumstances and the need to prioritize efficient use of resources, **switching to the bus system** might be the more prudent decision. However, before making a final decision, the city should conduct a thorough analysis of the express bus rapid transit system proposal, including its potential benefits, limitations, and feasibility, as well as its integration with other modes of transportation and the overall transit network.\n\nUltimately, the city should prioritize a solution that provides the best value for money, meets the evolving needs of its residents and workforce, and creates a sustainable and efficient transit system for the long term.",
+      "input_tokens": 268,
+      "output_tokens": 742,
+      "elapsed_seconds": 2.68
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before choosing between these two options, answer two preliminary questions:\n1. How would you guarantee the WORST possible outcome for Metro City's transit situation? List 5 specific decisions that would maximise waste and minimise public benefit.\n2. Is 'complete the rail vs. switch to buses' actually the right question? What is the question BEHIND this question — what problem is the city actually trying to solve?\nAfter answering both, then address the original question.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "**Preliminary Question 1: Guaranteeing the WORST possible outcome for Metro City's transit situation**\n\nTo maximize waste and minimize public benefit, the following decisions could be made:\n\n1. **Ignoring changing commuter patterns**: Continue to invest in the light rail project without reassessing its feasibility and potential ridership, despite the significant shift to remote work. This would lead to a costly and underutilized system.\n2. **Over-engineering and gold-plating**: Incorporate unnecessary and expensive features into the light rail project, such as elaborate station designs or high-end materials, which would increase costs without providing a proportional benefit to riders.\n3. **Failing to integrate with existing transportation networks**: Design the light rail system as a standalone network, rather than integrating it with existing bus routes, bike lanes, and pedestrian infrastructure. This would lead to a fragmented and inconvenient transportation system.\n4. **Not prioritizing maintenance and upkeep**: Allocate insufficient funds for maintenance and repairs, allowing the light rail system to deteriorate over time, which would compromise safety, reliability, and overall user experience.\n5. **Disregarding community feedback and engagement**: Push forward with the project without meaningful consultation with local residents, businesses, and stakeholders, potentially leading to a system that does not meet the needs of the community and fosters resentment towards the project.\n\n**Preliminary Question 2: The question behind the question**\n\nThe question \"complete the rail vs. switch to buses\" is not the fundamental issue the city is trying to solve. The underlying problem is: **How can Metro City provide an efficient, effective, and sustainable transportation system that meets the evolving needs of its residents and workforce, while making the most of the investments already made?**\n\nThe city needs to consider the changed commuting patterns, updated ridership projections, and the significant investment already made in the light rail project. The goal is to find a solution that balances the need for a reliable and convenient transportation system with the available budget and resources.\n\n**Addressing the original question**\n\nGiven the changed circumstances and the significant investment already made, the city should consider the following factors:\n\n* The light rail project is 70% complete, and abandoning it now would mean wasting a substantial portion of the $800 million already spent.\n* The updated ridership projections indicate that the light rail system will carry only 35% of the originally forecast passengers, which raises concerns about the system's viability and potential for underutilization.\n* The alternative express bus rapid transit system could be built for $150 million, which is significantly cheaper than completing the light rail project.\n\nConsidering these factors, I would recommend **switching to the bus system**. While it's a difficult decision to abandon the light rail project, the updated ridership projections and the significant cost savings of the bus system make it a more pragmatic and cost-effective solution. The $400 million required to complete the light rail project could be better spent on other transportation initiatives that would benefit a larger portion of the population.\n\nHowever, before making a final decision, the city should also consider the following:\n\n* Could the existing light rail infrastructure be repurposed or integrated with the bus system to minimize waste and maximize the value of the investment already made?\n* Are there any opportunities to adjust the bus system's design to incorporate elements that would have been part of the light rail project, such as dedicated bus lanes or improved pedestrian and cycling infrastructure?\n* How would the city ensure that the bus system is designed to meet the needs of the community, including frequency, reliability, and accessibility?\n\nUltimately, the city should prioritize a solution that provides the best value for the community, taking into account the changed circumstances and the need for a sustainable and effective transportation system.",
+      "input_tokens": 268,
+      "output_tokens": 752,
+      "elapsed_seconds": 2.81
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before choosing between these two options, answer two preliminary questions:\n1. How would you guarantee the WORST possible outcome for Metro City's transit situation? List 5 specific decisions that would maximise waste and minimise public benefit.\n2. Is 'complete the rail vs. switch to buses' actually the right question? What is the question BEHIND this question — what problem is the city actually trying to solve?\nAfter answering both, then address the original question.\n\nMetro City has spent $800 million over 12 years building a light rail line connecting the suburbs to downtown. The project is 70% complete. However, since the pandemic, remote work has become permanent for 40% of the workforce, and updated ridership projections show the line will carry only 35% of originally forecast passengers. Completing the remaining 30% will cost an additional $400 million. An alternative express bus rapid transit system serving the same corridor could be built for $150 million. Should the city complete the light rail or switch to the bus system?",
+      "response": "**Preliminary Question 1: Guaranteeing the Worst Possible Outcome**\n\nTo guarantee the worst possible outcome for Metro City's transit situation, here are 5 specific decisions that would maximize waste and minimize public benefit:\n\n1. **Continue investing in the light rail project without reassessing the changing transportation needs**: Ignoring the updated ridership projections and the shift towards remote work, the city would continue to pour money into a project that may no longer be the best solution for the community.\n2. **Build a separate, competing bus system**: Instead of choosing between the light rail and the bus system, the city could decide to build both, duplicating efforts and wasting resources on two separate systems that serve the same corridor.\n3. **Fail to integrate the transit system with other modes of transportation**: The city could neglect to integrate the chosen transit system with other modes of transportation, such as bike-share programs, ride-hailing services, or pedestrian infrastructure, making it difficult for residents to use the system efficiently.\n4. **Prioritize the interests of contractors and special interest groups over those of the community**: The city could make decisions based on the interests of contractors, developers, or special interest groups rather than the needs and preferences of the community, leading to a system that benefits a select few rather than the broader population.\n5. **Neglect to monitor and evaluate the performance of the transit system**: The city could fail to establish a system for monitoring and evaluating the performance of the transit system, making it difficult to identify areas for improvement and adjust the system to meet changing needs.\n\n**Preliminary Question 2: The Question Behind the Question**\n\nThe question \"complete the rail vs. switch to buses\" is not the underlying question that Metro City is trying to solve. The real question is: **How can Metro City provide an efficient, effective, and sustainable transportation system that meets the changing needs of its residents and supports the city's economic and social goals?**\n\nThe city is trying to solve a problem of how to provide the best possible transportation solution for its residents, given the significant changes in work patterns and transportation needs that have occurred since the light rail project was first conceived. The question of whether to complete the light rail or switch to a bus system is a symptom of a larger issue, which is how to create a transportation system that is adaptable, resilient, and responsive to the needs of the community.\n\n**Addressing the Original Question**\n\nGiven the updated ridership projections and the significant change in work patterns, it is likely that completing the light rail project would not be the best use of resources. The additional $400 million required to complete the project would be a significant investment, and the projected ridership of 35% of the original forecast suggests that the system may not be able to generate sufficient revenue to justify the cost.\n\nIn contrast, the express bus rapid transit system could provide a more flexible and adaptable solution, at a significantly lower cost. The $150 million required to build the bus system is a fraction of the cost of completing the light rail project, and it could provide a similar level of service to the community.\n\nTherefore, based on the information provided, it would likely be more beneficial for Metro City to **switch to the bus system**. However, this decision should be made as part of a broader evaluation of the city's transportation needs and goals, and should take into account the potential impacts on the community, the environment, and the economy. The city should also consider how to integrate the bus system with other modes of transportation, and how to ensure that the system is adaptable and responsive to changing needs over time.",
+      "input_tokens": 268,
+      "output_tokens": 730,
+      "elapsed_seconds": 2.26
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two distinct frames: completing the light rail project and switching to the bus rapid transit system. It explores the cost-effectiveness and adaptability of both options, but does not delve into more diverse perspectives such as hybrid solutions or repurposing the corridor."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies several assumptions, including the idea that the original ridership projections were accurate, and that the pandemic's impact on remote work is a long-term change. It also notes the sunk cost of the light rail project, recognizing it as irrelevant to the current decision. However, it does not systematically examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces a conventional solution, choosing between the two given options (light rail and bus rapid transit) without exploring more novel or hybrid solutions that could better address the city's needs."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting due to the changed circumstances (reduced ridership projections), but it does not fundamentally question the premise of the problem or explore alternative problem definitions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides a reasonable analysis of the situation, considering the reduced demand and the cost-effectiveness of the alternatives. However, it lacks a deeper exploration of potential risks, long-term implications, and the flexibility of the chosen solution in the face of future uncertainties."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two distinct frames: completing the light rail project and switching to the express bus rapid transit system. It weighs the pros and cons of each option, demonstrating an understanding of different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes that the $800 million already spent is a 'significant investment' but does not thoroughly question the assumption that this sunk cost should influence the decision. It touches on the idea that the city should prioritize the most efficient use of resources but does not deeply examine other hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions to the problem: either complete the light rail project or switch to the bus system. It does not explore non-obvious solutions, such as a hybrid approach or repurposing the corridor, which are mentioned in the success criteria as desirable."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with a minor acknowledgment of changing circumstances due to the pandemic. It does not fundamentally question the premise of the problem or explore alternative problem definitions, such as the need for flexible transit solutions rather than a specific technology."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is factually correct and provides a reasonable analysis of the situation. It correctly identifies the pros and cons of each option and makes a practical recommendation based on the information provided. However, it does not fully address the success criteria by considering Option C possibilities or explicitly naming sunk cost as irrelevant in a more nuanced way."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two distinct frames: completing the light rail project and switching to the bus rapid transit system. It also touches upon the idea of redirecting funds to other projects, but does not fully explore this as a separate frame."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the idea that sunk costs should not dictate future decisions, the assumption that the light rail project's original demand forecasts are no longer valid, and the notion that the city's transportation infrastructure needs to adapt to new realities. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces a conventional response with minor variation, choosing between the two given options (light rail and bus rapid transit) without exploring more innovative or hybrid solutions that could better meet the city's needs."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, particularly in terms of the shift towards remote work and its impact on transportation demand. However, it does not explicitly question the premise of the problem or explore alternative problem definitions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, providing a well-structured analysis of the key factors involved and a logical recommendation based on the given information. However, it lacks a deeper exploration of the potential risks and benefits associated with each option, as well as more detailed practical considerations for implementing the chosen solution."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily considers two main frames: completing the light rail and switching to the bus rapid transit system. It does acknowledge the impact of remote work and reduced ridership projections but does not explore a wide range of distinct frames or perspectives beyond these obvious considerations."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines a couple of assumptions, notably the irrelevance of sunk costs and the potential misalignment of the original project with current needs due to changed circumstances. However, it does not systematically surface and examine all hidden assumptions that might be influencing the decision."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response offers conventional solutions to the problem: either complete the light rail or switch to the bus rapid transit system. It does not produce solutions beyond these obvious first-order answers, such as considering a hybrid approach, repurposing the corridor, or redefining the problem entirely."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem largely as stated, with minor notes on how circumstances have changed. It does not fundamentally question the premise of the problem or explore alternative problem definitions that might lead to more innovative solutions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides reasonable practical advice grounded in the information given. It correctly identifies the sunk cost fallacy and considers the opportunity cost of pursuing the light rail project versus the bus rapid transit system, leading to a sensible recommendation based on the reduced ridership projections and significant cost savings of the alternative option."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two distinct frames: completing the light rail project and switching to an express bus rapid transit system. It explores the cost, ridership, and flexibility of both options, but does not synthesize four or more frames."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the expected ridership, the cost-effectiveness of the light rail, and the idea that the sunk cost of $800 million is irrelevant to the decision. It also considers the potential for future changes in transportation needs."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response produces a conventional response with a minor variation, comparing the light rail to an express bus rapid transit system. It does not present a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting by considering alternative transportation solutions, but it does not fundamentally reframe the question before answering. It accepts the basic premise of choosing between the light rail and the bus system."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, including a comparison of costs and consideration of ridership projections. It also recognizes the sunk cost fallacy and advises against letting past investment dictate the decision."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including completing the light rail project, switching to the bus system, and re-evaluating the city's transportation strategy. It also acknowledges the need to engage with the community and stakeholders, and considers the long-term maintenance and operational costs. However, it does not fully explore four or more distinct frames with synthesis."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several hidden assumptions, including the assumption that the light rail project is still the best solution, the assumption that the city should prioritize sunk costs, and the assumption that the express bus rapid transit system is not a viable alternative. It also notes the potential for neglecting to consider the long-term maintenance and operational costs. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces one non-obvious solution alongside conventional ones, which is to reframe the problem and consider the city's transportation strategy as a whole. However, it does not generate multiple non-obvious solutions or a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, by asking how Metro City can provide an efficient, effective, and sustainable transportation system that meets the evolving needs of its residents and businesses. It explicitly questions the premise of the original problem and explores alternative solutions."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, including the consideration of the express bus rapid transit system as a viable alternative and the need to engage with the community and stakeholders. However, it could be improved by providing more specific data and analysis to support the recommendation to switch to the bus system."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the original question of completing the light rail versus switching to buses, but also explores broader perspectives such as the need for flexible transit solutions, the impact of remote work on transportation needs, and the potential for alternative modes of transportation. It does not, however, synthesize these frames into a fully integrated solution."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the assumption that the light rail project should be completed as originally planned, the assumption that the express bus rapid transit system is the only alternative, and the implicit assumption that the primary goal is to maximize ridership. It also touches on the idea that sunk costs are irrelevant, though it does not explicitly explore this as an assumption."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces solutions beyond the obvious first-order answer by considering the express bus rapid transit system as an alternative to completing the light rail. However, it does not present a genuinely unexpected viable solution that reframes the problem entirely, such as a hybrid approach or repurposing the corridor for other uses."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem by asking if 'complete the rail vs. switch to buses' is the right question. It then explores alternative problem framings, such as how to provide the most effective public transportation solution given the new circumstances. This demonstrates a high level of premise questioning."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, such as considering the financial implications of each option and the potential for future adjustments. However, it does not provide excellent practical advice grounded in reality by fully exploring all potential solutions, including hybrid or repurposed corridor options, and does not explicitly name sunk cost as irrelevant in its final analysis."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including completing the light rail line, switching to the bus system, and questioning the premise of the problem. It also explores the idea of integrating the transit system with other modes of transportation, demonstrating a consideration of various perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the assumption that the light rail line is the best solution, the assumption that the updated ridership projections are accurate, and the assumption that the city's goal is to simply choose between two modes of transportation. However, it does not systematically surface and examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as considering the express bus rapid transit system and integrating the transit system with other modes of transportation. However, it does not provide a genuinely unexpected viable solution that reframes the problem, as it primarily focuses on choosing between the light rail line and the bus system."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, asking 'How can Metro City create an efficient, effective, and sustainable transit system that meets the evolving needs of its residents and workforce, while making the best use of available resources?' This demonstrates a high level of premise questioning, as it challenges the initial problem statement and explores alternative perspectives."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides good practical detail, considering the updated ridership projections, the costs of completing the light rail line, and the potential benefits of the express bus rapid transit system. However, it could be improved by providing more specific data and analysis to support the recommendations, making it excellent practical advice grounded in reality."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the original light rail project, the alternative bus system, and potential hybrid solutions. It also explores the idea of repurposing the existing infrastructure and adjusting the bus system's design to incorporate elements from the light rail project. However, it does not fully synthesize these frames into a comprehensive solution."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the assumption that the light rail project is still viable, the assumption that the bus system is a suitable alternative, and the assumption that the city's transportation needs are fixed. It also notes the potential for changed commuting patterns and updated ridership projections, which challenges the original assumptions behind the light rail project."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces some non-obvious solutions, such as repurposing the existing light rail infrastructure and adjusting the bus system's design to incorporate elements from the light rail project. However, it does not fully explore these ideas or present a genuinely unexpected viable solution that reframes the problem."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question by asking how Metro City can provide an efficient, effective, and sustainable transportation system that meets the evolving needs of its residents and workforce, rather than simply choosing between the light rail and bus systems. This reframing allows for a more comprehensive and flexible approach to solving the problem."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, as it takes into account the changed circumstances and the significant investment already made in the light rail project. It also considers the potential benefits and drawbacks of each option and presents a well-reasoned argument for switching to the bus system. However, it could be improved by providing more detailed analysis and data to support its conclusions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the original question of completing the light rail vs. switching to buses, as well as a broader evaluation of the city's transportation needs and goals. It also explores the idea of integrating the transit system with other modes of transportation, and considers the potential impacts on the community, environment, and economy. However, it does not fully synthesize these frames into a cohesive overall perspective."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several hidden assumptions, including the assumption that the light rail project is still the best solution for the city, and the assumption that the city's transportation needs have not changed since the project was first conceived. It also notes the potential for sunk cost fallacy, although it does not explicitly name it as such. However, it does not systematically surface and examine all possible hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response produces one non-obvious solution alongside conventional ones, which is to consider the broader transportation needs of the city and to evaluate the light rail project in the context of those needs. However, it does not produce multiple non-obvious solutions, and the ultimate recommendation to switch to the bus system is a relatively conventional response."
+      },
+      "premise_questioning": {
+        "score": 5,
+        "justification": "The response fundamentally reframes the question before answering, by asking how Metro City can provide an efficient, effective, and sustainable transportation system that meets the changing needs of its residents. This reframing allows the response to consider a wider range of possibilities and to evaluate the light rail project in a broader context."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and reasonable, and provides a well-reasoned evaluation of the pros and cons of completing the light rail project vs. switching to the bus system. However, it does not provide excellent practical advice grounded in reality, as it does not fully consider the potential implementation challenges and trade-offs of the recommended solution."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-benefit analysis frame, comparing the two given options (complete rail vs. switch to bus). While it mentions adaptability and flexibility as factors, these are still within the same economic efficiency frame rather than distinct perspectives like social equity, environmental impact, or political considerations."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the $800M is a sunk cost (correctly noted as irrelevant to future decisions) and that remote work changes are permanent/long-term. However, it doesn't question other assumptions like whether the ridership projections are accurate or whether the same corridor is still the right focus."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response only considers the two options explicitly stated in the problem: complete the rail line or switch to bus rapid transit. It doesn't explore hybrid solutions, partial completion, repurposing the corridor for other uses, or any other creative alternatives beyond the binary choice presented."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as framed - a binary choice between completing rail or switching to bus. It doesn't question whether this is the right framing, whether the corridor itself is still optimal, or whether the city might need different transportation solutions entirely given the changed work patterns."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The analysis is logically sound and correctly identifies sunk costs as irrelevant. The cost comparison is accurate and the recommendation is reasonable given the information provided. However, it misses the success criteria requirement to explore hybrid options and alternative framings, making it incomplete rather than excellent practical advice."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-benefit analysis frame, comparing the two given options. While it acknowledges different perspectives (financial, adaptability, efficiency), it doesn't explore fundamentally different ways of viewing the problem such as urban planning, environmental, or social equity frames."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about the sunk cost ($800 million already spent) but doesn't systematically examine other hidden assumptions like whether the ridership projections are accurate, whether remote work trends will persist, or whether the original transportation need still exists in the same form."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response only considers the two options explicitly stated in the problem (complete light rail vs. switch to bus system). It doesn't explore hybrid solutions, partial completion, repurposing the infrastructure, or alternative uses of the corridor that the success criteria specifically calls for."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as framed - a binary choice between completing the light rail or switching to buses. It doesn't question whether this is the right framing or whether there might be other ways to think about the city's transportation needs."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The analysis is logically sound and the recommendation to switch to buses is reasonable given the stated constraints. However, it fails to address the sunk cost fallacy properly (actually treats sunk costs as relevant) and misses creative alternatives that could provide better solutions, limiting its practical usefulness."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-benefit analysis frame throughout, with minor acknowledgment of flexibility/adaptability considerations. It doesn't explore other distinct frames like political, environmental, or urban development perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about sunk costs being irrelevant to future decisions, but fails to question other key assumptions like whether the ridership projections are accurate, whether remote work trends will persist, or whether the two options are truly comparable in service quality."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response only considers the two options explicitly stated in the problem (complete light rail vs. switch to bus system). It doesn't explore hybrid solutions, partial completion, repurposing the corridor, or any other creative alternatives beyond the binary choice presented."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as framed - a binary choice between completing the light rail or switching to bus rapid transit. It doesn't question whether this is the right framing or explore whether the city's real need might be something different entirely."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The analysis is logically sound and the recommendation to switch to BRT based on cost-effectiveness and changed circumstances is reasonable. However, it misses important considerations like the success criteria's emphasis on hybrid solutions and fails to fully explore the complexity of the decision."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses an economic/financial frame, considering costs, ridership, and opportunity costs. There's minor acknowledgment of community needs and infrastructure priorities, but it doesn't explore other distinct frames like environmental impact, urban development, political considerations, or social equity."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the $800 million is a sunk cost (correctly noting it shouldn't influence decisions) and that reduced ridership projections are accurate/permanent. However, it doesn't question other assumptions like whether the bus system would actually serve the same function, or whether current ridership projections account for future changes."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response only considers the two options explicitly stated in the problem: complete the light rail or switch to bus rapid transit. It doesn't explore any hybrid solutions, partial completion options, repurposing the corridor for other uses, or alternative approaches that could leverage the existing investment."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as framed - a binary choice between completing the light rail or switching to bus rapid transit. It doesn't question whether this is the right framing or explore whether the city's transportation needs might be better served by redefining the problem entirely."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is factually correct in its analysis of costs and properly identifies sunk costs as irrelevant to the decision. The recommendation is reasonable given the information provided. However, it lacks the depth and creative problem-solving that would make it excellent practical advice, missing opportunities to explore more comprehensive solutions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a financial/cost-benefit frame throughout the analysis. While it touches on flexibility and adaptability considerations, it doesn't explore other distinct frames like environmental impact, urban development, political considerations, or social equity. The analysis stays within a narrow economic perspective with only minor acknowledgment of operational flexibility."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the $800 million is a sunk cost (explicitly stated) and that the 35% ridership projection is accurate/permanent. However, it doesn't question other hidden assumptions like whether the bus system would actually achieve better ridership, whether remote work trends are permanent, or whether the original ridership forecasts were realistic to begin with."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response only considers the two options explicitly presented in the problem: complete the light rail or switch to the bus system. It doesn't explore any hybrid solutions, partial completion options, repurposing the existing infrastructure for other uses, or any other creative alternatives beyond the binary choice given."
+      },
+      "premise_questioning": {
+        "score": 1,
+        "justification": "The response accepts the problem exactly as framed - a binary choice between completing the light rail or switching to buses. It doesn't question whether this is the right framing, whether there might be other ways to think about the transportation needs, or whether the problem itself might be too narrowly defined."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides a methodical, logical analysis with correct financial calculations and sound reasoning about sunk costs. The recommendation to switch to the bus system is well-supported by the data presented and includes practical considerations like operational costs and maintenance. The analysis is thorough within its chosen framework and would be useful for decision-making."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-benefit analysis frame, with minor acknowledgment of community engagement and stakeholder perspectives. It doesn't explore multiple distinct analytical frameworks like political, environmental, or urban planning perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies two key assumptions: that the original ridership projections were accurate and that current work patterns will persist. However, it doesn't deeply examine other hidden assumptions like the permanence of remote work trends or the accuracy of new projections."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response concludes with the conventional 'switch to buses' recommendation with only minor variations. It doesn't explore hybrid solutions, repurposing the corridor for other uses, or fundamentally different approaches to the transit challenge."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise in 'Preliminary Question 2,' reframing the issue from 'rail vs. bus' to 'how to provide efficient transportation given changing needs.' This shows good recognition that the original question may be limiting."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides a reasonable analysis and reaches a defensible conclusion about switching to buses. However, it fails to address the success criteria requirement to explicitly name sunk costs as irrelevant and doesn't explore the hybrid or repurposing options that would make it more practically complete."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-benefit/financial efficiency frame throughout. While it mentions environmental concerns and urban planning briefly, these are not developed into distinct analytical perspectives. The response doesn't explore frames like equity, regional development, or technological innovation as separate lenses."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and questions the assumption that the original investment rationale remains valid given changed circumstances. It also surfaces the assumption that the binary choice presented is the right framing. However, it doesn't deeply examine other hidden assumptions like the permanence of remote work trends or the accuracy of ridership projections."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response suggests switching to buses and mentions using saved money for other projects, but these are fairly conventional responses to the scenario. While it briefly mentions cycling infrastructure and walkable communities, it doesn't develop these into concrete alternatives or explore hybrid solutions, repurposing options, or truly innovative approaches."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions whether 'complete rail vs. switch to buses' is the right question and reframes it as 'what is the best way to meet current and future transportation needs.' It dedicates a full section to questioning the problem framing and suggests the city should ask a broader question about transportation solutions."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides sound reasoning about sunk costs (though doesn't explicitly name them as irrelevant) and offers practical advice about switching to the bus system. However, it fails to meet the key success criteria of identifying hybrid solutions, repurposing options, or explicitly naming sunk costs as irrelevant. The advice is reasonable but incomplete given the evaluation criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily considers the cost-benefit frame (comparing rail vs bus costs and ridership), with minor acknowledgment of political and maintenance perspectives in the preliminary section. It doesn't explore multiple distinct analytical frameworks like environmental impact, economic development, equity, or technological disruption frames."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the original ridership projections were accurate and that current reduced projections are permanent. However, it doesn't examine other hidden assumptions like whether the 35% ridership figure is reliable, whether remote work patterns will persist, or whether the corridor still has the same transportation needs."
+      },
+      "solution_novelty": {
+        "score": 1,
+        "justification": "The response only considers the two options explicitly stated in the problem (complete rail vs switch to bus). It doesn't explore hybrid solutions, partial completion, repurposing the corridor for other uses, or any creative alternatives beyond the conventional binary choice presented."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response does note that the fundamental question should be about creating an efficient transit system rather than just choosing between two modes. However, it doesn't deeply challenge the premise or explore whether the problem framing itself might be limiting the solution space."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response reaches a reasonable conclusion to switch to buses based on cost-benefit analysis, it fails to address the key success criteria. It doesn't mention sunk costs as irrelevant, doesn't explore hybrid options, repurposing possibilities, or Option C alternatives. The analysis is partially correct but misses critical elements that would make it practically useful for the decision-makers."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-benefit analysis frame, with minor acknowledgment of community needs and integration possibilities. It doesn't explore multiple distinct perspectives like environmental impact, economic development, equity considerations, or long-term urban planning frames."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines two key assumptions: that the original ridership projections were accurate and that the binary choice between rail vs. bus is the only option. However, it doesn't systematically surface other hidden assumptions like the permanence of remote work trends or the accuracy of current projections."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional recommendation (switch to buses) with minor variations like repurposing existing infrastructure and integrating with bus systems. It doesn't offer genuinely novel solutions like hybrid approaches, corridor repurposing for other uses, or fundamentally different transit models."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by identifying 'the question behind the question' and reframing the fundamental issue as providing efficient transportation that meets evolving needs. It recognizes that the binary choice may not be the real problem to solve."
+      },
+      "correctness": {
+        "score": 2,
+        "justification": "While the response shows some practical thinking, it fails to address the success criteria by not explicitly naming sunk costs as irrelevant and not identifying Option C possibilities like hybrid solutions, corridor repurposing, or problem redefinition. The recommendation lacks the depth expected for such a complex decision."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response primarily uses a cost-benefit analysis frame, with minor acknowledgment of community needs and integration considerations. It doesn't explore multiple distinct analytical frameworks like political economy, urban planning theory, or environmental impact perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about ridership projections being accurate, but fails to question other critical assumptions like whether the 70% completion figure is meaningful, whether the bus system would actually achieve its projected ridership, or whether the cost estimates are reliable."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides a conventional recommendation (switch to buses) with minor variations like integration considerations. It doesn't explore hybrid solutions, repurposing the existing infrastructure, or fundamentally different approaches to the transit challenge."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise in 'Preliminary Question 2' by identifying that the real question is about providing efficient transportation rather than choosing between two specific technologies. It reframes the problem as being about adaptable, resilient transportation systems."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct in its analysis and reaches a reasonable conclusion based on the information provided. However, it fails to address the success criteria requirement to explicitly name sunk costs as irrelevant and doesn't explore the hybrid or repurposing options that would make the advice more practically useful."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response considers two main options: completing the light rail or switching to bus rapid transit. It does not explore hybrid solutions, repurposing, or reframing the problem as flexible transit needs, as required by the success criteria."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies the sunk cost fallacy and mentions demand uncertainty, but does not deeply question other assumptions such as the necessity of serving the exact corridor, the permanence of remote work, or the possibility of alternative uses for the infrastructure."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response sticks to the conventional binary choice between finishing the rail or switching to BRT. It does not propose hybrid, repurposing, or reframing solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only a minor caveat about demand uncertainty. It does not question whether the city needs a specific technology or if the corridor could be used differently."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The analysis is correct and practical within the frames considered, providing a sound recommendation based on cost, adaptability, and demand. However, it misses potentially better solutions outside the given binary."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response considers two main options: completing the light rail or switching to bus rapid transit. It does not explore hybrid or alternative uses (Option C), nor does it synthesize multiple frames or redefine the problem."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response notes the sunk cost fallacy implicitly by mentioning the loss of sunk investment, but does not explicitly state that sunk costs are irrelevant. It does not surface other hidden assumptions, such as whether the corridor could be repurposed or if the city needs flexible transit rather than a specific technology."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response sticks to the conventional options (finish rail or switch to bus) and does not propose hybrid, partial, or repurposing solutions. There is no novel or creative reframing."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only a minor caveat about changing circumstances (post-pandemic work patterns), but does not question whether the city should redefine its transit needs or consider other uses for the corridor."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The analysis is correct and practical within the frames considered, weighing costs, adaptability, and opportunity cost. However, it misses the explicit irrelevance of sunk costs and does not consider all possible alternatives, so it is not a perfect 5."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response considers the light rail completion versus switching to bus rapid transit, but does not explore hybrid, repurposing, or reframing options. It mainly compares two direct alternatives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies the sunk cost fallacy and questions the assumption that prior investment should dictate future action. It also notes the assumption that ridership projections and remote work trends are stable, but does not go deeper into other hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response only discusses the two obvious solutions (finish rail or switch to bus). It does not propose hybrid, repurposing, or reframing solutions as required by the success criteria."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only a minor caveat about sunk cost. It does not question whether the city needs a specific technology or if the corridor could be used differently."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The analysis is correct and practical, weighing costs, sunk cost, and adaptability. However, it misses potentially better solutions by not considering hybrid or repurposing options."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response considers two main options: completing the light rail or switching to bus rapid transit. It does not explore hybrid, repurposing, or reframing options, nor does it synthesize multiple perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies the sunk cost fallacy and questions the assumption that the original ridership projections are still valid. However, it does not deeply examine other hidden assumptions, such as the flexibility needs of future transit or the potential for partial completion."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response only presents the conventional options (finish rail or switch to bus). It does not propose hybrid, repurposing, or reframing solutions."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only a minor caveat about sunk cost. It does not question whether the city should redefine its transit needs or consider other uses for the corridor."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The analysis is correct and practical, clearly explaining the sunk cost fallacy and making a reasonable recommendation based on updated projections and costs. However, it misses potentially better solutions by not considering hybrid or repurposing options."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 2,
+        "justification": "The response compares two main options: completing the light rail or switching to bus rapid transit. It briefly mentions flexibility and adaptability but does not explore hybrid, repurposing, or reframing options as required by the success criteria."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies the sunk cost fallacy and mentions ridership projections, but does not question other assumptions such as whether the corridor could be repurposed, or if the city’s needs have fundamentally changed."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response sticks to the conventional options (finish rail or switch to bus). It does not propose hybrid solutions, corridor repurposing, or reframing the transit need, which would be more novel."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the problem as stated, with only a minor nod to flexibility in transit needs. It does not question whether the city should redefine the problem or consider other uses for the corridor."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The analysis is factually correct and the recommendation is practical given the data provided. However, it misses potentially better solutions by not considering the full range of options."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: (1) completing the light rail and (2) switching to the bus system. It also briefly mentions the importance of stakeholder engagement and long-term operational costs, but does not explore hybrid or repurposing options (Option C) as required by the success criteria."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that sunk costs should not drive future decisions, that ridership projections are accurate, and that the bus system can provide similar service. It also questions whether the original problem is the right one to solve, but does not systematically examine all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response focuses on the conventional options (finish rail vs. switch to bus) and does not propose hybrid, corridor repurposing, or other novel solutions. It does suggest further analysis and stakeholder engagement, but these are standard recommendations."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions whether the stated choice is the real issue, reframing the problem as one of meeting evolving transit needs rather than just picking between two technologies. However, it does not fundamentally reframe the question before answering."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct in its analysis of sunk costs, the need to adapt to new realities, and the likely superiority of the bus system under current projections. It is practical and grounded, though it could be improved by considering hybrid or repurposing options."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: (1) the direct rail vs. bus choice, (2) the broader question of what the city actually needs post-pandemic, (3) the possibility of reallocating funds to other urban development projects, and (4) the preliminary section on worst-case decisions, which, while not directly answering the main question, shows awareness of systemic pitfalls. However, it does not explicitly explore hybrid or repurposing options (Option C from the success criteria), so it falls short of a 5."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the original rationale for light rail is still valid, that sunk costs should influence the decision (implicitly challenged), and that the city's needs are unchanged post-pandemic. It also questions whether the rail vs. bus framing is the right one. However, it does not systematically enumerate all hidden assumptions (e.g., about future flexibility, technology shifts, or the irrelevance of sunk costs), so it does not reach a 5."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious by suggesting the city should ask a broader question and consider reallocating funds, but it ultimately recommends the bus system, which is a conventional alternative. It does not propose hybrid, partial completion, or corridor repurposing options, nor does it introduce a genuinely novel solution."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions whether 'rail vs. bus' is the right question and reframes the issue as one of meeting current and future needs, considering new realities. It does not, however, fundamentally reframe the question before answering (e.g., by proposing a completely different approach to urban mobility), so it does not merit a 5."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical reasoning for switching to the bus system, considering cost, flexibility, and changing demand. It also suggests reallocating savings to other projects. However, it misses the explicit mention of sunk cost irrelevance and does not fully explore all viable alternatives, so it is not the most comprehensive or actionable possible answer."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: (1) completing the light rail as planned, and (2) switching to the bus rapid transit system. It also briefly touches on the need to integrate with other transit modes and mentions the importance of reassessing demand, but does not explicitly explore hybrid or repurposing options (Option C) as required by the success criteria."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and questions some assumptions, such as the need to reassess demand and not simply proceed with the original plan. It also surfaces the assumption that the choice is only between rail and bus, and hints at the need for a broader analysis. However, it does not systematically surface less obvious assumptions, such as the irrelevance of sunk costs."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response primarily discusses the conventional options (complete rail or switch to bus) and recommends a thorough analysis before deciding. It does not propose hybrid, corridor repurposing, or other non-obvious solutions, nor does it explicitly mention sunk cost irrelevance."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by stating that the real question is not simply 'rail vs. bus,' but how to best meet the city's evolving transit needs. It reframes the problem to focus on broader goals, though it does not fundamentally redefine the problem or propose a new paradigm."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and provides practical advice, such as the need for a thorough analysis and consideration of changing demand. It avoids recommending a hasty decision and emphasizes value for money and adaptability. However, it misses some key practical considerations (e.g., hybrid solutions, sunk cost irrelevance) that would make it excellent."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames: (1) continuing the light rail, (2) switching to bus rapid transit, (3) integrating/repurposing existing infrastructure, and (4) the underlying goal of flexible, effective transit. It also briefly discusses worst-case outcomes and the need to redefine the problem, but does not fully synthesize all options."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that sunk costs should influence the decision, that ridership projections are reliable, and that the only options are rail or bus. It also questions whether the city should focus on a specific technology or broader transit needs. However, it could more systematically examine hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious rail vs. bus dichotomy by suggesting integration or repurposing of infrastructure and considering hybrid solutions. However, it does not fully develop or recommend a genuinely novel or unexpected solution."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by stating that the real issue is not rail vs. bus, but how to provide effective transit in changed circumstances. It reframes the problem and suggests the city should focus on broader goals, though it does not fundamentally reframe the question before answering."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and practical, weighing costs, sunk costs, and ridership projections. It recommends a reasonable course of action and suggests further considerations for maximizing value. However, it does not explicitly state that sunk costs are irrelevant, as required by the success criteria."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames: (1) completing the light rail and (2) switching to the bus system. It also briefly touches on the broader question of what the city is trying to achieve with its transit system, but does not explicitly explore hybrid or repurposing options as required by the success criteria."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and questions the assumption that the original light rail plan is still optimal, and recognizes that the real problem is broader than just choosing between two technologies. However, it does not explicitly name sunk cost as irrelevant, nor does it systematically surface less obvious assumptions."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response recommends the conventional alternative (bus system) and suggests integrating with other modes, but does not propose hybrid, partial completion, or corridor repurposing options. It does not go beyond the obvious first-order solutions."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise by stating that the real question is about providing efficient, effective, and sustainable transportation, not just choosing between rail and bus. It reframes the problem to some extent, but does not fundamentally redefine it or propose a new problem statement."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, weighing costs and ridership projections appropriately. It recommends a reasonable course of action and suggests broader evaluation, but lacks some practical detail about implementation or transition."
+      }
+    }
+  ]
+}

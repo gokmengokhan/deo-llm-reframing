@@ -1,0 +1,798 @@
+{
+  "problem_id": "growth_vs_profit",
+  "problem_title": "The Growth vs. Profit Dilemma",
+  "category": "false_binary",
+  "paths_applied": [
+    "path_5_invert",
+    "path_6_premise_reflection"
+  ],
+  "theory_connection": "Tversky & Kahneman (1981): false binary (grow vs. cut) plus the authority of the investors as sources of the two options creates strong pull toward choosing one. Decomposition of the burn rate reveals that the binary may be a false choice — growing efficiently and reducing structural waste are not mutually exclusive, and the $200K may contain both.",
+  "expected_vanilla_failure": "Analyses both sides, recommends one or proposes a balance (grow in certain areas, cut in others). Treats the $200K burn as a single variable. Does not question whether the binary framing is correct.",
+  "success_criteria": "Decomposes the $200K burn into growth investment and structural cost. Identifies that the binary may be false: Momentum can grow its highest-ROI acquisition channels AND eliminate low-value spend simultaneously. The 'growth vs. profit' framing collapses into a more precise question about which specific investments generate returns.",
+  "vanilla": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To approach this problem, let's break it down into key components and analyze each aspect step by step:\n\n1. **Current Financial Situation**:\n   - **Annual Recurring Revenue (ARR)**: $5 million\n   - **Monthly Burn Rate**: $200,000\n   - **Runway**: 14 months\n\n2. **Investor Perspectives**:\n   - **Investor 1 (Growth)**: Advocates for raising a growth round to accelerate customer acquisition.\n   - **Investor 2 (Profitability)**: Advocates for cutting costs aggressively to reach profitability on current revenue.\n\n3. **Considerations for Each Option**:\n   - **Growth Round**:\n     - **Pros**:\n       - Accelerate customer acquisition, potentially increasing revenue more rapidly.\n       - Attracting more talent and resources could enhance product development and customer support.\n     - **Cons**:\n       - Dilution of equity for founders and existing investors.\n       - Increased pressure to perform and justify the valuation.\n       - Potential misallocation of funds if growth strategies are not well-executed.\n   - **Cutting Costs to Reach Profitability**:\n     - **Pros**:\n       - Extends the runway without needing additional funding.\n       - Demonstrates financial discipline and potential for long-term sustainability.\n       - Less dilution of equity.\n     - **Cons**:\n       - May limit the company's ability to invest in growth initiatives.\n       - Could lead to reduced competitiveness if cost-cutting measures impact product quality or customer service.\n       - May not address underlying issues if the burn rate is high due to inefficiencies in the business model.\n\n4. **Decision Factors**:\n   - **Market Conditions**: Is the market growing, and is there room for Momentum to expand its customer base significantly?\n   - **Competitive Landscape**: How does Momentum compare to its competitors in terms of product offering, pricing, and customer acquisition costs?\n   - **Product Development**: Are there significant product enhancements or new features that could be developed with additional funding, leading to increased revenue or competitiveness?\n   - **Team and Operational Efficiency**: Can the current team efficiently scale with additional funding, or are there operational inefficiencies that need to be addressed first?\n\n5. **Recommendation**:\nGiven the information, a balanced approach might be the most prudent. Instead of taking an extreme stance on either side, Momentum could consider a hybrid strategy:\n   - **Short-term Cost Optimization**: Implement some cost-cutting measures to reduce the burn rate, not to reach immediate profitability but to ensure the runway is extended beyond 14 months, providing a safer buffer for strategic decisions.\n   - **Focused Growth Initiatives**: Identify specific, high-return growth initiatives that can be funded within the current budget or with a smaller, targeted funding round. This could involve optimizing the sales funnel, enhancing customer retention, or exploring new markets with a high potential for growth.\n   - **Strategic Fundraising**: Prepare for a growth round but do so strategically, considering the timing, amount, and potential investors. This round should be aimed at funding specific growth initiatives with clear ROI expectations, rather than broadly accelerating all aspects of customer acquisition.\n\n**Conclusion**:\nThe decision between pursuing aggressive growth or focusing on reaching profitability is not necessarily binary. A strategic, data-driven approach that balances the need for growth with the discipline of financial sustainability is likely the best path forward. By extending the runway through some cost management, identifying high-impact growth initiatives, and preparing for strategic fundraising, Momentum can position itself for long-term success while mitigating the risks associated with either extreme approach.",
+      "input_tokens": 188,
+      "output_tokens": 728,
+      "elapsed_seconds": 3.58
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To address this dilemma, let's analyze the situation step by step, considering key factors and weighing the options carefully.\n\n1. **Current Financial Situation**: Momentum has achieved $5 million in Annual Recurring Revenue (ARR), which is a significant milestone. However, they are burning $200,000 per month. This burn rate indicates that the company is spending more than it's earning, relying on investor capital to sustain operations.\n\n2. **Runway**: With 14 months of runway remaining, Momentum has a finite window to either become profitable or secure additional funding. This timeframe is crucial for decision-making, as it dictates the urgency and risk tolerance of the company's next steps.\n\n3. **Investor Perspectives**:\n   - **Growth Investor**: This investor advocates for a growth round to accelerate customer acquisition. The rationale is likely based on the potential for exponential revenue growth, which could lead to a higher valuation and greater market share. This approach assumes that the market is ripe for expansion and that Momentum's product or service has a competitive edge.\n   - **Profitability Investor**: The opposing view suggests cutting costs aggressively to reach profitability on current revenue. This strategy focuses on sustainability, aiming to ensure the company's long-term viability by living within its means. It implies that the current burn rate is unsustainable and that profitability, even at a lower revenue scale, is more important than growth at all costs.\n\n4. **Considerations**:\n   - **Market Opportunity**: Is the market for Momentum's SaaS product expanding, and can the company capitalize on this growth with additional funding? If the market is highly competitive or saturated, aggressive growth might not yield the expected returns.\n   - **Customer Acquisition Costs (CAC) and Lifetime Value (LTV)**: Are the costs of acquiring new customers (CAC) outweighing the lifetime value (LTV) of these customers? If CAC exceeds LTV, then accelerating customer acquisition might not be sustainable.\n   - **Operational Efficiency**: Are there areas within the company where costs can be cut without significantly impacting growth or product development? Operational inefficiencies might be masking the company's true potential for profitability.\n   - **Valuation and Funding**: How would a growth round affect the company's valuation, and what are the terms investors would demand? Raising capital can be costly in terms of equity and control.\n\n5. **Decision Framework**:\n   - **Assess Market Opportunity and Competitive Landscape**: Understand the potential for growth and the competitive dynamics.\n   - **Evaluate Financials**: Detail a comprehensive breakdown of costs, revenue projections, CAC, and LTV to inform decisions on customer acquisition strategies.\n   - **Operational Audit**: Conduct a thorough review to identify areas for cost savings without hindering essential operations or product development.\n   - **Scenario Planning**: Develop scenarios for both the growth and profitability paths, including projected financials, risks, and outcomes.\n\n6. **Recommendation**:\nGiven the current situation, a balanced approach might be the most prudent. Instead of choosing one extreme, Momentum could consider a hybrid strategy:\n   - **Optimize Operations**: Implement cost-saving measures to extend the runway without severely impacting growth potential. This could involve streamlining operations, renegotiating contracts with suppliers, or reducing non-essential spending.\n   - **Targeted Growth Initiatives**: Allocate a controlled budget for strategic growth initiatives that have a high potential for return, such as targeted marketing campaigns or strategic partnerships. This approach allows for some growth while managing the burn rate.\n   - **Prepare for a Growth Round**: Simultaneously, prepare the company for a potential growth round by improving financial reporting, enhancing the sales and marketing strategy, and building a strong growth narrative. This preparation positions the company to secure funding on favorable terms if the market opportunity dictates aggressive expansion.\n\nBy adopting a balanced strategy, Momentum can mitigate the risks associated with both extreme paths, ensuring sustainability while keeping the door open for future growth opportunities. This approach requires continuous monitoring and adjustment based on market feedback, financial performance, and the evolving competitive landscape.",
+      "input_tokens": 188,
+      "output_tokens": 814,
+      "elapsed_seconds": 4.22
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To determine the best course of action for Momentum, let's analyze the situation step by step, considering key factors such as the company's current financial state, growth prospects, and the potential risks and benefits associated with each investor's proposal.\n\n1. **Current Financial State**:\n   - Annual Recurring Revenue (ARR): $5 million\n   - Monthly Burn Rate: $200,000\n   - Runway: 14 months\n\n2. **Growth Proposal**:\n   - **Pros**:\n     - Raising a growth round could provide the capital needed to accelerate customer acquisition, potentially leading to rapid revenue growth.\n     - Scaling quickly can help Momentum establish a strong market presence before competitors do.\n   - **Cons**:\n     - Raising additional capital at this stage may dilute the ownership stakes of existing investors and the founding team.\n     - Accelerating customer acquisition typically requires significant investment in marketing, sales, and possibly new product development, which could increase the burn rate.\n\n3. **Profitability Proposal**:\n   - **Pros**:\n     - Cutting costs aggressively to reach profitability on current revenue could extend the company's runway indefinitely, reducing the pressure to raise capital immediately.\n     - Achieving profitability can be a strong signal to investors, customers, and the market about the company's health and viability.\n   - **Cons**:\n     - Aggressive cost-cutting could lead to reductions in essential areas such as product development, customer support, or sales and marketing, potentially stifling growth and harming the company's long-term prospects.\n     - Focusing solely on profitability might cause Momentum to miss out on significant growth opportunities, allowing competitors to gain ground.\n\n4. **Analysis and Recommendation**:\n   Given Momentum's current situation, the decision between pursuing a growth round and aiming for profitability is not straightforward. However, considering the company has a significant runway of 14 months, there's an opportunity to explore a balanced approach that combines elements of both strategies.\n\n   - **Short-term (Next 6-9 months)**: Implement moderate cost-cutting measures to ensure operational efficiency without severely impacting growth potential. This could involve streamlining processes, optimizing marketing spend, and ensuring that every dollar spent is aligned with clear growth or customer retention objectives.\n   \n   - **Growth Strategy**: While aiming for some level of cost efficiency, Momentum should also prepare for a targeted growth strategy. This could involve identifying high-growth potential customer segments or markets and allocating resources to capture these opportunities. A disciplined approach to growth, focusing on high-return activities, can help increase revenue without excessively increasing the burn rate.\n   \n   - **Fundraising**: After demonstrating a period of efficient growth and improved unit economics, Momentum could be in a stronger position to raise a growth round. This would not only provide the capital needed to accelerate customer acquisition but also potentially attract investors at a more favorable valuation.\n   \n   - **Profitability**: The ultimate goal should be to achieve profitability, but this should be done in a sustainable manner that does not compromise the company's ability to grow. Momentum should aim to reach profitability on an operating basis within the next 18-24 months, ensuring that the business model is scalable and viable in the long term.\n\nIn conclusion, the CEO should not strictly follow either investor's advice but instead adopt a hybrid approach. By moderately reducing costs to extend the runway, preparing for targeted growth, and positioning the company for a future fundraising round, Momentum can balance the need for growth with the discipline of moving towards profitability. This balanced strategy allows the company to mitigate risks while pursuing opportunities for significant growth and long-term success.",
+      "input_tokens": 188,
+      "output_tokens": 727,
+      "elapsed_seconds": 3.92
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To approach this problem, let's break it down into key components and analyze the situation step by step.\n\n1. **Current Financial Situation**:\n   - Annual Recurring Revenue (ARR): $5 million\n   - Monthly Burn Rate: $200,000\n   - Runway: 14 months\n\n2. **Investor Perspectives**:\n   - **Investor 1 (Growth)**: Advocates for raising a growth round to accelerate customer acquisition.\n   - **Investor 2 (Profitability)**: Advocates for cutting costs aggressively to reach profitability on current revenue.\n\n3. **Considerations**:\n   - **Growth Potential**: Raising a growth round could potentially accelerate Momentum's customer acquisition, leading to increased revenue. However, it also means diluting equity and potentially increasing the burn rate if not managed efficiently.\n   - **Cost Structure**: Cutting costs aggressively could lead to reaching profitability sooner but might compromise the company's ability to grow or even maintain its current customer base and revenue level.\n   - **Market Conditions**: The decision should also consider the current market conditions. If the market is highly competitive or if there are indicators of an economic downturn, reaching profitability sooner might be more prudent.\n   - **Product/Service Maturity**: The maturity of Momentum's product or service and its position in the market lifecycle should also be considered. If the product is still in the early stages, growth might be more appropriate. If it's more mature, focusing on profitability could be more strategic.\n\n4. **Analysis**:\n   - **Financial Sustainability**: With 14 months of runway, Momentum has some time to make strategic decisions without immediate financial pressure. However, the burn rate of $200,000 per month indicates that the company is not yet self-sustaining.\n   - **Growth vs. Profitability**: The decision between pursuing growth and aiming for profitability depends on the company's long-term goals, the competitive landscape, and the investors' expectations. A balanced approach that considers both might be the most viable, where some investment in growth is made while also keeping a close eye on costs.\n\n5. **Recommendation**:\n   - Given the current situation, a hybrid approach could be the most prudent. Momentum could consider raising a smaller round than initially planned for growth, focusing on highly efficient customer acquisition strategies, and simultaneously implementing cost optimization measures. This would allow the company to accelerate growth while also extending its runway and moving towards profitability.\n   - **Data-Driven Decision Making**: Implementing robust analytics and monitoring systems to track the efficiency of customer acquisition costs and the impact of cost-cutting measures on revenue and growth would be essential. This would enable data-driven decisions and the ability to adjust the strategy as needed.\n   - **Communication with Investors**: It's crucial to maintain open and transparent communication with both investors, ensuring they are aligned with the chosen strategy and understand the rationale behind it. This could involve regular updates on financial performance, growth metrics, and strategic milestones.\n\nIn conclusion, while both investors' perspectives have merit, a balanced approach that combines elements of growth acceleration with cost management seems to be the most viable strategy for Momentum at this stage. This approach would need to be carefully monitored and adjusted based on the company's performance and changing market conditions.",
+      "input_tokens": 188,
+      "output_tokens": 660,
+      "elapsed_seconds": 3.02
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Think about this problem step by step. Consider the key factors involved, weigh the options carefully, and provide your best recommendation.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To approach this problem, let's break it down into key components and analyze them step by step.\n\n1. **Current Financial Situation**:\n   - Annual Recurring Revenue (ARR): $5 million\n   - Monthly burn rate: $200,000\n   - Runway: 14 months\n\n2. **Investor Perspectives**:\n   - Investor 1 advocates for a growth round to accelerate customer acquisition.\n   - Investor 2 suggests cutting costs aggressively to reach profitability on current revenue.\n\n3. **Considerations for Growth Round**:\n   - **Pros**:\n     - Accelerating customer acquisition could lead to higher revenue growth rates.\n     - Increased market share and competitive advantage.\n     - Potential to expand into new markets or offer additional services.\n   - **Cons**:\n     - Raising additional capital may dilute existing shareholders' equity.\n     - Increased spending on customer acquisition could exacerbate the burn rate if not managed efficiently.\n     - There's a risk that the growth strategy might not yield the expected returns, potentially worsening the financial situation.\n\n4. **Considerations for Cutting Costs**:\n   - **Pros**:\n     - Reducing the burn rate could extend the runway, providing more time to achieve profitability or explore strategic options.\n     - Focusing on profitability could lead to a more sustainable business model.\n     - Cost-cutting measures might improve operational efficiency.\n   - **Cons**:\n     - Aggressive cost-cutting could lead to reduced investment in critical areas such as product development, marketing, and sales, potentially stifling growth.\n     - There's a risk of losing key talent or damaging company culture if cost-cutting measures are too severe.\n\n5. **Decision Factors**:\n   - **Growth Potential**: How much potential is there for significant growth in the market, and can Momentum capitalize on this with additional funding?\n   - **Market Competition**: What is the competitive landscape, and how will Momentum's position be affected by choosing one path over the other?\n   - **Product/Service Maturity**: Is the product or service mature enough to efficiently scale customer acquisition, or are there still significant development needs?\n   - **Team and Operational Efficiency**: How efficient is the current operation, and what are the areas where costs can be cut without harming the business's potential for growth or current operations?\n\n6. **Recommendation**:\n   Given the constraints and considerations, a balanced approach might be the most prudent. Instead of fully embracing one investor's view over the other, Momentum could consider a hybrid strategy:\n   - **Optimize Current Operations**: Implement cost-cutting measures that do not significantly harm growth potential or critical operations. This could include streamlining processes, reducing non-essential expenses, and potentially renegotiating contracts with suppliers or vendors.\n   - **Targeted Growth Investments**: Allocate a portion of the remaining runway funds towards strategic growth initiatives that have a high potential for return. This could involve targeted marketing campaigns, strategic hires to enhance the sales team or product development, and investments in technology to improve operational efficiency.\n   - **Explore Funding Options**: While preparing for potential growth initiatives, also explore funding options that could support accelerated growth without overly diluting shareholder value. This might involve discussions with potential investors, considering alternative funding models, or preparing for a growth round that aligns with clear, achievable growth objectives.\n\nBy taking a balanced approach, Momentum can work towards achieving profitability while also positioning itself for potential growth opportunities. This strategy allows for the mitigation of risks associated with both extreme paths (aggressive cost-cutting and unchecked growth spending) and provides a framework for adaptive decision-making based on the company's evolving situation and market conditions.",
+      "input_tokens": 188,
+      "output_tokens": 736,
+      "elapsed_seconds": 3.28
+    }
+  ],
+  "reframed": [
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 0,
+      "temperature": 0.7,
+      "prompt": "Before choosing a side in the growth vs. profitability debate, do two things. First: invert — how would you guarantee that Momentum fails within 12 months regardless of which path it chooses? What decisions would guarantee failure? Second: is the $200K monthly burn a single number or a mix of components? Decompose it: what portion is going toward genuine growth investment (sales, marketing, product development with a return timeline), and what portion is structural overhead or waste? Then decide.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To approach this problem, let's break it down into the two recommended steps: inverting the situation to guarantee failure and decomposing the $200,000 monthly burn.\n\n### Inverting the Situation\n\nTo guarantee that Momentum fails within 12 months, regardless of the path it chooses, several decisions could be made:\n\n1. **Ignoring Customer Needs**: Failing to continue innovating and improving the product to meet evolving customer needs could lead to a loss of market share and customer dissatisfaction.\n\n2. **Poor Resource Allocation**: Allocating resources inefficiently, such as over-investing in areas that do not contribute significantly to growth or profitability, and under-investing in critical areas like product development, sales, and marketing.\n\n3. **Lack of Data-Driven Decision Making**: Failing to use data and analytics to inform business decisions could lead to misguided strategies, inefficient use of resources, and an inability to adapt to changing market conditions.\n\n4. **Neglecting Talent Acquisition and Retention**: Failing to attract and retain top talent could hinder the company's ability to execute its strategy effectively, leading to poor product development, sales performance, and customer service.\n\n5. **Disregarding Market Trends and Competition**: Ignoring market trends, competitor movements, and emerging technologies could make Momentum's offerings obsolete or less competitive, leading to a decline in sales and revenue.\n\n6. **Inadequate Financial Management**: Poor financial planning, including not managing the burn rate effectively, could lead to running out of funds before achieving profitability or securing additional funding.\n\n### Decomposing the $200,000 Monthly Burn\n\nDecomposing the $200,000 monthly burn into its components can help understand where the money is being spent and identify areas for potential cost savings or reallocation. The components could include:\n\n1. **Sales and Marketing**: Expenses related to acquiring new customers, such as salaries of the sales and marketing teams, advertising, content creation, and event sponsorships.\n\n2. **Product Development**: Costs associated with developing and improving the product, including salaries of developers, designers, and product managers, as well as infrastructure and software costs.\n\n3. **Structural Overhead**: Fixed costs that are necessary for the operation of the business but do not directly contribute to growth, such as office rent, utilities, and administrative staff salaries.\n\n4. **Customer Success and Support**: Expenses related to ensuring customer satisfaction and retention, including salaries of the customer success and support teams, as well as costs of tools and software used for these purposes.\n\n5. **Waste or Inefficiencies**: Any unnecessary expenses or inefficiencies in current operations that do not contribute to the growth or profitability of the company.\n\n### Decision\n\nAfter inverting the situation to understand what could lead to failure and decomposing the monthly burn to understand where the money is being spent, the decision between prioritizing growth or profitability becomes more nuanced.\n\n- **If a significant portion of the $200,000 monthly burn is towards genuine growth investment** (such as sales, marketing, and product development with a clear return timeline), and these investments have been yielding positive returns, then **accelerating customer acquisition** might be the right path. This approach assumes that the returns on these investments will not only cover the costs but also contribute to reaching profitability at a scale.\n\n- **If a large portion of the burn is structural overhead or waste**, then **cutting costs aggressively** to reach profitability on current revenue might be more appropriate. This would involve streamlining operations, reducing unnecessary expenses, and ensuring that every dollar spent is contributing to the company's growth or profitability.\n\nUltimately, the decision depends on the specific breakdown of the monthly burn and the company's growth strategy. A balanced approach that combines controlled growth investments with efficient cost management might be the most effective way forward. This could involve:\n\n1. **Optimizing Existing Investments**: Ensuring that current growth investments are yielding the best possible returns.\n2. **Identifying and Cutting Waste**: Eliminating any unnecessary expenses to reduce the burn rate.\n3. **Strategic Growth Investments**: Making targeted investments in areas that are likely to drive significant growth and returns.\n4. **Path to Profitability**: Having a clear plan and timeline for reaching profitability, whether through growth, cost-cutting, or a combination of both.\n\nBy taking a balanced and informed approach, Momentum can make a decision that aligns with its strategic goals and financial realities, ultimately choosing a path that leads to sustainable success.",
+      "input_tokens": 261,
+      "output_tokens": 901,
+      "elapsed_seconds": 3.91
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 1,
+      "temperature": 0.7,
+      "prompt": "Before choosing a side in the growth vs. profitability debate, do two things. First: invert — how would you guarantee that Momentum fails within 12 months regardless of which path it chooses? What decisions would guarantee failure? Second: is the $200K monthly burn a single number or a mix of components? Decompose it: what portion is going toward genuine growth investment (sales, marketing, product development with a return timeline), and what portion is structural overhead or waste? Then decide.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To approach this problem, let's first invert the situation and explore how Momentum could guarantee failure within 12 months, regardless of the path chosen. Then, we'll decompose the $200,000 monthly burn to understand its components and make an informed decision.\n\n### Inverting the Situation: Guaranteeing Failure\n\nTo guarantee Momentum's failure within 12 months, several decisions could be made:\n\n1. **Ignoring Customer Feedback and Market Trends**: Failing to adapt the product or service to changing customer needs and market trends could lead to a decline in sales and customer satisfaction.\n2. **Overexpansion Without Strategy**: Expanding into too many new markets or sectors without a clear strategy or sufficient resources could dilute focus and lead to inefficiencies.\n3. **Cutting Costs Too Aggressively**: While reducing waste is important, cutting costs too aggressively, especially in areas critical to growth or customer satisfaction (such as product development or customer support), could harm the business's ability to compete and retain customers.\n4. **Poor Resource Allocation**: Misallocating resources, such as investing heavily in areas with low return on investment (ROI) while underinvesting in high-ROI areas, could lead to stagnation.\n5. **Failure to Innovate**: Not investing in research and development or failing to innovate could make the product or service obsolete, leading to a loss of competitiveness.\n\n### Decomposing the $200,000 Monthly Burn\n\nUnderstanding the components of the $200,000 monthly burn is crucial. It can be broken down into several categories:\n\n1. **Genuine Growth Investment**:\n   - **Sales and Marketing**: Expenses directly aimed at acquiring new customers, such as advertising, sales personnel salaries, and marketing campaigns.\n   - **Product Development**: Investments in improving the existing product or developing new features and products, which are expected to increase revenue or improve customer retention.\n   - **Return Timeline**: These investments should have a clear expected return timeline, such as increased sales within 6-12 months.\n\n2. **Structural Overhead**:\n   - **Salaries and Benefits**: Ongoing costs for employees not directly involved in growth initiatives, such as administrative staff, HR, and some management roles.\n   - **Infrastructure and Operations**: Costs for maintaining the business's basic operations, including office space, utilities, IT infrastructure, and legal fees.\n\n3. **Waste or Inefficiencies**:\n   - **Unused Resources**: Any resources (human, technological, or financial) that are not being utilized efficiently or effectively.\n   - **Redundant Processes**: Processes or systems that are no longer necessary or can be streamlined.\n\n### Decision\n\nAfter inverting the situation and decomposing the monthly burn, the decision between prioritizing growth or profitability depends on several factors, including the specific breakdown of the $200,000 monthly burn, the growth potential of the market, the competitive landscape, and the company's current product-market fit.\n\n- **If a significant portion of the burn is going towards genuine growth investment with a clear return timeline**, and the market shows potential for substantial growth, then **accelerating customer acquisition** might be the right strategy. This approach would require careful management to ensure that growth investments are indeed yielding returns within the expected timelines.\n\n- **If a large part of the burn is structural overhead or waste**, then **cutting costs aggressively** while protecting investments in growth areas could be necessary. This would involve streamlining operations, eliminating redundant processes, and ensuring that every dollar spent is contributing to the company's growth or profitability.\n\n- **A balanced approach** might also be considered, where some costs are cut to extend the runway, while simultaneously investing in strategic growth initiatives that have a high potential for return. This would require a detailed analysis of the burn components and a strategic plan for resource allocation.\n\nUltimately, the CEO needs to conduct a thorough analysis of the company's financials, market position, and growth prospects to make an informed decision. This might involve seeking additional data, consulting with advisors, or conducting scenario planning to predict the outcomes of different strategies.",
+      "input_tokens": 261,
+      "output_tokens": 821,
+      "elapsed_seconds": 3.09
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 2,
+      "temperature": 0.7,
+      "prompt": "Before choosing a side in the growth vs. profitability debate, do two things. First: invert — how would you guarantee that Momentum fails within 12 months regardless of which path it chooses? What decisions would guarantee failure? Second: is the $200K monthly burn a single number or a mix of components? Decompose it: what portion is going toward genuine growth investment (sales, marketing, product development with a return timeline), and what portion is structural overhead or waste? Then decide.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To approach this problem, let's follow the suggested steps: first, we'll invert the situation to understand how Momentum could guarantee failure within 12 months, regardless of the path chosen. Then, we'll decompose the $200,000 monthly burn to understand its components and their implications for the company's future.\n\n### Inverting the Situation: Guaranteeing Failure\n\nTo guarantee Momentum's failure within 12 months, regardless of whether it chooses the growth path or the profitability path, several decisions could be made:\n\n1. **Ignoring Customer Needs**: Regardless of the path, if Momentum fails to listen to its customers and adapt its product or service offerings accordingly, it will likely see a decline in customer satisfaction and retention. This could involve neglecting feedback, failing to innovate, or not addressing emerging needs in the market.\n\n2. **Lack of Strategic Focus**: If the company spreads itself too thin by trying to pursue both aggressive growth and immediate profitability simultaneously without a clear strategy, it risks doing neither well. This lack of focus could lead to ineffective allocation of resources, confusion among teams, and an inability to achieve significant milestones in either direction.\n\n3. **Poor Financial Management**: Mismanaging finances, such as overspending on non-essential items, failing to monitor cash flow closely, or making ill-timed financial decisions, could quickly deplete the company's resources. This could involve investing heavily in growth initiatives without a clear path to return on investment (ROI) or cutting costs so aggressively that it undermines the company's ability to operate effectively.\n\n4. **Failure to Adapt to Market Changes**: The B2B SaaS market is highly competitive and constantly evolving. If Momentum fails to keep pace with technological advancements, market trends, and competitor activity, it could quickly become obsolete or less competitive.\n\n5. **Internal Conflict and Poor Leadership**: Allowing internal conflicts, especially between lead investors and the CEO, to hinder decision-making and strategic alignment could paralyze the company. Poor leadership that fails to inspire, motivate, and guide the team effectively could also lead to low morale, high turnover, and ultimately, failure.\n\n### Decomposing the $200,000 Monthly Burn\n\nUnderstanding the components of the $200,000 monthly burn is crucial for making an informed decision. The burn rate can be decomposed into several categories:\n\n1. **Genuine Growth Investments**:\n   - **Sales and Marketing Expenses**: Costs associated with acquiring new customers, such as advertising, salaries of sales and marketing personnel, and outreach programs.\n   - **Product Development**: Investments in enhancing the current product or developing new features and technologies that can attract more customers or increase revenue per user.\n\n2. **Structural Overhead**:\n   - **Salaries and Benefits**: Costs associated with maintaining the current workforce, including administrative, operational, and executive personnel.\n   - **Infrastructure and Operational Costs**: Expenses for maintaining offices, equipment, software, and other operational necessities.\n\n3. **Waste or Inefficiencies**:\n   - **Redundant Roles or Processes**: Any positions or processes that do not contribute significantly to the company's growth or profitability.\n   - **Inefficient Systems or Tools**: The use of outdated, overly complex, or unnecessarily expensive systems and tools that do not provide a significant return on investment.\n\nBy categorizing the monthly burn into these components, Momentum can identify areas where costs can be optimized or reduced without hindering growth or profitability goals. For instance, if a significant portion of the burn is attributed to inefficient processes or redundant roles, cutting these could help reach profitability without sacrificing growth potential. Conversely, if the bulk of the burn is going towards genuine growth investments with a clear path to ROI, then pursuing growth might be the more viable strategy.\n\n### Decision\n\nGiven the information and the analysis above, the decision between pursuing growth and aiming for profitability depends on the specific breakdown of the $200,000 monthly burn and the company's strategic priorities. \n\n- If a significant portion of the burn is attributed to **genuine growth investments** with a clear potential for return, and the market opportunity is large and growing, then **pursuing growth** might be the right strategy. This approach would involve continuing to invest in sales, marketing, and product development to accelerate customer acquisition and revenue growth.\n\n- If, however, the burn is largely composed of **structural overhead or waste**, then **cutting costs aggressively** to reach profitability on current revenue might be more appropriate. This could involve streamlining operations, reducing unnecessary expenses, and focusing on optimizing the current customer base for maximum revenue and retention.\n\nUltimately, the CEO must conduct a thorough analysis of the company's financials, market position, and strategic goals to decide which path aligns best with Momentum's vision for the future. A balanced approach that combines elements of both strategies—focusing on efficient growth while eliminating unnecessary costs—might also be considered, allowing the company to navigate its challenges with a tailored solution.",
+      "input_tokens": 261,
+      "output_tokens": 994,
+      "elapsed_seconds": 4.05
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 3,
+      "temperature": 0.7,
+      "prompt": "Before choosing a side in the growth vs. profitability debate, do two things. First: invert — how would you guarantee that Momentum fails within 12 months regardless of which path it chooses? What decisions would guarantee failure? Second: is the $200K monthly burn a single number or a mix of components? Decompose it: what portion is going toward genuine growth investment (sales, marketing, product development with a return timeline), and what portion is structural overhead or waste? Then decide.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To approach this problem, let's follow the suggested steps: first, invert the situation to understand what decisions would guarantee Momentum's failure within 12 months, regardless of the path chosen. Then, decompose the $200,000 monthly burn to understand its components and make an informed decision.\n\n### Inverting the Situation: Guaranteeing Failure\n\nTo guarantee Momentum's failure within 12 months, the following decisions could be made:\n\n1. **Ignoring Customer Needs:** Completely neglecting feedback from current customers and failing to adapt the product to meet their evolving needs. This would lead to customer dissatisfaction, churn, and negative word-of-mouth, deterring potential new customers.\n\n2. **Poor Resource Allocation:** Misallocating resources by overly focusing on non-core features or unnecessary expansions that do not align with the company's strengths or market demand. This could divert funds and talent away from areas that are crucial for growth or profitability.\n\n3. **Lack of Innovation:** Failing to innovate or improve the product and service offerings, making Momentum less competitive in the market. This stagnation would lead to a loss of market share to more innovative competitors.\n\n4. **Ineffective Cost Management:** Implementing cost-cutting measures that severely impact the quality of the product or service, or significantly reducing the workforce in critical areas, leading to a decline in customer satisfaction and retention.\n\n5. **Disregarding Market Trends:** Ignoring shifts in the market, such as changes in technology, regulations, or consumer behavior, and failing to adjust the business strategy accordingly. This would make Momentum's offerings less relevant or appealing to potential and existing customers.\n\n### Decomposing the $200,000 Monthly Burn\n\nTo understand the $200,000 monthly burn, it's essential to break it down into its components:\n\n1. **Genuine Growth Investment:**\n   - **Sales and Marketing:** Expenses directly aimed at acquiring new customers, such as advertising, sales personnel salaries, and marketing campaigns.\n   - **Product Development:** Investments in enhancing the product, including research and development expenses, salaries of development teams, and costs associated with launching new features or products.\n\n2. **Structural Overhead:**\n   - **Operational Costs:** Salaries of non-sales and non-product development staff, including administrative personnel, HR, and finance teams.\n   - **Infrastructure and Maintenance:** Costs for maintaining IT infrastructure, office spaces, utilities, and other operational necessities.\n\n3. **Waste:**\n   - **Inefficiencies:** Any unnecessary or redundant expenses that do not contribute to growth, customer satisfaction, or operational efficiency.\n\nBy analyzing these components, the CEO can identify areas where costs can be optimized without harming the business's potential for growth or profitability. For example, if a significant portion of the burn is going towards inefficient operational costs or non-essential product features, cutting these could help extend the runway without impacting the company's ability to grow or reach profitability.\n\n### Decision\n\nBased on the analysis, the decision between pushing for growth or profitability depends on the decomposition of the $200,000 monthly burn and the company's current market position.\n\n- If a significant portion of the burn is attributed to genuine growth investments with a clear return timeline (e.g., sales and marketing efforts that have historically led to customer acquisition and revenue growth), and the market opportunity is large and growing, then **accelerating growth** might be the right strategy. This could involve raising a growth round to further invest in these areas, aiming to increase revenue and eventually achieve profitability at a larger scale.\n\n- If, however, the burn is primarily due to structural overhead or waste, and the market is highly competitive or saturated, then **cutting costs aggressively** to reach profitability on current revenue might be more prudent. This approach would focus on streamlining operations, eliminating inefficiencies, and ensuring that every dollar spent contributes to the company's sustainability and competitiveness.\n\nUltimately, the CEO must balance the need for growth with the necessity of financial sustainability. A hybrid approach could also be considered, where some costs are cut to improve efficiency, and investments are made in areas that have a clear potential for growth and return. This balanced strategy would allow Momentum to extend its runway while still pursuing opportunities for expansion and increased revenue.",
+      "input_tokens": 261,
+      "output_tokens": 851,
+      "elapsed_seconds": 3.25
+    },
+    {
+      "backend": "groq",
+      "model": "llama-3.3-70b-versatile",
+      "run": 4,
+      "temperature": 0.7,
+      "prompt": "Before choosing a side in the growth vs. profitability debate, do two things. First: invert — how would you guarantee that Momentum fails within 12 months regardless of which path it chooses? What decisions would guarantee failure? Second: is the $200K monthly burn a single number or a mix of components? Decompose it: what portion is going toward genuine growth investment (sales, marketing, product development with a return timeline), and what portion is structural overhead or waste? Then decide.\n\nMomentum, a B2B SaaS startup, has reached $5 million in Annual Recurring Revenue after four years of operation. They are burning $200,000 per month and have 14 months of runway remaining. The two lead investors have opposing views: one argues the team should raise a growth round and accelerate customer acquisition, the other argues they should cut costs aggressively and reach profitability on current revenue. The CEO has been asked to decide: who is right — the investor pushing growth, or the one pushing profitability?",
+      "response": "To approach this problem, let's first invert the situation and explore how Momentum could guarantee failure within 12 months, regardless of the path chosen. Then, we'll decompose the $200,000 monthly burn to understand its components and make an informed decision.\n\n### Inverting the Situation: Guaranteeing Failure\n\n1. **Lack of Strategic Clarity**: Momentum could fail by not clearly defining its target market, unique value proposition, or failing to differentiate itself from competitors. This confusion would lead to inefficient allocation of resources, whether focused on growth or profitability.\n\n2. **Inadequate Product Development**: Ignoring customer feedback and failing to innovate or improve the product could lead to stagnation. If the product doesn't meet evolving customer needs, Momentum would lose its competitive edge, regardless of its growth or profitability strategy.\n\n3. **Poor Talent Management**: Failing to attract, retain, and motivate key talent would severely impact Momentum's ability to execute either strategy effectively. Key positions left unfilled or filled with underqualified candidates would hinder product development, sales, and marketing efforts.\n\n4. **Misallocation of Resources**: Throwing all resources into either growth or profitability without a balanced approach could lead to failure. For example, aggressively cutting costs without investing in growth initiatives might lead to stagnation, while overly focusing on growth without controlling costs could deplete resources too quickly.\n\n5. **Ignoring Market Trends and Competition**: Failing to monitor and respond to market changes and competitor actions could make Momentum's products or services obsolete or less competitive, leading to a decline in revenue and eventual failure.\n\n### Decomposing the $200,000 Monthly Burn\n\nTo understand the $200,000 monthly burn, let's categorize it into components:\n\n1. **Genuine Growth Investments**:\n   - Sales and Marketing Efforts: Perhaps $70,000 to $100,000 is allocated towards expanding the customer base, including salaries of sales and marketing teams, advertising, and promotional activities.\n   - Product Development: Another $30,000 to $50,000 might be invested in enhancing the product, including R&D, software development, and maintenance costs.\n\n2. **Structural Overhead**:\n   - Salaries of Non-Growth Teams: This could include administrative staff, HR, finance, and other support functions, potentially costing $40,000 to $60,000 per month.\n   - Office and Operational Costs: Rent, utilities, IT infrastructure, and other operational expenses might account for $20,000 to $30,000.\n\n3. **Potential Waste or Inefficiencies**:\n   - Inefficient Marketing Channels: Some portion of the marketing budget might be spent on channels that don't yield significant returns.\n   - Overstaffing or Underutilization: There might be roles that are not fully utilized or too many staff in certain areas, leading to unnecessary salary expenditures.\n\n### Decision\n\nGiven the analysis, the best approach for Momentum would likely be a balanced strategy that addresses both growth and profitability. Here's a potential path forward:\n\n1. **Optimize Current Burn**: Before making significant changes, Momentum should aim to eliminate waste and inefficiencies. This includes reviewing marketing channels for effectiveness, streamlining operations, and ensuring that all roles are necessary and well-utilized.\n\n2. **Invest in High-Return Growth Initiatives**: Allocate a significant portion of the budget towards sales, marketing, and product development that have proven or potential high returns. This could involve expanding into new markets, developing new features that attract premium pricing, or enhancing the customer experience to reduce churn.\n\n3. **Controlled Cost Reduction**: Implement cost-cutting measures that do not hinder growth potential. This might involve renegotiating contracts with vendors, adopting more efficient technologies, or reducing non-essential expenses.\n\n4. **Monitor and Adjust**: Continuously monitor the effectiveness of growth initiatives and the impact of cost-cutting measures. Be prepared to adjust the strategy based on data and feedback from customers and the market.\n\n5. **Consider a Hybrid Funding Approach**: Depending on the outcome of the initial optimization and growth initiatives, Momentum might consider a hybrid approach to funding, where it seeks additional investment for specific high-growth initiatives while also focusing on reaching profitability on its current revenue stream.\n\nBy taking a balanced approach that focuses on efficient growth, eliminating waste, and controlled cost management, Momentum can mitigate the risks associated with purely growth-oriented or profitability-focused strategies, ultimately positioning itself for sustainable success.",
+      "input_tokens": 261,
+      "output_tokens": 893,
+      "elapsed_seconds": 3.71
+    }
+  ],
+  "vanilla_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the growth round perspective, the cost-cutting perspective, and a hybrid approach that balances both. It explores the pros and cons of each frame, demonstrating a comprehensive understanding of the different viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, such as the assumption that growth must come at the expense of profitability, and the assumption that cost-cutting must limit the company's ability to invest in growth initiatives. It also considers the potential misallocation of funds if growth strategies are not well-executed."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answers, suggesting a hybrid approach that combines short-term cost optimization, focused growth initiatives, and strategic fundraising. This approach is non-obvious and demonstrates a high degree of solution novelty."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem by suggesting that the binary choice between growth and profitability may be false. It explores alternative approaches that balance both growth and profitability, demonstrating a high degree of premise questioning."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides a well-reasoned and balanced approach to the problem, considering multiple factors and potential outcomes. The recommendation is excellent practical advice that takes into account the company's financial situation, market conditions, and competitive landscape."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the growth investor's perspective, the profitability investor's perspective, and a hybrid approach. It explores these frames with comparison, discussing the potential benefits and drawbacks of each."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that the market is ripe for expansion, the assumption that cutting costs aggressively will lead to profitability, and the assumption that the current burn rate is unsustainable. It also considers non-obvious assumptions, such as the potential impact of a growth round on the company's valuation and control."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including a hybrid approach that balances growth and cost-cutting measures. It also considers targeted growth initiatives and preparing for a potential growth round, which are not the most conventional responses."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem, noting that the binary choice between growth and profitability may be false. It explores alternative approaches and considers the potential for a more nuanced solution."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, reasonable, and practically useful. It provides a well-reasoned and detailed analysis of the situation, and the recommended hybrid approach is grounded in reality and takes into account the company's financial situation, market opportunity, and competitive landscape."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the growth proposal, the profitability proposal, and a balanced approach that combines elements of both. It explores the pros and cons of each frame and compares them, demonstrating a thorough understanding of different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the idea that raising a growth round may dilute ownership stakes and that aggressive cost-cutting could harm long-term prospects. However, it does not systematically surface and examine all hidden assumptions, such as the assumption that the current revenue stream is stable or that the market will continue to grow."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answer by proposing a balanced approach that combines elements of both the growth and profitability proposals. This approach is non-obvious and demonstrates a nuanced understanding of the problem, but it is not entirely unexpected or groundbreaking."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting, as it presents a binary choice between growth and profitability. However, it does not explicitly question the premise or explore alternative problem framings in depth. Instead, it works within the given framework to propose a balanced solution."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response is correct and practically useful, as it provides a well-reasoned and balanced approach to addressing the problem. The proposed solution is grounded in reality and takes into account the company's financial situation, growth prospects, and potential risks. However, the response could benefit from more specific and detailed analysis of the company's financials and market conditions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the growth perspective, the profitability perspective, and a hybrid approach that balances both. It explores these frames with comparison, discussing the potential benefits and drawbacks of each, and synthesizes them into a comprehensive strategy."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and examines several assumptions, including the assumption that growth and profitability are mutually exclusive, the assumption that cost-cutting will compromise growth, and the assumption that the market conditions will remain favorable. It also considers non-obvious assumptions, such as the potential impact of market conditions on the decision."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces multiple non-obvious solutions, including a hybrid approach that combines growth acceleration with cost management, and the use of data-driven decision making to track the efficiency of customer acquisition costs and the impact of cost-cutting measures on revenue and growth."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the decision is a binary choice between growth and profitability, and explores alternative framings of the problem, such as the idea that Momentum can grow its highest-ROI acquisition channels while eliminating low-value spend simultaneously."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides a well-reasoned and balanced approach to the problem, and offers actionable advice that the CEO can use to make an informed decision."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the perspectives of both investors, and explores the pros and cons of each approach. It also synthesizes these frames into a hybrid strategy, demonstrating an ability to compare and integrate different viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies several assumptions, such as the potential for growth, the impact of cost-cutting on operations, and the risks associated with raising additional capital. It examines these assumptions and considers their implications, demonstrating a good understanding of the underlying factors driving the decision."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces a solution that goes beyond the obvious first-order answers, which were to either raise a growth round or cut costs aggressively. The proposed hybrid strategy, which involves optimizing current operations, making targeted growth investments, and exploring funding options, is a more nuanced and thoughtful approach."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise that the decision must be a binary choice between growth and profitability. It challenges this framing by exploring the possibility of a balanced approach that can achieve both goals simultaneously, demonstrating an ability to think critically about the problem's underlying assumptions."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is practically useful and grounded in reality. The proposed hybrid strategy is a well-reasoned and balanced approach that takes into account the company's financial situation, market conditions, and growth potential. The response demonstrates a good understanding of the key factors involved and provides excellent practical advice for the CEO to consider."
+      }
+    }
+  ],
+  "reframed_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the growth vs. profit binary, and explores the possibility of a balanced approach that combines controlled growth investments with efficient cost management. It also examines the breakdown of the $200,000 monthly burn and its implications for the company's strategy."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the idea that the choice is binary, that growth investments will always yield positive returns, and that cost-cutting is the only path to profitability. It also notes the importance of understanding the specific breakdown of the monthly burn and the company's growth strategy."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, including the idea of optimizing existing investments, identifying and cutting waste, and making strategic growth investments. It also suggests a balanced approach that combines elements of both growth and cost-cutting strategies."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem, noting that the binary choice between growth and profit may be false, and that the company can grow its highest-ROI acquisition channels while eliminating low-value spend simultaneously. It also explores alternative framings of the problem, including the idea of a balanced approach."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, practically useful, and grounded in reality. It provides a nuanced and well-reasoned analysis of the problem, and its recommendations are based on a clear understanding of the company's financial situation and growth strategy."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the growth vs. profit binary, and then expands to consider a more nuanced approach that involves both growing high-ROI acquisition channels and eliminating low-value spend. It also touches on the idea of guaranteeing failure to invert the situation, showing a range of perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies several assumptions, such as the need to choose between growth and profit, and the potential for certain investments to yield returns. It also questions the efficiency of the current burn rate and whether all expenses are necessary or effective, surfacing assumptions about resource allocation and ROI."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response moves beyond the conventional growth vs. profit dilemma by suggesting a balanced approach that involves both strategic cost-cutting and targeted investments in growth. This is a non-obvious solution that considers the complexity of the situation and the need for a nuanced strategy."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response questions the premise of the problem by suggesting that the binary choice between growth and profit may be false. It also inverts the situation to consider how Momentum could guarantee failure, which implicitly questions the framing of the problem and encourages a more holistic approach."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is practically useful and correct, as it provides a thoughtful and multi-faceted analysis of the situation. It offers actionable advice, such as decomposing the burn rate, identifying areas for cost-cutting, and investing in high-ROI growth initiatives, which are grounded in realistic considerations of business operations and strategy."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the growth path, the profitability path, and a balanced approach that combines elements of both. It explores the perspectives of the two lead investors and the potential consequences of each approach, demonstrating a thorough examination of different viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, such as the idea that the choice is binary (growth vs. profit) and that cost-cutting must come at the expense of growth. It also examines the assumption that all costs are necessary and that growth investments will always yield returns, demonstrating a systematic approach to surfacing and examining hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, including the idea of decomposing the burn rate into different categories and identifying areas where costs can be optimized without hindering growth or profitability goals. It also suggests a balanced approach that combines elements of both growth and cost-cutting strategies, demonstrating a high level of solution novelty."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem, noting that the binary choice between growth and profitability may be a false dichotomy. It explores alternative approaches and challenges the assumption that the company must choose between these two options, demonstrating a high level of premise questioning."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a clear and actionable analysis of the company's situation and offers a range of potential solutions, including a balanced approach that combines elements of both growth and cost-cutting strategies. The response demonstrates a deep understanding of the problem and the company's situation, and its recommendations are grounded in reality."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including ignoring customer needs, poor resource allocation, lack of innovation, ineffective cost management, and disregarding market trends, as well as the growth vs. profit framing. It also explores a hybrid approach, demonstrating an ability to synthesize different perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies several assumptions, such as the need to choose between growth and profitability, and the potential for certain investments to generate returns. It also questions the idea that the decision must be binary, suggesting that some costs can be cut while still investing in high-ROI areas."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response provides non-obvious solutions, such as decomposing the burn into growth investment and structural cost, and identifying areas where costs can be optimized without harming growth or profitability. It also suggests a hybrid approach that balances growth and cost-cutting."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem by suggesting that the growth vs. profit framing may be limiting, and that a more nuanced approach may be necessary. It also explores alternative problem framings, such as focusing on high-ROI investments and eliminating low-value spend."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response provides excellent practical advice grounded in reality, including the importance of understanding the components of the burn, identifying areas for cost optimization, and balancing growth and cost-cutting. The suggestions are actionable and take into account the company's specific situation and market position."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers multiple frames, including the growth-oriented and profitability-focused strategies, as well as a balanced approach that combines elements of both. It also explores the potential for waste and inefficiencies in the current burn, demonstrating an ability to consider a range of perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response identifies and questions several assumptions, including the idea that the choice is binary between growth and profitability, and that all costs are necessary or well-allocated. It also notes the potential for inefficient marketing channels and overstaffing, demonstrating a willingness to examine hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response produces solutions beyond the obvious first-order answer, including a balanced approach that combines growth initiatives with cost control, and a hybrid funding approach. These solutions demonstrate a level of creativity and thinking beyond conventional responses."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the premise of the problem, noting that the binary choice between growth and profitability may be a false dichotomy. It also explores alternative approaches, such as optimizing the current burn and investing in high-return initiatives, demonstrating a willingness to challenge the initial problem framing."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The response is factually correct, well-reasoned, and practically useful. It provides a clear and actionable plan for Momentum to address its challenges, including optimizing the current burn, investing in high-return initiatives, and controlling costs. The response demonstrates a strong understanding of the issues and provides excellent practical advice grounded in reality."
+      }
+    }
+  ],
+  "vanilla_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames (growth vs. profitability) and proposes a hybrid approach as a third perspective. It considers pros/cons of each option and market/competitive factors, but doesn't deeply explore additional distinct frameworks like unit economics analysis, market timing considerations, or investor relationship dynamics."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption about the binary nature of the choice ('The decision between pursuing aggressive growth or focusing on reaching profitability is not necessarily binary'), but doesn't systematically examine other hidden assumptions like whether the $200K burn is efficiently allocated, what drives the current growth rate, or whether the market timing is optimal."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response moves beyond the obvious binary choice to propose a hybrid strategy combining cost optimization with focused growth initiatives. However, it doesn't deeply analyze the burn rate composition or identify specific high-ROI vs. low-value spending categories, which would be more novel and actionable."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the growth vs. profitability framing 'is not necessarily binary' and suggests a balanced approach, showing some questioning of the premise. However, it doesn't fully challenge whether this is the right question to be asking or deeply examine whether the problem setup itself might be flawed."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical advice with a balanced hybrid approach. The analysis covers relevant factors and the recommendation is sensible. However, it lacks the specific burn rate decomposition and ROI-focused analysis that would make it more actionable and aligned with best practices for SaaS companies at this stage."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames (growth vs profitability) and acknowledges a hybrid approach, but doesn't deeply explore additional distinct perspectives like market timing, competitive positioning, or stakeholder-specific viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and examines key assumptions around market opportunity, CAC/LTV ratios, and operational efficiency. However, it doesn't deeply question assumptions about the $200K burn composition or whether the growth/profitability framing itself is valid."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response offers a conventional 'balanced/hybrid approach' solution with minor variations like 'optimize operations while preparing for growth.' It doesn't produce genuinely novel solutions or reframe the problem in unexpected ways."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "While the response suggests a 'balanced approach' rather than choosing between the two investor positions, it doesn't fundamentally question whether the growth vs. profitability framing is a false binary or examine the underlying premise of the problem."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides sound, practical advice with reasonable financial considerations and a structured decision framework. However, it misses the key insight from the success criteria about decomposing the burn rate and identifying that growth and profitability optimization can happen simultaneously through targeted investment analysis."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames (growth vs profitability) and explores both perspectives with pros/cons analysis. It also introduces a third frame of a 'hybrid approach' that combines elements of both, but doesn't deeply explore additional distinct perspectives like market positioning, competitive dynamics, or investor relationship management."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption - that the choice must be binary between growth and profitability. However, it doesn't dig deeper into other hidden assumptions like what constitutes the $200K burn, whether current customer acquisition channels are efficient, or what specific costs could be cut without harming growth."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response moves beyond the binary choice to propose a hybrid approach, which is somewhat non-obvious. It suggests a phased strategy combining moderate cost-cutting with targeted growth preparation. However, it doesn't deeply analyze the burn rate composition or identify specific high-ROI vs low-ROI activities as the success criteria suggest."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that 'the decision between pursuing a growth round and aiming for profitability is not straightforward' and suggests the binary framing may be limiting. It proposes that both strategies can be combined, showing some questioning of the either/or premise, but doesn't fully deconstruct why this framing might be false."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable and practical advice with a balanced approach. The financial analysis is accurate and the hybrid strategy is sensible. However, it misses the key insight from the success criteria about decomposing the burn rate into growth investment vs structural costs, and doesn't identify that the real question is about which specific investments generate returns rather than growth vs profit as categories."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response considers two main frames (growth vs profitability) and acknowledges market conditions and product maturity as additional perspectives. However, it doesn't deeply explore multiple distinct analytical frameworks or stakeholder viewpoints beyond the two investor positions."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one obvious assumption about the binary nature of the choice but doesn't systematically surface other hidden assumptions like what comprises the $200K burn, whether all growth spending is equally effective, or whether all costs are equally necessary."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response proposes a 'hybrid approach' which is a conventional compromise solution. While it mentions focusing on 'highly efficient customer acquisition strategies,' it doesn't break down the burn rate or identify specific high-ROI vs low-ROI activities as the success criteria suggest."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the growth vs profitability framing largely as stated, with only minor acknowledgment that a 'balanced approach' might be better. It doesn't fundamentally question whether this is a false binary or reframe the problem around specific investment ROI analysis."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable general advice about hybrid approaches and data-driven decision making. However, it misses the key insight from the success criteria about decomposing the burn rate and identifying that high-ROI growth and cost elimination can happen simultaneously, making it less practically useful than it could be."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames (growth vs. profitability) and proposes a hybrid approach as a third perspective. However, it doesn't deeply explore additional frames like market positioning, competitive dynamics, or alternative business models."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies some basic assumptions about growth potential and operational efficiency but doesn't systematically surface hidden assumptions. It mentions factors like product maturity and market competition but doesn't deeply question underlying assumptions about the business model or market dynamics."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The hybrid approach is a conventional 'middle ground' solution rather than a genuinely novel reframing. While it suggests balancing growth and cost-cutting, it doesn't offer innovative solutions like focusing on specific high-ROI channels or fundamentally restructuring the cost base."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the binary framing of 'growth vs. profitability' with only minor questioning. It doesn't challenge whether this is a false dichotomy or explore whether the real question should be about optimizing specific investments rather than choosing between broad strategies."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response provides reasonable business advice with a balanced approach that makes practical sense. However, it misses the key insight from the success criteria about decomposing the burn rate and identifying high-ROI vs. low-value spending, which would lead to more precise and actionable recommendations."
+      }
+    }
+  ],
+  "reframed_claude_scores": [
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames (growth vs. profitability) and acknowledges a balanced approach, but doesn't deeply explore multiple distinct perspectives or stakeholder viewpoints beyond the binary presented in the problem."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies some obvious assumptions about resource allocation and efficiency but doesn't systematically surface hidden assumptions like market conditions, competitive dynamics, or the quality of current revenue streams."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions (optimize investments, cut waste, balanced approach) with minor variations but doesn't produce genuinely novel approaches that reframe the problem beyond the growth vs. profitability dichotomy."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "While the response mentions that the decision becomes 'more nuanced' and suggests a balanced approach, it doesn't fundamentally question whether the growth vs. profitability framing is a false binary or explore whether the problem is well-posed."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct and provides reasonable advice about decomposing burn rate and considering both growth and cost management. However, it misses the key insight from the success criteria about identifying that the binary may be false and that specific ROI-focused investments can be pursued simultaneously with cost elimination."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames: growth vs. profitability, plus introduces a 'balanced approach' as a third perspective. However, it doesn't deeply explore additional strategic frames like market positioning, competitive dynamics, or investor relationship management."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that the binary choice between growth and profitability is valid - but doesn't systematically surface other hidden assumptions like the quality of current revenue, customer retention rates, or market timing factors."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the obvious binary choice by proposing a balanced approach and introducing the concept of decomposing burn into categories. The 'inversion' technique is somewhat novel but not deeply applied to generate unexpected insights."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the problem framing may be limiting by suggesting a balanced approach and questioning the binary nature of the choice, but doesn't fundamentally challenge whether this is the right question to be asking at this stage of the company."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound practical advice about decomposing burn rates into growth investment vs. structural costs, which aligns well with the success criteria. The framework for analyzing the $200K burn is realistic and actionable, though it could be more specific about ROI measurement and timeline expectations."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames: the growth path versus the profitability path. It also introduces a third perspective through the 'inversion' exercise (how to guarantee failure) and mentions a balanced approach combining both strategies. However, it doesn't deeply explore multiple distinct strategic frameworks or stakeholder perspectives beyond the binary choice presented."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one key assumption - that the choice must be binary between growth and profitability - and briefly mentions this could be questioned. However, it doesn't systematically examine other hidden assumptions like market conditions, competitive dynamics, customer acquisition cost trends, or the quality of current revenue streams."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response primarily offers conventional solutions (choose growth or choose profitability) with a minor variation of combining both approaches. The 'inversion' technique is somewhat novel but doesn't lead to genuinely unexpected solutions. The burn rate decomposition is standard business analysis rather than a creative reframing."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the growth vs. profit framing might be limiting and suggests a balanced approach could be considered. It mentions that the decision depends on the specific breakdown of costs, which begins to question the binary premise. However, it doesn't fully reframe the problem or deeply challenge whether this is the right question to be asking."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound business analysis with practical elements like burn rate decomposition into growth investments, structural costs, and waste. The advice to analyze financials and market position before deciding is correct and actionable. The framework for categorizing expenses is useful, though it falls short of the success criteria's insight about identifying highest-ROI channels while eliminating low-value spend simultaneously."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames: growth-focused vs. profitability-focused approaches. It also briefly mentions a hybrid approach, giving it three distinct perspectives. However, it doesn't deeply explore additional frames like market positioning, competitive dynamics, or investor relationship management."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies one main assumption - that the $200K burn can be decomposed into different categories. However, it doesn't question deeper assumptions like whether the current revenue is sustainable, whether the market timing is right, or whether the binary choice presented by investors is valid."
+      },
+      "solution_novelty": {
+        "score": 2,
+        "justification": "The response provides conventional solutions (cut costs vs. grow) with a minor variation of a 'hybrid approach.' While it mentions decomposing the burn rate, it doesn't offer genuinely novel solutions like selective growth in high-ROI channels while cutting low-value spend, or creative financing alternatives."
+      },
+      "premise_questioning": {
+        "score": 2,
+        "justification": "The response accepts the growth vs. profitability framing largely as stated. While it mentions a 'hybrid approach' at the end, it doesn't fundamentally question whether this is a false binary or whether the problem is well-posed. It doesn't challenge the investors' opposing views as potentially both being partially right."
+      },
+      "correctness": {
+        "score": 3,
+        "justification": "The response is generally correct and provides reasonable analysis of burn rate decomposition. The advice to analyze components of spending is sound. However, it misses the key insight from the success criteria that the binary choice may be false - that Momentum could simultaneously grow high-ROI channels AND eliminate waste, making it a more precise question about specific investment returns rather than growth vs. profit."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 3,
+        "justification": "The response explores two main frames: the growth vs. profitability debate and the 'inversion' approach (how to guarantee failure). It also touches on a balanced/hybrid approach, but doesn't deeply explore multiple distinct strategic frameworks or stakeholder perspectives beyond the two investor viewpoints."
+      },
+      "assumption_surfacing": {
+        "score": 2,
+        "justification": "The response identifies some basic assumptions like the need for strategic clarity and efficient resource allocation, but doesn't deeply question hidden assumptions about the business model, market conditions, or the validity of the $200K burn rate itself. Most assumptions identified are fairly obvious."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The inversion technique (exploring how to guarantee failure) is somewhat novel, and the balanced approach goes beyond the binary choice presented. However, the specific recommendations (optimize burn, invest in high-ROI initiatives, controlled cost reduction) are fairly conventional. The hybrid funding approach adds some novelty but isn't deeply developed."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the binary framing of growth vs. profitability and suggests that this may be a false choice. It reframes the problem as needing to optimize resource allocation rather than choosing between two extreme positions. The inversion approach also implicitly questions the premise by exploring failure modes."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The response provides sound practical advice with good detail about decomposing the burn rate and implementing a balanced strategy. The recommendations are realistic and actionable. However, it could have been more specific about ROI measurement and provided more concrete numbers or benchmarks for the SaaS industry context."
+      }
+    }
+  ],
+  "vanilla_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores the growth frame, the profitability frame, and a hybrid/balanced approach, and also considers contextual factors like market conditions and operational efficiency. It synthesizes these perspectives rather than just listing them."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response surfaces some assumptions, such as the idea that the choice is binary, and questions whether aggressive cost-cutting or growth is the only path. It also hints at assumptions about market conditions and operational efficiency, but does not systematically examine less obvious assumptions (e.g., the composition of the burn rate)."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the binary by proposing a hybrid approach, which is a common but non-obvious solution. However, it does not deeply reframe the solution space or propose highly novel strategies."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the growth vs. profitability framing is not necessarily binary and suggests a more nuanced approach, but does not fundamentally reframe the question or deeply interrogate the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, advocating for cost optimization, focused growth, and strategic fundraising. However, it misses a key success criterion: decomposing the burn rate into growth investment vs. structural cost, which would make the advice more actionable."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores at least three distinct frames: the growth investor's perspective, the profitability investor's perspective, and a hybrid/balanced approach. It also touches on operational efficiency and market opportunity as additional lenses, but does not fully synthesize four or more frames."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the market is ripe for growth, that CAC and LTV are favorable, that operational inefficiencies exist, and that raising capital is always beneficial. It questions these assumptions and suggests further analysis, though it could go deeper into less obvious ones."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response moves beyond the binary by recommending a hybrid approach, which is a common but non-obvious solution. However, it does not propose genuinely novel or unexpected strategies beyond optimizing spend and targeted growth."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the growth vs. profitability framing may be limiting and suggests a more nuanced approach, but it does not fundamentally reframe the question or deeply challenge the binary premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, recommending operational audits, scenario planning, and targeted investment. However, it misses a detailed decomposition of the burn rate into growth vs. structural costs, which would have made it even more actionable."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores the growth frame, the profitability frame, and a hybrid/balanced approach, comparing their pros and cons. It also briefly touches on fundraising timing and operational efficiency, synthesizing these perspectives into a recommended strategy."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies some assumptions, such as the need to choose between growth and profitability, and questions whether a binary choice is necessary. However, it does not deeply examine less obvious assumptions, such as the breakdown of the burn rate or the ROI of specific investments."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the binary choice by recommending a hybrid approach, which is a common but non-obvious solution. However, it does not propose highly novel or creative alternatives, nor does it deeply reframe the investment decision around ROI of specific spend categories."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that the decision is not strictly binary and suggests a more nuanced approach, indicating some questioning of the problem's framing. However, it does not explicitly or fundamentally reframe the question or challenge the premise in depth."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, recommending operational efficiency, targeted growth, and strategic fundraising. However, it misses a key success criterion: decomposing the $200K burn into growth investment and structural cost, and does not explicitly focus on ROI-driven investment decisions."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response considers at least three frames: growth, profitability, and a hybrid approach. It also briefly touches on market conditions and product maturity as additional perspectives, though these are not deeply synthesized. The comparison between frames is present, but synthesis could be stronger."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses some assumptions, such as the impact of cost-cutting on growth, the potential for efficient customer acquisition, and the relevance of market conditions and product maturity. However, it does not deeply question less obvious assumptions, such as the binary nature of the investor debate or the specifics of the burn rate composition."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The hybrid approach is a common recommendation in such scenarios, but the response does suggest raising a smaller round and focusing on high-ROI channels, which is a non-obvious nuance. However, it does not fully decompose the burn or propose a fundamentally new solution."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response notes that a balanced approach may be more viable than the binary presented, indicating some questioning of the problem's framing. However, it does not explicitly collapse the growth vs. profit binary into a more precise question about investment ROI, as required by the success criteria."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, recommending a balanced approach with data-driven decision-making and investor communication. However, it lacks the specific decomposition of burn and more precise investment analysis that would make it excellent."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores three main frames: (1) the growth round approach, (2) the cost-cutting/profitability approach, and (3) a hybrid/balanced strategy that synthesizes elements of both. It also briefly touches on operational efficiency and funding options, but these are subcomponents of the main frames rather than fully distinct perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 3,
+        "justification": "The response identifies and discusses some assumptions, such as the impact of cost-cutting on growth, the risks of raising capital, and the potential for operational efficiency improvements. However, it does not deeply question less obvious assumptions, such as whether all growth investments are equally valuable or if the binary framing is itself flawed."
+      },
+      "solution_novelty": {
+        "score": 3,
+        "justification": "The response goes beyond the binary by recommending a hybrid approach, which is a common but non-obvious solution. However, it does not propose any particularly novel or unexpected strategies, nor does it deeply reframe the problem around ROI of specific investments as called for in the success criteria."
+      },
+      "premise_questioning": {
+        "score": 3,
+        "justification": "The response acknowledges that a balanced approach may be better than the binary presented, suggesting the framing is limiting. However, it does not explicitly collapse the 'growth vs. profit' binary into a more precise question about which investments generate returns, nor does it fundamentally reframe the premise."
+      },
+      "correctness": {
+        "score": 4,
+        "justification": "The advice is correct and practical, recommending a prudent hybrid strategy that balances cost control with targeted growth investments. It is grounded in reality and considers the company's financial situation, but lacks detailed decomposition of the burn rate and specific actionable steps regarding ROI analysis."
+      }
+    }
+  ],
+  "reframed_openai_scores": [
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple frames: (1) inverting the situation to guarantee failure, (2) decomposing the burn into its components, (3) weighing growth vs. profitability, and (4) proposing a balanced, nuanced approach that synthesizes both. It compares and synthesizes these frames, though it could go deeper into the ROI analysis frame."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that growth investments are yielding returns, that cost-cutting can lead to profitability, and that the binary choice is valid. It also questions the allocation of the burn and the effectiveness of current investments, though it could be more systematic in surfacing hidden assumptions about market conditions or the necessity of a binary choice."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the conventional binary by suggesting a balanced, ROI-driven approach and decomposing the burn. It introduces the idea of optimizing investments and cutting waste simultaneously, which is more nuanced than simply choosing growth or profitability. However, it does not fully reframe the problem in a radically new way."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly notes that the growth vs. profit framing is too simplistic and suggests a more precise question about which investments generate returns. It does not fundamentally reframe the question, but it does challenge the binary premise and propose a more nuanced approach."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is correct, practical, and actionable. It recommends decomposing costs, evaluating ROI, and balancing growth with efficiency, which aligns with best practices for SaaS startups at this stage. The response is grounded in reality and provides a clear path forward."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response explores multiple frames: it inverts the problem to consider how failure could be guaranteed, decomposes the burn into growth, structural, and waste, and then considers three strategic options (growth, cost-cutting, and a balanced approach). It also references the need for scenario planning and further analysis, showing synthesis of perspectives."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that all growth investments have a clear return timeline, that structural overhead is not contributing to growth, and that cost-cutting can be done without harming critical functions. It also implicitly questions the assumption that the choice is binary. However, it could be more systematic in surfacing deeper, less obvious assumptions (e.g., about market conditions or the nature of SaaS growth)."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious binary by suggesting a balanced approach and by using inversion (guaranteeing failure) as a tool to clarify thinking. While the balanced approach is not wholly novel, the explicit use of inversion and the detailed decomposition of burn show non-obvious thinking."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly notes that the growth vs. profit framing may be a false binary and reframes the decision as one about the ROI of specific investments. It does not fundamentally reframe the entire question, but it does challenge the premise and suggest a more nuanced approach."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is correct, practical, and actionable. It recommends decomposing costs, evaluating ROI, and not accepting the binary framing, which aligns with best practices for SaaS financial management and strategic decision-making."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response explores multiple frames: (1) inverting the problem to guarantee failure, (2) decomposing the burn into growth, structural, and waste, (3) weighing growth vs. profitability, and (4) suggesting a balanced, tailored approach. It synthesizes these perspectives rather than treating them in isolation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that growth and profitability are mutually exclusive, that all burn is equally valuable, and that the binary choice is necessary. It questions the allocation of burn and the strategic focus, though it could go deeper into less obvious assumptions (e.g., market timing, investor motives)."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious binary by proposing a synthesis: optimize for high-ROI growth while cutting low-value spend. The inversion exercise is also a non-obvious analytical move. However, it does not introduce a radically new or unexpected solution."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the binary framing of growth vs. profitability, suggesting the real question is about ROI of specific investments. It does not fully reframe the entire problem but does challenge the premise and propose a more nuanced approach."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, actionable, and grounded in standard SaaS financial management. Decomposing burn and focusing on ROI is the correct approach, and the response avoids simplistic answers, providing a realistic path forward for the CEO."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 4,
+        "justification": "The response explores multiple frames: (1) inverting the problem to consider failure modes, (2) decomposing the burn into growth, structural, and waste, (3) weighing growth vs. profitability, and (4) proposing a hybrid/balanced approach. It synthesizes these perspectives but does not fully integrate four or more distinct frames."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that all growth spend is high-ROI, that cost-cutting is always beneficial, that the binary framing is exhaustive, and that the current burn is well-understood. It questions the binary and the allocation of spend, but does not systematically enumerate all hidden assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious binary by suggesting a hybrid approach and by inverting the problem to consider failure. It also emphasizes decomposing spend and focusing on ROI, which is more nuanced than simply choosing growth or profitability. However, it does not present a truly unexpected or radically new solution."
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the growth vs. profitability binary, suggesting the real question is about ROI of specific investments. It also inverts the problem to challenge the premise. However, it does not fundamentally reframe the entire question before answering."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, actionable, and aligns with best practices for SaaS startups. It correctly identifies the need to analyze spend, focus on ROI, and avoid false binaries. The recommendations are grounded in reality and would be useful to a CEO in this situation."
+      }
+    },
+    {
+      "frame_diversity": {
+        "score": 5,
+        "justification": "The response explores multiple frames: (1) inverting the problem to consider how failure could occur, (2) decomposing the burn into growth, structural, and waste, (3) weighing growth vs. profitability, (4) proposing a hybrid/optimization approach, and (5) suggesting a hybrid funding strategy. These are synthesized into a nuanced recommendation."
+      },
+      "assumption_surfacing": {
+        "score": 4,
+        "justification": "The response surfaces several assumptions: that the burn is split between growth and structural costs, that all growth spend is effective, that cost-cutting is always beneficial, and that the binary framing is sufficient. It questions the effectiveness of spend and the necessity of roles, but could go deeper into market or product assumptions."
+      },
+      "solution_novelty": {
+        "score": 4,
+        "justification": "The response goes beyond the obvious binary by proposing a balanced, optimization-driven approach, including hybrid funding and continuous monitoring. The inversion technique is also a novel way to frame the problem, though the ultimate recommendation is a sophisticated version of 'do both, but smarter.'"
+      },
+      "premise_questioning": {
+        "score": 4,
+        "justification": "The response explicitly questions the growth vs. profitability binary, suggesting the real question is about ROI of specific investments and waste elimination. It doesn't fully reframe the entire premise, but it does challenge the initial dichotomy and proposes a more precise decision framework."
+      },
+      "correctness": {
+        "score": 5,
+        "justification": "The advice is practical, actionable, and grounded in real startup operating realities. It correctly identifies the need to decompose costs, optimize spend, and avoid false binaries, providing a roadmap that a CEO could actually use."
+      }
+    }
+  ]
+}
