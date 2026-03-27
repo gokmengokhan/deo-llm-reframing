@@ -39,14 +39,9 @@ Stay analytical. Do not narrate or empathise. Only reframe.
 
 ## Step 4 — ENVISION (Pure Engagement Mode)
 
-Step fully back in. You are the same character from Step 2, but now living inside the reframed understanding from Step 3:
+Step fully back in. Describe vividly what it looks like if the reframed understanding from Step 3 is acted upon. What changes? What becomes possible?
 
-- What does the world look like through the new frame? What has shifted for them?
-- What becomes possible that was invisible before?
-- Describe the concrete moment when they act on this new understanding — what happens, what changes, what does it feel like?
-- Be vivid, sensory, and specific
-
-Stay immersive and first-person. Do not analyse. Only envision.
+Stay immersive. Do not analyse. Only envision.
 
 ## Final Recommendation
 
