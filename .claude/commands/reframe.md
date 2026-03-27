@@ -33,12 +33,7 @@ Stay immersive and first-person. Do not analyse, list assumptions, or step back.
 
 ## Step 3 — REFRAME (Pure Distance Mode)
 
-Step back out again. You are the outside analyst once more. Drawing on what the first two steps revealed, work purely analytically:
-
-- What is the REAL question behind this problem?
-- What frame was invisible before that is now visible? Name it precisely.
-- Articulate the reframed problem in one clear, precise sentence
-- What structural features does the new frame make salient that the old frame hid?
+Step back out. You are the outside analyst once more. Given what you discovered analytically in Step 1 and what was felt in Step 2, what is the REAL question behind this problem?
 
 Stay analytical. Do not narrate or empathise. Only reframe.
 
