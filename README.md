@@ -1,4 +1,4 @@
-# Distance-Engagement Oscillation in LLM Prompting (aka *electric-sheep*)
+# Distance-Engagement Oscillation in LLM Prompting
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19252225.svg)](https://doi.org/10.5281/zenodo.19252225)
 
@@ -74,7 +74,7 @@ deo-llm-reframing/
 ### Setup
 
 ```bash
-git clone https://github.com/gokmengokhan/deo-llm-creative-reframing.git
+git clone https://github.com/gokmengokhan/deo-llm-reframing.git
 cd deo-llm-reframing
 cp .env.example .env
 # Edit .env with your API keys
