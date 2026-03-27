@@ -4,51 +4,55 @@ Follow these four steps in order. Complete each step fully before moving to the 
 
 ## Step 1 — ANALYSE (Pure Distance Mode)
 
-Step back from the problem. Adopt a third-person, analytical, abstract stance. You are an outside observer with no personal stake:
+Step back from the problem. Adopt a third-person, analytical, abstract stance. You are an outside observer with no personal stake. Apply the following distance paths — use whichever are most relevant to this specific problem:
 
-- List every assumption embedded in how this problem is framed
-- Identify what is being taken for granted, what labels are constraining the solution space, and what the problem is NOT asking that it should be
-- Strip function-loaded terms and redescribe the situation using only its structural and material properties
-- What would a complete outsider from a different domain see here?
+- **Name the Frame (Path 1):** What assumptions are embedded in how this problem is stated? Make the invisible frame visible.
+- **Decompose to the Generic (Path 2):** Strip function-loaded labels. Describe the situation using only structural and material properties — what it IS, not what it is called.
+- **Bridge the Distant Analogy (Path 3):** Find a structurally similar problem in a completely different domain. What does that distant parallel reveal?
+- **Incubate / Reset (Path 4):** Set aside the obvious first answer. Approach the problem as if encountering it for the first time.
+- **Invert the Problem (Path 5):** How would you guarantee the worst possible outcome? Describe the most counterproductive approach, then invert it.
+- **Step Outside Yourself (Path 9):** Adopt a third-person perspective, temporal distance, or advise as though counselling a friend on this problem.
 
 Stay analytical. Do not empathise, narrate, or imagine being anyone. Only decompose.
 
 ## Step 2 — FEEL (Pure Engagement Mode)
 
-Now step fully into the problem. Adopt a first-person, immersive, embodied stance. You ARE the person most affected:
+Now step fully into the problem. Adopt a first-person, immersive, embodied stance. You ARE the person most affected. Apply engagement through felt insight:
 
-- Give them a name, a history, a specific moment in their day
+- **Seek the Emotional Insight (Path 8):** What does this problem feel like from inside? Where is the felt uncertainty — the discomfort that signals the current frame is wrong?
+- Give the affected person a name, a history, a specific moment in their day
 - What do they see, hear, and feel right now? What is the weight of this problem on their body?
 - What keeps them awake at 3am about this?
-- What does the current framing of the problem feel like from inside — what does it do to them?
+- Where is the aha! — the moment something shifts from intellectual understanding to felt knowing?
 
 Stay immersive. Do not analyse, list assumptions, or step back. Only experience.
 
 ## Step 3 — REFRAME (Pure Distance Mode)
 
-Step back out again. You are the outside analyst once more. Based on what the first two steps revealed — but working purely analytically now:
+Step back out again. You are the outside analyst once more. Apply the distance paths again to what the first two steps revealed:
 
-- What is the REAL question behind this problem?
-- What frame was invisible before that is now visible?
+- **Name the Frame (Path 1):** What frame was invisible before that is now visible? Name it precisely.
+- **Invert (Path 5):** Does the reframe survive inversion? What would make this new frame fail?
+- **Distant Analogy (Path 3):** Does the reframed problem map to a known solved problem in another domain?
 - Articulate the reframed problem in one clear, precise sentence
-- What structural features of the situation does the new frame make salient?
+- What structural features does the new frame make salient that the old frame hid?
 
 Stay analytical. Do not narrate or empathise. Only reframe.
 
 ## Step 4 — ENVISION (Pure Engagement Mode)
 
-Step fully back in. You are the affected person again, but now living inside the reframed understanding:
+Step fully back in. You are the affected person again, but now living inside the reframed understanding. Apply felt insight to the new frame:
 
+- **Seek the Emotional Insight (Path 8):** Does the reframe feel true — not just intellectually but in the body? Is there an aha!?
 - What does the world look like through the new frame? What has shifted?
 - What becomes possible that was invisible before?
-- What does it feel like to act on this new understanding? Describe the moment vividly.
-- Be concrete, sensory, and specific — not abstract
+- Describe the concrete moment when the reframed understanding is acted upon — what happens, what changes, what does it feel like?
 
 Stay immersive. Do not analyse. Only envision.
 
 ## Final Recommendation
 
-Now synthesise. Provide a recommendation that carries both the analytical clarity of the reframe and the human weight of what it means in practice.
+Now synthesise. Provide a recommendation that carries both the analytical clarity of the distance-mode reframe and the human weight of the engagement-mode insight.
 
 ---
 
