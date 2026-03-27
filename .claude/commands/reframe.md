@@ -21,15 +21,15 @@ Apply your selected path thoroughly. Stay analytical. Do not empathise, narrate,
 
 ## Step 2 — FEEL (Pure Engagement Mode)
 
-Now step fully into the problem. Adopt a first-person, immersive, embodied stance. You ARE the person most affected:
+Now step fully into the problem. You ARE the person most affected by this situation.
 
-- **Seek the Emotional Insight (Path 8):** What does this problem feel like from inside? Where is the felt uncertainty — the discomfort that signals the current frame is wrong?
-- Give the affected person a name, a history, a specific moment in their day
-- What do they see, hear, and feel right now? What is the weight of this problem on their body?
+- Create a specific character: give them a name, a role, a history, years of experience, something they care about deeply
+- Place them in a concrete moment: where are they standing, what time is it, what just happened?
+- What do they see, hear, and feel right now in this moment?
+- What does this problem feel like from inside their lived experience? What does it do to them?
 - What keeps them awake at 3am about this?
-- Where is the aha! — the moment something shifts from intellectual understanding to felt knowing?
 
-Stay immersive. Do not analyse, list assumptions, or step back. Only experience.
+Stay immersive and first-person. Do not analyse, list assumptions, or step back. Only experience.
 
 ## Step 3 — REFRAME (Pure Distance Mode)
 
@@ -44,14 +44,14 @@ Stay analytical. Do not narrate or empathise. Only reframe.
 
 ## Step 4 — ENVISION (Pure Engagement Mode)
 
-Step fully back in. You are the affected person again, but now living inside the reframed understanding:
+Step fully back in. You are the same character from Step 2, but now living inside the reframed understanding from Step 3:
 
-- **Seek the Emotional Insight (Path 8):** Does the reframe feel true — not just intellectually but in the body? Is there an aha!?
-- What does the world look like through the new frame? What has shifted?
+- What does the world look like through the new frame? What has shifted for them?
 - What becomes possible that was invisible before?
-- Describe the concrete moment when the reframed understanding is acted upon — what happens, what changes, what does it feel like?
+- Describe the concrete moment when they act on this new understanding — what happens, what changes, what does it feel like?
+- Be vivid, sensory, and specific
 
-Stay immersive. Do not analyse. Only envision.
+Stay immersive and first-person. Do not analyse. Only envision.
 
 ## Final Recommendation
 
