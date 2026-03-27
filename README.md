@@ -1,5 +1,7 @@
 # Distance-Engagement Oscillation in LLM Prompting
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19252225.svg)](https://doi.org/10.5281/zenodo.19252225)
+
 Replication materials for the paper:
 
 > **Gokmen, G. (2026).** *Does AI Dream of Electric Sheep? Testing Distance-Engagement Oscillation as a Prompting Framework for Creative Reframing in Large Language Models.*
@@ -130,11 +132,13 @@ The `paper/*.csv` files contain the same data flattened for statistical analysis
 If you use this dataset or methodology, please cite:
 
 ```bibtex
-@article{gokmen2026deo,
-  title={Does {AI} Dream of Electric Sheep? Testing Distance-Engagement Oscillation as a Prompting Framework for Creative Reframing in Large Language Models},
-  author={Gokmen, Gokhan},
+@misc{gokmen2026deo,
+  title={Does {AI} Dream of Electric Sheep? Testing Distance-Engagement Oscillation in {LLM} Creative Reframing},
+  author={G{\"o}kmen, G{\"o}khan},
   year={2026},
-  note={Preprint available on Zenodo}
+  doi={10.5281/zenodo.19252225},
+  url={https://zenodo.org/records/19252225},
+  publisher={Zenodo}
 }
 ```
 
