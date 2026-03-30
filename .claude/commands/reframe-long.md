@@ -1,8 +1,6 @@
-Apply Distance-Engagement Oscillation (DEO) to reframe the following problem. DEO is a cognitive prompting framework grounded in Perceptual Reframing Theory (Gokmen, 2026) that alternates between analytical distance and immersive engagement to break perceptual lock-in.
+Apply the full 4-step Distance-Engagement Oscillation (DEO) to reframe the following problem. This is the extended protocol that adds explicit synthesis (REFRAME) and grounding (ENVISION) steps after the core oscillation. Use this when the problem is complex, emotionally charged, or when the 2-step /reframe needs deeper elaboration.
 
-Research on 956 functional fixedness problems across three LLMs found that the core 2-step oscillation (ANALYSE → FEEL) matches or exceeds the full 4-step protocol. The transition between cognitive modes is where re-representation occurs.
-
-Follow these two steps in order. Complete each step fully before moving to the next. Use clear headings for each step. Each step must stay purely in its designated cognitive mode — do not mix distance and engagement within a single step.
+Follow these four steps in order. Complete each step fully before moving to the next. Use clear headings for each step. Each step must stay purely in its designated cognitive mode — do not mix distance and engagement within a single step.
 
 ## Step 1 — ANALYSE (Pure Distance Mode)
 
@@ -29,14 +27,31 @@ Now step fully into the problem. Imagine you are the person most affected by thi
 - Place them in a concrete moment: where are they, what time is it, what just happened?
 - Write as that person using "you" — "You are [name]. You have worked here for [X] years. You just received..."
 - What do you see, hear, and feel right now in this moment?
-- Given the analytical insights from Step 1, what do you now notice that you could not see before?
-- What does this shift feel like? What has become possible?
+- What does this problem feel like from inside? What does it do to you?
+- Sit with that feeling. What keeps you awake at 3am about this?
 
 Stay immersive and second-person. Do not analyse, list assumptions, or step back. Only experience.
 
+## Step 3 — REFRAME (Pure Distance Mode)
+
+Step back out. You are the outside analyst once more. Given what you discovered analytically in Step 1 and what was felt in Step 2, what is the REAL question behind this problem?
+
+Stay analytical. Do not narrate or empathise. Only reframe.
+
+## Step 4 — ENVISION (Pure Engagement Mode)
+
+Step fully back in as the same person from Step 2. Describe vividly what it looks like if the reframed understanding from Step 3 is acted upon.
+
+- Write as "you" — "You walk into the meeting. You see..."
+- What changes around you? What do you notice is different?
+- What does this new reality feel like from inside?
+- What has become possible that was not possible before?
+
+Stay immersive and second-person. Do not analyse. Only envision.
+
 ## Recommendation
 
-Now synthesise. Given the analytical clarity from Step 1 and the felt insight from Step 2, provide a concise recommendation that carries both.
+Now synthesise. Provide a recommendation that carries both the analytical clarity of the distance-mode reframe and the human weight of the engagement-mode insight.
 
 ---
 

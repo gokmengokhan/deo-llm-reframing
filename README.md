@@ -17,14 +17,28 @@ Perceptual Reframing Theory (PRT; Gokmen, submitted) identifies nine cognitive p
 
 The predicted ordering **DEO > Distance > Engagement > Vanilla** held across all 3 models and all 3 scorers (9/9 combinations, all p < .001). Effect sizes were very large (Cohen's d = 1.29-1.63 for Analysis 1).
 
+### MacGyver benchmark update (30 Mar 2026)
+
+A follow-up study on 956 functional fixedness problems from the [MacGyver benchmark](https://github.com/allenai/MacGyver) (Tian et al., 2024) replicated the core finding and revealed that **a 2-step "DEO Brief" protocol (ANALYSE then FEEL) matches or exceeds the full 4-step DEO** on 2 of 3 models:
+
+| Condition | Llama 70B | Qwen 32B | Scout 17B |
+|-----------|:---------:|:--------:|:---------:|
+| Vanilla (fair) | 3.3% | 4.1% | 2.7% |
+| Distance only | 15.1% | 15.5% | 14.1% |
+| Engagement only | 7.2% | 6.8% | 7.9% |
+| **DEO Brief (2-step)** | **20.7%** | **44.2%** | **27.6%** |
+| DEO full (4-step) | 29.2% | 29.2% | 29.3% |
+
+All omnibus tests p < .001. The `/reframe` slash command has been updated to use the 2-step protocol as the default; `/reframe-long` provides the original 4-step version.
+
 ## Experiment design
 
-- **50 novel problems** across 8 categories of perceptual lock-in
+- **50 novel problems** across 8 categories of perceptual lock-in (+ 956 MacGyver benchmark problems)
 - **3 open-weight LLMs**: Llama 3.3 70B, Qwen3 32B, Llama 4 Scout 17B-16E
-- **4 conditions**: vanilla (control), distance-only, engagement-only, DEO (oscillation)
-- **5 runs per condition** (temperature 0.7) averaged to reduce variance
-- **3 independent scorers**: self-scoring + Claude Sonnet 4 + GPT-4.1 (all blind to condition)
-- **5-dimension rubric**: frame diversity, assumption surfacing, solution novelty, premise questioning, correctness
+- **6 conditions**: vanilla, vanilla (fair), distance-only, engagement-only, DEO Brief (2-step), DEO (4-step oscillation)
+- **5 runs per condition** for 50-problem study; 1 run per condition for MacGyver (n = 956 provides sufficient power)
+- **3 independent scorers** for 50-problem study: self-scoring + Claude Sonnet 4 + GPT-4.1 (all blind to condition)
+- **MacGyver scoring**: GPT-4.1 mini feasibility classification (A/B/C/D) against human-verified gold solutions
 - All generation via Groq API; zero-shot, prompt-level intervention only
 
 ## Repository structure
@@ -117,25 +131,23 @@ uv run python generate_figures.py
 
 The full experiment (3 models, 4 conditions, 5 runs, 3 scorers) costs approximately $15-20 USD across the Groq, Anthropic, and OpenAI APIs.
 
-## Claude Code slash command
+## Claude Code slash commands
 
-This repo includes a `/reframe` slash command that applies the DEO framework to any problem. To use it:
+Based on the MacGyver findings, the default `/reframe` command now uses the 2-step DEO Brief protocol. The full 4-step version is available as `/reframe-long`.
 
-1. Clone this repo
-2. From within the repo directory, run Claude Code
-3. Type `/reframe` followed by your problem:
+- **`/reframe`** — 2-step DEO Brief: ANALYSE (select one of six distance paths) then FEEL (embodied engagement). Research shows the core oscillation is the mechanism.
+- **`/reframe-long`** — Full 4-step DEO: ANALYSE, FEEL, REFRAME, ENVISION. For complex or emotionally charged problems.
 
 ```
 /reframe Our hospital ED loses $2.3M per year. Should we close it?
 ```
 
-Claude will apply the four-step DEO oscillation (ANALYSE, FEEL, REFRAME, ENVISION) and return a reframed response.
-
-To install it globally (available in all projects), copy the command file:
+To install globally (available in all projects):
 
 ```bash
 mkdir -p ~/.claude/commands
 cp .claude/commands/reframe.md ~/.claude/commands/reframe.md
+cp .claude/commands/reframe-long.md ~/.claude/commands/reframe-long.md
 ```
 
 ## Data format
