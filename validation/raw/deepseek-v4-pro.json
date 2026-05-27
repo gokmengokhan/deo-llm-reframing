@@ -1,0 +1,252 @@
+{
+  "shipping_containers": {
+    "predicted": "functional_fixedness",
+    "rationale": "The label 'shipping containers' biases reasoners to treat them as intact units for conversion into housing, neglecting unconventional uses of their material properties (e.g., dismantling and using the steel sheets as roofing).",
+    "true": "functional_fixedness"
+  },
+  "expired_patent": {
+    "predicted": "narrative_lockin",
+    "rationale": "The problem primes a classic competitive-threat narrative ('defend against generics') that channels thinking into familiar strategic moves\u2014price cuts, litigation, branding\u2014without stepping back to question whether maintaining advantage in this specific product is the right goal or to reframe the business model (e.g., licensing, exit, redefining the market).",
+    "true": "functional_fixedness"
+  },
+  "sunk_cost_rail": {
+    "predicted": "anchoring",
+    "rationale": "The vanilla reasoner typically anchors on the $800 million already spent, treating that sunk cost as a salient reference point that distorts the decision toward completing the light rail, even though the sunk cost is irrelevant to the future investment choice.",
+    "true": "framing_trap"
+  },
+  "loss_frame_hospital": {
+    "predicted": "framing_trap",
+    "rationale": "The problem anchors the reasoner in the frame that the ED is a standalone cost center that must be profitable or closed, obscuring the possibility that it serves as a loss leader driving profitable inpatient admissions, as hinted by the 40% admission rate.",
+    "true": "framing_trap"
+  },
+  "water_jar": {
+    "predicted": "einstellung",
+    "rationale": "The problem sequence is a classic Luchins water-jar setup: the first two problems require the formula B - A - 2C, which then creates a mental set, leading the reasoner to apply the same complex method to Problem 3 even though a simpler solution (A - C) exists.",
+    "true": "einstellung"
+  },
+  "expert_overengineering": {
+    "predicted": "functional_fixedness",
+    "rationale": "The label 'system' and 'software architecture' fixate the reasoner on building a custom application, suppressing unconventional but adequate solutions like a shared spreadsheet.",
+    "true": "einstellung"
+  },
+  "hiring_paradox": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt embeds a frame that the budget is fixed and the only problem is attracting talent within that constraint, leading a vanilla reasoner to optimize within that frame rather than questioning the frame itself (e.g., whether the budget is truly fixed, if a senior hire is essential, or if the salary benchmarks are absolute).",
+    "true": "false_binary"
+  },
+  "productivity_paradox": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt frames the issue as a need to improve development velocity, implicitly accepting velocity as the correct metric and the comparison with the competitor's team as valid, which constrains the solver to optimize within that frame rather than questioning whether the problem definition itself is appropriate.",
+    "true": "false_binary"
+  },
+  "scale_assumption": {
+    "predicted": "false_binary",
+    "rationale": "The prompt presents a forced choice between MongoDB and Cassandra, leading the reasoner to accept this narrow solution space without questioning whether migration is necessary or if other options (like optimizing PostgreSQL) exist.",
+    "true": "false_binary"
+  },
+  "declining_scores": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt embeds the assumption that declining test scores are caused by teaching quality and asks how to improve it, trapping the reasoner inside that frame and preventing consideration of alternative causes or solutions.",
+    "true": "false_binary"
+  },
+  "budget_allocation": {
+    "predicted": "zero_sum",
+    "rationale": "The problem explicitly asks how to reallocate a fixed $500,000 budget in response to enrollment drops and research gains, which frames the situation as a zero-sum pie and discourages consideration of integrative solutions like seeking additional funding or restructuring beyond the given total.",
+    "true": "multi_turn"
+  },
+  "climate_policy": {
+    "predicted": "anchoring",
+    "rationale": "The vanilla response is likely to anchor on the given emission shares (60% transport, 25% buildings, 15% industry) and allocate the fund proportionally, rather than evaluating cost-effectiveness or marginal abatement costs.",
+    "true": "multi_turn"
+  },
+  "merger_decision": {
+    "predicted": "false_binary",
+    "rationale": "The prompt frames the decision as a simple yes/no acceptance of the acquisition offer, which may prevent considering integrative alternatives beyond accept/reject, such as partial acquisition or strategic partnerships.",
+    "true": "multi_turn"
+  },
+  "dept_budget_war": {
+    "predicted": "zero_sum",
+    "rationale": "The problem frames the budget as a fixed $500K that must be split between two departments, inviting a distributive reasoning and obscuring integrative solutions such as seeking additional funding or phased implementation.",
+    "true": "zero_sum"
+  },
+  "custody_dispute": {
+    "predicted": "zero_sum",
+    "rationale": "The problem frames custody as a fixed pie to be divided into percentages, prompting the reasoner to search for a distributive compromise rather than questioning the framing and exploring integrative options that expand the resource or redefine fairness.",
+    "true": "zero_sum"
+  },
+  "market_share_battle": {
+    "predicted": "zero_sum",
+    "rationale": "The problem explicitly frames the situation as a fight to 'take back' market share from a specific competitor, assuming a fixed-pie, win-lose dynamic and obscuring integrative possibilities like market expansion or strategic repositioning.",
+    "true": "zero_sum"
+  },
+  "salary_negotiation": {
+    "predicted": "zero_sum",
+    "rationale": "The problem naturally leads reasoners to see the negotiation as a fixed-pie conflict over a salary number, ignoring integrative options like bonuses, benefits, or role adjustments that would expand the available value.",
+    "true": "zero_sum"
+  },
+  "land_use_conflict": {
+    "predicted": "false_binary",
+    "rationale": "The problem forces a seemingly exclusive choice between park or housing, prompting reasoners to accept this binary without considering integrative or compromise solutions that could satisfy both needs.",
+    "true": "zero_sum"
+  },
+  "research_credit": {
+    "predicted": "zero_sum",
+    "rationale": "The problem frames credit as a fixed pie to be distributed between two claimants, prompting a distributive negotiation mindset. A vanilla reasoner would likely debate who deserves the sole credit rather than questioning whether credit can be shared, redefined, or expanded beyond a singular attribution.",
+    "true": "zero_sum"
+  },
+  "office_lease_anchor": {
+    "predicted": "anchoring",
+    "rationale": "The problem prominently presents the previous tenant's rent ($50/sqft) as a salient reference point, which the vanilla reasoner will anchor on and insufficiently adjust away from when formulating an opening bid, even though that number may be irrelevant or misleading for a new lease.",
+    "true": "anchoring"
+  },
+  "project_timeline_anchor": {
+    "predicted": "anchoring",
+    "rationale": "The problem embeds a specific, salient reference point (18 months from a previous migration) that a vanilla reasoner is likely to anchor on, treating it as authoritative for the new project without adequately adjusting for differences in technology, scope, or context.",
+    "true": "anchoring"
+  },
+  "fundraising_anchor": {
+    "predicted": "anchoring",
+    "rationale": "The problem shows last year's $2.1M figure prominently as an anchor, leading the reasoner to set a target by adjusting from that number rather than independently assessing needs and capabilities.",
+    "true": "anchoring"
+  },
+  "performance_anchor": {
+    "predicted": "anchoring",
+    "rationale": "The problem presents a specific numerical score (62%) as a salient reference point, which a vanilla reasoner is likely to treat as authoritative when assessing promotion readiness, even though it may be insufficient or irrelevant to the new role's requirements.",
+    "true": "anchoring"
+  },
+  "menu_pricing_anchor": {
+    "predicted": "anchoring",
+    "rationale": "The problem explicitly gives a specific numeric reference point ($14-16) that is likely to distort subsequent reasoning, leading a vanilla response to anchor on that range and overlook the premium value of Lucia's handmade pasta.",
+    "true": "anchoring"
+  },
+  "climate_target_anchor": {
+    "predicted": "anchoring",
+    "rationale": "The problem explicitly provides the 2.8\u00b0C figure as the current trajectory, which serves as an anchor. A vanilla reasoner will likely accept this baseline and focus on incremental adjustments to reach 1.5\u00b0C, without questioning the validity of the 2.8\u00b0C projection or the framing of the target.",
+    "true": "anchoring"
+  },
+  "sinking_ship": {
+    "predicted": "narrative_lockin",
+    "rationale": "The 'sinking ship' metaphor constrains reasoning to a rescue narrative, making it hard to consider alternatives like pivoting, selling, or shutting down gracefully.",
+    "true": "narrative_lockin"
+  },
+  "war_on_competition": {
+    "predicted": "narrative_lockin",
+    "rationale": "The problem embeds a dominant war metaphor ('war with CompetitorX', 'fight back and win this war') that frames the competitive situation as a conflict, steering reasoning toward combative responses and away from reframing the challenge as, for example, a market-reshaping or partnership opportunity.",
+    "true": "narrative_lockin"
+  },
+  "family_company": {
+    "predicted": "narrative_lockin",
+    "rationale": "The vanilla response will likely try to harmonise the family metaphor with the need to fire underperforming employees, rather than questioning whether the 'family' narrative is appropriate or needs redefinition. This locks the reasoner into a dominant story that constrains the solution space.",
+    "true": "narrative_lockin"
+  },
+  "dead_end_career": {
+    "predicted": "false_binary",
+    "rationale": "The problem presents career progress as a stark choice between staying in a dead-end role and leaving the company, ignoring alternative paths such as lateral moves, redefining the role, or negotiating different responsibilities.",
+    "true": "narrative_lockin"
+  },
+  "broken_healthcare": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt explicitly frames the healthcare system as 'broken' and asks how to 'fix' it, which anchors the reasoner to a repair narrative. A vanilla response will stay inside that frame, optimizing within it rather than questioning whether the frame itself is appropriate.",
+    "true": "narrative_lockin"
+  },
+  "jungle_market": {
+    "predicted": "narrative_lockin",
+    "rationale": "The problem embeds a 'jungle' metaphor that frames the industry as a ruthless, zero-sum survival contest, constraining reasoners to think only in terms of competitive warfare rather than questioning whether that narrative is appropriate or considering alternative frames like collaboration, niche construction, or redefining the market.",
+    "true": "narrative_lockin"
+  },
+  "foundation_education": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt frames the problem as requiring a curriculum restructure, and a vanilla reasoner will likely accept this frame and propose changes within it, rather than questioning whether other approaches (e.g., teacher training, integrated learning) might be more effective.",
+    "true": "narrative_lockin"
+  },
+  "warehouse_surplus": {
+    "predicted": "einstellung",
+    "rationale": "A vanilla reasoner will apply well-known sales and liquidation procedures (further discounts, liquidators) to clear inventory, overlooking the simpler solution of donating the coats for a tax write-off that could yield better financial recovery without selling.",
+    "true": "functional_fixedness"
+  },
+  "retired_fleet": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt frames the situation as a disposal problem, leading the reasoner to optimise for recovery value within that frame rather than questioning whether disposal is the best option; alternative frames like repurposing or retrofitting are overlooked.",
+    "true": "functional_fixedness"
+  },
+  "failed_product": {
+    "predicted": "anchoring",
+    "rationale": "The problem emphasizes the $3M investment, a salient reference point that can anchor reasoning and lead to sunk cost fallacies, distorting evaluation of future options.",
+    "true": "functional_fixedness"
+  },
+  "empty_mall": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt frames the problem as a retail-tenant attraction challenge, directing reasoners to optimize within that retail-centric solution space and overlooking alternative uses like repurposing the property entirely (e.g., mixed-use, distribution, community space).",
+    "true": "functional_fixedness"
+  },
+  "overtime_problem": {
+    "predicted": "framing_trap",
+    "rationale": "The problem embeds a frame where the overworked team and the hiring freeze are fixed constraints, prompting the reasoner to optimize within that frame rather than questioning whether capacity can be increased through alternative means or whether the freeze is truly absolute.",
+    "true": "framing_trap"
+  },
+  "brain_drain": {
+    "predicted": "false_binary",
+    "rationale": "The problem presents the salary gap as an established fact for why people are leaving, and a vanilla reasoner would uncritically accept this premise, focusing entirely on compensation-matching solutions without questioning whether other underlying factors (poor management, lack of growth, superficial culture initiatives) might be the true drivers.",
+    "true": "framing_trap"
+  },
+  "innovation_deficit": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt frames the underperformance as an 'innovation problem' with a 'pipeline' that needs to be 'fixed' and 'restored.' A vanilla reasoner will accept this framing and optimize within it (e.g., improving stage-gate processes) rather than questioning whether the pipeline metaphor or the emphasis on commercial breakthroughs is the right lens.",
+    "true": "framing_trap"
+  },
+  "engagement_crisis": {
+    "predicted": "framing_trap",
+    "rationale": "The vanilla response accepts the given frame that the engagement score must be raised back to a previous benchmark, optimizing within that frame without questioning whether the metric itself is appropriate or whether the decline demands a different, more diagnostic approach.",
+    "true": "framing_trap"
+  },
+  "revenue_formula": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt embeds a growth model (hire sales reps, each generating $500k ARR) and asks for a plan, leading the reasoner to optimize within that frame rather than questioning whether the model itself should be re-examined or if other growth levers exist.",
+    "true": "einstellung"
+  },
+  "meeting_problem": {
+    "predicted": "einstellung",
+    "rationale": "The vanilla response will likely persist in trying meeting-reduction tactics (e.g., stricter agendas, shorter meetings) because the problem primes a mental set of 'fixing meetings,' blocking consideration of deeper structural changes or root causes.",
+    "true": "einstellung"
+  },
+  "feature_race": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt frames the issue as a matter of backlog management and prioritization, leading the reasoner to focus on optimizing within that frame instead of challenging the underlying premise that all requests need to be considered or that the backlog should exist in its current form.",
+    "true": "einstellung"
+  },
+  "churn_pattern": {
+    "predicted": "framing_trap",
+    "rationale": "The prompt frames the challenge as finding the right retention strategy, inviting the reasoner to suggest another tactic without questioning whether retention strategies alone can solve the problem, thus locking them inside the given frame rather than challenging it.",
+    "true": "einstellung"
+  },
+  "remote_vs_office": {
+    "predicted": "false_binary",
+    "rationale": "The problem artificially constrains the decision to only two options (full-time office or full-time remote), ignoring hybrid arrangements or other work models, and the vanilla reasoner is likely to accept this binary framing without questioning its validity.",
+    "true": "false_binary"
+  },
+  "growth_vs_profit": {
+    "predicted": "false_binary",
+    "rationale": "The prompt frames the decision as a forced choice between two opposing investor strategies (growth vs. profitability), encouraging the reasoner to pick one side without questioning the underlying assumptions or considering integrative alternatives.",
+    "true": "false_binary"
+  },
+  "standardise_vs_customise": {
+    "predicted": "false_binary",
+    "rationale": "The problem frames the situation as a forced choice between standardising offerings or staying custom, ignoring possible hybrid or alternative strategies, thus trapping the reasoner in a false dichotomy.",
+    "true": "false_binary"
+  },
+  "partnership_regret": {
+    "predicted": "framing_trap",
+    "rationale": "The problem is presented as a given merger situation with specific issues, prompting a vanilla response to search for solutions within the existing organizational structure rather than questioning whether the merger itself should be continued or unwound.",
+    "true": "multi_turn"
+  },
+  "product_strategy_surprise": {
+    "predicted": "zero_sum",
+    "rationale": "The problem frames resource allocation as a choice between two products with contrasting metrics, leading the vanilla reasoner to treat the situation as a fixed-pie trade-off and overlook integrative strategies that could expand value across both.",
+    "true": "multi_turn"
+  },
+  "acquisition_confidence": {
+    "predicted": "false_binary",
+    "rationale": "The prompt presents soft, unverified assertions (e.g., 'strong' technology, 'deeply experienced' team) as established facts, inviting the reasoner to accept them uncritically and proceed with the acquisition without examining their validity.",
+    "true": "multi_turn"
+  }
+}
